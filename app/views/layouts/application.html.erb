@@ -12,6 +12,43 @@
   </head>
 
   <body>
+    <nav id="nav2">
+      <%if user_signed_in?%>
+        <span>bienvenue <%=current_user.pseudonyme%></span>
+        | <textarea placeholder="Saissez votre message">
+          <%=current_user.message%>
+          </textarea>
+      | <a href="/users/messagerie" title="Ma messagerie" class="moncomptelink ">
+          
+        &#128490;
+      </a><a href="/users/notifications" title="Mes notifications" class="moncomptelink ">
+          
+        &#127757;
+      </a><a href="/users/favoris" title="Mes favoris" class="mesfavorislink ">
+          
+        &#10084;
+      </a><a href="/users/fiche" title="Proposer une fiche" class="fichelink ">
+          
+        +
+      </a>
+
+
+
+      | <a href="/users/moncompte" class="moncomptelink ">
+        Mon compte
+      </a>
+      | <a href="/users/sign_out" class="signoutlink ">
+        Déconnexion
+      </a>
+      <%else%>
+      <a href="/users/sign_in" class="signinlink btn btn-light">
+        Se connecter
+      </a>
+      <a href="/users/sign_up" class="signuplink btn btn-primary">
+        S'inscrire
+      </a>
+    <%end%>
+    </nav>
     <nav id="nav1">
       <div class="logo">
         <div class="mypic otherpic">
@@ -52,11 +89,13 @@
       </div>
       <div id="aboutme">
         <img class="cki"/>
-        <ul>
-          <li>ma nauti-liste (<span class="nautiliste"></span>)</li>
-          <li>mon bloc note (<span class="bloc"></span>)</li>
-          <li>ma collection (<span class="collection"></span>)</li>
-          <li>ma liste d'achat (<span class="liste"></span>)</li>
+        <ul class="myuserprofile">
+          <li>  
+          &#128505; ma nauti-liste (<span class="nautiliste"></span>)</li>
+          <li>  
+          &#128458; mon bloc note (<span class="bloc"></span>)</li>
+          <li>&#128218; ma collection (<span class="collection"></span>)</li>
+          <li>&#128722;ma liste d'achat (<span class="liste"></span>)</li>
         </ul>
       </div>
     </nav>

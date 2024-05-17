@@ -1,0 +1,81 @@
+<div class="card">
+<h2>Nautiljson.com</h2>
+
+<%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+  <p>Champs obligatoires</p>
+  <div class="sexfield">
+    <%= f.label :sex %><br />
+  <div class="field">
+
+
+    <%= f.radio_button :sex,"f", autofocus: true, autocomplete: "off",checked:true %>
+    <%= f.label :sex,"femme" %><br />
+  </div>
+  <div class="field">
+
+
+    <%= f.radio_button :sex,"m", autofocus: true, autocomplete: "off" %>
+    <%= f.label :sex,"homme" %><br />
+  </div>
+  <div class="field">
+
+
+    <%= f.radio_button :sex,"a", autofocus: true, autocomplete: "off" %>
+    <%= f.label :sex,"autre" %><br />
+  </div>
+  </div>
+  <div class="sexfield">
+    <%= f.label :affichersex %><br />
+  <div class="field">
+
+
+    <%= f.radio_button :affichersex,"1", autofocus: true, autocomplete: "off",checked:true %>
+    <%= f.label :affichersex,"oui" %><br />
+  </div>
+  <div class="field">
+
+
+    <%= f.radio_button :affichersex,"0", autofocus: true, autocomplete: "off" %>
+    <%= f.label :affichersex,"non" %><br />
+  </div>
+  </div>
+  <div class="field">
+    <%= f.label :pseudonyme %><br />
+    <%= f.text_field :pseudonyme, autofocus: true, autocomplete: "pseudonyme" %>
+  </div>
+
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+  <p>Champs optionnels</p>
+  <div class="field">
+    <%= f.label :siteweb %><br />
+    <%= f.text_field :siteweb, autofocus: true, autocomplete: "siteweb" %>
+  </div>
+  <div class="field">
+    <%= f.check_box :newsletter %>
+    <%= f.label :newsletter %><br />
+
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+</div>

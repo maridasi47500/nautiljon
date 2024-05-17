@@ -138,3 +138,22 @@
 	    background: #4747ff;
 	    color:white;
 		    }
+		    div#aboutme {
+			        display: inline-block;
+				    height: 100%;
+				    width:400px;
+			    }
+			    img.cki {
+				        position: relative;
+					    /* float: left; */
+					    height: 93%;
+					        width: 85px;
+						    top: 3%;
+					    }
+					    ul.myuserprofile {
+						        width: 256px;
+						}
+						nav#nav2 {
+							    background:#000000d4; 
+							    text-align:right;
+						    }
