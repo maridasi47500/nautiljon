@@ -1,0 +1,2 @@
+module OstsPlateformesHelper
+end

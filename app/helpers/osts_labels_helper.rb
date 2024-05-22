@@ -1,0 +1,2 @@
+module OstsLabelsHelper
+end

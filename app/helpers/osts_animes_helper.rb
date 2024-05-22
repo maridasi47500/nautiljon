@@ -1,0 +1,2 @@
+module OstsAnimesHelper
+end

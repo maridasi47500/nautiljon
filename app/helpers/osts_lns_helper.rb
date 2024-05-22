@@ -1,0 +1,2 @@
+module OstsLnsHelper
+end
