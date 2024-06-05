@@ -71,9 +71,9 @@ rails g scaffold animes_cinema name
 rails g scaffold animes_quizz name
 rails g scaffold animes_topic name
 rails g scaffold animes titre:string titre_alternatif:string titre_alternatif_suite:string titre_original_latin:string titre_original:string image:string animes_format_id:integer animes_origine_id:integer webanime:string animes_encours_id:integer date_debut_jj:string date_debut_mm:string date_debut_aaaa:string date_fin_jj:string date_fin_mm:string date_fin_aaaa:string animes_pays_id:integer animes_pays_id:integer animes_genres_id:integer animes_genres_id:integer animes_themes_id:integer animes_themes_id:integer animes_staff_role_id:integer animes_staff_people_id:integer animes_staff_role_id:integer animes_staff_people_id:integer animes_societe_role_id:integer animes_societe_people_id:integer animes_societe_role_id:integer animes_societe_people_id:integer animes_public_averti_id:integer age:string nb_ep:string total_ep_inconnu:string duree:string licencie:string licencie:string animes_editeurs_vf_role_id:integer animes_editeurs_vf_id:integer animes_editeurs_vf_role_id:integer animes_editeurs_vf_id:integer date_debut_simulcast_jj:string date_debut_simulcast_mm:string date_debut_simulcast_aaaa:string date_vf_jj:string date_vf_mm:string date_vf_aaaa:string image_francaise:string description:text site:string site2:string youtube:string animes_groupes_id:integer animes_actualite_id:integer animes_actualite_mini_id:integer animes_anime_id:integer animes_anime_plus_id:integer animes_ln_id:integer animes_ln_plus_id:integer animes_manga_id:integer animes_manga_plus_id:integer animes_jv_id:integer animes_jv_plus_id:integer animes_am_id:integer animes_am_plus_id:integer animes_drama_id:integer animes_drama_plus_id:integer animes_people_id:integer animes_dvd_id:integer animes_artbook_id:integer animes_photobook_id:integer animes_litterature_asiatique_id:integer animes_litterature_asiatique_plus_id:integer animes_culture_id:integer animes_ost_id:integer animes_cd_id:integer animes_doujin_id:integer animes_amv_id:integer animes_cinema_id:integer animes_quizz_id:integer animes_topic_id:integer comment:text statut_prop:string statut_prop:string acceptregles:string
-rails g scaffold evènements_pays name
-rails g scaffold evènements_people name
-rails g scaffold evènements titre:string description:text date:string date_fin:string heure:string prix:string ville:string lieu:string adresse:string evènements_pays_id:integer lien:string site:string evènements_people_id:integer acceptregles:string
+rails g scaffold evenements_pays name
+rails g scaffold evenements_people name
+rails g scaffold evenements titre:string description:text date:string date_fin:string heure:string prix:string ville:string lieu:string adresse:string evenements_pays_id:integer lien:string site:string evenements_people_id:integer acceptregles:string
 rails g scaffold artbooks_france name
 rails g scaffold artbooks_pays name
 rails g scaffold artbooks_illustrations name
@@ -218,43 +218,43 @@ rails g scaffold _photobooks_goodies name
 rails g scaffold _photobooks _photobooks_france_id:integer _photobooks_pays_id:integer titre:string titre_alternatif:string titre_original_latin:string titre_original:string image:string image_vo:string date_parution_vo_jj:string date_parution_vo_mm:string date_parution_vo_aaaa:string date_parution_vf_jj:string date_parution_vf_mm:string date_parution_vf_aaaa:string prix:string ean:string ref:string _photobooks_disponibilite_id:integer nb_pages:string site:string _photobooks_illustrations_id:integer _photobooks_type_id:integer _photobooks_editeurs_vo_id:integer _photobooks_editeurs_vo_id:integer _photobooks_editeurs_vf_id:integer _photobooks_editeurs_vf_id:integer _photobooks_role_id:integer _photobooks_people_id:integer _photobooks_role_id:integer _photobooks_people_id:integer _photobooks_societe_role_id:integer _photobooks_societe_people_id:integer _photobooks_societe_role_id:integer _photobooks_societe_people_id:integer resume:text infos:text _photobooks_public_averti_id:integer _photobooks_groupes_id:integer _photobooks_drama_id:integer _photobooks_am_id:integer _photobooks_cd_id:integer _photobooks_photobook_id:integer _photobooks_anime_id:integer _photobooks_bonus_id:integer _photobooks_actualite_id:integer _photobooks_actualite_mini_id:integer _photobooks_goodies_id:integer comment:text statut_prop:string statut_prop:string acceptregles:string
 rails g scaffold _boutiques_pays name
 rails g scaffold _boutiques nom:string image:string adresse:text tel:string description:text dept:string ville:string _boutiques_pays_id:integer site:string acceptregles:string
-rails g scaffold _brèves_cat name
-rails g scaffold _brèves_actualite name
-rails g scaffold _brèves_actualite_mini name
-rails g scaffold _brèves_people name
-rails g scaffold _brèves_anime name
-rails g scaffold _brèves_ln name
-rails g scaffold _brèves_manga name
-rails g scaffold _brèves_drama name
-rails g scaffold _brèves_am name
-rails g scaffold _brèves_litterature_asiatique name
-rails g scaffold _brèves_livre_jeunesse name
-rails g scaffold _brèves_magazine name
-rails g scaffold _brèves_beau_livre name
-rails g scaffold _brèves_jv name
-rails g scaffold _brèves_dvd name
-rails g scaffold _brèves_artbook name
-rails g scaffold _brèves_photobook name
-rails g scaffold _brèves_goodies name
-rails g scaffold _brèves_cinema name
-rails g scaffold _brèves_evenement name
-rails g scaffold _brèves_concerts name
-rails g scaffold _brèves_recette name
-rails g scaffold _brèves_cd name
-rails g scaffold _brèves_ost name
-rails g scaffold _brèves_amv name
-rails g scaffold _brèves_clip name
-rails g scaffold _brèves_emission_tv name
-rails g scaffold _brèves_emission_tv_numero name
-rails g scaffold _brèves_sondage name
-rails g scaffold _brèves_quizz name
-rails g scaffold _brèves_concours name
-rails g scaffold _brèves_manga_editeur name
-rails g scaffold _brèves_anime_studio name
-rails g scaffold _brèves_jv_societe name
-rails g scaffold _brèves_societe name
-rails g scaffold _brèves_culture name
-rails g scaffold _brèves titre:string _brèves_cat_id:integer image:string texte:text tags:string source:string source_url:string source2:string source2_url:string source3:string source3_url:string _brèves_actualite_id:integer _brèves_actualite_mini_id:integer _brèves_people_id:integer _brèves_anime_id:integer _brèves_ln_id:integer _brèves_manga_id:integer _brèves_drama_id:integer _brèves_am_id:integer _brèves_litterature_asiatique_id:integer _brèves_livre_jeunesse_id:integer _brèves_magazine_id:integer _brèves_beau_livre_id:integer _brèves_jv_id:integer _brèves_dvd_id:integer _brèves_artbook_id:integer _brèves_photobook_id:integer _brèves_goodies_id:integer _brèves_cinema_id:integer _brèves_evenement_id:integer _brèves_concerts_id:integer _brèves_recette_id:integer _brèves_cd_id:integer _brèves_ost_id:integer _brèves_amv_id:integer _brèves_clip_id:integer _brèves_emission_tv_id:integer _brèves_emission_tv_numero_id:integer _brèves_sondage_id:integer _brèves_quizz_id:integer _brèves_concours_id:integer _brèves_manga_editeur_id:integer _brèves_anime_studio_id:integer _brèves_jv_societe_id:integer _brèves_societe_id:integer _brèves_culture_id:integer comment:text statut_prop:string statut_prop:string acceptregles:string
+rails g scaffold _breves_cat name
+rails g scaffold _breves_actualite name
+rails g scaffold _breves_actualite_mini name
+rails g scaffold _breves_people name
+rails g scaffold _breves_anime name
+rails g scaffold _breves_ln name
+rails g scaffold _breves_manga name
+rails g scaffold _breves_drama name
+rails g scaffold _breves_am name
+rails g scaffold _breves_litterature_asiatique name
+rails g scaffold _breves_livre_jeunesse name
+rails g scaffold _breves_magazine name
+rails g scaffold _breves_beau_livre name
+rails g scaffold _breves_jv name
+rails g scaffold _breves_dvd name
+rails g scaffold _breves_artbook name
+rails g scaffold _breves_photobook name
+rails g scaffold _breves_goodies name
+rails g scaffold _breves_cinema name
+rails g scaffold _breves_evenement name
+rails g scaffold _breves_concerts name
+rails g scaffold _breves_recette name
+rails g scaffold _breves_cd name
+rails g scaffold _breves_ost name
+rails g scaffold _breves_amv name
+rails g scaffold _breves_clip name
+rails g scaffold _breves_emission_tv name
+rails g scaffold _breves_emission_tv_numero name
+rails g scaffold _breves_sondage name
+rails g scaffold _breves_quizz name
+rails g scaffold _breves_concours name
+rails g scaffold _breves_manga_editeur name
+rails g scaffold _breves_anime_studio name
+rails g scaffold _breves_jv_societe name
+rails g scaffold _breves_societe name
+rails g scaffold _breves_culture name
+rails g scaffold _breves titre:string _breves_cat_id:integer image:string texte:text tags:string source:string source_url:string source2:string source2_url:string source3:string source3_url:string _breves_actualite_id:integer _breves_actualite_mini_id:integer _breves_people_id:integer _breves_anime_id:integer _breves_ln_id:integer _breves_manga_id:integer _breves_drama_id:integer _breves_am_id:integer _breves_litterature_asiatique_id:integer _breves_livre_jeunesse_id:integer _breves_magazine_id:integer _breves_beau_livre_id:integer _breves_jv_id:integer _breves_dvd_id:integer _breves_artbook_id:integer _breves_photobook_id:integer _breves_goodies_id:integer _breves_cinema_id:integer _breves_evenement_id:integer _breves_concerts_id:integer _breves_recette_id:integer _breves_cd_id:integer _breves_ost_id:integer _breves_amv_id:integer _breves_clip_id:integer _breves_emission_tv_id:integer _breves_emission_tv_numero_id:integer _breves_sondage_id:integer _breves_quizz_id:integer _breves_concours_id:integer _breves_manga_editeur_id:integer _breves_anime_studio_id:integer _breves_jv_societe_id:integer _breves_societe_id:integer _breves_culture_id:integer comment:text statut_prop:string statut_prop:string acceptregles:string
 rails g scaffold _clips_/_lives_/_bonus_/_concerts_type name
 rails g scaffold _clips_/_lives_/_bonus_/_concerts_type_bonus name
 rails g scaffold _clips_/_lives_/_bonus_/_concerts_role name
