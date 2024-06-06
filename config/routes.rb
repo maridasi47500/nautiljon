@@ -451,7 +451,7 @@ Rails.application.routes.draw do
       end
     end
   end
-  resources :_breves
+
   resources :_breves_cultures
   resources :_breves_societes
   resources :_breves_jv_societes
@@ -488,6 +488,7 @@ Rails.application.routes.draw do
   resources :_breves_actualite_minis
   resources :_breves_actualites
   resources :_breves_cats
+  resources :breves, controller: "breves", path: "breves"
   resources :_boutiques
   resources :_boutiques_pays
   resources :_photobooks

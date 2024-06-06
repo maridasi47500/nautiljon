@@ -1,25 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
   <head>
+  <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <%= javascript_importmap_tags %>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Nautiljon</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    &lt;</head>
-<body>
-<p>%= csrf_meta_tags %&gt;
-    &lt;%= csp_meta_tag %&gt;
 
-    &lt;%= stylesheet_link_tag "application", "data-turbo-track": "reload" %&gt;
-    &lt;%= javascript_importmap_tags %&gt;
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+
+    </head>
+<body>
+  <p>
+
   
 
   </p>
     <nav id="nav2">
-      &lt;%if user_signed_in?%&gt;
-        <span>bienvenue &lt;%=current_user.pseudonyme%&gt;</span>
+      <%if user_signed_in?%>
+        <span>bienvenue <%=current_user.pseudonyme%></span>
         | <textarea placeholder="Saissez votre message">
-          &lt;%=current_user.message%&gt;
+          <%=current_user.message%>
           </textarea>
       | <a href="/users/messagerie" title="Ma messagerie" class="moncomptelink ">
           
@@ -52,14 +57,14 @@
       | <a href="/users/sign_out" class="signoutlink ">
         Déconnexion
       </a>
-      &lt;%else%&gt;
+      <%else%>
       <a href="/users/sign_in" class="signinlink btn btn-light">
         Se connecter
       </a>
       <a href="/users/sign_up" class="signuplink btn btn-primary">
         S'inscrire
       </a>
-    &lt;%end%&gt;
+    <%end%>
     </nav>
     <nav id="nav1">
       <div class="logo">
@@ -100,7 +105,7 @@
                               </form>
       </div>
       <div id="aboutme">
-        <img class="cki">
+        <img class="cki"/>
         <ul class="myuserprofile">
           <li>  
           🗹 ma nauti-liste (<span class="nautiliste"></span>)</li>
@@ -127,10 +132,10 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/actualite/">Actualités</a></li>
-<li><a href="/actualite/articles/">Articles</a></li>
-<li><a href="/breves/">Brèves</a></li>
-<li><a href="/site/last_comments.php?flashinfos">Flash infos</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/actualite/">Actualités</a></li>
+<li><a class="dropdown-item" href="/actualite/articles/">Articles</a></li>
+<li><a class="dropdown-item" href="/breves/">Brèves</a></li>
+<li><a class="dropdown-item" href="/site/last_comments.php?flashinfos">Flash infos</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -140,10 +145,10 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/concerts/">Agenda des concerts</a></li>
-<li><a href="/evenements/">Agenda des évènements</a></li>
-<li><a href="/cinema/">Agenda des sorties cinéma en salle</a></li>
-<li><a href="/calendrier/">Calendrier</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/concerts/">Agenda des concerts</a></li>
+<li><a class="dropdown-item" href="/evenements/">Agenda des évènements</a></li>
+<li><a class="dropdown-item" href="/cinema/">Agenda des sorties cinéma en salle</a></li>
+<li><a class="dropdown-item" href="/calendrier/">Calendrier</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                     <li class="nav-item">
@@ -156,12 +161,12 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/animes/">Animes</a></li>
-<li><a href="/animes/planning/">Planning des épisodes</a></li>
-<li><a href="/animes/printemps-2024.html?tri=p">Calendrier saisonnier</a></li>
-<li><a href="/persos/">Personnages d'anime</a></li>
-<li><a href="/lyrics/">Génériques d'anime</a></li>
-<li><a href="/amv/">AMV</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/animes/">Animes</a></li>
+<li><a class="dropdown-item" href="/animes/planning/">Planning des épisodes</a></li>
+<li><a class="dropdown-item" href="/animes/printemps-2024.html?tri=p">Calendrier saisonnier</a></li>
+<li><a class="dropdown-item" href="/persos/">Personnages d'anime</a></li>
+<li><a class="dropdown-item" href="/lyrics/">Génériques d'anime</a></li>
+<li><a class="dropdown-item" href="/amv/">AMV</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -171,9 +176,9 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/mangas/">Mangas</a></li>
-<li><a href="/persos-mangas/">Personnages de manga</a></li>
-<li><a href="/doujinshi/">Doujinshis</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/mangas/">Mangas</a></li>
+<li><a class="dropdown-item" href="/persos-mangas/">Personnages de manga</a></li>
+<li><a class="dropdown-item" href="/doujinshi/">Doujinshis</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -183,9 +188,9 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/jeuxvideo/">Jeux vidéo</a></li>
-<li><a href="/persos-jeuxvideo/">Personnages de jeux vidéo</a></li>
-<li><a href="/generiques-jeuxvideo/">Génériques de jeux vidéo</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/jeuxvideo/">Jeux vidéo</a></li>
+<li><a class="dropdown-item" href="/persos-jeuxvideo/">Personnages de jeux vidéo</a></li>
+<li><a class="dropdown-item" href="/generiques-jeuxvideo/">Génériques de jeux vidéo</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -195,16 +200,16 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/clips/">Clips (PV)</a></li>
-<li><a href="/clips/streaming/">Clips en streaming</a></li>
-<li><a href="/lives/">Lives</a></li>
-<li><a href="/bonus/">Bonus</a></li>
-<li><a href="/concert/">Concerts</a></li>
-<li><a href="/jmusic/">CD</a></li>
-<li><a href="/ost/">OST</a></li>
-<li><a href="/doujins/">Doujins</a></li>
-<li><a href="/paroles/">Paroles</a></li>
-<li><a href="/tablatures/">Tablatures et partitions</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/clips/">Clips (PV)</a></li>
+<li><a class="dropdown-item" href="/clips/streaming/">Clips en streaming</a></li>
+<li><a class="dropdown-item" href="/lives/">Lives</a></li>
+<li><a class="dropdown-item" href="/bonus/">Bonus</a></li>
+<li><a class="dropdown-item" href="/concert/">Concerts</a></li>
+<li><a class="dropdown-item" href="/jmusic/">CD</a></li>
+<li><a class="dropdown-item" href="/ost/">OST</a></li>
+<li><a class="dropdown-item" href="/doujins/">Doujins</a></li>
+<li><a class="dropdown-item" href="/paroles/">Paroles</a></li>
+<li><a class="dropdown-item" href="/tablatures/">Tablatures et partitions</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -214,10 +219,10 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/asian_movies/">Films asiatiques</a></li>
-<li><a href="/dramas/">Dramas</a></li>
-<li><a href="/dramas/printemps-2024.html?tri=p">Calendrier saisonnier dramas</a></li>
-<li><a href="/emissions_tv/">Émissions TV</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/asian_movies/">Films asiatiques</a></li>
+<li><a class="dropdown-item" href="/dramas/">Dramas</a></li>
+<li><a class="dropdown-item" href="/dramas/printemps-2024.html?tri=p">Calendrier saisonnier dramas</a></li>
+<li><a class="dropdown-item" href="/emissions_tv/">Émissions TV</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                 <li class="nav-item">
@@ -233,13 +238,13 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/artbook/">Artbooks</a></li>
-<li><a href="/photobook/">Photobooks</a></li>
-<li><a href="/light_novels/">Light novels</a></li>
-<li><a href="/litterature_asiatique/">Romans</a></li>
-<li><a href="/livres_jeunesse/">Livres jeunesse / BD</a></li>
-<li><a href="/magazines/">Magazines</a></li>
-<li><a href="/beaux_livres/">Beaux livres / Livres pratiques</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/artbook/">Artbooks</a></li>
+<li><a class="dropdown-item" href="/photobook/">Photobooks</a></li>
+<li><a class="dropdown-item" href="/light_novels/">Light novels</a></li>
+<li><a class="dropdown-item" href="/litterature_asiatique/">Romans</a></li>
+<li><a class="dropdown-item" href="/livres_jeunesse/">Livres jeunesse / BD</a></li>
+<li><a class="dropdown-item" href="/magazines/">Magazines</a></li>
+<li><a class="dropdown-item" href="/beaux_livres/">Beaux livres / Livres pratiques</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -249,10 +254,10 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/culture/">Culture et traditions</a></li>
-<li><a href="/recettes/">Recettes asiatiques</a></li>
-<li><a href="/univers/">Univers</a></li>
-<li><a href="/conventions/">Conventions</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/culture/">Culture et traditions</a></li>
+<li><a class="dropdown-item" href="/recettes/">Recettes asiatiques</a></li>
+<li><a class="dropdown-item" href="/univers/">Univers</a></li>
+<li><a class="dropdown-item" href="/conventions/">Conventions</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -262,8 +267,8 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/galerie/">Galerie</a></li>
-<li><a href="/wallpapers/">Wallpapers</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/galerie/">Galerie</a></li>
+<li><a class="dropdown-item" href="/wallpapers/">Wallpapers</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                                                                                                                                                       <li class="nav-item">
@@ -276,10 +281,10 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/boutiques/">Boutiques</a></li>
-<li><a href="/restaurants/">Restaurants</a></li>
-<li><a href="/sites-achat/">Sites d'achat</a></li>
-<li><a href="/lexique/">Lexique</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/boutiques/">Boutiques</a></li>
+<li><a class="dropdown-item" href="/restaurants/">Restaurants</a></li>
+<li><a class="dropdown-item" href="/sites-achat/">Sites d'achat</a></li>
+<li><a class="dropdown-item" href="/lexique/">Lexique</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                             <li class="nav-item dropdown">
@@ -289,20 +294,20 @@
                                                                                                                                                                                     <li><a class="dropdown-item" href="#">Another action</a></li>
                                                                                                                                                                                                 <li><hr class="dropdown-divider"></li>
                                                                                                                                                                                                             <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                                                                                                                                                                                                      <li><a href="/videos/">Vidéos</a></li>
-<li><a href="/quiz/">Quiz</a></li>
-<li><a href="/sondages/">Sondages</a></li>
-<li><a href="/concours/">Concours</a></li>
-<li><a href="/listes/">Listes</a></li>
-<li><a href="/membre/">Les membres du site</a></li>
-<li><a href="/site/last_review.php">Critiques</a></li>
+                                                                                                                                                                                                                      <li><a class="dropdown-item" href="/videos/">Vidéos</a></li>
+<li><a class="dropdown-item" href="/quiz/">Quiz</a></li>
+<li><a class="dropdown-item" href="/sondages/">Sondages</a></li>
+<li><a class="dropdown-item" href="/concours/">Concours</a></li>
+<li><a class="dropdown-item" href="/listes/">Listes</a></li>
+<li><a class="dropdown-item" href="/membre/">Les membres du site</a></li>
+<li><a class="dropdown-item" href="/site/last_review.php">Critiques</a></li>
 </ul>
                                                                                                                                                                                                                               </li>
                                                                                                                                                                                                                                                                 </ul>
                                                                                                                                                                                                                                                                                                   </div>
                                                                                                                                                                                                                                                                                                     </div>
     </nav>
-    &lt;%= yield %&gt;
+    <%= yield %>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   
 </body>
