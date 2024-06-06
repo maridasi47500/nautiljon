@@ -25,7 +25,7 @@ class DoujinsGroupesController < ApplicationController
 
     respond_to do |format|
       if @_doujins_groupe.save
-        format.html { redirect_to _doujins_groupe_url(@_doujins_groupe), notice: "Doujins groupe was successfully created." }
+        format.html { redirect_to doujins_groupe_url(@_doujins_groupe), notice: "Doujins groupe was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_groupe.update(_doujins_groupe_params)
-        format.html { redirect_to _doujins_groupe_url(@_doujins_groupe), notice: "Doujins groupe was successfully updated." }
+        format.html { redirect_to doujins_groupe_url(@_doujins_groupe), notice: "Doujins groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsGroupesController < ApplicationController
     @_doujins_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_groupes_url, notice: "Doujins groupe was successfully destroyed." }
+      format.html { redirect_to doujins_groupes_url, notice: "Doujins groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_groupe_params
-      params.require(:_doujins_groupe).permit(:name)
+      params.require(:doujins_groupe).permit(:name)
     end
 end

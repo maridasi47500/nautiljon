@@ -25,7 +25,7 @@ class VolumesLnsController < ApplicationController
 
     respond_to do |format|
       if @_volumes_ln.save
-        format.html { redirect_to _volumes_ln_url(@_volumes_ln), notice: "Volumes ln was successfully created." }
+        format.html { redirect_to volumes_ln_url(@_volumes_ln), notice: "Volumes ln was successfully created." }
         format.json { render :show, status: :created, location: @_volumes_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VolumesLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_volumes_ln.update(_volumes_ln_params)
-        format.html { redirect_to _volumes_ln_url(@_volumes_ln), notice: "Volumes ln was successfully updated." }
+        format.html { redirect_to volumes_ln_url(@_volumes_ln), notice: "Volumes ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_volumes_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VolumesLnsController < ApplicationController
     @_volumes_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _volumes_lns_url, notice: "Volumes ln was successfully destroyed." }
+      format.html { redirect_to volumes_lns_url, notice: "Volumes ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VolumesLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _volumes_ln_params
-      params.require(:_volumes_ln).permit(:name)
+      params.require(:volumes_ln).permit(:name)
     end
 end

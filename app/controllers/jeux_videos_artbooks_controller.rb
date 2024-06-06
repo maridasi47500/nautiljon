@@ -25,7 +25,7 @@ class JeuxVideosArtbooksController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_artbook.save
-        format.html { redirect_to _jeux_videos_artbook_url(@_jeux_videos_artbook), notice: "Jeux videos artbook was successfully created." }
+        format.html { redirect_to jeux_videos_artbook_url(@_jeux_videos_artbook), notice: "Jeux videos artbook was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_artbook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosArtbooksController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_artbook.update(_jeux_videos_artbook_params)
-        format.html { redirect_to _jeux_videos_artbook_url(@_jeux_videos_artbook), notice: "Jeux videos artbook was successfully updated." }
+        format.html { redirect_to jeux_videos_artbook_url(@_jeux_videos_artbook), notice: "Jeux videos artbook was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_artbook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosArtbooksController < ApplicationController
     @_jeux_videos_artbook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_artbooks_url, notice: "Jeux videos artbook was successfully destroyed." }
+      format.html { redirect_to jeux_videos_artbooks_url, notice: "Jeux videos artbook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosArtbooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_artbook_params
-      params.require(:_jeux_videos_artbook).permit(:name)
+      params.require(:jeux_videos_artbook).permit(:name)
     end
 end

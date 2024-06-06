@@ -25,7 +25,7 @@ class JeuxVideosAmsController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_am.save
-        format.html { redirect_to _jeux_videos_am_url(@_jeux_videos_am), notice: "Jeux videos am was successfully created." }
+        format.html { redirect_to jeux_videos_am_url(@_jeux_videos_am), notice: "Jeux videos am was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_am }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosAmsController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_am.update(_jeux_videos_am_params)
-        format.html { redirect_to _jeux_videos_am_url(@_jeux_videos_am), notice: "Jeux videos am was successfully updated." }
+        format.html { redirect_to jeux_videos_am_url(@_jeux_videos_am), notice: "Jeux videos am was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_am }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosAmsController < ApplicationController
     @_jeux_videos_am.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_ams_url, notice: "Jeux videos am was successfully destroyed." }
+      format.html { redirect_to jeux_videos_ams_url, notice: "Jeux videos am was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosAmsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_am_params
-      params.require(:_jeux_videos_am).permit(:name)
+      params.require(:jeux_videos_am).permit(:name)
     end
 end

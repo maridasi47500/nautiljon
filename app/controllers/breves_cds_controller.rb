@@ -25,7 +25,7 @@ class BrevesCdsController < ApplicationController
 
     respond_to do |format|
       if @_breves_cd.save
-        format.html { redirect_to _breves_cd_url(@_breves_cd), notice: "Breves cd was successfully created." }
+        format.html { redirect_to breves_cd_url(@_breves_cd), notice: "Breves cd was successfully created." }
         format.json { render :show, status: :created, location: @_breves_cd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesCdsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_cd.update(_breves_cd_params)
-        format.html { redirect_to _breves_cd_url(@_breves_cd), notice: "Breves cd was successfully updated." }
+        format.html { redirect_to breves_cd_url(@_breves_cd), notice: "Breves cd was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_cd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesCdsController < ApplicationController
     @_breves_cd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_cds_url, notice: "Breves cd was successfully destroyed." }
+      format.html { redirect_to breves_cds_url, notice: "Breves cd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesCdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_cd_params
-      params.require(:_breves_cd).permit(:name)
+      params.require(:breves_cd).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class GoodiesActualiteMinisController < ApplicationController
 
     respond_to do |format|
       if @_goodies_actualite_mini.save
-        format.html { redirect_to _goodies_actualite_mini_url(@_goodies_actualite_mini), notice: "Goodies actualite mini was successfully created." }
+        format.html { redirect_to goodies_actualite_mini_url(@_goodies_actualite_mini), notice: "Goodies actualite mini was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_actualite_mini }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesActualiteMinisController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_actualite_mini.update(_goodies_actualite_mini_params)
-        format.html { redirect_to _goodies_actualite_mini_url(@_goodies_actualite_mini), notice: "Goodies actualite mini was successfully updated." }
+        format.html { redirect_to goodies_actualite_mini_url(@_goodies_actualite_mini), notice: "Goodies actualite mini was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_actualite_mini }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesActualiteMinisController < ApplicationController
     @_goodies_actualite_mini.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_actualite_minis_url, notice: "Goodies actualite mini was successfully destroyed." }
+      format.html { redirect_to goodies_actualite_minis_url, notice: "Goodies actualite mini was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesActualiteMinisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_actualite_mini_params
-      params.require(:_goodies_actualite_mini).permit(:name)
+      params.require(:goodies_actualite_mini).permit(:name)
     end
 end

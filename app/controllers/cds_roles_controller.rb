@@ -25,7 +25,7 @@ class CdsRolesController < ApplicationController
 
     respond_to do |format|
       if @_cds_role.save
-        format.html { redirect_to _cds_role_url(@_cds_role), notice: "Cds role was successfully created." }
+        format.html { redirect_to cds_role_url(@_cds_role), notice: "Cds role was successfully created." }
         format.json { render :show, status: :created, location: @_cds_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_role.update(_cds_role_params)
-        format.html { redirect_to _cds_role_url(@_cds_role), notice: "Cds role was successfully updated." }
+        format.html { redirect_to cds_role_url(@_cds_role), notice: "Cds role was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsRolesController < ApplicationController
     @_cds_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_roles_url, notice: "Cds role was successfully destroyed." }
+      format.html { redirect_to cds_roles_url, notice: "Cds role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_role_params
-      params.require(:_cds_role).permit(:name)
+      params.require(:cds_role).permit(:name)
     end
 end

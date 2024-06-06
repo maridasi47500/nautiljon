@@ -25,7 +25,7 @@ class GoodiesStaffRolesController < ApplicationController
 
     respond_to do |format|
       if @_goodies_staff_role.save
-        format.html { redirect_to _goodies_staff_role_url(@_goodies_staff_role), notice: "Goodies staff role was successfully created." }
+        format.html { redirect_to goodies_staff_role_url(@_goodies_staff_role), notice: "Goodies staff role was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_staff_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesStaffRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_staff_role.update(_goodies_staff_role_params)
-        format.html { redirect_to _goodies_staff_role_url(@_goodies_staff_role), notice: "Goodies staff role was successfully updated." }
+        format.html { redirect_to goodies_staff_role_url(@_goodies_staff_role), notice: "Goodies staff role was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_staff_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesStaffRolesController < ApplicationController
     @_goodies_staff_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_staff_roles_url, notice: "Goodies staff role was successfully destroyed." }
+      format.html { redirect_to goodies_staff_roles_url, notice: "Goodies staff role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesStaffRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_staff_role_params
-      params.require(:_goodies_staff_role).permit(:name)
+      params.require(:goodies_staff_role).permit(:name)
     end
 end

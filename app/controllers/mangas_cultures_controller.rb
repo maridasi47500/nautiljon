@@ -25,7 +25,7 @@ class MangasCulturesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_culture.save
-        format.html { redirect_to _mangas_culture_url(@_mangas_culture), notice: "Mangas culture was successfully created." }
+        format.html { redirect_to mangas_culture_url(@_mangas_culture), notice: "Mangas culture was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_culture }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasCulturesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_culture.update(_mangas_culture_params)
-        format.html { redirect_to _mangas_culture_url(@_mangas_culture), notice: "Mangas culture was successfully updated." }
+        format.html { redirect_to mangas_culture_url(@_mangas_culture), notice: "Mangas culture was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_culture }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasCulturesController < ApplicationController
     @_mangas_culture.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_cultures_url, notice: "Mangas culture was successfully destroyed." }
+      format.html { redirect_to mangas_cultures_url, notice: "Mangas culture was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasCulturesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_culture_params
-      params.require(:_mangas_culture).permit(:name)
+      params.require(:mangas_culture).permit(:name)
     end
 end

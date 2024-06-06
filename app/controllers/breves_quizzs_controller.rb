@@ -25,7 +25,7 @@ class BrevesQuizzsController < ApplicationController
 
     respond_to do |format|
       if @_breves_quizz.save
-        format.html { redirect_to _breves_quizz_url(@_breves_quizz), notice: "Breves quizz was successfully created." }
+        format.html { redirect_to breves_quizz_url(@_breves_quizz), notice: "Breves quizz was successfully created." }
         format.json { render :show, status: :created, location: @_breves_quizz }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesQuizzsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_quizz.update(_breves_quizz_params)
-        format.html { redirect_to _breves_quizz_url(@_breves_quizz), notice: "Breves quizz was successfully updated." }
+        format.html { redirect_to breves_quizz_url(@_breves_quizz), notice: "Breves quizz was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_quizz }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesQuizzsController < ApplicationController
     @_breves_quizz.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_quizzs_url, notice: "Breves quizz was successfully destroyed." }
+      format.html { redirect_to breves_quizzs_url, notice: "Breves quizz was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesQuizzsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_quizz_params
-      params.require(:_breves_quizz).permit(:name)
+      params.require(:breves_quizz).permit(:name)
     end
 end

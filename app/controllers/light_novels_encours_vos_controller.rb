@@ -25,7 +25,7 @@ class LightNovelsEncoursVosController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_encours_vo.save
-        format.html { redirect_to _light_novels_encours_vo_url(@_light_novels_encours_vo), notice: "Light novels encours vo was successfully created." }
+        format.html { redirect_to light_novels_encours_vo_url(@_light_novels_encours_vo), notice: "Light novels encours vo was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_encours_vo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsEncoursVosController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_encours_vo.update(_light_novels_encours_vo_params)
-        format.html { redirect_to _light_novels_encours_vo_url(@_light_novels_encours_vo), notice: "Light novels encours vo was successfully updated." }
+        format.html { redirect_to light_novels_encours_vo_url(@_light_novels_encours_vo), notice: "Light novels encours vo was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_encours_vo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsEncoursVosController < ApplicationController
     @_light_novels_encours_vo.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_encours_vos_url, notice: "Light novels encours vo was successfully destroyed." }
+      format.html { redirect_to light_novels_encours_vos_url, notice: "Light novels encours vo was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsEncoursVosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_encours_vo_params
-      params.require(:_light_novels_encours_vo).permit(:name)
+      params.require(:light_novels_encours_vo).permit(:name)
     end
 end

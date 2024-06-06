@@ -25,7 +25,7 @@ class VolumesIllustrationsController < ApplicationController
 
     respond_to do |format|
       if @_volumes_illustration.save
-        format.html { redirect_to _volumes_illustration_url(@_volumes_illustration), notice: "Volumes illustration was successfully created." }
+        format.html { redirect_to volumes_illustration_url(@_volumes_illustration), notice: "Volumes illustration was successfully created." }
         format.json { render :show, status: :created, location: @_volumes_illustration }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VolumesIllustrationsController < ApplicationController
   def update
     respond_to do |format|
       if @_volumes_illustration.update(_volumes_illustration_params)
-        format.html { redirect_to _volumes_illustration_url(@_volumes_illustration), notice: "Volumes illustration was successfully updated." }
+        format.html { redirect_to volumes_illustration_url(@_volumes_illustration), notice: "Volumes illustration was successfully updated." }
         format.json { render :show, status: :ok, location: @_volumes_illustration }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VolumesIllustrationsController < ApplicationController
     @_volumes_illustration.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _volumes_illustrations_url, notice: "Volumes illustration was successfully destroyed." }
+      format.html { redirect_to volumes_illustrations_url, notice: "Volumes illustration was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VolumesIllustrationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _volumes_illustration_params
-      params.require(:_volumes_illustration).permit(:name)
+      params.require(:volumes_illustration).permit(:name)
     end
 end

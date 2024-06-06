@@ -25,7 +25,7 @@ class FicheUniversDoujinshisController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_doujinshi.save
-        format.html { redirect_to _fiche_univers_doujinshi_url(@_fiche_univers_doujinshi), notice: "Fiche univers doujinshi was successfully created." }
+        format.html { redirect_to fiche_univers_doujinshi_url(@_fiche_univers_doujinshi), notice: "Fiche univers doujinshi was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_doujinshi }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversDoujinshisController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_doujinshi.update(_fiche_univers_doujinshi_params)
-        format.html { redirect_to _fiche_univers_doujinshi_url(@_fiche_univers_doujinshi), notice: "Fiche univers doujinshi was successfully updated." }
+        format.html { redirect_to fiche_univers_doujinshi_url(@_fiche_univers_doujinshi), notice: "Fiche univers doujinshi was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_doujinshi }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversDoujinshisController < ApplicationController
     @_fiche_univers_doujinshi.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_doujinshis_url, notice: "Fiche univers doujinshi was successfully destroyed." }
+      format.html { redirect_to fiche_univers_doujinshis_url, notice: "Fiche univers doujinshi was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversDoujinshisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_doujinshi_params
-      params.require(:_fiche_univers_doujinshi).permit(:name)
+      params.require(:fiche_univers_doujinshi).permit(:name)
     end
 end

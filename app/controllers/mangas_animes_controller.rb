@@ -25,7 +25,7 @@ class MangasAnimesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_anime.save
-        format.html { redirect_to _mangas_anime_url(@_mangas_anime), notice: "Mangas anime was successfully created." }
+        format.html { redirect_to mangas_anime_url(@_mangas_anime), notice: "Mangas anime was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_anime.update(_mangas_anime_params)
-        format.html { redirect_to _mangas_anime_url(@_mangas_anime), notice: "Mangas anime was successfully updated." }
+        format.html { redirect_to mangas_anime_url(@_mangas_anime), notice: "Mangas anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasAnimesController < ApplicationController
     @_mangas_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_animes_url, notice: "Mangas anime was successfully destroyed." }
+      format.html { redirect_to mangas_animes_url, notice: "Mangas anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_anime_params
-      params.require(:_mangas_anime).permit(:name)
+      params.require(:mangas_anime).permit(:name)
     end
 end

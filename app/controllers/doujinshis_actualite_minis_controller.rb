@@ -25,7 +25,7 @@ class DoujinshisActualiteMinisController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_actualite_mini.save
-        format.html { redirect_to _doujinshis_actualite_mini_url(@_doujinshis_actualite_mini), notice: "Doujinshis actualite mini was successfully created." }
+        format.html { redirect_to doujinshis_actualite_mini_url(@_doujinshis_actualite_mini), notice: "Doujinshis actualite mini was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_actualite_mini }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisActualiteMinisController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_actualite_mini.update(_doujinshis_actualite_mini_params)
-        format.html { redirect_to _doujinshis_actualite_mini_url(@_doujinshis_actualite_mini), notice: "Doujinshis actualite mini was successfully updated." }
+        format.html { redirect_to doujinshis_actualite_mini_url(@_doujinshis_actualite_mini), notice: "Doujinshis actualite mini was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_actualite_mini }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisActualiteMinisController < ApplicationController
     @_doujinshis_actualite_mini.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_actualite_minis_url, notice: "Doujinshis actualite mini was successfully destroyed." }
+      format.html { redirect_to doujinshis_actualite_minis_url, notice: "Doujinshis actualite mini was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisActualiteMinisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_actualite_mini_params
-      params.require(:_doujinshis_actualite_mini).permit(:name)
+      params.require(:doujinshis_actualite_mini).permit(:name)
     end
 end

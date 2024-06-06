@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesTypesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_type.save
-        format.html { redirect_to _films_asiatiques_en_salles_type_url(@_films_asiatiques_en_salles_type), notice: "Films asiatiques en salles type was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_type_url(@_films_asiatiques_en_salles_type), notice: "Films asiatiques en salles type was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_type.update(_films_asiatiques_en_salles_type_params)
-        format.html { redirect_to _films_asiatiques_en_salles_type_url(@_films_asiatiques_en_salles_type), notice: "Films asiatiques en salles type was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_type_url(@_films_asiatiques_en_salles_type), notice: "Films asiatiques en salles type was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesTypesController < ApplicationController
     @_films_asiatiques_en_salles_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_types_url, notice: "Films asiatiques en salles type was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_types_url, notice: "Films asiatiques en salles type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_type_params
-      params.require(:_films_asiatiques_en_salles_type).permit(:name)
+      params.require(:films_asiatiques_en_salles_type).permit(:name)
     end
 end

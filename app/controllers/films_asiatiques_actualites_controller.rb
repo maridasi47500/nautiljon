@@ -25,7 +25,7 @@ class FilmsAsiatiquesActualitesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_actualite.save
-        format.html { redirect_to _films_asiatiques_actualite_url(@_films_asiatiques_actualite), notice: "Films asiatiques actualite was successfully created." }
+        format.html { redirect_to films_asiatiques_actualite_url(@_films_asiatiques_actualite), notice: "Films asiatiques actualite was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_actualite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesActualitesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_actualite.update(_films_asiatiques_actualite_params)
-        format.html { redirect_to _films_asiatiques_actualite_url(@_films_asiatiques_actualite), notice: "Films asiatiques actualite was successfully updated." }
+        format.html { redirect_to films_asiatiques_actualite_url(@_films_asiatiques_actualite), notice: "Films asiatiques actualite was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_actualite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesActualitesController < ApplicationController
     @_films_asiatiques_actualite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_actualites_url, notice: "Films asiatiques actualite was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_actualites_url, notice: "Films asiatiques actualite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesActualitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_actualite_params
-      params.require(:_films_asiatiques_actualite).permit(:name)
+      params.require(:films_asiatiques_actualite).permit(:name)
     end
 end

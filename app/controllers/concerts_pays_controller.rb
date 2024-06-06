@@ -25,7 +25,7 @@ class ConcertsPaysController < ApplicationController
 
     respond_to do |format|
       if @_concerts_pay.save
-        format.html { redirect_to _concerts_pay_url(@_concerts_pay), notice: "Concerts pay was successfully created." }
+        format.html { redirect_to concerts_pay_url(@_concerts_pay), notice: "Concerts pay was successfully created." }
         format.json { render :show, status: :created, location: @_concerts_pay }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ConcertsPaysController < ApplicationController
   def update
     respond_to do |format|
       if @_concerts_pay.update(_concerts_pay_params)
-        format.html { redirect_to _concerts_pay_url(@_concerts_pay), notice: "Concerts pay was successfully updated." }
+        format.html { redirect_to concerts_pay_url(@_concerts_pay), notice: "Concerts pay was successfully updated." }
         format.json { render :show, status: :ok, location: @_concerts_pay }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ConcertsPaysController < ApplicationController
     @_concerts_pay.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _concerts_pays_url, notice: "Concerts pay was successfully destroyed." }
+      format.html { redirect_to concerts_pays_url, notice: "Concerts pay was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class ConcertsPaysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _concerts_pay_params
-      params.require(:_concerts_pay).permit(:name)
+      params.require(:concerts_pay).permit(:name)
     end
 end

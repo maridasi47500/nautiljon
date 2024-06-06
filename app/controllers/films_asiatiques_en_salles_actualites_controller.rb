@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesActualitesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_actualite.save
-        format.html { redirect_to _films_asiatiques_en_salles_actualite_url(@_films_asiatiques_en_salles_actualite), notice: "Films asiatiques en salles actualite was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_actualite_url(@_films_asiatiques_en_salles_actualite), notice: "Films asiatiques en salles actualite was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_actualite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesActualitesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_actualite.update(_films_asiatiques_en_salles_actualite_params)
-        format.html { redirect_to _films_asiatiques_en_salles_actualite_url(@_films_asiatiques_en_salles_actualite), notice: "Films asiatiques en salles actualite was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_actualite_url(@_films_asiatiques_en_salles_actualite), notice: "Films asiatiques en salles actualite was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_actualite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesActualitesController < ApplicationController
     @_films_asiatiques_en_salles_actualite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_actualites_url, notice: "Films asiatiques en salles actualite was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_actualites_url, notice: "Films asiatiques en salles actualite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesActualitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_actualite_params
-      params.require(:_films_asiatiques_en_salles_actualite).permit(:name)
+      params.require(:films_asiatiques_en_salles_actualite).permit(:name)
     end
 end

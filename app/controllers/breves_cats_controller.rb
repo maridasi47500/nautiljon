@@ -25,7 +25,7 @@ class BrevesCatsController < ApplicationController
 
     respond_to do |format|
       if @_breves_cat.save
-        format.html { redirect_to _breves_cat_url(@_breves_cat), notice: "Breves cat was successfully created." }
+        format.html { redirect_to breves_cat_url(@_breves_cat), notice: "Breves cat was successfully created." }
         format.json { render :show, status: :created, location: @_breves_cat }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesCatsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_cat.update(_breves_cat_params)
-        format.html { redirect_to _breves_cat_url(@_breves_cat), notice: "Breves cat was successfully updated." }
+        format.html { redirect_to breves_cat_url(@_breves_cat), notice: "Breves cat was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_cat }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesCatsController < ApplicationController
     @_breves_cat.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_cats_url, notice: "Breves cat was successfully destroyed." }
+      format.html { redirect_to breves_cats_url, notice: "Breves cat was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesCatsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_cat_params
-      params.require(:_breves_cat).permit(:name)
+      params.require(:breves_cat).permit(:name)
     end
 end

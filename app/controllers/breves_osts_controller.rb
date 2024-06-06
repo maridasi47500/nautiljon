@@ -25,7 +25,7 @@ class BrevesOstsController < ApplicationController
 
     respond_to do |format|
       if @_breves_ost.save
-        format.html { redirect_to _breves_ost_url(@_breves_ost), notice: "Breves ost was successfully created." }
+        format.html { redirect_to breves_ost_url(@_breves_ost), notice: "Breves ost was successfully created." }
         format.json { render :show, status: :created, location: @_breves_ost }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesOstsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_ost.update(_breves_ost_params)
-        format.html { redirect_to _breves_ost_url(@_breves_ost), notice: "Breves ost was successfully updated." }
+        format.html { redirect_to breves_ost_url(@_breves_ost), notice: "Breves ost was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_ost }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesOstsController < ApplicationController
     @_breves_ost.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_osts_url, notice: "Breves ost was successfully destroyed." }
+      format.html { redirect_to breves_osts_url, notice: "Breves ost was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesOstsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_ost_params
-      params.require(:_breves_ost).permit(:name)
+      params.require(:breves_ost).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class FilmsAsiatiquesThemesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_theme.save
-        format.html { redirect_to _films_asiatiques_theme_url(@_films_asiatiques_theme), notice: "Films asiatiques theme was successfully created." }
+        format.html { redirect_to films_asiatiques_theme_url(@_films_asiatiques_theme), notice: "Films asiatiques theme was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_theme.update(_films_asiatiques_theme_params)
-        format.html { redirect_to _films_asiatiques_theme_url(@_films_asiatiques_theme), notice: "Films asiatiques theme was successfully updated." }
+        format.html { redirect_to films_asiatiques_theme_url(@_films_asiatiques_theme), notice: "Films asiatiques theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesThemesController < ApplicationController
     @_films_asiatiques_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_themes_url, notice: "Films asiatiques theme was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_themes_url, notice: "Films asiatiques theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_theme_params
-      params.require(:_films_asiatiques_theme).permit(:name)
+      params.require(:films_asiatiques_theme).permit(:name)
     end
 end

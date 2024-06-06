@@ -25,7 +25,7 @@ class LightNovelsActualitesController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_actualite.save
-        format.html { redirect_to _light_novels_actualite_url(@_light_novels_actualite), notice: "Light novels actualite was successfully created." }
+        format.html { redirect_to light_novels_actualite_url(@_light_novels_actualite), notice: "Light novels actualite was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_actualite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsActualitesController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_actualite.update(_light_novels_actualite_params)
-        format.html { redirect_to _light_novels_actualite_url(@_light_novels_actualite), notice: "Light novels actualite was successfully updated." }
+        format.html { redirect_to light_novels_actualite_url(@_light_novels_actualite), notice: "Light novels actualite was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_actualite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsActualitesController < ApplicationController
     @_light_novels_actualite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_actualites_url, notice: "Light novels actualite was successfully destroyed." }
+      format.html { redirect_to light_novels_actualites_url, notice: "Light novels actualite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsActualitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_actualite_params
-      params.require(:_light_novels_actualite).permit(:name)
+      params.require(:light_novels_actualite).permit(:name)
     end
 end

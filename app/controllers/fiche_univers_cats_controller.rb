@@ -25,7 +25,7 @@ class FicheUniversCatsController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_cat.save
-        format.html { redirect_to _fiche_univers_cat_url(@_fiche_univers_cat), notice: "Fiche univers cat was successfully created." }
+        format.html { redirect_to fiche_univers_cat_url(@_fiche_univers_cat), notice: "Fiche univers cat was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_cat }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversCatsController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_cat.update(_fiche_univers_cat_params)
-        format.html { redirect_to _fiche_univers_cat_url(@_fiche_univers_cat), notice: "Fiche univers cat was successfully updated." }
+        format.html { redirect_to fiche_univers_cat_url(@_fiche_univers_cat), notice: "Fiche univers cat was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_cat }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversCatsController < ApplicationController
     @_fiche_univers_cat.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_cats_url, notice: "Fiche univers cat was successfully destroyed." }
+      format.html { redirect_to fiche_univers_cats_url, notice: "Fiche univers cat was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversCatsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_cat_params
-      params.require(:_fiche_univers_cat).permit(:name)
+      params.require(:fiche_univers_cat).permit(:name)
     end
 end

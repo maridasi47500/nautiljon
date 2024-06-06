@@ -25,7 +25,7 @@ class LivresPublicAvertisController < ApplicationController
 
     respond_to do |format|
       if @_livres_public_averti.save
-        format.html { redirect_to _livres_public_averti_url(@_livres_public_averti), notice: "Livres public averti was successfully created." }
+        format.html { redirect_to livres_public_averti_url(@_livres_public_averti), notice: "Livres public averti was successfully created." }
         format.json { render :show, status: :created, location: @_livres_public_averti }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresPublicAvertisController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_public_averti.update(_livres_public_averti_params)
-        format.html { redirect_to _livres_public_averti_url(@_livres_public_averti), notice: "Livres public averti was successfully updated." }
+        format.html { redirect_to livres_public_averti_url(@_livres_public_averti), notice: "Livres public averti was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_public_averti }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresPublicAvertisController < ApplicationController
     @_livres_public_averti.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_public_avertis_url, notice: "Livres public averti was successfully destroyed." }
+      format.html { redirect_to livres_public_avertis_url, notice: "Livres public averti was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresPublicAvertisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_public_averti_params
-      params.require(:_livres_public_averti).permit(:name)
+      params.require(:livres_public_averti).permit(:name)
     end
 end

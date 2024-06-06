@@ -25,7 +25,7 @@ class FicheUniversJvsController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_jv.save
-        format.html { redirect_to _fiche_univers_jv_url(@_fiche_univers_jv), notice: "Fiche univers jv was successfully created." }
+        format.html { redirect_to fiche_univers_jv_url(@_fiche_univers_jv), notice: "Fiche univers jv was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_jv.update(_fiche_univers_jv_params)
-        format.html { redirect_to _fiche_univers_jv_url(@_fiche_univers_jv), notice: "Fiche univers jv was successfully updated." }
+        format.html { redirect_to fiche_univers_jv_url(@_fiche_univers_jv), notice: "Fiche univers jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversJvsController < ApplicationController
     @_fiche_univers_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_jvs_url, notice: "Fiche univers jv was successfully destroyed." }
+      format.html { redirect_to fiche_univers_jvs_url, notice: "Fiche univers jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_jv_params
-      params.require(:_fiche_univers_jv).permit(:name)
+      params.require(:fiche_univers_jv).permit(:name)
     end
 end

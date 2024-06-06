@@ -25,7 +25,7 @@ class PersonnalitesLabelsExesController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_labels_ex.save
-        format.html { redirect_to _personnalites_labels_ex_url(@_personnalites_labels_ex), notice: "Personnalites labels ex was successfully created." }
+        format.html { redirect_to personnalites_labels_ex_url(@_personnalites_labels_ex), notice: "Personnalites labels ex was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_labels_ex }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesLabelsExesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_labels_ex.update(_personnalites_labels_ex_params)
-        format.html { redirect_to _personnalites_labels_ex_url(@_personnalites_labels_ex), notice: "Personnalites labels ex was successfully updated." }
+        format.html { redirect_to personnalites_labels_ex_url(@_personnalites_labels_ex), notice: "Personnalites labels ex was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_labels_ex }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesLabelsExesController < ApplicationController
     @_personnalites_labels_ex.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_labels_exes_url, notice: "Personnalites labels ex was successfully destroyed." }
+      format.html { redirect_to personnalites_labels_exes_url, notice: "Personnalites labels ex was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesLabelsExesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_labels_ex_params
-      params.require(:_personnalites_labels_ex).permit(:name)
+      params.require(:personnalites_labels_ex).permit(:name)
     end
 end

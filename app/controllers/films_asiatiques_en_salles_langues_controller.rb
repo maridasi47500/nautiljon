@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesLanguesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_langue.save
-        format.html { redirect_to _films_asiatiques_en_salles_langue_url(@_films_asiatiques_en_salles_langue), notice: "Films asiatiques en salles langue was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_langue_url(@_films_asiatiques_en_salles_langue), notice: "Films asiatiques en salles langue was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_langue }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesLanguesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_langue.update(_films_asiatiques_en_salles_langue_params)
-        format.html { redirect_to _films_asiatiques_en_salles_langue_url(@_films_asiatiques_en_salles_langue), notice: "Films asiatiques en salles langue was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_langue_url(@_films_asiatiques_en_salles_langue), notice: "Films asiatiques en salles langue was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_langue }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesLanguesController < ApplicationController
     @_films_asiatiques_en_salles_langue.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_langues_url, notice: "Films asiatiques en salles langue was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_langues_url, notice: "Films asiatiques en salles langue was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesLanguesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_langue_params
-      params.require(:_films_asiatiques_en_salles_langue).permit(:name)
+      params.require(:films_asiatiques_en_salles_langue).permit(:name)
     end
 end

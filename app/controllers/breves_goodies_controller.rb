@@ -25,7 +25,7 @@ class BrevesGoodiesController < ApplicationController
 
     respond_to do |format|
       if @_breves_goody.save
-        format.html { redirect_to _breves_goody_url(@_breves_goody), notice: "Breves goody was successfully created." }
+        format.html { redirect_to breves_goody_url(@_breves_goody), notice: "Breves goody was successfully created." }
         format.json { render :show, status: :created, location: @_breves_goody }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesGoodiesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_goody.update(_breves_goody_params)
-        format.html { redirect_to _breves_goody_url(@_breves_goody), notice: "Breves goody was successfully updated." }
+        format.html { redirect_to breves_goody_url(@_breves_goody), notice: "Breves goody was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_goody }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesGoodiesController < ApplicationController
     @_breves_goody.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_goodies_url, notice: "Breves goody was successfully destroyed." }
+      format.html { redirect_to breves_goodies_url, notice: "Breves goody was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesGoodiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_goody_params
-      params.require(:_breves_goody).permit(:name)
+      params.require(:breves_goody).permit(:name)
     end
 end

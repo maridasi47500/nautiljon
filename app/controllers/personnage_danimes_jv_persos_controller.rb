@@ -25,7 +25,7 @@ class PersonnageDanimesJvPersosController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_jv_perso.save
-        format.html { redirect_to _personnage_danimes_jv_perso_url(@_personnage_danimes_jv_perso), notice: "Personnage danimes jv perso was successfully created." }
+        format.html { redirect_to personnage_danimes_jv_perso_url(@_personnage_danimes_jv_perso), notice: "Personnage danimes jv perso was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_jv_perso }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesJvPersosController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_jv_perso.update(_personnage_danimes_jv_perso_params)
-        format.html { redirect_to _personnage_danimes_jv_perso_url(@_personnage_danimes_jv_perso), notice: "Personnage danimes jv perso was successfully updated." }
+        format.html { redirect_to personnage_danimes_jv_perso_url(@_personnage_danimes_jv_perso), notice: "Personnage danimes jv perso was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_jv_perso }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesJvPersosController < ApplicationController
     @_personnage_danimes_jv_perso.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_jv_persos_url, notice: "Personnage danimes jv perso was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_jv_persos_url, notice: "Personnage danimes jv perso was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesJvPersosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_jv_perso_params
-      params.require(:_personnage_danimes_jv_perso).permit(:name)
+      params.require(:personnage_danimes_jv_perso).permit(:name)
     end
 end

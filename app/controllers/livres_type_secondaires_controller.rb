@@ -25,7 +25,7 @@ class LivresTypeSecondairesController < ApplicationController
 
     respond_to do |format|
       if @_livres_type_secondaire.save
-        format.html { redirect_to _livres_type_secondaire_url(@_livres_type_secondaire), notice: "Livres type secondaire was successfully created." }
+        format.html { redirect_to livres_type_secondaire_url(@_livres_type_secondaire), notice: "Livres type secondaire was successfully created." }
         format.json { render :show, status: :created, location: @_livres_type_secondaire }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresTypeSecondairesController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_type_secondaire.update(_livres_type_secondaire_params)
-        format.html { redirect_to _livres_type_secondaire_url(@_livres_type_secondaire), notice: "Livres type secondaire was successfully updated." }
+        format.html { redirect_to livres_type_secondaire_url(@_livres_type_secondaire), notice: "Livres type secondaire was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_type_secondaire }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresTypeSecondairesController < ApplicationController
     @_livres_type_secondaire.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_type_secondaires_url, notice: "Livres type secondaire was successfully destroyed." }
+      format.html { redirect_to livres_type_secondaires_url, notice: "Livres type secondaire was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresTypeSecondairesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_type_secondaire_params
-      params.require(:_livres_type_secondaire).permit(:name)
+      params.require(:livres_type_secondaire).permit(:name)
     end
 end

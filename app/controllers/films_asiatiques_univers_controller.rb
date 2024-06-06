@@ -25,7 +25,7 @@ class FilmsAsiatiquesUniversController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_univer.save
-        format.html { redirect_to _films_asiatiques_univer_url(@_films_asiatiques_univer), notice: "Films asiatiques univer was successfully created." }
+        format.html { redirect_to films_asiatiques_univer_url(@_films_asiatiques_univer), notice: "Films asiatiques univer was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_univer }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesUniversController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_univer.update(_films_asiatiques_univer_params)
-        format.html { redirect_to _films_asiatiques_univer_url(@_films_asiatiques_univer), notice: "Films asiatiques univer was successfully updated." }
+        format.html { redirect_to films_asiatiques_univer_url(@_films_asiatiques_univer), notice: "Films asiatiques univer was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_univer }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesUniversController < ApplicationController
     @_films_asiatiques_univer.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_univers_url, notice: "Films asiatiques univer was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_univers_url, notice: "Films asiatiques univer was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesUniversController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_univer_params
-      params.require(:_films_asiatiques_univer).permit(:name)
+      params.require(:films_asiatiques_univer).permit(:name)
     end
 end

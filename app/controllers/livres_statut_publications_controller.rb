@@ -25,7 +25,7 @@ class LivresStatutPublicationsController < ApplicationController
 
     respond_to do |format|
       if @_livres_statut_publication.save
-        format.html { redirect_to _livres_statut_publication_url(@_livres_statut_publication), notice: "Livres statut publication was successfully created." }
+        format.html { redirect_to livres_statut_publication_url(@_livres_statut_publication), notice: "Livres statut publication was successfully created." }
         format.json { render :show, status: :created, location: @_livres_statut_publication }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresStatutPublicationsController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_statut_publication.update(_livres_statut_publication_params)
-        format.html { redirect_to _livres_statut_publication_url(@_livres_statut_publication), notice: "Livres statut publication was successfully updated." }
+        format.html { redirect_to livres_statut_publication_url(@_livres_statut_publication), notice: "Livres statut publication was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_statut_publication }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresStatutPublicationsController < ApplicationController
     @_livres_statut_publication.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_statut_publications_url, notice: "Livres statut publication was successfully destroyed." }
+      format.html { redirect_to livres_statut_publications_url, notice: "Livres statut publication was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresStatutPublicationsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_statut_publication_params
-      params.require(:_livres_statut_publication).permit(:name)
+      params.require(:livres_statut_publication).permit(:name)
     end
 end

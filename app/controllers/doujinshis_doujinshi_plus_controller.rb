@@ -25,7 +25,7 @@ class DoujinshisDoujinshiPlusController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_doujinshi_plu.save
-        format.html { redirect_to _doujinshis_doujinshi_plu_url(@_doujinshis_doujinshi_plu), notice: "Doujinshis doujinshi plu was successfully created." }
+        format.html { redirect_to doujinshis_doujinshi_plu_url(@_doujinshis_doujinshi_plu), notice: "Doujinshis doujinshi plu was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_doujinshi_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisDoujinshiPlusController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_doujinshi_plu.update(_doujinshis_doujinshi_plu_params)
-        format.html { redirect_to _doujinshis_doujinshi_plu_url(@_doujinshis_doujinshi_plu), notice: "Doujinshis doujinshi plu was successfully updated." }
+        format.html { redirect_to doujinshis_doujinshi_plu_url(@_doujinshis_doujinshi_plu), notice: "Doujinshis doujinshi plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_doujinshi_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisDoujinshiPlusController < ApplicationController
     @_doujinshis_doujinshi_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_doujinshi_plus_url, notice: "Doujinshis doujinshi plu was successfully destroyed." }
+      format.html { redirect_to doujinshis_doujinshi_plus_url, notice: "Doujinshis doujinshi plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisDoujinshiPlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_doujinshi_plu_params
-      params.require(:_doujinshis_doujinshi_plu).permit(:name)
+      params.require(:doujinshis_doujinshi_plu).permit(:name)
     end
 end

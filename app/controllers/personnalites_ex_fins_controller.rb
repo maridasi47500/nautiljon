@@ -25,7 +25,7 @@ class PersonnalitesExFinsController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_ex_fin.save
-        format.html { redirect_to _personnalites_ex_fin_url(@_personnalites_ex_fin), notice: "Personnalites ex fin was successfully created." }
+        format.html { redirect_to personnalites_ex_fin_url(@_personnalites_ex_fin), notice: "Personnalites ex fin was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_ex_fin }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesExFinsController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_ex_fin.update(_personnalites_ex_fin_params)
-        format.html { redirect_to _personnalites_ex_fin_url(@_personnalites_ex_fin), notice: "Personnalites ex fin was successfully updated." }
+        format.html { redirect_to personnalites_ex_fin_url(@_personnalites_ex_fin), notice: "Personnalites ex fin was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_ex_fin }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesExFinsController < ApplicationController
     @_personnalites_ex_fin.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_ex_fins_url, notice: "Personnalites ex fin was successfully destroyed." }
+      format.html { redirect_to personnalites_ex_fins_url, notice: "Personnalites ex fin was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesExFinsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_ex_fin_params
-      params.require(:_personnalites_ex_fin).permit(:name)
+      params.require(:personnalites_ex_fin).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PersonnalitesStatutsController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_statut.save
-        format.html { redirect_to _personnalites_statut_url(@_personnalites_statut), notice: "Personnalites statut was successfully created." }
+        format.html { redirect_to personnalites_statut_url(@_personnalites_statut), notice: "Personnalites statut was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_statut }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesStatutsController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_statut.update(_personnalites_statut_params)
-        format.html { redirect_to _personnalites_statut_url(@_personnalites_statut), notice: "Personnalites statut was successfully updated." }
+        format.html { redirect_to personnalites_statut_url(@_personnalites_statut), notice: "Personnalites statut was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_statut }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesStatutsController < ApplicationController
     @_personnalites_statut.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_statuts_url, notice: "Personnalites statut was successfully destroyed." }
+      format.html { redirect_to personnalites_statuts_url, notice: "Personnalites statut was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesStatutsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_statut_params
-      params.require(:_personnalites_statut).permit(:name)
+      params.require(:personnalites_statut).permit(:name)
     end
 end

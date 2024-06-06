@@ -25,7 +25,7 @@ class LivresJvsController < ApplicationController
 
     respond_to do |format|
       if @_livres_jv.save
-        format.html { redirect_to _livres_jv_url(@_livres_jv), notice: "Livres jv was successfully created." }
+        format.html { redirect_to livres_jv_url(@_livres_jv), notice: "Livres jv was successfully created." }
         format.json { render :show, status: :created, location: @_livres_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_jv.update(_livres_jv_params)
-        format.html { redirect_to _livres_jv_url(@_livres_jv), notice: "Livres jv was successfully updated." }
+        format.html { redirect_to livres_jv_url(@_livres_jv), notice: "Livres jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresJvsController < ApplicationController
     @_livres_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_jvs_url, notice: "Livres jv was successfully destroyed." }
+      format.html { redirect_to livres_jvs_url, notice: "Livres jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_jv_params
-      params.require(:_livres_jv).permit(:name)
+      params.require(:livres_jv).permit(:name)
     end
 end

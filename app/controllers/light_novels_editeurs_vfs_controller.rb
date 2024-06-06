@@ -25,7 +25,7 @@ class LightNovelsEditeursVfsController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_editeurs_vf.save
-        format.html { redirect_to _light_novels_editeurs_vf_url(@_light_novels_editeurs_vf), notice: "Light novels editeurs vf was successfully created." }
+        format.html { redirect_to light_novels_editeurs_vf_url(@_light_novels_editeurs_vf), notice: "Light novels editeurs vf was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_editeurs_vf }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsEditeursVfsController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_editeurs_vf.update(_light_novels_editeurs_vf_params)
-        format.html { redirect_to _light_novels_editeurs_vf_url(@_light_novels_editeurs_vf), notice: "Light novels editeurs vf was successfully updated." }
+        format.html { redirect_to light_novels_editeurs_vf_url(@_light_novels_editeurs_vf), notice: "Light novels editeurs vf was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_editeurs_vf }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsEditeursVfsController < ApplicationController
     @_light_novels_editeurs_vf.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_editeurs_vfs_url, notice: "Light novels editeurs vf was successfully destroyed." }
+      format.html { redirect_to light_novels_editeurs_vfs_url, notice: "Light novels editeurs vf was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsEditeursVfsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_editeurs_vf_params
-      params.require(:_light_novels_editeurs_vf).permit(:name)
+      params.require(:light_novels_editeurs_vf).permit(:name)
     end
 end

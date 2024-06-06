@@ -25,7 +25,7 @@ class JeuxVideosStaffSocieteRolesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_staff_societe_role.save
-        format.html { redirect_to _jeux_videos_staff_societe_role_url(@_jeux_videos_staff_societe_role), notice: "Jeux videos staff societe role was successfully created." }
+        format.html { redirect_to jeux_videos_staff_societe_role_url(@_jeux_videos_staff_societe_role), notice: "Jeux videos staff societe role was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_staff_societe_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosStaffSocieteRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_staff_societe_role.update(_jeux_videos_staff_societe_role_params)
-        format.html { redirect_to _jeux_videos_staff_societe_role_url(@_jeux_videos_staff_societe_role), notice: "Jeux videos staff societe role was successfully updated." }
+        format.html { redirect_to jeux_videos_staff_societe_role_url(@_jeux_videos_staff_societe_role), notice: "Jeux videos staff societe role was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_staff_societe_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosStaffSocieteRolesController < ApplicationController
     @_jeux_videos_staff_societe_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_staff_societe_roles_url, notice: "Jeux videos staff societe role was successfully destroyed." }
+      format.html { redirect_to jeux_videos_staff_societe_roles_url, notice: "Jeux videos staff societe role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosStaffSocieteRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_staff_societe_role_params
-      params.require(:_jeux_videos_staff_societe_role).permit(:name)
+      params.require(:jeux_videos_staff_societe_role).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class LightNovelsPaysController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_pay.save
-        format.html { redirect_to _light_novels_pay_url(@_light_novels_pay), notice: "Light novels pay was successfully created." }
+        format.html { redirect_to light_novels_pay_url(@_light_novels_pay), notice: "Light novels pay was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_pay }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsPaysController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_pay.update(_light_novels_pay_params)
-        format.html { redirect_to _light_novels_pay_url(@_light_novels_pay), notice: "Light novels pay was successfully updated." }
+        format.html { redirect_to light_novels_pay_url(@_light_novels_pay), notice: "Light novels pay was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_pay }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsPaysController < ApplicationController
     @_light_novels_pay.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_pays_url, notice: "Light novels pay was successfully destroyed." }
+      format.html { redirect_to light_novels_pays_url, notice: "Light novels pay was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsPaysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_pay_params
-      params.require(:_light_novels_pay).permit(:name)
+      params.require(:light_novels_pay).permit(:name)
     end
 end

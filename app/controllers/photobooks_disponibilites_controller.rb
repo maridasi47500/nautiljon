@@ -25,7 +25,7 @@ class PhotobooksDisponibilitesController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_disponibilite.save
-        format.html { redirect_to _photobooks_disponibilite_url(@_photobooks_disponibilite), notice: "Photobooks disponibilite was successfully created." }
+        format.html { redirect_to photobooks_disponibilite_url(@_photobooks_disponibilite), notice: "Photobooks disponibilite was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_disponibilite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksDisponibilitesController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_disponibilite.update(_photobooks_disponibilite_params)
-        format.html { redirect_to _photobooks_disponibilite_url(@_photobooks_disponibilite), notice: "Photobooks disponibilite was successfully updated." }
+        format.html { redirect_to photobooks_disponibilite_url(@_photobooks_disponibilite), notice: "Photobooks disponibilite was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_disponibilite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksDisponibilitesController < ApplicationController
     @_photobooks_disponibilite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_disponibilites_url, notice: "Photobooks disponibilite was successfully destroyed." }
+      format.html { redirect_to photobooks_disponibilites_url, notice: "Photobooks disponibilite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksDisponibilitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_disponibilite_params
-      params.require(:_photobooks_disponibilite).permit(:name)
+      params.require(:photobooks_disponibilite).permit(:name)
     end
 end

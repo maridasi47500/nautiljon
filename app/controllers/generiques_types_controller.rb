@@ -25,7 +25,7 @@ class GeneriquesTypesController < ApplicationController
 
     respond_to do |format|
       if @_generiques_type.save
-        format.html { redirect_to _generiques_type_url(@_generiques_type), notice: "Generiques type was successfully created." }
+        format.html { redirect_to generiques_type_url(@_generiques_type), notice: "Generiques type was successfully created." }
         format.json { render :show, status: :created, location: @_generiques_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriquesTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_generiques_type.update(_generiques_type_params)
-        format.html { redirect_to _generiques_type_url(@_generiques_type), notice: "Generiques type was successfully updated." }
+        format.html { redirect_to generiques_type_url(@_generiques_type), notice: "Generiques type was successfully updated." }
         format.json { render :show, status: :ok, location: @_generiques_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriquesTypesController < ApplicationController
     @_generiques_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generiques_types_url, notice: "Generiques type was successfully destroyed." }
+      format.html { redirect_to generiques_types_url, notice: "Generiques type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriquesTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generiques_type_params
-      params.require(:_generiques_type).permit(:name)
+      params.require(:generiques_type).permit(:name)
     end
 end

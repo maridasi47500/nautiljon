@@ -25,7 +25,7 @@ class GoodiesDramasController < ApplicationController
 
     respond_to do |format|
       if @_goodies_drama.save
-        format.html { redirect_to _goodies_drama_url(@_goodies_drama), notice: "Goodies drama was successfully created." }
+        format.html { redirect_to goodies_drama_url(@_goodies_drama), notice: "Goodies drama was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_drama }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesDramasController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_drama.update(_goodies_drama_params)
-        format.html { redirect_to _goodies_drama_url(@_goodies_drama), notice: "Goodies drama was successfully updated." }
+        format.html { redirect_to goodies_drama_url(@_goodies_drama), notice: "Goodies drama was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_drama }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesDramasController < ApplicationController
     @_goodies_drama.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_dramas_url, notice: "Goodies drama was successfully destroyed." }
+      format.html { redirect_to goodies_dramas_url, notice: "Goodies drama was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesDramasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_drama_params
-      params.require(:_goodies_drama).permit(:name)
+      params.require(:goodies_drama).permit(:name)
     end
 end

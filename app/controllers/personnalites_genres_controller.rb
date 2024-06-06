@@ -25,7 +25,7 @@ class PersonnalitesGenresController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_genre.save
-        format.html { redirect_to _personnalites_genre_url(@_personnalites_genre), notice: "Personnalites genre was successfully created." }
+        format.html { redirect_to personnalites_genre_url(@_personnalites_genre), notice: "Personnalites genre was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_genre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesGenresController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_genre.update(_personnalites_genre_params)
-        format.html { redirect_to _personnalites_genre_url(@_personnalites_genre), notice: "Personnalites genre was successfully updated." }
+        format.html { redirect_to personnalites_genre_url(@_personnalites_genre), notice: "Personnalites genre was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_genre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesGenresController < ApplicationController
     @_personnalites_genre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_genres_url, notice: "Personnalites genre was successfully destroyed." }
+      format.html { redirect_to personnalites_genres_url, notice: "Personnalites genre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesGenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_genre_params
-      params.require(:_personnalites_genre).permit(:name)
+      params.require(:personnalites_genre).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class FicheUniversCulturesController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_culture.save
-        format.html { redirect_to _fiche_univers_culture_url(@_fiche_univers_culture), notice: "Fiche univers culture was successfully created." }
+        format.html { redirect_to fiche_univers_culture_url(@_fiche_univers_culture), notice: "Fiche univers culture was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_culture }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversCulturesController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_culture.update(_fiche_univers_culture_params)
-        format.html { redirect_to _fiche_univers_culture_url(@_fiche_univers_culture), notice: "Fiche univers culture was successfully updated." }
+        format.html { redirect_to fiche_univers_culture_url(@_fiche_univers_culture), notice: "Fiche univers culture was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_culture }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversCulturesController < ApplicationController
     @_fiche_univers_culture.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_cultures_url, notice: "Fiche univers culture was successfully destroyed." }
+      format.html { redirect_to fiche_univers_cultures_url, notice: "Fiche univers culture was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversCulturesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_culture_params
-      params.require(:_fiche_univers_culture).permit(:name)
+      params.require(:fiche_univers_culture).permit(:name)
     end
 end

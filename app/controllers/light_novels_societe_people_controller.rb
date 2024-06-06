@@ -25,7 +25,7 @@ class LightNovelsSocietePeopleController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_societe_person.save
-        format.html { redirect_to _light_novels_societe_person_url(@_light_novels_societe_person), notice: "Light novels societe person was successfully created." }
+        format.html { redirect_to light_novels_societe_person_url(@_light_novels_societe_person), notice: "Light novels societe person was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_societe_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsSocietePeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_societe_person.update(_light_novels_societe_person_params)
-        format.html { redirect_to _light_novels_societe_person_url(@_light_novels_societe_person), notice: "Light novels societe person was successfully updated." }
+        format.html { redirect_to light_novels_societe_person_url(@_light_novels_societe_person), notice: "Light novels societe person was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_societe_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsSocietePeopleController < ApplicationController
     @_light_novels_societe_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_societe_people_url, notice: "Light novels societe person was successfully destroyed." }
+      format.html { redirect_to light_novels_societe_people_url, notice: "Light novels societe person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsSocietePeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_societe_person_params
-      params.require(:_light_novels_societe_person).permit(:name)
+      params.require(:light_novels_societe_person).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosDoubleurPeopleController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_person.save
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_person_url(@_personnages_de_jeux_videos_doubleur_person), notice: "Personnages de jeux videos doubleur person was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_person_url(@_personnages_de_jeux_videos_doubleur_person), notice: "Personnages de jeux videos doubleur person was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_doubleur_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosDoubleurPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_person.update(_personnages_de_jeux_videos_doubleur_person_params)
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_person_url(@_personnages_de_jeux_videos_doubleur_person), notice: "Personnages de jeux videos doubleur person was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_person_url(@_personnages_de_jeux_videos_doubleur_person), notice: "Personnages de jeux videos doubleur person was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_doubleur_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosDoubleurPeopleController < ApplicationController
     @_personnages_de_jeux_videos_doubleur_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_doubleur_people_url, notice: "Personnages de jeux videos doubleur person was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_doubleur_people_url, notice: "Personnages de jeux videos doubleur person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosDoubleurPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_doubleur_person_params
-      params.require(:_personnages_de_jeux_videos_doubleur_person).permit(:name)
+      params.require(:personnages_de_jeux_videos_doubleur_person).permit(:name)
     end
 end

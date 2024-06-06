@@ -25,7 +25,7 @@ class FilmsAsiatiquesGeneriquesPeople2sController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_generiques_people2.save
-        format.html { redirect_to _films_asiatiques_generiques_people2_url(@_films_asiatiques_generiques_people2), notice: "Films asiatiques generiques people2 was successfully created." }
+        format.html { redirect_to films_asiatiques_generiques_people2_url(@_films_asiatiques_generiques_people2), notice: "Films asiatiques generiques people2 was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_generiques_people2 }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesGeneriquesPeople2sController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_generiques_people2.update(_films_asiatiques_generiques_people2_params)
-        format.html { redirect_to _films_asiatiques_generiques_people2_url(@_films_asiatiques_generiques_people2), notice: "Films asiatiques generiques people2 was successfully updated." }
+        format.html { redirect_to films_asiatiques_generiques_people2_url(@_films_asiatiques_generiques_people2), notice: "Films asiatiques generiques people2 was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_generiques_people2 }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesGeneriquesPeople2sController < ApplicationController
     @_films_asiatiques_generiques_people2.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_generiques_people2s_url, notice: "Films asiatiques generiques people2 was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_generiques_people2s_url, notice: "Films asiatiques generiques people2 was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesGeneriquesPeople2sController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_generiques_people2_params
-      params.require(:_films_asiatiques_generiques_people2).permit(:name)
+      params.require(:films_asiatiques_generiques_people2).permit(:name)
     end
 end

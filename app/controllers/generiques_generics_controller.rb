@@ -25,7 +25,7 @@ class GeneriquesGenericsController < ApplicationController
 
     respond_to do |format|
       if @_generiques_generic.save
-        format.html { redirect_to _generiques_generic_url(@_generiques_generic), notice: "Generiques generic was successfully created." }
+        format.html { redirect_to generiques_generic_url(@_generiques_generic), notice: "Generiques generic was successfully created." }
         format.json { render :show, status: :created, location: @_generiques_generic }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriquesGenericsController < ApplicationController
   def update
     respond_to do |format|
       if @_generiques_generic.update(_generiques_generic_params)
-        format.html { redirect_to _generiques_generic_url(@_generiques_generic), notice: "Generiques generic was successfully updated." }
+        format.html { redirect_to generiques_generic_url(@_generiques_generic), notice: "Generiques generic was successfully updated." }
         format.json { render :show, status: :ok, location: @_generiques_generic }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriquesGenericsController < ApplicationController
     @_generiques_generic.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generiques_generics_url, notice: "Generiques generic was successfully destroyed." }
+      format.html { redirect_to generiques_generics_url, notice: "Generiques generic was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriquesGenericsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generiques_generic_params
-      params.require(:_generiques_generic).permit(:name)
+      params.require(:generiques_generic).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class BoutiquesController < ApplicationController
 
     respond_to do |format|
       if @_boutique.save
-        format.html { redirect_to _boutique_url(@_boutique), notice: "Boutique was successfully created." }
+        format.html { redirect_to boutique_url(@_boutique), notice: "Boutique was successfully created." }
         format.json { render :show, status: :created, location: @_boutique }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BoutiquesController < ApplicationController
   def update
     respond_to do |format|
       if @_boutique.update(_boutique_params)
-        format.html { redirect_to _boutique_url(@_boutique), notice: "Boutique was successfully updated." }
+        format.html { redirect_to boutique_url(@_boutique), notice: "Boutique was successfully updated." }
         format.json { render :show, status: :ok, location: @_boutique }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BoutiquesController < ApplicationController
     @_boutique.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _boutiques_url, notice: "Boutique was successfully destroyed." }
+      format.html { redirect_to boutiques_url, notice: "Boutique was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BoutiquesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _boutique_params
-      params.require(:_boutique).permit(:nom, :image, :adresse, :tel, :description, :dept, :ville, :_boutiques_pays_id, :site, :acceptregles)
+      params.require(:boutique).permit(:nom, :image, :adresse, :tel, :description, :dept, :ville, :_boutiques_pays_id, :site, :acceptregles)
     end
 end

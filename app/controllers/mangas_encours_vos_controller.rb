@@ -25,7 +25,7 @@ class MangasEncoursVosController < ApplicationController
 
     respond_to do |format|
       if @_mangas_encours_vo.save
-        format.html { redirect_to _mangas_encours_vo_url(@_mangas_encours_vo), notice: "Mangas encours vo was successfully created." }
+        format.html { redirect_to mangas_encours_vo_url(@_mangas_encours_vo), notice: "Mangas encours vo was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_encours_vo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasEncoursVosController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_encours_vo.update(_mangas_encours_vo_params)
-        format.html { redirect_to _mangas_encours_vo_url(@_mangas_encours_vo), notice: "Mangas encours vo was successfully updated." }
+        format.html { redirect_to mangas_encours_vo_url(@_mangas_encours_vo), notice: "Mangas encours vo was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_encours_vo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasEncoursVosController < ApplicationController
     @_mangas_encours_vo.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_encours_vos_url, notice: "Mangas encours vo was successfully destroyed." }
+      format.html { redirect_to mangas_encours_vos_url, notice: "Mangas encours vo was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasEncoursVosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_encours_vo_params
-      params.require(:_mangas_encours_vo).permit(:name)
+      params.require(:mangas_encours_vo).permit(:name)
     end
 end

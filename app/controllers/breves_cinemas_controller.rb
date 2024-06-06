@@ -25,7 +25,7 @@ class BrevesCinemasController < ApplicationController
 
     respond_to do |format|
       if @_breves_cinema.save
-        format.html { redirect_to _breves_cinema_url(@_breves_cinema), notice: "Breves cinema was successfully created." }
+        format.html { redirect_to breves_cinema_url(@_breves_cinema), notice: "Breves cinema was successfully created." }
         format.json { render :show, status: :created, location: @_breves_cinema }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesCinemasController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_cinema.update(_breves_cinema_params)
-        format.html { redirect_to _breves_cinema_url(@_breves_cinema), notice: "Breves cinema was successfully updated." }
+        format.html { redirect_to breves_cinema_url(@_breves_cinema), notice: "Breves cinema was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_cinema }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesCinemasController < ApplicationController
     @_breves_cinema.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_cinemas_url, notice: "Breves cinema was successfully destroyed." }
+      format.html { redirect_to breves_cinemas_url, notice: "Breves cinema was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesCinemasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_cinema_params
-      params.require(:_breves_cinema).permit(:name)
+      params.require(:breves_cinema).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class BrevesEmissionTvNumerosController < ApplicationController
 
     respond_to do |format|
       if @_breves_emission_tv_numero.save
-        format.html { redirect_to _breves_emission_tv_numero_url(@_breves_emission_tv_numero), notice: "Breves emission tv numero was successfully created." }
+        format.html { redirect_to breves_emission_tv_numero_url(@_breves_emission_tv_numero), notice: "Breves emission tv numero was successfully created." }
         format.json { render :show, status: :created, location: @_breves_emission_tv_numero }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesEmissionTvNumerosController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_emission_tv_numero.update(_breves_emission_tv_numero_params)
-        format.html { redirect_to _breves_emission_tv_numero_url(@_breves_emission_tv_numero), notice: "Breves emission tv numero was successfully updated." }
+        format.html { redirect_to breves_emission_tv_numero_url(@_breves_emission_tv_numero), notice: "Breves emission tv numero was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_emission_tv_numero }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesEmissionTvNumerosController < ApplicationController
     @_breves_emission_tv_numero.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_emission_tv_numeros_url, notice: "Breves emission tv numero was successfully destroyed." }
+      format.html { redirect_to breves_emission_tv_numeros_url, notice: "Breves emission tv numero was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesEmissionTvNumerosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_emission_tv_numero_params
-      params.require(:_breves_emission_tv_numero).permit(:name)
+      params.require(:breves_emission_tv_numero).permit(:name)
     end
 end

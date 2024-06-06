@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosPersoPlusController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_perso_plu.save
-        format.html { redirect_to _personnages_de_jeux_videos_perso_plu_url(@_personnages_de_jeux_videos_perso_plu), notice: "Personnages de jeux videos perso plu was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_perso_plu_url(@_personnages_de_jeux_videos_perso_plu), notice: "Personnages de jeux videos perso plu was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_perso_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosPersoPlusController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_perso_plu.update(_personnages_de_jeux_videos_perso_plu_params)
-        format.html { redirect_to _personnages_de_jeux_videos_perso_plu_url(@_personnages_de_jeux_videos_perso_plu), notice: "Personnages de jeux videos perso plu was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_perso_plu_url(@_personnages_de_jeux_videos_perso_plu), notice: "Personnages de jeux videos perso plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_perso_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosPersoPlusController < ApplicationController
     @_personnages_de_jeux_videos_perso_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_perso_plus_url, notice: "Personnages de jeux videos perso plu was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_perso_plus_url, notice: "Personnages de jeux videos perso plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosPersoPlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_perso_plu_params
-      params.require(:_personnages_de_jeux_videos_perso_plu).permit(:name)
+      params.require(:personnages_de_jeux_videos_perso_plu).permit(:name)
     end
 end

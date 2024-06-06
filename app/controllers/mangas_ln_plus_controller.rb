@@ -25,7 +25,7 @@ class MangasLnPlusController < ApplicationController
 
     respond_to do |format|
       if @_mangas_ln_plu.save
-        format.html { redirect_to _mangas_ln_plu_url(@_mangas_ln_plu), notice: "Mangas ln plu was successfully created." }
+        format.html { redirect_to mangas_ln_plu_url(@_mangas_ln_plu), notice: "Mangas ln plu was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_ln_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasLnPlusController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_ln_plu.update(_mangas_ln_plu_params)
-        format.html { redirect_to _mangas_ln_plu_url(@_mangas_ln_plu), notice: "Mangas ln plu was successfully updated." }
+        format.html { redirect_to mangas_ln_plu_url(@_mangas_ln_plu), notice: "Mangas ln plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_ln_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasLnPlusController < ApplicationController
     @_mangas_ln_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_ln_plus_url, notice: "Mangas ln plu was successfully destroyed." }
+      format.html { redirect_to mangas_ln_plus_url, notice: "Mangas ln plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasLnPlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_ln_plu_params
-      params.require(:_mangas_ln_plu).permit(:name)
+      params.require(:mangas_ln_plu).permit(:name)
     end
 end

@@ -1,0 +1,105 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Blu rays people</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_dvd___blu_rays_people">
+
+
+
+
+
+
+
+  <% @_dvd___blu_rays_people.each do |_dvd___blu_rays_person| %>
+
+
+
+
+
+
+
+    <%= render _dvd___blu_rays_person %>
+
+
+
+
+
+
+
+    <p>
+
+
+
+
+
+
+
+      <%= link_to "Show this blu rays person", dvd___blu_rays_person %>
+
+
+
+
+
+
+
+    </p>
+
+
+
+
+
+
+
+  <% end %>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= link_to "New blu rays person", new_dvd___blu_rays_person_path %>

@@ -25,7 +25,7 @@ class JeuxVideosOstsController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_ost.save
-        format.html { redirect_to _jeux_videos_ost_url(@_jeux_videos_ost), notice: "Jeux videos ost was successfully created." }
+        format.html { redirect_to jeux_videos_ost_url(@_jeux_videos_ost), notice: "Jeux videos ost was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_ost }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosOstsController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_ost.update(_jeux_videos_ost_params)
-        format.html { redirect_to _jeux_videos_ost_url(@_jeux_videos_ost), notice: "Jeux videos ost was successfully updated." }
+        format.html { redirect_to jeux_videos_ost_url(@_jeux_videos_ost), notice: "Jeux videos ost was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_ost }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosOstsController < ApplicationController
     @_jeux_videos_ost.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_osts_url, notice: "Jeux videos ost was successfully destroyed." }
+      format.html { redirect_to jeux_videos_osts_url, notice: "Jeux videos ost was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosOstsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_ost_params
-      params.require(:_jeux_videos_ost).permit(:name)
+      params.require(:jeux_videos_ost).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PhotobooksBonusController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_bonu.save
-        format.html { redirect_to _photobooks_bonu_url(@_photobooks_bonu), notice: "Photobooks bonu was successfully created." }
+        format.html { redirect_to photobooks_bonu_url(@_photobooks_bonu), notice: "Photobooks bonu was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_bonu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksBonusController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_bonu.update(_photobooks_bonu_params)
-        format.html { redirect_to _photobooks_bonu_url(@_photobooks_bonu), notice: "Photobooks bonu was successfully updated." }
+        format.html { redirect_to photobooks_bonu_url(@_photobooks_bonu), notice: "Photobooks bonu was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_bonu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksBonusController < ApplicationController
     @_photobooks_bonu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_bonus_url, notice: "Photobooks bonu was successfully destroyed." }
+      format.html { redirect_to photobooks_bonus_url, notice: "Photobooks bonu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksBonusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_bonu_params
-      params.require(:_photobooks_bonu).permit(:name)
+      params.require(:photobooks_bonu).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class BrevesSondagesController < ApplicationController
 
     respond_to do |format|
       if @_breves_sondage.save
-        format.html { redirect_to _breves_sondage_url(@_breves_sondage), notice: "Breves sondage was successfully created." }
+        format.html { redirect_to breves_sondage_url(@_breves_sondage), notice: "Breves sondage was successfully created." }
         format.json { render :show, status: :created, location: @_breves_sondage }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesSondagesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_sondage.update(_breves_sondage_params)
-        format.html { redirect_to _breves_sondage_url(@_breves_sondage), notice: "Breves sondage was successfully updated." }
+        format.html { redirect_to breves_sondage_url(@_breves_sondage), notice: "Breves sondage was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_sondage }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesSondagesController < ApplicationController
     @_breves_sondage.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_sondages_url, notice: "Breves sondage was successfully destroyed." }
+      format.html { redirect_to breves_sondages_url, notice: "Breves sondage was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesSondagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_sondage_params
-      params.require(:_breves_sondage).permit(:name)
+      params.require(:breves_sondage).permit(:name)
     end
 end

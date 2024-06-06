@@ -25,7 +25,7 @@ class JeuxVideosUniversController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_univer.save
-        format.html { redirect_to _jeux_videos_univer_url(@_jeux_videos_univer), notice: "Jeux videos univer was successfully created." }
+        format.html { redirect_to jeux_videos_univer_url(@_jeux_videos_univer), notice: "Jeux videos univer was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_univer }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosUniversController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_univer.update(_jeux_videos_univer_params)
-        format.html { redirect_to _jeux_videos_univer_url(@_jeux_videos_univer), notice: "Jeux videos univer was successfully updated." }
+        format.html { redirect_to jeux_videos_univer_url(@_jeux_videos_univer), notice: "Jeux videos univer was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_univer }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosUniversController < ApplicationController
     @_jeux_videos_univer.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_univers_url, notice: "Jeux videos univer was successfully destroyed." }
+      format.html { redirect_to jeux_videos_univers_url, notice: "Jeux videos univer was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosUniversController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_univer_params
-      params.require(:_jeux_videos_univer).permit(:name)
+      params.require(:jeux_videos_univer).permit(:name)
     end
 end

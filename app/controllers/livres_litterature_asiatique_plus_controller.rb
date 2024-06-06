@@ -25,7 +25,7 @@ class LivresLitteratureAsiatiquePlusController < ApplicationController
 
     respond_to do |format|
       if @_livres_litterature_asiatique_plu.save
-        format.html { redirect_to _livres_litterature_asiatique_plu_url(@_livres_litterature_asiatique_plu), notice: "Livres litterature asiatique plu was successfully created." }
+        format.html { redirect_to livres_litterature_asiatique_plu_url(@_livres_litterature_asiatique_plu), notice: "Livres litterature asiatique plu was successfully created." }
         format.json { render :show, status: :created, location: @_livres_litterature_asiatique_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresLitteratureAsiatiquePlusController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_litterature_asiatique_plu.update(_livres_litterature_asiatique_plu_params)
-        format.html { redirect_to _livres_litterature_asiatique_plu_url(@_livres_litterature_asiatique_plu), notice: "Livres litterature asiatique plu was successfully updated." }
+        format.html { redirect_to livres_litterature_asiatique_plu_url(@_livres_litterature_asiatique_plu), notice: "Livres litterature asiatique plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_litterature_asiatique_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresLitteratureAsiatiquePlusController < ApplicationController
     @_livres_litterature_asiatique_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_litterature_asiatique_plus_url, notice: "Livres litterature asiatique plu was successfully destroyed." }
+      format.html { redirect_to livres_litterature_asiatique_plus_url, notice: "Livres litterature asiatique plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresLitteratureAsiatiquePlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_litterature_asiatique_plu_params
-      params.require(:_livres_litterature_asiatique_plu).permit(:name)
+      params.require(:livres_litterature_asiatique_plu).permit(:name)
     end
 end

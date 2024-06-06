@@ -25,7 +25,7 @@ class PersonnageDanimesSexesController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_sex.save
-        format.html { redirect_to _personnage_danimes_sex_url(@_personnage_danimes_sex), notice: "Personnage danimes sexe was successfully created." }
+        format.html { redirect_to personnage_danimes_sex_url(@_personnage_danimes_sex), notice: "Personnage danimes sexe was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_sex }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesSexesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_sex.update(_personnage_danimes_sex_params)
-        format.html { redirect_to _personnage_danimes_sex_url(@_personnage_danimes_sex), notice: "Personnage danimes sexe was successfully updated." }
+        format.html { redirect_to personnage_danimes_sex_url(@_personnage_danimes_sex), notice: "Personnage danimes sexe was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_sex }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesSexesController < ApplicationController
     @_personnage_danimes_sex.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_sexes_url, notice: "Personnage danimes sexe was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_sexes_url, notice: "Personnage danimes sexe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesSexesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_sex_params
-      params.require(:_personnage_danimes_sex).permit(:name)
+      params.require(:personnage_danimes_sex).permit(:name)
     end
 end

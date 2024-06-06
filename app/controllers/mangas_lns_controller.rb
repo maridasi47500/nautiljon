@@ -25,7 +25,7 @@ class MangasLnsController < ApplicationController
 
     respond_to do |format|
       if @_mangas_ln.save
-        format.html { redirect_to _mangas_ln_url(@_mangas_ln), notice: "Mangas ln was successfully created." }
+        format.html { redirect_to mangas_ln_url(@_mangas_ln), notice: "Mangas ln was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_ln.update(_mangas_ln_params)
-        format.html { redirect_to _mangas_ln_url(@_mangas_ln), notice: "Mangas ln was successfully updated." }
+        format.html { redirect_to mangas_ln_url(@_mangas_ln), notice: "Mangas ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasLnsController < ApplicationController
     @_mangas_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_lns_url, notice: "Mangas ln was successfully destroyed." }
+      format.html { redirect_to mangas_lns_url, notice: "Mangas ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_ln_params
-      params.require(:_mangas_ln).permit(:name)
+      params.require(:mangas_ln).permit(:name)
     end
 end

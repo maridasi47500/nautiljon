@@ -25,7 +25,7 @@ class CdsMangasController < ApplicationController
 
     respond_to do |format|
       if @_cds_manga.save
-        format.html { redirect_to _cds_manga_url(@_cds_manga), notice: "Cds manga was successfully created." }
+        format.html { redirect_to cds_manga_url(@_cds_manga), notice: "Cds manga was successfully created." }
         format.json { render :show, status: :created, location: @_cds_manga }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsMangasController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_manga.update(_cds_manga_params)
-        format.html { redirect_to _cds_manga_url(@_cds_manga), notice: "Cds manga was successfully updated." }
+        format.html { redirect_to cds_manga_url(@_cds_manga), notice: "Cds manga was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_manga }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsMangasController < ApplicationController
     @_cds_manga.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_mangas_url, notice: "Cds manga was successfully destroyed." }
+      format.html { redirect_to cds_mangas_url, notice: "Cds manga was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsMangasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_manga_params
-      params.require(:_cds_manga).permit(:name)
+      params.require(:cds_manga).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosDoubleurRolesController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_role.save
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_role_url(@_personnages_de_jeux_videos_doubleur_role), notice: "Personnages de jeux videos doubleur role was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_role_url(@_personnages_de_jeux_videos_doubleur_role), notice: "Personnages de jeux videos doubleur role was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_doubleur_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosDoubleurRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_role.update(_personnages_de_jeux_videos_doubleur_role_params)
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_role_url(@_personnages_de_jeux_videos_doubleur_role), notice: "Personnages de jeux videos doubleur role was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_role_url(@_personnages_de_jeux_videos_doubleur_role), notice: "Personnages de jeux videos doubleur role was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_doubleur_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosDoubleurRolesController < ApplicationController
     @_personnages_de_jeux_videos_doubleur_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_doubleur_roles_url, notice: "Personnages de jeux videos doubleur role was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_doubleur_roles_url, notice: "Personnages de jeux videos doubleur role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosDoubleurRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_doubleur_role_params
-      params.require(:_personnages_de_jeux_videos_doubleur_role).permit(:name)
+      params.require(:personnages_de_jeux_videos_doubleur_role).permit(:name)
     end
 end

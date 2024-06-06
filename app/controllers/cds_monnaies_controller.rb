@@ -25,7 +25,7 @@ class CdsMonnaiesController < ApplicationController
 
     respond_to do |format|
       if @_cds_monnaie.save
-        format.html { redirect_to _cds_monnaie_url(@_cds_monnaie), notice: "Cds monnaie was successfully created." }
+        format.html { redirect_to cds_monnaie_url(@_cds_monnaie), notice: "Cds monnaie was successfully created." }
         format.json { render :show, status: :created, location: @_cds_monnaie }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsMonnaiesController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_monnaie.update(_cds_monnaie_params)
-        format.html { redirect_to _cds_monnaie_url(@_cds_monnaie), notice: "Cds monnaie was successfully updated." }
+        format.html { redirect_to cds_monnaie_url(@_cds_monnaie), notice: "Cds monnaie was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_monnaie }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsMonnaiesController < ApplicationController
     @_cds_monnaie.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_monnaies_url, notice: "Cds monnaie was successfully destroyed." }
+      format.html { redirect_to cds_monnaies_url, notice: "Cds monnaie was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsMonnaiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_monnaie_params
-      params.require(:_cds_monnaie).permit(:name)
+      params.require(:cds_monnaie).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class LivresAmsController < ApplicationController
 
     respond_to do |format|
       if @_livres_am.save
-        format.html { redirect_to _livres_am_url(@_livres_am), notice: "Livres am was successfully created." }
+        format.html { redirect_to livres_am_url(@_livres_am), notice: "Livres am was successfully created." }
         format.json { render :show, status: :created, location: @_livres_am }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresAmsController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_am.update(_livres_am_params)
-        format.html { redirect_to _livres_am_url(@_livres_am), notice: "Livres am was successfully updated." }
+        format.html { redirect_to livres_am_url(@_livres_am), notice: "Livres am was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_am }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresAmsController < ApplicationController
     @_livres_am.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_ams_url, notice: "Livres am was successfully destroyed." }
+      format.html { redirect_to livres_ams_url, notice: "Livres am was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresAmsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_am_params
-      params.require(:_livres_am).permit(:name)
+      params.require(:livres_am).permit(:name)
     end
 end

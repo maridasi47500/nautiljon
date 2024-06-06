@@ -25,7 +25,7 @@ class VolumesController < ApplicationController
 
     respond_to do |format|
       if @_volume.save
-        format.html { redirect_to _volume_url(@_volume), notice: "Volume was successfully created." }
+        format.html { redirect_to volume_url(@_volume), notice: "Volume was successfully created." }
         format.json { render :show, status: :created, location: @_volume }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VolumesController < ApplicationController
   def update
     respond_to do |format|
       if @_volume.update(_volume_params)
-        format.html { redirect_to _volume_url(@_volume), notice: "Volume was successfully updated." }
+        format.html { redirect_to volume_url(@_volume), notice: "Volume was successfully updated." }
         format.json { render :show, status: :ok, location: @_volume }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VolumesController < ApplicationController
     @_volume.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _volumes_url, notice: "Volume was successfully destroyed." }
+      format.html { redirect_to volumes_url, notice: "Volume was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VolumesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _volume_params
-      params.require(:_volume).permit(:_volumes_ln_id, :numero, :_volumes_type_id, :numerique, :image, :image_nc, :image_vo, :image_vo2, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :prix, :prix_vo, :pages, :_volumes_illustrations_id, :ean, :relie, :sous_jaquette, :resume, :chapitres, :infos, :preview, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:volume).permit(:_volumes_ln_id, :numero, :_volumes_type_id, :numerique, :image, :image_nc, :image_vo, :image_vo2, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :prix, :prix_vo, :pages, :_volumes_illustrations_id, :ean, :relie, :sous_jaquette, :resume, :chapitres, :infos, :preview, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

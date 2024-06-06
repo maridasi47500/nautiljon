@@ -25,7 +25,7 @@ class MangasSondagesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_sondage.save
-        format.html { redirect_to _mangas_sondage_url(@_mangas_sondage), notice: "Mangas sondage was successfully created." }
+        format.html { redirect_to mangas_sondage_url(@_mangas_sondage), notice: "Mangas sondage was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_sondage }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasSondagesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_sondage.update(_mangas_sondage_params)
-        format.html { redirect_to _mangas_sondage_url(@_mangas_sondage), notice: "Mangas sondage was successfully updated." }
+        format.html { redirect_to mangas_sondage_url(@_mangas_sondage), notice: "Mangas sondage was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_sondage }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasSondagesController < ApplicationController
     @_mangas_sondage.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_sondages_url, notice: "Mangas sondage was successfully destroyed." }
+      format.html { redirect_to mangas_sondages_url, notice: "Mangas sondage was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasSondagesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_sondage_params
-      params.require(:_mangas_sondage).permit(:name)
+      params.require(:mangas_sondage).permit(:name)
     end
 end

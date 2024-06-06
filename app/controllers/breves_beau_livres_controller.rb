@@ -25,7 +25,7 @@ class BrevesBeauLivresController < ApplicationController
 
     respond_to do |format|
       if @_breves_beau_livre.save
-        format.html { redirect_to _breves_beau_livre_url(@_breves_beau_livre), notice: "Breves beau livre was successfully created." }
+        format.html { redirect_to breves_beau_livre_url(@_breves_beau_livre), notice: "Breves beau livre was successfully created." }
         format.json { render :show, status: :created, location: @_breves_beau_livre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesBeauLivresController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_beau_livre.update(_breves_beau_livre_params)
-        format.html { redirect_to _breves_beau_livre_url(@_breves_beau_livre), notice: "Breves beau livre was successfully updated." }
+        format.html { redirect_to breves_beau_livre_url(@_breves_beau_livre), notice: "Breves beau livre was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_beau_livre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesBeauLivresController < ApplicationController
     @_breves_beau_livre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_beau_livres_url, notice: "Breves beau livre was successfully destroyed." }
+      format.html { redirect_to breves_beau_livres_url, notice: "Breves beau livre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesBeauLivresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_beau_livre_params
-      params.require(:_breves_beau_livre).permit(:name)
+      params.require(:breves_beau_livre).permit(:name)
     end
 end

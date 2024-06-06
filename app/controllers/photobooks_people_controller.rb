@@ -25,7 +25,7 @@ class PhotobooksPeopleController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_person.save
-        format.html { redirect_to _photobooks_person_url(@_photobooks_person), notice: "Photobooks person was successfully created." }
+        format.html { redirect_to photobooks_person_url(@_photobooks_person), notice: "Photobooks person was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_person.update(_photobooks_person_params)
-        format.html { redirect_to _photobooks_person_url(@_photobooks_person), notice: "Photobooks person was successfully updated." }
+        format.html { redirect_to photobooks_person_url(@_photobooks_person), notice: "Photobooks person was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksPeopleController < ApplicationController
     @_photobooks_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_people_url, notice: "Photobooks person was successfully destroyed." }
+      format.html { redirect_to photobooks_people_url, notice: "Photobooks person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_person_params
-      params.require(:_photobooks_person).permit(:name)
+      params.require(:photobooks_person).permit(:name)
     end
 end

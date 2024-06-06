@@ -25,7 +25,7 @@ class CdsTypesController < ApplicationController
 
     respond_to do |format|
       if @_cds_type.save
-        format.html { redirect_to _cds_type_url(@_cds_type), notice: "Cds type was successfully created." }
+        format.html { redirect_to cds_type_url(@_cds_type), notice: "Cds type was successfully created." }
         format.json { render :show, status: :created, location: @_cds_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_type.update(_cds_type_params)
-        format.html { redirect_to _cds_type_url(@_cds_type), notice: "Cds type was successfully updated." }
+        format.html { redirect_to cds_type_url(@_cds_type), notice: "Cds type was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsTypesController < ApplicationController
     @_cds_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_types_url, notice: "Cds type was successfully destroyed." }
+      format.html { redirect_to cds_types_url, notice: "Cds type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_type_params
-      params.require(:_cds_type).permit(:name)
+      params.require(:cds_type).permit(:name)
     end
 end

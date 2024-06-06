@@ -25,7 +25,7 @@ class LivresEditeursVosController < ApplicationController
 
     respond_to do |format|
       if @_livres_editeurs_vo.save
-        format.html { redirect_to _livres_editeurs_vo_url(@_livres_editeurs_vo), notice: "Livres editeurs vo was successfully created." }
+        format.html { redirect_to livres_editeurs_vo_url(@_livres_editeurs_vo), notice: "Livres editeurs vo was successfully created." }
         format.json { render :show, status: :created, location: @_livres_editeurs_vo }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresEditeursVosController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_editeurs_vo.update(_livres_editeurs_vo_params)
-        format.html { redirect_to _livres_editeurs_vo_url(@_livres_editeurs_vo), notice: "Livres editeurs vo was successfully updated." }
+        format.html { redirect_to livres_editeurs_vo_url(@_livres_editeurs_vo), notice: "Livres editeurs vo was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_editeurs_vo }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresEditeursVosController < ApplicationController
     @_livres_editeurs_vo.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_editeurs_vos_url, notice: "Livres editeurs vo was successfully destroyed." }
+      format.html { redirect_to livres_editeurs_vos_url, notice: "Livres editeurs vo was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresEditeursVosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_editeurs_vo_params
-      params.require(:_livres_editeurs_vo).permit(:name)
+      params.require(:livres_editeurs_vo).permit(:name)
     end
 end

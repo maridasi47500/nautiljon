@@ -25,7 +25,7 @@ class LightNovelsArtbooksController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_artbook.save
-        format.html { redirect_to _light_novels_artbook_url(@_light_novels_artbook), notice: "Light novels artbook was successfully created." }
+        format.html { redirect_to light_novels_artbook_url(@_light_novels_artbook), notice: "Light novels artbook was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_artbook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsArtbooksController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_artbook.update(_light_novels_artbook_params)
-        format.html { redirect_to _light_novels_artbook_url(@_light_novels_artbook), notice: "Light novels artbook was successfully updated." }
+        format.html { redirect_to light_novels_artbook_url(@_light_novels_artbook), notice: "Light novels artbook was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_artbook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsArtbooksController < ApplicationController
     @_light_novels_artbook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_artbooks_url, notice: "Light novels artbook was successfully destroyed." }
+      format.html { redirect_to light_novels_artbooks_url, notice: "Light novels artbook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsArtbooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_artbook_params
-      params.require(:_light_novels_artbook).permit(:name)
+      params.require(:light_novels_artbook).permit(:name)
     end
 end

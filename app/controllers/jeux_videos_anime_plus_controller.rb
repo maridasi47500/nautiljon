@@ -25,7 +25,7 @@ class JeuxVideosAnimePlusController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_anime_plu.save
-        format.html { redirect_to _jeux_videos_anime_plu_url(@_jeux_videos_anime_plu), notice: "Jeux videos anime plu was successfully created." }
+        format.html { redirect_to jeux_videos_anime_plu_url(@_jeux_videos_anime_plu), notice: "Jeux videos anime plu was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_anime_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosAnimePlusController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_anime_plu.update(_jeux_videos_anime_plu_params)
-        format.html { redirect_to _jeux_videos_anime_plu_url(@_jeux_videos_anime_plu), notice: "Jeux videos anime plu was successfully updated." }
+        format.html { redirect_to jeux_videos_anime_plu_url(@_jeux_videos_anime_plu), notice: "Jeux videos anime plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_anime_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosAnimePlusController < ApplicationController
     @_jeux_videos_anime_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_anime_plus_url, notice: "Jeux videos anime plu was successfully destroyed." }
+      format.html { redirect_to jeux_videos_anime_plus_url, notice: "Jeux videos anime plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosAnimePlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_anime_plu_params
-      params.require(:_jeux_videos_anime_plu).permit(:name)
+      params.require(:jeux_videos_anime_plu).permit(:name)
     end
 end

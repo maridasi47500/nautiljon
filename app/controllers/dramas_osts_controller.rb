@@ -25,7 +25,7 @@ class DramasOstsController < ApplicationController
 
     respond_to do |format|
       if @_dramas_ost.save
-        format.html { redirect_to _dramas_ost_url(@_dramas_ost), notice: "Dramas ost was successfully created." }
+        format.html { redirect_to dramas_ost_url(@_dramas_ost), notice: "Dramas ost was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_ost }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasOstsController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_ost.update(_dramas_ost_params)
-        format.html { redirect_to _dramas_ost_url(@_dramas_ost), notice: "Dramas ost was successfully updated." }
+        format.html { redirect_to dramas_ost_url(@_dramas_ost), notice: "Dramas ost was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_ost }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasOstsController < ApplicationController
     @_dramas_ost.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_osts_url, notice: "Dramas ost was successfully destroyed." }
+      format.html { redirect_to dramas_osts_url, notice: "Dramas ost was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasOstsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_ost_params
-      params.require(:_dramas_ost).permit(:name)
+      params.require(:dramas_ost).permit(:name)
     end
 end

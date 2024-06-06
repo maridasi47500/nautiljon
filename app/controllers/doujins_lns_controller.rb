@@ -25,7 +25,7 @@ class DoujinsLnsController < ApplicationController
 
     respond_to do |format|
       if @_doujins_ln.save
-        format.html { redirect_to _doujins_ln_url(@_doujins_ln), notice: "Doujins ln was successfully created." }
+        format.html { redirect_to doujins_ln_url(@_doujins_ln), notice: "Doujins ln was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_ln.update(_doujins_ln_params)
-        format.html { redirect_to _doujins_ln_url(@_doujins_ln), notice: "Doujins ln was successfully updated." }
+        format.html { redirect_to doujins_ln_url(@_doujins_ln), notice: "Doujins ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsLnsController < ApplicationController
     @_doujins_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_lns_url, notice: "Doujins ln was successfully destroyed." }
+      format.html { redirect_to doujins_lns_url, notice: "Doujins ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_ln_params
-      params.require(:_doujins_ln).permit(:name)
+      params.require(:doujins_ln).permit(:name)
     end
 end

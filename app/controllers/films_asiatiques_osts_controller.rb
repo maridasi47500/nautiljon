@@ -25,7 +25,7 @@ class FilmsAsiatiquesOstsController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_ost.save
-        format.html { redirect_to _films_asiatiques_ost_url(@_films_asiatiques_ost), notice: "Films asiatiques ost was successfully created." }
+        format.html { redirect_to films_asiatiques_ost_url(@_films_asiatiques_ost), notice: "Films asiatiques ost was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_ost }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesOstsController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_ost.update(_films_asiatiques_ost_params)
-        format.html { redirect_to _films_asiatiques_ost_url(@_films_asiatiques_ost), notice: "Films asiatiques ost was successfully updated." }
+        format.html { redirect_to films_asiatiques_ost_url(@_films_asiatiques_ost), notice: "Films asiatiques ost was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_ost }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesOstsController < ApplicationController
     @_films_asiatiques_ost.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_osts_url, notice: "Films asiatiques ost was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_osts_url, notice: "Films asiatiques ost was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesOstsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_ost_params
-      params.require(:_films_asiatiques_ost).permit(:name)
+      params.require(:films_asiatiques_ost).permit(:name)
     end
 end

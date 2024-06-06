@@ -25,7 +25,7 @@ class MangasEditeursVfCollectionsController < ApplicationController
 
     respond_to do |format|
       if @_mangas_editeurs_vf_collection.save
-        format.html { redirect_to _mangas_editeurs_vf_collection_url(@_mangas_editeurs_vf_collection), notice: "Mangas editeurs vf collection was successfully created." }
+        format.html { redirect_to mangas_editeurs_vf_collection_url(@_mangas_editeurs_vf_collection), notice: "Mangas editeurs vf collection was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_editeurs_vf_collection }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasEditeursVfCollectionsController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_editeurs_vf_collection.update(_mangas_editeurs_vf_collection_params)
-        format.html { redirect_to _mangas_editeurs_vf_collection_url(@_mangas_editeurs_vf_collection), notice: "Mangas editeurs vf collection was successfully updated." }
+        format.html { redirect_to mangas_editeurs_vf_collection_url(@_mangas_editeurs_vf_collection), notice: "Mangas editeurs vf collection was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_editeurs_vf_collection }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasEditeursVfCollectionsController < ApplicationController
     @_mangas_editeurs_vf_collection.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_editeurs_vf_collections_url, notice: "Mangas editeurs vf collection was successfully destroyed." }
+      format.html { redirect_to mangas_editeurs_vf_collections_url, notice: "Mangas editeurs vf collection was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasEditeursVfCollectionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_editeurs_vf_collection_params
-      params.require(:_mangas_editeurs_vf_collection).permit(:name)
+      params.require(:mangas_editeurs_vf_collection).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class FilmsAsiatiquesGeneriquesTypesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_generiques_type.save
-        format.html { redirect_to _films_asiatiques_generiques_type_url(@_films_asiatiques_generiques_type), notice: "Films asiatiques generiques type was successfully created." }
+        format.html { redirect_to films_asiatiques_generiques_type_url(@_films_asiatiques_generiques_type), notice: "Films asiatiques generiques type was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_generiques_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesGeneriquesTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_generiques_type.update(_films_asiatiques_generiques_type_params)
-        format.html { redirect_to _films_asiatiques_generiques_type_url(@_films_asiatiques_generiques_type), notice: "Films asiatiques generiques type was successfully updated." }
+        format.html { redirect_to films_asiatiques_generiques_type_url(@_films_asiatiques_generiques_type), notice: "Films asiatiques generiques type was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_generiques_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesGeneriquesTypesController < ApplicationController
     @_films_asiatiques_generiques_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_generiques_types_url, notice: "Films asiatiques generiques type was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_generiques_types_url, notice: "Films asiatiques generiques type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesGeneriquesTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_generiques_type_params
-      params.require(:_films_asiatiques_generiques_type).permit(:name)
+      params.require(:films_asiatiques_generiques_type).permit(:name)
     end
 end

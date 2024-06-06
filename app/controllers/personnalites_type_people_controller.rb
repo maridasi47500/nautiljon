@@ -25,7 +25,7 @@ class PersonnalitesTypePeopleController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_type_person.save
-        format.html { redirect_to _personnalites_type_person_url(@_personnalites_type_person), notice: "Personnalites type person was successfully created." }
+        format.html { redirect_to personnalites_type_person_url(@_personnalites_type_person), notice: "Personnalites type person was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_type_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesTypePeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_type_person.update(_personnalites_type_person_params)
-        format.html { redirect_to _personnalites_type_person_url(@_personnalites_type_person), notice: "Personnalites type person was successfully updated." }
+        format.html { redirect_to personnalites_type_person_url(@_personnalites_type_person), notice: "Personnalites type person was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_type_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesTypePeopleController < ApplicationController
     @_personnalites_type_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_type_people_url, notice: "Personnalites type person was successfully destroyed." }
+      format.html { redirect_to personnalites_type_people_url, notice: "Personnalites type person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesTypePeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_type_person_params
-      params.require(:_personnalites_type_person).permit(:name)
+      params.require(:personnalites_type_person).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class VolumesTypesController < ApplicationController
 
     respond_to do |format|
       if @_volumes_type.save
-        format.html { redirect_to _volumes_type_url(@_volumes_type), notice: "Volumes type was successfully created." }
+        format.html { redirect_to volumes_type_url(@_volumes_type), notice: "Volumes type was successfully created." }
         format.json { render :show, status: :created, location: @_volumes_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VolumesTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_volumes_type.update(_volumes_type_params)
-        format.html { redirect_to _volumes_type_url(@_volumes_type), notice: "Volumes type was successfully updated." }
+        format.html { redirect_to volumes_type_url(@_volumes_type), notice: "Volumes type was successfully updated." }
         format.json { render :show, status: :ok, location: @_volumes_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VolumesTypesController < ApplicationController
     @_volumes_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _volumes_types_url, notice: "Volumes type was successfully destroyed." }
+      format.html { redirect_to volumes_types_url, notice: "Volumes type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VolumesTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _volumes_type_params
-      params.require(:_volumes_type).permit(:name)
+      params.require(:volumes_type).permit(:name)
     end
 end

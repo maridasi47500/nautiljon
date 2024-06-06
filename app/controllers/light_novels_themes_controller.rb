@@ -25,7 +25,7 @@ class LightNovelsThemesController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_theme.save
-        format.html { redirect_to _light_novels_theme_url(@_light_novels_theme), notice: "Light novels theme was successfully created." }
+        format.html { redirect_to light_novels_theme_url(@_light_novels_theme), notice: "Light novels theme was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_theme.update(_light_novels_theme_params)
-        format.html { redirect_to _light_novels_theme_url(@_light_novels_theme), notice: "Light novels theme was successfully updated." }
+        format.html { redirect_to light_novels_theme_url(@_light_novels_theme), notice: "Light novels theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsThemesController < ApplicationController
     @_light_novels_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_themes_url, notice: "Light novels theme was successfully destroyed." }
+      format.html { redirect_to light_novels_themes_url, notice: "Light novels theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_theme_params
-      params.require(:_light_novels_theme).permit(:name)
+      params.require(:light_novels_theme).permit(:name)
     end
 end

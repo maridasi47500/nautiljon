@@ -25,7 +25,7 @@ class GoodiesLitteratureAsiatiquesController < ApplicationController
 
     respond_to do |format|
       if @_goodies_litterature_asiatique.save
-        format.html { redirect_to _goodies_litterature_asiatique_url(@_goodies_litterature_asiatique), notice: "Goodies litterature asiatique was successfully created." }
+        format.html { redirect_to goodies_litterature_asiatique_url(@_goodies_litterature_asiatique), notice: "Goodies litterature asiatique was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_litterature_asiatique }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesLitteratureAsiatiquesController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_litterature_asiatique.update(_goodies_litterature_asiatique_params)
-        format.html { redirect_to _goodies_litterature_asiatique_url(@_goodies_litterature_asiatique), notice: "Goodies litterature asiatique was successfully updated." }
+        format.html { redirect_to goodies_litterature_asiatique_url(@_goodies_litterature_asiatique), notice: "Goodies litterature asiatique was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_litterature_asiatique }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesLitteratureAsiatiquesController < ApplicationController
     @_goodies_litterature_asiatique.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_litterature_asiatiques_url, notice: "Goodies litterature asiatique was successfully destroyed." }
+      format.html { redirect_to goodies_litterature_asiatiques_url, notice: "Goodies litterature asiatique was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesLitteratureAsiatiquesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_litterature_asiatique_params
-      params.require(:_goodies_litterature_asiatique).permit(:name)
+      params.require(:goodies_litterature_asiatique).permit(:name)
     end
 end

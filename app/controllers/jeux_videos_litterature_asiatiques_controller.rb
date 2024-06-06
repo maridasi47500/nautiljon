@@ -25,7 +25,7 @@ class JeuxVideosLitteratureAsiatiquesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_litterature_asiatique.save
-        format.html { redirect_to _jeux_videos_litterature_asiatique_url(@_jeux_videos_litterature_asiatique), notice: "Jeux videos litterature asiatique was successfully created." }
+        format.html { redirect_to jeux_videos_litterature_asiatique_url(@_jeux_videos_litterature_asiatique), notice: "Jeux videos litterature asiatique was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_litterature_asiatique }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosLitteratureAsiatiquesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_litterature_asiatique.update(_jeux_videos_litterature_asiatique_params)
-        format.html { redirect_to _jeux_videos_litterature_asiatique_url(@_jeux_videos_litterature_asiatique), notice: "Jeux videos litterature asiatique was successfully updated." }
+        format.html { redirect_to jeux_videos_litterature_asiatique_url(@_jeux_videos_litterature_asiatique), notice: "Jeux videos litterature asiatique was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_litterature_asiatique }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosLitteratureAsiatiquesController < ApplicationController
     @_jeux_videos_litterature_asiatique.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_litterature_asiatiques_url, notice: "Jeux videos litterature asiatique was successfully destroyed." }
+      format.html { redirect_to jeux_videos_litterature_asiatiques_url, notice: "Jeux videos litterature asiatique was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosLitteratureAsiatiquesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_litterature_asiatique_params
-      params.require(:_jeux_videos_litterature_asiatique).permit(:name)
+      params.require(:jeux_videos_litterature_asiatique).permit(:name)
     end
 end

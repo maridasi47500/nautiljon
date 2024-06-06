@@ -25,7 +25,7 @@ class DoujinshisJvPersosController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_jv_perso.save
-        format.html { redirect_to _doujinshis_jv_perso_url(@_doujinshis_jv_perso), notice: "Doujinshis jv perso was successfully created." }
+        format.html { redirect_to doujinshis_jv_perso_url(@_doujinshis_jv_perso), notice: "Doujinshis jv perso was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_jv_perso }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisJvPersosController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_jv_perso.update(_doujinshis_jv_perso_params)
-        format.html { redirect_to _doujinshis_jv_perso_url(@_doujinshis_jv_perso), notice: "Doujinshis jv perso was successfully updated." }
+        format.html { redirect_to doujinshis_jv_perso_url(@_doujinshis_jv_perso), notice: "Doujinshis jv perso was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_jv_perso }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisJvPersosController < ApplicationController
     @_doujinshis_jv_perso.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_jv_persos_url, notice: "Doujinshis jv perso was successfully destroyed." }
+      format.html { redirect_to doujinshis_jv_persos_url, notice: "Doujinshis jv perso was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisJvPersosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_jv_perso_params
-      params.require(:_doujinshis_jv_perso).permit(:name)
+      params.require(:doujinshis_jv_perso).permit(:name)
     end
 end

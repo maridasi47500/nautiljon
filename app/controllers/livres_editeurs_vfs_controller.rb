@@ -25,7 +25,7 @@ class LivresEditeursVfsController < ApplicationController
 
     respond_to do |format|
       if @_livres_editeurs_vf.save
-        format.html { redirect_to _livres_editeurs_vf_url(@_livres_editeurs_vf), notice: "Livres editeurs vf was successfully created." }
+        format.html { redirect_to livres_editeurs_vf_url(@_livres_editeurs_vf), notice: "Livres editeurs vf was successfully created." }
         format.json { render :show, status: :created, location: @_livres_editeurs_vf }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresEditeursVfsController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_editeurs_vf.update(_livres_editeurs_vf_params)
-        format.html { redirect_to _livres_editeurs_vf_url(@_livres_editeurs_vf), notice: "Livres editeurs vf was successfully updated." }
+        format.html { redirect_to livres_editeurs_vf_url(@_livres_editeurs_vf), notice: "Livres editeurs vf was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_editeurs_vf }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresEditeursVfsController < ApplicationController
     @_livres_editeurs_vf.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_editeurs_vfs_url, notice: "Livres editeurs vf was successfully destroyed." }
+      format.html { redirect_to livres_editeurs_vfs_url, notice: "Livres editeurs vf was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresEditeursVfsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_editeurs_vf_params
-      params.require(:_livres_editeurs_vf).permit(:name)
+      params.require(:livres_editeurs_vf).permit(:name)
     end
 end

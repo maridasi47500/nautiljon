@@ -25,7 +25,7 @@ class FilmsAsiatiquesJvsController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_jv.save
-        format.html { redirect_to _films_asiatiques_jv_url(@_films_asiatiques_jv), notice: "Films asiatiques jv was successfully created." }
+        format.html { redirect_to films_asiatiques_jv_url(@_films_asiatiques_jv), notice: "Films asiatiques jv was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_jv.update(_films_asiatiques_jv_params)
-        format.html { redirect_to _films_asiatiques_jv_url(@_films_asiatiques_jv), notice: "Films asiatiques jv was successfully updated." }
+        format.html { redirect_to films_asiatiques_jv_url(@_films_asiatiques_jv), notice: "Films asiatiques jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesJvsController < ApplicationController
     @_films_asiatiques_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_jvs_url, notice: "Films asiatiques jv was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_jvs_url, notice: "Films asiatiques jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_jv_params
-      params.require(:_films_asiatiques_jv).permit(:name)
+      params.require(:films_asiatiques_jv).permit(:name)
     end
 end

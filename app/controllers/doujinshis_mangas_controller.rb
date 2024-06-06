@@ -25,7 +25,7 @@ class DoujinshisMangasController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_manga.save
-        format.html { redirect_to _doujinshis_manga_url(@_doujinshis_manga), notice: "Doujinshis manga was successfully created." }
+        format.html { redirect_to doujinshis_manga_url(@_doujinshis_manga), notice: "Doujinshis manga was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_manga }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisMangasController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_manga.update(_doujinshis_manga_params)
-        format.html { redirect_to _doujinshis_manga_url(@_doujinshis_manga), notice: "Doujinshis manga was successfully updated." }
+        format.html { redirect_to doujinshis_manga_url(@_doujinshis_manga), notice: "Doujinshis manga was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_manga }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisMangasController < ApplicationController
     @_doujinshis_manga.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_mangas_url, notice: "Doujinshis manga was successfully destroyed." }
+      format.html { redirect_to doujinshis_mangas_url, notice: "Doujinshis manga was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisMangasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_manga_params
-      params.require(:_doujinshis_manga).permit(:name)
+      params.require(:doujinshis_manga).permit(:name)
     end
 end

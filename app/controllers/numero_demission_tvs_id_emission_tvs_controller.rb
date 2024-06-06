@@ -25,7 +25,7 @@ class NumeroDemissionTvsIdEmissionTvsController < ApplicationController
 
     respond_to do |format|
       if @_numero_demission_tvs_id_emission_tv.save
-        format.html { redirect_to _numero_demission_tvs_id_emission_tv_url(@_numero_demission_tvs_id_emission_tv), notice: "Numero demission tvs id emission tv was successfully created." }
+        format.html { redirect_to numero_demission_tvs_id_emission_tv_url(@_numero_demission_tvs_id_emission_tv), notice: "Numero demission tvs id emission tv was successfully created." }
         format.json { render :show, status: :created, location: @_numero_demission_tvs_id_emission_tv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class NumeroDemissionTvsIdEmissionTvsController < ApplicationController
   def update
     respond_to do |format|
       if @_numero_demission_tvs_id_emission_tv.update(_numero_demission_tvs_id_emission_tv_params)
-        format.html { redirect_to _numero_demission_tvs_id_emission_tv_url(@_numero_demission_tvs_id_emission_tv), notice: "Numero demission tvs id emission tv was successfully updated." }
+        format.html { redirect_to numero_demission_tvs_id_emission_tv_url(@_numero_demission_tvs_id_emission_tv), notice: "Numero demission tvs id emission tv was successfully updated." }
         format.json { render :show, status: :ok, location: @_numero_demission_tvs_id_emission_tv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class NumeroDemissionTvsIdEmissionTvsController < ApplicationController
     @_numero_demission_tvs_id_emission_tv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _numero_demission_tvs_id_emission_tvs_url, notice: "Numero demission tvs id emission tv was successfully destroyed." }
+      format.html { redirect_to numero_demission_tvs_id_emission_tvs_url, notice: "Numero demission tvs id emission tv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class NumeroDemissionTvsIdEmissionTvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _numero_demission_tvs_id_emission_tv_params
-      params.require(:_numero_demission_tvs_id_emission_tv).permit(:name)
+      params.require(:numero_demission_tvs_id_emission_tv).permit(:name)
     end
 end

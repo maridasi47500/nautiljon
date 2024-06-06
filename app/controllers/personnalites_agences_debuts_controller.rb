@@ -25,7 +25,7 @@ class PersonnalitesAgencesDebutsController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_agences_debut.save
-        format.html { redirect_to _personnalites_agences_debut_url(@_personnalites_agences_debut), notice: "Personnalites agences debut was successfully created." }
+        format.html { redirect_to personnalites_agences_debut_url(@_personnalites_agences_debut), notice: "Personnalites agences debut was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_agences_debut }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesAgencesDebutsController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_agences_debut.update(_personnalites_agences_debut_params)
-        format.html { redirect_to _personnalites_agences_debut_url(@_personnalites_agences_debut), notice: "Personnalites agences debut was successfully updated." }
+        format.html { redirect_to personnalites_agences_debut_url(@_personnalites_agences_debut), notice: "Personnalites agences debut was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_agences_debut }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesAgencesDebutsController < ApplicationController
     @_personnalites_agences_debut.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_agences_debuts_url, notice: "Personnalites agences debut was successfully destroyed." }
+      format.html { redirect_to personnalites_agences_debuts_url, notice: "Personnalites agences debut was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesAgencesDebutsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_agences_debut_params
-      params.require(:_personnalites_agences_debut).permit(:name)
+      params.require(:personnalites_agences_debut).permit(:name)
     end
 end

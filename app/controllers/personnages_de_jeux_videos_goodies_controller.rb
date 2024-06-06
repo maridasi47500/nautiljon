@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosGoodiesController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_goody.save
-        format.html { redirect_to _personnages_de_jeux_videos_goody_url(@_personnages_de_jeux_videos_goody), notice: "Personnages de jeux videos goody was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_goody_url(@_personnages_de_jeux_videos_goody), notice: "Personnages de jeux videos goody was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_goody }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosGoodiesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_goody.update(_personnages_de_jeux_videos_goody_params)
-        format.html { redirect_to _personnages_de_jeux_videos_goody_url(@_personnages_de_jeux_videos_goody), notice: "Personnages de jeux videos goody was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_goody_url(@_personnages_de_jeux_videos_goody), notice: "Personnages de jeux videos goody was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_goody }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosGoodiesController < ApplicationController
     @_personnages_de_jeux_videos_goody.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_goodies_url, notice: "Personnages de jeux videos goody was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_goodies_url, notice: "Personnages de jeux videos goody was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosGoodiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_goody_params
-      params.require(:_personnages_de_jeux_videos_goody).permit(:name)
+      params.require(:personnages_de_jeux_videos_goody).permit(:name)
     end
 end

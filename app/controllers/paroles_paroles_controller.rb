@@ -25,7 +25,7 @@ class ParolesParolesController < ApplicationController
 
     respond_to do |format|
       if @_paroles_parole.save
-        format.html { redirect_to _paroles_parole_url(@_paroles_parole), notice: "Paroles parole was successfully created." }
+        format.html { redirect_to paroles_parole_url(@_paroles_parole), notice: "Paroles parole was successfully created." }
         format.json { render :show, status: :created, location: @_paroles_parole }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ParolesParolesController < ApplicationController
   def update
     respond_to do |format|
       if @_paroles_parole.update(_paroles_parole_params)
-        format.html { redirect_to _paroles_parole_url(@_paroles_parole), notice: "Paroles parole was successfully updated." }
+        format.html { redirect_to paroles_parole_url(@_paroles_parole), notice: "Paroles parole was successfully updated." }
         format.json { render :show, status: :ok, location: @_paroles_parole }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ParolesParolesController < ApplicationController
     @_paroles_parole.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _paroles_paroles_url, notice: "Paroles parole was successfully destroyed." }
+      format.html { redirect_to paroles_paroles_url, notice: "Paroles parole was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class ParolesParolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _paroles_parole_params
-      params.require(:_paroles_parole).permit(:name)
+      params.require(:paroles_parole).permit(:name)
     end
 end

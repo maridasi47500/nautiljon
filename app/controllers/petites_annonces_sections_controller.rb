@@ -25,7 +25,7 @@ class PetitesAnnoncesSectionsController < ApplicationController
 
     respond_to do |format|
       if @_petites_annonces_section.save
-        format.html { redirect_to _petites_annonces_section_url(@_petites_annonces_section), notice: "Petites annonces section was successfully created." }
+        format.html { redirect_to petites_annonces_section_url(@_petites_annonces_section), notice: "Petites annonces section was successfully created." }
         format.json { render :show, status: :created, location: @_petites_annonces_section }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PetitesAnnoncesSectionsController < ApplicationController
   def update
     respond_to do |format|
       if @_petites_annonces_section.update(_petites_annonces_section_params)
-        format.html { redirect_to _petites_annonces_section_url(@_petites_annonces_section), notice: "Petites annonces section was successfully updated." }
+        format.html { redirect_to petites_annonces_section_url(@_petites_annonces_section), notice: "Petites annonces section was successfully updated." }
         format.json { render :show, status: :ok, location: @_petites_annonces_section }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PetitesAnnoncesSectionsController < ApplicationController
     @_petites_annonces_section.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _petites_annonces_sections_url, notice: "Petites annonces section was successfully destroyed." }
+      format.html { redirect_to petites_annonces_sections_url, notice: "Petites annonces section was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PetitesAnnoncesSectionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _petites_annonces_section_params
-      params.require(:_petites_annonces_section).permit(:name)
+      params.require(:petites_annonces_section).permit(:name)
     end
 end

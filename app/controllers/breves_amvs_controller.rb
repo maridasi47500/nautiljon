@@ -25,7 +25,7 @@ class BrevesAmvsController < ApplicationController
 
     respond_to do |format|
       if @_breves_amv.save
-        format.html { redirect_to _breves_amv_url(@_breves_amv), notice: "Breves amv was successfully created." }
+        format.html { redirect_to breves_amv_url(@_breves_amv), notice: "Breves amv was successfully created." }
         format.json { render :show, status: :created, location: @_breves_amv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesAmvsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_amv.update(_breves_amv_params)
-        format.html { redirect_to _breves_amv_url(@_breves_amv), notice: "Breves amv was successfully updated." }
+        format.html { redirect_to breves_amv_url(@_breves_amv), notice: "Breves amv was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_amv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesAmvsController < ApplicationController
     @_breves_amv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_amvs_url, notice: "Breves amv was successfully destroyed." }
+      format.html { redirect_to breves_amvs_url, notice: "Breves amv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesAmvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_amv_params
-      params.require(:_breves_amv).permit(:name)
+      params.require(:breves_amv).permit(:name)
     end
 end

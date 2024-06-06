@@ -25,7 +25,7 @@ class CdsEmissionTvsController < ApplicationController
 
     respond_to do |format|
       if @_cds_emission_tv.save
-        format.html { redirect_to _cds_emission_tv_url(@_cds_emission_tv), notice: "Cds emission tv was successfully created." }
+        format.html { redirect_to cds_emission_tv_url(@_cds_emission_tv), notice: "Cds emission tv was successfully created." }
         format.json { render :show, status: :created, location: @_cds_emission_tv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsEmissionTvsController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_emission_tv.update(_cds_emission_tv_params)
-        format.html { redirect_to _cds_emission_tv_url(@_cds_emission_tv), notice: "Cds emission tv was successfully updated." }
+        format.html { redirect_to cds_emission_tv_url(@_cds_emission_tv), notice: "Cds emission tv was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_emission_tv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsEmissionTvsController < ApplicationController
     @_cds_emission_tv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_emission_tvs_url, notice: "Cds emission tv was successfully destroyed." }
+      format.html { redirect_to cds_emission_tvs_url, notice: "Cds emission tv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsEmissionTvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_emission_tv_params
-      params.require(:_cds_emission_tv).permit(:name)
+      params.require(:cds_emission_tv).permit(:name)
     end
 end

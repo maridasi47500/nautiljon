@@ -25,7 +25,7 @@ class GeneriquesIdAnimesController < ApplicationController
 
     respond_to do |format|
       if @_generiques_id_anime.save
-        format.html { redirect_to _generiques_id_anime_url(@_generiques_id_anime), notice: "Generiques id anime was successfully created." }
+        format.html { redirect_to generiques_id_anime_url(@_generiques_id_anime), notice: "Generiques id anime was successfully created." }
         format.json { render :show, status: :created, location: @_generiques_id_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriquesIdAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_generiques_id_anime.update(_generiques_id_anime_params)
-        format.html { redirect_to _generiques_id_anime_url(@_generiques_id_anime), notice: "Generiques id anime was successfully updated." }
+        format.html { redirect_to generiques_id_anime_url(@_generiques_id_anime), notice: "Generiques id anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_generiques_id_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriquesIdAnimesController < ApplicationController
     @_generiques_id_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generiques_id_animes_url, notice: "Generiques id anime was successfully destroyed." }
+      format.html { redirect_to generiques_id_animes_url, notice: "Generiques id anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriquesIdAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generiques_id_anime_params
-      params.require(:_generiques_id_anime).permit(:name)
+      params.require(:generiques_id_anime).permit(:name)
     end
 end

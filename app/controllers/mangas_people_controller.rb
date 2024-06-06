@@ -25,7 +25,7 @@ class MangasPeopleController < ApplicationController
 
     respond_to do |format|
       if @_mangas_person.save
-        format.html { redirect_to _mangas_person_url(@_mangas_person), notice: "Mangas person was successfully created." }
+        format.html { redirect_to mangas_person_url(@_mangas_person), notice: "Mangas person was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_person.update(_mangas_person_params)
-        format.html { redirect_to _mangas_person_url(@_mangas_person), notice: "Mangas person was successfully updated." }
+        format.html { redirect_to mangas_person_url(@_mangas_person), notice: "Mangas person was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasPeopleController < ApplicationController
     @_mangas_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_people_url, notice: "Mangas person was successfully destroyed." }
+      format.html { redirect_to mangas_people_url, notice: "Mangas person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_person_params
-      params.require(:_mangas_person).permit(:name)
+      params.require(:mangas_person).permit(:name)
     end
 end

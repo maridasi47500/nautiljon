@@ -25,7 +25,7 @@ class MangasGroupesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_groupe.save
-        format.html { redirect_to _mangas_groupe_url(@_mangas_groupe), notice: "Mangas groupe was successfully created." }
+        format.html { redirect_to mangas_groupe_url(@_mangas_groupe), notice: "Mangas groupe was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_groupe.update(_mangas_groupe_params)
-        format.html { redirect_to _mangas_groupe_url(@_mangas_groupe), notice: "Mangas groupe was successfully updated." }
+        format.html { redirect_to mangas_groupe_url(@_mangas_groupe), notice: "Mangas groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasGroupesController < ApplicationController
     @_mangas_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_groupes_url, notice: "Mangas groupe was successfully destroyed." }
+      format.html { redirect_to mangas_groupes_url, notice: "Mangas groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_groupe_params
-      params.require(:_mangas_groupe).permit(:name)
+      params.require(:mangas_groupe).permit(:name)
     end
 end

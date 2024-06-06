@@ -25,7 +25,7 @@ class BrevesRecettesController < ApplicationController
 
     respond_to do |format|
       if @_breves_recette.save
-        format.html { redirect_to _breves_recette_url(@_breves_recette), notice: "Breves recette was successfully created." }
+        format.html { redirect_to breves_recette_url(@_breves_recette), notice: "Breves recette was successfully created." }
         format.json { render :show, status: :created, location: @_breves_recette }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesRecettesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_recette.update(_breves_recette_params)
-        format.html { redirect_to _breves_recette_url(@_breves_recette), notice: "Breves recette was successfully updated." }
+        format.html { redirect_to breves_recette_url(@_breves_recette), notice: "Breves recette was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_recette }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesRecettesController < ApplicationController
     @_breves_recette.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_recettes_url, notice: "Breves recette was successfully destroyed." }
+      format.html { redirect_to breves_recettes_url, notice: "Breves recette was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesRecettesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_recette_params
-      params.require(:_breves_recette).permit(:name)
+      params.require(:breves_recette).permit(:name)
     end
 end

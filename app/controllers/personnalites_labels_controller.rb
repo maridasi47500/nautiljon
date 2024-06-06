@@ -25,7 +25,7 @@ class PersonnalitesLabelsController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_label.save
-        format.html { redirect_to _personnalites_label_url(@_personnalites_label), notice: "Personnalites label was successfully created." }
+        format.html { redirect_to personnalites_label_url(@_personnalites_label), notice: "Personnalites label was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_label }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesLabelsController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_label.update(_personnalites_label_params)
-        format.html { redirect_to _personnalites_label_url(@_personnalites_label), notice: "Personnalites label was successfully updated." }
+        format.html { redirect_to personnalites_label_url(@_personnalites_label), notice: "Personnalites label was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_label }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesLabelsController < ApplicationController
     @_personnalites_label.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_labels_url, notice: "Personnalites label was successfully destroyed." }
+      format.html { redirect_to personnalites_labels_url, notice: "Personnalites label was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesLabelsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_label_params
-      params.require(:_personnalites_label).permit(:name)
+      params.require(:personnalites_label).permit(:name)
     end
 end

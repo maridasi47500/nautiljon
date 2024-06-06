@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosDoubleurPaysController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_pay.save
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_pay_url(@_personnages_de_jeux_videos_doubleur_pay), notice: "Personnages de jeux videos doubleur pay was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_pay_url(@_personnages_de_jeux_videos_doubleur_pay), notice: "Personnages de jeux videos doubleur pay was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_doubleur_pay }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosDoubleurPaysController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_doubleur_pay.update(_personnages_de_jeux_videos_doubleur_pay_params)
-        format.html { redirect_to _personnages_de_jeux_videos_doubleur_pay_url(@_personnages_de_jeux_videos_doubleur_pay), notice: "Personnages de jeux videos doubleur pay was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_doubleur_pay_url(@_personnages_de_jeux_videos_doubleur_pay), notice: "Personnages de jeux videos doubleur pay was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_doubleur_pay }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosDoubleurPaysController < ApplicationController
     @_personnages_de_jeux_videos_doubleur_pay.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_doubleur_pays_url, notice: "Personnages de jeux videos doubleur pay was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_doubleur_pays_url, notice: "Personnages de jeux videos doubleur pay was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosDoubleurPaysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_doubleur_pay_params
-      params.require(:_personnages_de_jeux_videos_doubleur_pay).permit(:name)
+      params.require(:personnages_de_jeux_videos_doubleur_pay).permit(:name)
     end
 end

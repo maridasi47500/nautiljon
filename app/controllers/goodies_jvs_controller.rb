@@ -25,7 +25,7 @@ class GoodiesJvsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_jv.save
-        format.html { redirect_to _goodies_jv_url(@_goodies_jv), notice: "Goodies jv was successfully created." }
+        format.html { redirect_to goodies_jv_url(@_goodies_jv), notice: "Goodies jv was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_jv.update(_goodies_jv_params)
-        format.html { redirect_to _goodies_jv_url(@_goodies_jv), notice: "Goodies jv was successfully updated." }
+        format.html { redirect_to goodies_jv_url(@_goodies_jv), notice: "Goodies jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesJvsController < ApplicationController
     @_goodies_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_jvs_url, notice: "Goodies jv was successfully destroyed." }
+      format.html { redirect_to goodies_jvs_url, notice: "Goodies jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_jv_params
-      params.require(:_goodies_jv).permit(:name)
+      params.require(:goodies_jv).permit(:name)
     end
 end

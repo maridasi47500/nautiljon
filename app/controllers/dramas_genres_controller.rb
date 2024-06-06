@@ -25,7 +25,7 @@ class DramasGenresController < ApplicationController
 
     respond_to do |format|
       if @_dramas_genre.save
-        format.html { redirect_to _dramas_genre_url(@_dramas_genre), notice: "Dramas genre was successfully created." }
+        format.html { redirect_to dramas_genre_url(@_dramas_genre), notice: "Dramas genre was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_genre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasGenresController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_genre.update(_dramas_genre_params)
-        format.html { redirect_to _dramas_genre_url(@_dramas_genre), notice: "Dramas genre was successfully updated." }
+        format.html { redirect_to dramas_genre_url(@_dramas_genre), notice: "Dramas genre was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_genre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasGenresController < ApplicationController
     @_dramas_genre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_genres_url, notice: "Dramas genre was successfully destroyed." }
+      format.html { redirect_to dramas_genres_url, notice: "Dramas genre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasGenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_genre_params
-      params.require(:_dramas_genre).permit(:name)
+      params.require(:dramas_genre).permit(:name)
     end
 end

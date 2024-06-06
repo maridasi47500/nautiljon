@@ -25,7 +25,7 @@ class DoujinsRolesController < ApplicationController
 
     respond_to do |format|
       if @_doujins_role.save
-        format.html { redirect_to _doujins_role_url(@_doujins_role), notice: "Doujins role was successfully created." }
+        format.html { redirect_to doujins_role_url(@_doujins_role), notice: "Doujins role was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_role.update(_doujins_role_params)
-        format.html { redirect_to _doujins_role_url(@_doujins_role), notice: "Doujins role was successfully updated." }
+        format.html { redirect_to doujins_role_url(@_doujins_role), notice: "Doujins role was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsRolesController < ApplicationController
     @_doujins_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_roles_url, notice: "Doujins role was successfully destroyed." }
+      format.html { redirect_to doujins_roles_url, notice: "Doujins role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_role_params
-      params.require(:_doujins_role).permit(:name)
+      params.require(:doujins_role).permit(:name)
     end
 end

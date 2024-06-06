@@ -25,7 +25,7 @@ class JeuxVideosStaffPeopleController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_staff_person.save
-        format.html { redirect_to _jeux_videos_staff_person_url(@_jeux_videos_staff_person), notice: "Jeux videos staff person was successfully created." }
+        format.html { redirect_to jeux_videos_staff_person_url(@_jeux_videos_staff_person), notice: "Jeux videos staff person was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_staff_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosStaffPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_staff_person.update(_jeux_videos_staff_person_params)
-        format.html { redirect_to _jeux_videos_staff_person_url(@_jeux_videos_staff_person), notice: "Jeux videos staff person was successfully updated." }
+        format.html { redirect_to jeux_videos_staff_person_url(@_jeux_videos_staff_person), notice: "Jeux videos staff person was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_staff_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosStaffPeopleController < ApplicationController
     @_jeux_videos_staff_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_staff_people_url, notice: "Jeux videos staff person was successfully destroyed." }
+      format.html { redirect_to jeux_videos_staff_people_url, notice: "Jeux videos staff person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosStaffPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_staff_person_params
-      params.require(:_jeux_videos_staff_person).permit(:name)
+      params.require(:jeux_videos_staff_person).permit(:name)
     end
 end

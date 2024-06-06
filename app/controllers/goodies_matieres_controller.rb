@@ -25,7 +25,7 @@ class GoodiesMatieresController < ApplicationController
 
     respond_to do |format|
       if @_goodies_matiere.save
-        format.html { redirect_to _goodies_matiere_url(@_goodies_matiere), notice: "Goodies matiere was successfully created." }
+        format.html { redirect_to goodies_matiere_url(@_goodies_matiere), notice: "Goodies matiere was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_matiere }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesMatieresController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_matiere.update(_goodies_matiere_params)
-        format.html { redirect_to _goodies_matiere_url(@_goodies_matiere), notice: "Goodies matiere was successfully updated." }
+        format.html { redirect_to goodies_matiere_url(@_goodies_matiere), notice: "Goodies matiere was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_matiere }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesMatieresController < ApplicationController
     @_goodies_matiere.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_matieres_url, notice: "Goodies matiere was successfully destroyed." }
+      format.html { redirect_to goodies_matieres_url, notice: "Goodies matiere was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesMatieresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_matiere_params
-      params.require(:_goodies_matiere).permit(:name)
+      params.require(:goodies_matiere).permit(:name)
     end
 end

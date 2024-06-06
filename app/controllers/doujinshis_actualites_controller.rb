@@ -25,7 +25,7 @@ class DoujinshisActualitesController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_actualite.save
-        format.html { redirect_to _doujinshis_actualite_url(@_doujinshis_actualite), notice: "Doujinshis actualite was successfully created." }
+        format.html { redirect_to doujinshis_actualite_url(@_doujinshis_actualite), notice: "Doujinshis actualite was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_actualite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisActualitesController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_actualite.update(_doujinshis_actualite_params)
-        format.html { redirect_to _doujinshis_actualite_url(@_doujinshis_actualite), notice: "Doujinshis actualite was successfully updated." }
+        format.html { redirect_to doujinshis_actualite_url(@_doujinshis_actualite), notice: "Doujinshis actualite was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_actualite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisActualitesController < ApplicationController
     @_doujinshis_actualite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_actualites_url, notice: "Doujinshis actualite was successfully destroyed." }
+      format.html { redirect_to doujinshis_actualites_url, notice: "Doujinshis actualite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisActualitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_actualite_params
-      params.require(:_doujinshis_actualite).permit(:name)
+      params.require(:doujinshis_actualite).permit(:name)
     end
 end

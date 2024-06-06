@@ -25,7 +25,7 @@ class DramasGeneriquesPeopleController < ApplicationController
 
     respond_to do |format|
       if @_dramas_generiques_person.save
-        format.html { redirect_to _dramas_generiques_person_url(@_dramas_generiques_person), notice: "Dramas generiques person was successfully created." }
+        format.html { redirect_to dramas_generiques_person_url(@_dramas_generiques_person), notice: "Dramas generiques person was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_generiques_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasGeneriquesPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_generiques_person.update(_dramas_generiques_person_params)
-        format.html { redirect_to _dramas_generiques_person_url(@_dramas_generiques_person), notice: "Dramas generiques person was successfully updated." }
+        format.html { redirect_to dramas_generiques_person_url(@_dramas_generiques_person), notice: "Dramas generiques person was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_generiques_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasGeneriquesPeopleController < ApplicationController
     @_dramas_generiques_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_generiques_people_url, notice: "Dramas generiques person was successfully destroyed." }
+      format.html { redirect_to dramas_generiques_people_url, notice: "Dramas generiques person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasGeneriquesPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_generiques_person_params
-      params.require(:_dramas_generiques_person).permit(:name)
+      params.require(:dramas_generiques_person).permit(:name)
     end
 end

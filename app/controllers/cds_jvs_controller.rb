@@ -25,7 +25,7 @@ class CdsJvsController < ApplicationController
 
     respond_to do |format|
       if @_cds_jv.save
-        format.html { redirect_to _cds_jv_url(@_cds_jv), notice: "Cds jv was successfully created." }
+        format.html { redirect_to cds_jv_url(@_cds_jv), notice: "Cds jv was successfully created." }
         format.json { render :show, status: :created, location: @_cds_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_jv.update(_cds_jv_params)
-        format.html { redirect_to _cds_jv_url(@_cds_jv), notice: "Cds jv was successfully updated." }
+        format.html { redirect_to cds_jv_url(@_cds_jv), notice: "Cds jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsJvsController < ApplicationController
     @_cds_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_jvs_url, notice: "Cds jv was successfully destroyed." }
+      format.html { redirect_to cds_jvs_url, notice: "Cds jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_jv_params
-      params.require(:_cds_jv).permit(:name)
+      params.require(:cds_jv).permit(:name)
     end
 end

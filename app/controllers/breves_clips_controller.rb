@@ -25,7 +25,7 @@ class BrevesClipsController < ApplicationController
 
     respond_to do |format|
       if @_breves_clip.save
-        format.html { redirect_to _breves_clip_url(@_breves_clip), notice: "Breves clip was successfully created." }
+        format.html { redirect_to breves_clip_url(@_breves_clip), notice: "Breves clip was successfully created." }
         format.json { render :show, status: :created, location: @_breves_clip }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesClipsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_clip.update(_breves_clip_params)
-        format.html { redirect_to _breves_clip_url(@_breves_clip), notice: "Breves clip was successfully updated." }
+        format.html { redirect_to breves_clip_url(@_breves_clip), notice: "Breves clip was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_clip }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesClipsController < ApplicationController
     @_breves_clip.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_clips_url, notice: "Breves clip was successfully destroyed." }
+      format.html { redirect_to breves_clips_url, notice: "Breves clip was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesClipsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_clip_params
-      params.require(:_breves_clip).permit(:name)
+      params.require(:breves_clip).permit(:name)
     end
 end

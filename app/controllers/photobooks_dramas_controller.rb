@@ -25,7 +25,7 @@ class PhotobooksDramasController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_drama.save
-        format.html { redirect_to _photobooks_drama_url(@_photobooks_drama), notice: "Photobooks drama was successfully created." }
+        format.html { redirect_to photobooks_drama_url(@_photobooks_drama), notice: "Photobooks drama was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_drama }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksDramasController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_drama.update(_photobooks_drama_params)
-        format.html { redirect_to _photobooks_drama_url(@_photobooks_drama), notice: "Photobooks drama was successfully updated." }
+        format.html { redirect_to photobooks_drama_url(@_photobooks_drama), notice: "Photobooks drama was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_drama }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksDramasController < ApplicationController
     @_photobooks_drama.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_dramas_url, notice: "Photobooks drama was successfully destroyed." }
+      format.html { redirect_to photobooks_dramas_url, notice: "Photobooks drama was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksDramasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_drama_params
-      params.require(:_photobooks_drama).permit(:name)
+      params.require(:photobooks_drama).permit(:name)
     end
 end

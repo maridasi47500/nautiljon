@@ -25,7 +25,7 @@ class CdsDramasController < ApplicationController
 
     respond_to do |format|
       if @_cds_drama.save
-        format.html { redirect_to _cds_drama_url(@_cds_drama), notice: "Cds drama was successfully created." }
+        format.html { redirect_to cds_drama_url(@_cds_drama), notice: "Cds drama was successfully created." }
         format.json { render :show, status: :created, location: @_cds_drama }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsDramasController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_drama.update(_cds_drama_params)
-        format.html { redirect_to _cds_drama_url(@_cds_drama), notice: "Cds drama was successfully updated." }
+        format.html { redirect_to cds_drama_url(@_cds_drama), notice: "Cds drama was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_drama }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsDramasController < ApplicationController
     @_cds_drama.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_dramas_url, notice: "Cds drama was successfully destroyed." }
+      format.html { redirect_to cds_dramas_url, notice: "Cds drama was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsDramasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_drama_params
-      params.require(:_cds_drama).permit(:name)
+      params.require(:cds_drama).permit(:name)
     end
 end

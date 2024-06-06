@@ -1,0 +1,105 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h1>Blu rays type editions</h1>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div id="_dvd___blu_rays_type_editions">
+
+
+
+
+
+
+
+  <% @_dvd___blu_rays_type_editions.each do |_dvd___blu_rays_type_edition| %>
+
+
+
+
+
+
+
+    <%= render _dvd___blu_rays_type_edition %>
+
+
+
+
+
+
+
+    <p>
+
+
+
+
+
+
+
+      <%= link_to "Show this blu rays type edition", dvd___blu_rays_type_edition %>
+
+
+
+
+
+
+
+    </p>
+
+
+
+
+
+
+
+  <% end %>
+
+
+
+
+
+
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<%= link_to "New blu rays type edition", new_dvd___blu_rays_type_edition_path %>

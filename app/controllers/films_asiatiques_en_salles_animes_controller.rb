@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesAnimesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_anime.save
-        format.html { redirect_to _films_asiatiques_en_salles_anime_url(@_films_asiatiques_en_salles_anime), notice: "Films asiatiques en salles anime was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_anime_url(@_films_asiatiques_en_salles_anime), notice: "Films asiatiques en salles anime was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_anime.update(_films_asiatiques_en_salles_anime_params)
-        format.html { redirect_to _films_asiatiques_en_salles_anime_url(@_films_asiatiques_en_salles_anime), notice: "Films asiatiques en salles anime was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_anime_url(@_films_asiatiques_en_salles_anime), notice: "Films asiatiques en salles anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesAnimesController < ApplicationController
     @_films_asiatiques_en_salles_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_animes_url, notice: "Films asiatiques en salles anime was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_animes_url, notice: "Films asiatiques en salles anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_anime_params
-      params.require(:_films_asiatiques_en_salles_anime).permit(:name)
+      params.require(:films_asiatiques_en_salles_anime).permit(:name)
     end
 end

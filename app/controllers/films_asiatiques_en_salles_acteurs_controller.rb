@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesActeursController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_acteur.save
-        format.html { redirect_to _films_asiatiques_en_salles_acteur_url(@_films_asiatiques_en_salles_acteur), notice: "Films asiatiques en salles acteur was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_acteur_url(@_films_asiatiques_en_salles_acteur), notice: "Films asiatiques en salles acteur was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_acteur }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesActeursController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_acteur.update(_films_asiatiques_en_salles_acteur_params)
-        format.html { redirect_to _films_asiatiques_en_salles_acteur_url(@_films_asiatiques_en_salles_acteur), notice: "Films asiatiques en salles acteur was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_acteur_url(@_films_asiatiques_en_salles_acteur), notice: "Films asiatiques en salles acteur was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_acteur }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesActeursController < ApplicationController
     @_films_asiatiques_en_salles_acteur.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_acteurs_url, notice: "Films asiatiques en salles acteur was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_acteurs_url, notice: "Films asiatiques en salles acteur was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesActeursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_acteur_params
-      params.require(:_films_asiatiques_en_salles_acteur).permit(:name)
+      params.require(:films_asiatiques_en_salles_acteur).permit(:name)
     end
 end

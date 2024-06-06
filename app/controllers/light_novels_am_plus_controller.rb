@@ -25,7 +25,7 @@ class LightNovelsAmPlusController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_am_plu.save
-        format.html { redirect_to _light_novels_am_plu_url(@_light_novels_am_plu), notice: "Light novels am plu was successfully created." }
+        format.html { redirect_to light_novels_am_plu_url(@_light_novels_am_plu), notice: "Light novels am plu was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_am_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsAmPlusController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_am_plu.update(_light_novels_am_plu_params)
-        format.html { redirect_to _light_novels_am_plu_url(@_light_novels_am_plu), notice: "Light novels am plu was successfully updated." }
+        format.html { redirect_to light_novels_am_plu_url(@_light_novels_am_plu), notice: "Light novels am plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_am_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsAmPlusController < ApplicationController
     @_light_novels_am_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_am_plus_url, notice: "Light novels am plu was successfully destroyed." }
+      format.html { redirect_to light_novels_am_plus_url, notice: "Light novels am plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsAmPlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_am_plu_params
-      params.require(:_light_novels_am_plu).permit(:name)
+      params.require(:light_novels_am_plu).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PhotobooksGroupesController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_groupe.save
-        format.html { redirect_to _photobooks_groupe_url(@_photobooks_groupe), notice: "Photobooks groupe was successfully created." }
+        format.html { redirect_to photobooks_groupe_url(@_photobooks_groupe), notice: "Photobooks groupe was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_groupe.update(_photobooks_groupe_params)
-        format.html { redirect_to _photobooks_groupe_url(@_photobooks_groupe), notice: "Photobooks groupe was successfully updated." }
+        format.html { redirect_to photobooks_groupe_url(@_photobooks_groupe), notice: "Photobooks groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksGroupesController < ApplicationController
     @_photobooks_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_groupes_url, notice: "Photobooks groupe was successfully destroyed." }
+      format.html { redirect_to photobooks_groupes_url, notice: "Photobooks groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_groupe_params
-      params.require(:_photobooks_groupe).permit(:name)
+      params.require(:photobooks_groupe).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class DoujinshisThemesController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_theme.save
-        format.html { redirect_to _doujinshis_theme_url(@_doujinshis_theme), notice: "Doujinshis theme was successfully created." }
+        format.html { redirect_to doujinshis_theme_url(@_doujinshis_theme), notice: "Doujinshis theme was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_theme.update(_doujinshis_theme_params)
-        format.html { redirect_to _doujinshis_theme_url(@_doujinshis_theme), notice: "Doujinshis theme was successfully updated." }
+        format.html { redirect_to doujinshis_theme_url(@_doujinshis_theme), notice: "Doujinshis theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisThemesController < ApplicationController
     @_doujinshis_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_themes_url, notice: "Doujinshis theme was successfully destroyed." }
+      format.html { redirect_to doujinshis_themes_url, notice: "Doujinshis theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_theme_params
-      params.require(:_doujinshis_theme).permit(:name)
+      params.require(:doujinshis_theme).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class RestaurantsController < ApplicationController
 
     respond_to do |format|
       if @_restaurant.save
-        format.html { redirect_to _restaurant_url(@_restaurant), notice: "Restaurant was successfully created." }
+        format.html { redirect_to restaurant_url(@_restaurant), notice: "Restaurant was successfully created." }
         format.json { render :show, status: :created, location: @_restaurant }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class RestaurantsController < ApplicationController
   def update
     respond_to do |format|
       if @_restaurant.update(_restaurant_params)
-        format.html { redirect_to _restaurant_url(@_restaurant), notice: "Restaurant was successfully updated." }
+        format.html { redirect_to restaurant_url(@_restaurant), notice: "Restaurant was successfully updated." }
         format.json { render :show, status: :ok, location: @_restaurant }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class RestaurantsController < ApplicationController
     @_restaurant.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _restaurants_url, notice: "Restaurant was successfully destroyed." }
+      format.html { redirect_to restaurants_url, notice: "Restaurant was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class RestaurantsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _restaurant_params
-      params.require(:_restaurant).permit(:nom, :image, :adresse, :tel, :description, :dept, :ville, :_restaurants_pays_id, :horaires, :creation, :site, :acceptregles)
+      params.require(:restaurant).permit(:nom, :image, :adresse, :tel, :description, :dept, :ville, :_restaurants_pays_id, :horaires, :creation, :site, :acceptregles)
     end
 end

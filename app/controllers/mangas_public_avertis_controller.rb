@@ -25,7 +25,7 @@ class MangasPublicAvertisController < ApplicationController
 
     respond_to do |format|
       if @_mangas_public_averti.save
-        format.html { redirect_to _mangas_public_averti_url(@_mangas_public_averti), notice: "Mangas public averti was successfully created." }
+        format.html { redirect_to mangas_public_averti_url(@_mangas_public_averti), notice: "Mangas public averti was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_public_averti }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasPublicAvertisController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_public_averti.update(_mangas_public_averti_params)
-        format.html { redirect_to _mangas_public_averti_url(@_mangas_public_averti), notice: "Mangas public averti was successfully updated." }
+        format.html { redirect_to mangas_public_averti_url(@_mangas_public_averti), notice: "Mangas public averti was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_public_averti }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasPublicAvertisController < ApplicationController
     @_mangas_public_averti.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_public_avertis_url, notice: "Mangas public averti was successfully destroyed." }
+      format.html { redirect_to mangas_public_avertis_url, notice: "Mangas public averti was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasPublicAvertisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_public_averti_params
-      params.require(:_mangas_public_averti).permit(:name)
+      params.require(:mangas_public_averti).permit(:name)
     end
 end

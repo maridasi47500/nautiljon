@@ -25,7 +25,7 @@ class DoujinshisGenresController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_genre.save
-        format.html { redirect_to _doujinshis_genre_url(@_doujinshis_genre), notice: "Doujinshis genre was successfully created." }
+        format.html { redirect_to doujinshis_genre_url(@_doujinshis_genre), notice: "Doujinshis genre was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_genre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisGenresController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_genre.update(_doujinshis_genre_params)
-        format.html { redirect_to _doujinshis_genre_url(@_doujinshis_genre), notice: "Doujinshis genre was successfully updated." }
+        format.html { redirect_to doujinshis_genre_url(@_doujinshis_genre), notice: "Doujinshis genre was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_genre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisGenresController < ApplicationController
     @_doujinshis_genre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_genres_url, notice: "Doujinshis genre was successfully destroyed." }
+      format.html { redirect_to doujinshis_genres_url, notice: "Doujinshis genre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisGenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_genre_params
-      params.require(:_doujinshis_genre).permit(:name)
+      params.require(:doujinshis_genre).permit(:name)
     end
 end

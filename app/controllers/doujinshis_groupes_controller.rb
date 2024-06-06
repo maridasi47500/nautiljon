@@ -25,7 +25,7 @@ class DoujinshisGroupesController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_groupe.save
-        format.html { redirect_to _doujinshis_groupe_url(@_doujinshis_groupe), notice: "Doujinshis groupe was successfully created." }
+        format.html { redirect_to doujinshis_groupe_url(@_doujinshis_groupe), notice: "Doujinshis groupe was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_groupe.update(_doujinshis_groupe_params)
-        format.html { redirect_to _doujinshis_groupe_url(@_doujinshis_groupe), notice: "Doujinshis groupe was successfully updated." }
+        format.html { redirect_to doujinshis_groupe_url(@_doujinshis_groupe), notice: "Doujinshis groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisGroupesController < ApplicationController
     @_doujinshis_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_groupes_url, notice: "Doujinshis groupe was successfully destroyed." }
+      format.html { redirect_to doujinshis_groupes_url, notice: "Doujinshis groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_groupe_params
-      params.require(:_doujinshis_groupe).permit(:name)
+      params.require(:doujinshis_groupe).permit(:name)
     end
 end

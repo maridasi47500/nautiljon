@@ -25,7 +25,7 @@ class BrevesMagazinesController < ApplicationController
 
     respond_to do |format|
       if @_breves_magazine.save
-        format.html { redirect_to _breves_magazine_url(@_breves_magazine), notice: "Breves magazine was successfully created." }
+        format.html { redirect_to breves_magazine_url(@_breves_magazine), notice: "Breves magazine was successfully created." }
         format.json { render :show, status: :created, location: @_breves_magazine }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesMagazinesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_magazine.update(_breves_magazine_params)
-        format.html { redirect_to _breves_magazine_url(@_breves_magazine), notice: "Breves magazine was successfully updated." }
+        format.html { redirect_to breves_magazine_url(@_breves_magazine), notice: "Breves magazine was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_magazine }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesMagazinesController < ApplicationController
     @_breves_magazine.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_magazines_url, notice: "Breves magazine was successfully destroyed." }
+      format.html { redirect_to breves_magazines_url, notice: "Breves magazine was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesMagazinesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_magazine_params
-      params.require(:_breves_magazine).permit(:name)
+      params.require(:breves_magazine).permit(:name)
     end
 end

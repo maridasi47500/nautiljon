@@ -25,7 +25,7 @@ class PersonnalitesIdTravauxesController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_id_travaux.save
-        format.html { redirect_to _personnalites_id_travaux_url(@_personnalites_id_travaux), notice: "Personnalites id travaux was successfully created." }
+        format.html { redirect_to personnalites_id_travaux_url(@_personnalites_id_travaux), notice: "Personnalites id travaux was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_id_travaux }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesIdTravauxesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_id_travaux.update(_personnalites_id_travaux_params)
-        format.html { redirect_to _personnalites_id_travaux_url(@_personnalites_id_travaux), notice: "Personnalites id travaux was successfully updated." }
+        format.html { redirect_to personnalites_id_travaux_url(@_personnalites_id_travaux), notice: "Personnalites id travaux was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_id_travaux }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesIdTravauxesController < ApplicationController
     @_personnalites_id_travaux.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_id_travauxes_url, notice: "Personnalites id travaux was successfully destroyed." }
+      format.html { redirect_to personnalites_id_travauxes_url, notice: "Personnalites id travaux was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesIdTravauxesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_id_travaux_params
-      params.require(:_personnalites_id_travaux).permit(:name)
+      params.require(:personnalites_id_travaux).permit(:name)
     end
 end

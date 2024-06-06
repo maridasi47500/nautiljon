@@ -25,7 +25,7 @@ class JeuxVideosLnsController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_ln.save
-        format.html { redirect_to _jeux_videos_ln_url(@_jeux_videos_ln), notice: "Jeux videos ln was successfully created." }
+        format.html { redirect_to jeux_videos_ln_url(@_jeux_videos_ln), notice: "Jeux videos ln was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_ln.update(_jeux_videos_ln_params)
-        format.html { redirect_to _jeux_videos_ln_url(@_jeux_videos_ln), notice: "Jeux videos ln was successfully updated." }
+        format.html { redirect_to jeux_videos_ln_url(@_jeux_videos_ln), notice: "Jeux videos ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosLnsController < ApplicationController
     @_jeux_videos_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_lns_url, notice: "Jeux videos ln was successfully destroyed." }
+      format.html { redirect_to jeux_videos_lns_url, notice: "Jeux videos ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_ln_params
-      params.require(:_jeux_videos_ln).permit(:name)
+      params.require(:jeux_videos_ln).permit(:name)
     end
 end

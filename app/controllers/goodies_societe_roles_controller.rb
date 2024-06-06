@@ -25,7 +25,7 @@ class GoodiesSocieteRolesController < ApplicationController
 
     respond_to do |format|
       if @_goodies_societe_role.save
-        format.html { redirect_to _goodies_societe_role_url(@_goodies_societe_role), notice: "Goodies societe role was successfully created." }
+        format.html { redirect_to goodies_societe_role_url(@_goodies_societe_role), notice: "Goodies societe role was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_societe_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesSocieteRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_societe_role.update(_goodies_societe_role_params)
-        format.html { redirect_to _goodies_societe_role_url(@_goodies_societe_role), notice: "Goodies societe role was successfully updated." }
+        format.html { redirect_to goodies_societe_role_url(@_goodies_societe_role), notice: "Goodies societe role was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_societe_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesSocieteRolesController < ApplicationController
     @_goodies_societe_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_societe_roles_url, notice: "Goodies societe role was successfully destroyed." }
+      format.html { redirect_to goodies_societe_roles_url, notice: "Goodies societe role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesSocieteRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_societe_role_params
-      params.require(:_goodies_societe_role).permit(:name)
+      params.require(:goodies_societe_role).permit(:name)
     end
 end

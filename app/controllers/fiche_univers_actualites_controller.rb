@@ -25,7 +25,7 @@ class FicheUniversActualitesController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_actualite.save
-        format.html { redirect_to _fiche_univers_actualite_url(@_fiche_univers_actualite), notice: "Fiche univers actualite was successfully created." }
+        format.html { redirect_to fiche_univers_actualite_url(@_fiche_univers_actualite), notice: "Fiche univers actualite was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_actualite }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversActualitesController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_actualite.update(_fiche_univers_actualite_params)
-        format.html { redirect_to _fiche_univers_actualite_url(@_fiche_univers_actualite), notice: "Fiche univers actualite was successfully updated." }
+        format.html { redirect_to fiche_univers_actualite_url(@_fiche_univers_actualite), notice: "Fiche univers actualite was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_actualite }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversActualitesController < ApplicationController
     @_fiche_univers_actualite.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_actualites_url, notice: "Fiche univers actualite was successfully destroyed." }
+      format.html { redirect_to fiche_univers_actualites_url, notice: "Fiche univers actualite was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversActualitesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_actualite_params
-      params.require(:_fiche_univers_actualite).permit(:name)
+      params.require(:fiche_univers_actualite).permit(:name)
     end
 end

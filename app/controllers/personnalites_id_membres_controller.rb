@@ -25,7 +25,7 @@ class PersonnalitesIdMembresController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_id_membre.save
-        format.html { redirect_to _personnalites_id_membre_url(@_personnalites_id_membre), notice: "Personnalites id membre was successfully created." }
+        format.html { redirect_to personnalites_id_membre_url(@_personnalites_id_membre), notice: "Personnalites id membre was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_id_membre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesIdMembresController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_id_membre.update(_personnalites_id_membre_params)
-        format.html { redirect_to _personnalites_id_membre_url(@_personnalites_id_membre), notice: "Personnalites id membre was successfully updated." }
+        format.html { redirect_to personnalites_id_membre_url(@_personnalites_id_membre), notice: "Personnalites id membre was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_id_membre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesIdMembresController < ApplicationController
     @_personnalites_id_membre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_id_membres_url, notice: "Personnalites id membre was successfully destroyed." }
+      format.html { redirect_to personnalites_id_membres_url, notice: "Personnalites id membre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesIdMembresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_id_membre_params
-      params.require(:_personnalites_id_membre).permit(:name)
+      params.require(:personnalites_id_membre).permit(:name)
     end
 end

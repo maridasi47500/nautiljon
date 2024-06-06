@@ -25,7 +25,7 @@ class LightNovelsDramasController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_drama.save
-        format.html { redirect_to _light_novels_drama_url(@_light_novels_drama), notice: "Light novels drama was successfully created." }
+        format.html { redirect_to light_novels_drama_url(@_light_novels_drama), notice: "Light novels drama was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_drama }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsDramasController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_drama.update(_light_novels_drama_params)
-        format.html { redirect_to _light_novels_drama_url(@_light_novels_drama), notice: "Light novels drama was successfully updated." }
+        format.html { redirect_to light_novels_drama_url(@_light_novels_drama), notice: "Light novels drama was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_drama }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsDramasController < ApplicationController
     @_light_novels_drama.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_dramas_url, notice: "Light novels drama was successfully destroyed." }
+      format.html { redirect_to light_novels_dramas_url, notice: "Light novels drama was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsDramasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_drama_params
-      params.require(:_light_novels_drama).permit(:name)
+      params.require(:light_novels_drama).permit(:name)
     end
 end

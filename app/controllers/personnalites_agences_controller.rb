@@ -25,7 +25,7 @@ class PersonnalitesAgencesController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_agence.save
-        format.html { redirect_to _personnalites_agence_url(@_personnalites_agence), notice: "Personnalites agence was successfully created." }
+        format.html { redirect_to personnalites_agence_url(@_personnalites_agence), notice: "Personnalites agence was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_agence }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesAgencesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_agence.update(_personnalites_agence_params)
-        format.html { redirect_to _personnalites_agence_url(@_personnalites_agence), notice: "Personnalites agence was successfully updated." }
+        format.html { redirect_to personnalites_agence_url(@_personnalites_agence), notice: "Personnalites agence was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_agence }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesAgencesController < ApplicationController
     @_personnalites_agence.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_agences_url, notice: "Personnalites agence was successfully destroyed." }
+      format.html { redirect_to personnalites_agences_url, notice: "Personnalites agence was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesAgencesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_agence_params
-      params.require(:_personnalites_agence).permit(:name)
+      params.require(:personnalites_agence).permit(:name)
     end
 end

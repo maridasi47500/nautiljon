@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<h1>Concerts emission tv numeros</h1>
+
+
+
+<div id="_clips_lives_bonus_concerts_emission_tv_numeros">
+
+  <% @_clips_lives_bonus_concerts_emission_tv_numeros.each do |_clips_lives_bonus_concerts_emission_tv_numero| %>
+
+    <%= render _clips_lives_bonus_concerts_emission_tv_numero %>
+
+    <p>
+
+      <%= link_to "Show this concerts emission tv numero", clips_lives_bonus_concerts_emission_tv_numero %>
+
+    </p>
+
+  <% end %>
+
+</div>
+
+
+
+<%= link_to "New concerts emission tv numero", new_clips_lives_bonus_concerts_emission_tv_numero_path %>

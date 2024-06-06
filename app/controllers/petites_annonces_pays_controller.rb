@@ -25,7 +25,7 @@ class PetitesAnnoncesPaysController < ApplicationController
 
     respond_to do |format|
       if @_petites_annonces_pay.save
-        format.html { redirect_to _petites_annonces_pay_url(@_petites_annonces_pay), notice: "Petites annonces pay was successfully created." }
+        format.html { redirect_to petites_annonces_pay_url(@_petites_annonces_pay), notice: "Petites annonces pay was successfully created." }
         format.json { render :show, status: :created, location: @_petites_annonces_pay }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PetitesAnnoncesPaysController < ApplicationController
   def update
     respond_to do |format|
       if @_petites_annonces_pay.update(_petites_annonces_pay_params)
-        format.html { redirect_to _petites_annonces_pay_url(@_petites_annonces_pay), notice: "Petites annonces pay was successfully updated." }
+        format.html { redirect_to petites_annonces_pay_url(@_petites_annonces_pay), notice: "Petites annonces pay was successfully updated." }
         format.json { render :show, status: :ok, location: @_petites_annonces_pay }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PetitesAnnoncesPaysController < ApplicationController
     @_petites_annonces_pay.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _petites_annonces_pays_url, notice: "Petites annonces pay was successfully destroyed." }
+      format.html { redirect_to petites_annonces_pays_url, notice: "Petites annonces pay was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PetitesAnnoncesPaysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _petites_annonces_pay_params
-      params.require(:_petites_annonces_pay).permit(:name)
+      params.require(:petites_annonces_pay).permit(:name)
     end
 end

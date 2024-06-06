@@ -25,7 +25,7 @@ class ConcertsArtistesController < ApplicationController
 
     respond_to do |format|
       if @_concerts_artiste.save
-        format.html { redirect_to _concerts_artiste_url(@_concerts_artiste), notice: "Concerts artiste was successfully created." }
+        format.html { redirect_to concerts_artiste_url(@_concerts_artiste), notice: "Concerts artiste was successfully created." }
         format.json { render :show, status: :created, location: @_concerts_artiste }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ConcertsArtistesController < ApplicationController
   def update
     respond_to do |format|
       if @_concerts_artiste.update(_concerts_artiste_params)
-        format.html { redirect_to _concerts_artiste_url(@_concerts_artiste), notice: "Concerts artiste was successfully updated." }
+        format.html { redirect_to concerts_artiste_url(@_concerts_artiste), notice: "Concerts artiste was successfully updated." }
         format.json { render :show, status: :ok, location: @_concerts_artiste }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ConcertsArtistesController < ApplicationController
     @_concerts_artiste.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _concerts_artistes_url, notice: "Concerts artiste was successfully destroyed." }
+      format.html { redirect_to concerts_artistes_url, notice: "Concerts artiste was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class ConcertsArtistesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _concerts_artiste_params
-      params.require(:_concerts_artiste).permit(:name)
+      params.require(:concerts_artiste).permit(:name)
     end
 end

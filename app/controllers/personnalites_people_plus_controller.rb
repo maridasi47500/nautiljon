@@ -25,7 +25,7 @@ class PersonnalitesPeoplePlusController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_people_plu.save
-        format.html { redirect_to _personnalites_people_plu_url(@_personnalites_people_plu), notice: "Personnalites people plu was successfully created." }
+        format.html { redirect_to personnalites_people_plu_url(@_personnalites_people_plu), notice: "Personnalites people plu was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_people_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesPeoplePlusController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_people_plu.update(_personnalites_people_plu_params)
-        format.html { redirect_to _personnalites_people_plu_url(@_personnalites_people_plu), notice: "Personnalites people plu was successfully updated." }
+        format.html { redirect_to personnalites_people_plu_url(@_personnalites_people_plu), notice: "Personnalites people plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_people_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesPeoplePlusController < ApplicationController
     @_personnalites_people_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_people_plus_url, notice: "Personnalites people plu was successfully destroyed." }
+      format.html { redirect_to personnalites_people_plus_url, notice: "Personnalites people plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesPeoplePlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_people_plu_params
-      params.require(:_personnalites_people_plu).permit(:name)
+      params.require(:personnalites_people_plu).permit(:name)
     end
 end

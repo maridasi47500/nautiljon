@@ -25,7 +25,7 @@ class DoujinsDoujinsController < ApplicationController
 
     respond_to do |format|
       if @_doujins_doujin.save
-        format.html { redirect_to _doujins_doujin_url(@_doujins_doujin), notice: "Doujins doujin was successfully created." }
+        format.html { redirect_to doujins_doujin_url(@_doujins_doujin), notice: "Doujins doujin was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_doujin }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsDoujinsController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_doujin.update(_doujins_doujin_params)
-        format.html { redirect_to _doujins_doujin_url(@_doujins_doujin), notice: "Doujins doujin was successfully updated." }
+        format.html { redirect_to doujins_doujin_url(@_doujins_doujin), notice: "Doujins doujin was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_doujin }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsDoujinsController < ApplicationController
     @_doujins_doujin.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_doujins_url, notice: "Doujins doujin was successfully destroyed." }
+      format.html { redirect_to doujins_doujins_url, notice: "Doujins doujin was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsDoujinsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_doujin_params
-      params.require(:_doujins_doujin).permit(:name)
+      params.require(:doujins_doujin).permit(:name)
     end
 end

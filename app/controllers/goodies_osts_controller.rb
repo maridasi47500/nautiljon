@@ -25,7 +25,7 @@ class GoodiesOstsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_ost.save
-        format.html { redirect_to _goodies_ost_url(@_goodies_ost), notice: "Goodies ost was successfully created." }
+        format.html { redirect_to goodies_ost_url(@_goodies_ost), notice: "Goodies ost was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_ost }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesOstsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_ost.update(_goodies_ost_params)
-        format.html { redirect_to _goodies_ost_url(@_goodies_ost), notice: "Goodies ost was successfully updated." }
+        format.html { redirect_to goodies_ost_url(@_goodies_ost), notice: "Goodies ost was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_ost }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesOstsController < ApplicationController
     @_goodies_ost.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_osts_url, notice: "Goodies ost was successfully destroyed." }
+      format.html { redirect_to goodies_osts_url, notice: "Goodies ost was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesOstsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_ost_params
-      params.require(:_goodies_ost).permit(:name)
+      params.require(:goodies_ost).permit(:name)
     end
 end

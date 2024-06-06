@@ -25,7 +25,7 @@ class GoodiesEditeursVfsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_editeurs_vf.save
-        format.html { redirect_to _goodies_editeurs_vf_url(@_goodies_editeurs_vf), notice: "Goodies editeurs vf was successfully created." }
+        format.html { redirect_to goodies_editeurs_vf_url(@_goodies_editeurs_vf), notice: "Goodies editeurs vf was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_editeurs_vf }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesEditeursVfsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_editeurs_vf.update(_goodies_editeurs_vf_params)
-        format.html { redirect_to _goodies_editeurs_vf_url(@_goodies_editeurs_vf), notice: "Goodies editeurs vf was successfully updated." }
+        format.html { redirect_to goodies_editeurs_vf_url(@_goodies_editeurs_vf), notice: "Goodies editeurs vf was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_editeurs_vf }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesEditeursVfsController < ApplicationController
     @_goodies_editeurs_vf.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_editeurs_vfs_url, notice: "Goodies editeurs vf was successfully destroyed." }
+      format.html { redirect_to goodies_editeurs_vfs_url, notice: "Goodies editeurs vf was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesEditeursVfsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_editeurs_vf_params
-      params.require(:_goodies_editeurs_vf).permit(:name)
+      params.require(:goodies_editeurs_vf).permit(:name)
     end
 end

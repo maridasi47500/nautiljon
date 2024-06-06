@@ -25,7 +25,7 @@ class DramasDvdsController < ApplicationController
 
     respond_to do |format|
       if @_dramas_dvd.save
-        format.html { redirect_to _dramas_dvd_url(@_dramas_dvd), notice: "Dramas dvd was successfully created." }
+        format.html { redirect_to dramas_dvd_url(@_dramas_dvd), notice: "Dramas dvd was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_dvd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasDvdsController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_dvd.update(_dramas_dvd_params)
-        format.html { redirect_to _dramas_dvd_url(@_dramas_dvd), notice: "Dramas dvd was successfully updated." }
+        format.html { redirect_to dramas_dvd_url(@_dramas_dvd), notice: "Dramas dvd was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_dvd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasDvdsController < ApplicationController
     @_dramas_dvd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_dvds_url, notice: "Dramas dvd was successfully destroyed." }
+      format.html { redirect_to dramas_dvds_url, notice: "Dramas dvd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasDvdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_dvd_params
-      params.require(:_dramas_dvd).permit(:name)
+      params.require(:dramas_dvd).permit(:name)
     end
 end

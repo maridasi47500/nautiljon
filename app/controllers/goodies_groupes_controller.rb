@@ -25,7 +25,7 @@ class GoodiesGroupesController < ApplicationController
 
     respond_to do |format|
       if @_goodies_groupe.save
-        format.html { redirect_to _goodies_groupe_url(@_goodies_groupe), notice: "Goodies groupe was successfully created." }
+        format.html { redirect_to goodies_groupe_url(@_goodies_groupe), notice: "Goodies groupe was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_groupe.update(_goodies_groupe_params)
-        format.html { redirect_to _goodies_groupe_url(@_goodies_groupe), notice: "Goodies groupe was successfully updated." }
+        format.html { redirect_to goodies_groupe_url(@_goodies_groupe), notice: "Goodies groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesGroupesController < ApplicationController
     @_goodies_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_groupes_url, notice: "Goodies groupe was successfully destroyed." }
+      format.html { redirect_to goodies_groupes_url, notice: "Goodies groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_groupe_params
-      params.require(:_goodies_groupe).permit(:name)
+      params.require(:goodies_groupe).permit(:name)
     end
 end

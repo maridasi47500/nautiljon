@@ -25,7 +25,7 @@ class NumeroDemissionTvsClipsController < ApplicationController
 
     respond_to do |format|
       if @_numero_demission_tvs_clip.save
-        format.html { redirect_to _numero_demission_tvs_clip_url(@_numero_demission_tvs_clip), notice: "Numero demission tvs clip was successfully created." }
+        format.html { redirect_to numero_demission_tvs_clip_url(@_numero_demission_tvs_clip), notice: "Numero demission tvs clip was successfully created." }
         format.json { render :show, status: :created, location: @_numero_demission_tvs_clip }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class NumeroDemissionTvsClipsController < ApplicationController
   def update
     respond_to do |format|
       if @_numero_demission_tvs_clip.update(_numero_demission_tvs_clip_params)
-        format.html { redirect_to _numero_demission_tvs_clip_url(@_numero_demission_tvs_clip), notice: "Numero demission tvs clip was successfully updated." }
+        format.html { redirect_to numero_demission_tvs_clip_url(@_numero_demission_tvs_clip), notice: "Numero demission tvs clip was successfully updated." }
         format.json { render :show, status: :ok, location: @_numero_demission_tvs_clip }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class NumeroDemissionTvsClipsController < ApplicationController
     @_numero_demission_tvs_clip.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _numero_demission_tvs_clips_url, notice: "Numero demission tvs clip was successfully destroyed." }
+      format.html { redirect_to numero_demission_tvs_clips_url, notice: "Numero demission tvs clip was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class NumeroDemissionTvsClipsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _numero_demission_tvs_clip_params
-      params.require(:_numero_demission_tvs_clip).permit(:name)
+      params.require(:numero_demission_tvs_clip).permit(:name)
     end
 end

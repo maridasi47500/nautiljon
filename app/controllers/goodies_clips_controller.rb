@@ -25,7 +25,7 @@ class GoodiesClipsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_clip.save
-        format.html { redirect_to _goodies_clip_url(@_goodies_clip), notice: "Goodies clip was successfully created." }
+        format.html { redirect_to goodies_clip_url(@_goodies_clip), notice: "Goodies clip was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_clip }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesClipsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_clip.update(_goodies_clip_params)
-        format.html { redirect_to _goodies_clip_url(@_goodies_clip), notice: "Goodies clip was successfully updated." }
+        format.html { redirect_to goodies_clip_url(@_goodies_clip), notice: "Goodies clip was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_clip }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesClipsController < ApplicationController
     @_goodies_clip.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_clips_url, notice: "Goodies clip was successfully destroyed." }
+      format.html { redirect_to goodies_clips_url, notice: "Goodies clip was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesClipsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_clip_params
-      params.require(:_goodies_clip).permit(:name)
+      params.require(:goodies_clip).permit(:name)
     end
 end

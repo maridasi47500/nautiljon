@@ -25,7 +25,7 @@ class CdsController < ApplicationController
 
     respond_to do |format|
       if @_cd.save
-        format.html { redirect_to _cd_url(@_cd), notice: "Cd was successfully created." }
+        format.html { redirect_to cd_url(@_cd), notice: "Cd was successfully created." }
         format.json { render :show, status: :created, location: @_cd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsController < ApplicationController
   def update
     respond_to do |format|
       if @_cd.update(_cd_params)
-        format.html { redirect_to _cd_url(@_cd), notice: "Cd was successfully updated." }
+        format.html { redirect_to cd_url(@_cd), notice: "Cd was successfully updated." }
         format.json { render :show, status: :ok, location: @_cd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsController < ApplicationController
     @_cd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_url, notice: "Cd was successfully destroyed." }
+      format.html { redirect_to cds_url, notice: "Cd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cd_params
-      params.require(:_cd).permit(:titre, :titre_original, :titre_original_latin, :_cds_type_id, :ref, :date_jj, :date_mm, :date_aaaa, :prix, :_cds_monnaie_id, :_cds_role_id, :_cds_people_id, :_cds_role_id, :_cds_people_id, :image, :sametracklist, :_cds_labels_id, :_cds_labels_id, :_cds_distributeurs_id, :_cds_distributeurs_id, :infos, :_cds_groupes_id, :_cds_cd_id, :_cds_anime_id, :_cds_ln_id, :_cds_drama_id, :_cds_am_id, :_cds_jv_id, :_cds_emission_tv_id, :_cds_bonus_id, :_cds_manga_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:cd).permit(:titre, :titre_original, :titre_original_latin, :_cds_type_id, :ref, :date_jj, :date_mm, :date_aaaa, :prix, :_cds_monnaie_id, :_cds_role_id, :_cds_people_id, :_cds_role_id, :_cds_people_id, :image, :sametracklist, :_cds_labels_id, :_cds_labels_id, :_cds_distributeurs_id, :_cds_distributeurs_id, :infos, :_cds_groupes_id, :_cds_cd_id, :_cds_anime_id, :_cds_ln_id, :_cds_drama_id, :_cds_am_id, :_cds_jv_id, :_cds_emission_tv_id, :_cds_bonus_id, :_cds_manga_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

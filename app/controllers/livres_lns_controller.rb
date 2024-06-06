@@ -25,7 +25,7 @@ class LivresLnsController < ApplicationController
 
     respond_to do |format|
       if @_livres_ln.save
-        format.html { redirect_to _livres_ln_url(@_livres_ln), notice: "Livres ln was successfully created." }
+        format.html { redirect_to livres_ln_url(@_livres_ln), notice: "Livres ln was successfully created." }
         format.json { render :show, status: :created, location: @_livres_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_ln.update(_livres_ln_params)
-        format.html { redirect_to _livres_ln_url(@_livres_ln), notice: "Livres ln was successfully updated." }
+        format.html { redirect_to livres_ln_url(@_livres_ln), notice: "Livres ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresLnsController < ApplicationController
     @_livres_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_lns_url, notice: "Livres ln was successfully destroyed." }
+      format.html { redirect_to livres_lns_url, notice: "Livres ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_ln_params
-      params.require(:_livres_ln).permit(:name)
+      params.require(:livres_ln).permit(:name)
     end
 end

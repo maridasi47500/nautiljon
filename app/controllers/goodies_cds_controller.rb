@@ -25,7 +25,7 @@ class GoodiesCdsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_cd.save
-        format.html { redirect_to _goodies_cd_url(@_goodies_cd), notice: "Goodies cd was successfully created." }
+        format.html { redirect_to goodies_cd_url(@_goodies_cd), notice: "Goodies cd was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_cd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesCdsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_cd.update(_goodies_cd_params)
-        format.html { redirect_to _goodies_cd_url(@_goodies_cd), notice: "Goodies cd was successfully updated." }
+        format.html { redirect_to goodies_cd_url(@_goodies_cd), notice: "Goodies cd was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_cd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesCdsController < ApplicationController
     @_goodies_cd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_cds_url, notice: "Goodies cd was successfully destroyed." }
+      format.html { redirect_to goodies_cds_url, notice: "Goodies cd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesCdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_cd_params
-      params.require(:_goodies_cd).permit(:name)
+      params.require(:goodies_cd).permit(:name)
     end
 end

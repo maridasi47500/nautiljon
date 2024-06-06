@@ -25,7 +25,7 @@ class BrevesLivreJeunessesController < ApplicationController
 
     respond_to do |format|
       if @_breves_livre_jeuness.save
-        format.html { redirect_to _breves_livre_jeuness_url(@_breves_livre_jeuness), notice: "Breves livre jeunesse was successfully created." }
+        format.html { redirect_to breves_livre_jeuness_url(@_breves_livre_jeuness), notice: "Breves livre jeunesse was successfully created." }
         format.json { render :show, status: :created, location: @_breves_livre_jeuness }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesLivreJeunessesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_livre_jeuness.update(_breves_livre_jeuness_params)
-        format.html { redirect_to _breves_livre_jeuness_url(@_breves_livre_jeuness), notice: "Breves livre jeunesse was successfully updated." }
+        format.html { redirect_to breves_livre_jeuness_url(@_breves_livre_jeuness), notice: "Breves livre jeunesse was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_livre_jeuness }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesLivreJeunessesController < ApplicationController
     @_breves_livre_jeuness.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_livre_jeunesses_url, notice: "Breves livre jeunesse was successfully destroyed." }
+      format.html { redirect_to breves_livre_jeunesses_url, notice: "Breves livre jeunesse was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesLivreJeunessesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_livre_jeuness_params
-      params.require(:_breves_livre_jeuness).permit(:name)
+      params.require(:breves_livre_jeuness).permit(:name)
     end
 end

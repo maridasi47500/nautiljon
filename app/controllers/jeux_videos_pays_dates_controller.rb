@@ -25,7 +25,7 @@ class JeuxVideosPaysDatesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_pays_date.save
-        format.html { redirect_to _jeux_videos_pays_date_url(@_jeux_videos_pays_date), notice: "Jeux videos pays date was successfully created." }
+        format.html { redirect_to jeux_videos_pays_date_url(@_jeux_videos_pays_date), notice: "Jeux videos pays date was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_pays_date }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosPaysDatesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_pays_date.update(_jeux_videos_pays_date_params)
-        format.html { redirect_to _jeux_videos_pays_date_url(@_jeux_videos_pays_date), notice: "Jeux videos pays date was successfully updated." }
+        format.html { redirect_to jeux_videos_pays_date_url(@_jeux_videos_pays_date), notice: "Jeux videos pays date was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_pays_date }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosPaysDatesController < ApplicationController
     @_jeux_videos_pays_date.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_pays_dates_url, notice: "Jeux videos pays date was successfully destroyed." }
+      format.html { redirect_to jeux_videos_pays_dates_url, notice: "Jeux videos pays date was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosPaysDatesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_pays_date_params
-      params.require(:_jeux_videos_pays_date).permit(:name)
+      params.require(:jeux_videos_pays_date).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class DramasUniversController < ApplicationController
 
     respond_to do |format|
       if @_dramas_univer.save
-        format.html { redirect_to _dramas_univer_url(@_dramas_univer), notice: "Dramas univer was successfully created." }
+        format.html { redirect_to dramas_univer_url(@_dramas_univer), notice: "Dramas univer was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_univer }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasUniversController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_univer.update(_dramas_univer_params)
-        format.html { redirect_to _dramas_univer_url(@_dramas_univer), notice: "Dramas univer was successfully updated." }
+        format.html { redirect_to dramas_univer_url(@_dramas_univer), notice: "Dramas univer was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_univer }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasUniversController < ApplicationController
     @_dramas_univer.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_univers_url, notice: "Dramas univer was successfully destroyed." }
+      format.html { redirect_to dramas_univers_url, notice: "Dramas univer was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasUniversController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_univer_params
-      params.require(:_dramas_univer).permit(:name)
+      params.require(:dramas_univer).permit(:name)
     end
 end

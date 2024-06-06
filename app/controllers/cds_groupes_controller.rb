@@ -25,7 +25,7 @@ class CdsGroupesController < ApplicationController
 
     respond_to do |format|
       if @_cds_groupe.save
-        format.html { redirect_to _cds_groupe_url(@_cds_groupe), notice: "Cds groupe was successfully created." }
+        format.html { redirect_to cds_groupe_url(@_cds_groupe), notice: "Cds groupe was successfully created." }
         format.json { render :show, status: :created, location: @_cds_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_groupe.update(_cds_groupe_params)
-        format.html { redirect_to _cds_groupe_url(@_cds_groupe), notice: "Cds groupe was successfully updated." }
+        format.html { redirect_to cds_groupe_url(@_cds_groupe), notice: "Cds groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsGroupesController < ApplicationController
     @_cds_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_groupes_url, notice: "Cds groupe was successfully destroyed." }
+      format.html { redirect_to cds_groupes_url, notice: "Cds groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_groupe_params
-      params.require(:_cds_groupe).permit(:name)
+      params.require(:cds_groupe).permit(:name)
     end
 end

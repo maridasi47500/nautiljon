@@ -25,7 +25,7 @@ class NumeroDemissionTvsEmissionTvNumerosController < ApplicationController
 
     respond_to do |format|
       if @_numero_demission_tvs_emission_tv_numero.save
-        format.html { redirect_to _numero_demission_tvs_emission_tv_numero_url(@_numero_demission_tvs_emission_tv_numero), notice: "Numero demission tvs emission tv numero was successfully created." }
+        format.html { redirect_to numero_demission_tvs_emission_tv_numero_url(@_numero_demission_tvs_emission_tv_numero), notice: "Numero demission tvs emission tv numero was successfully created." }
         format.json { render :show, status: :created, location: @_numero_demission_tvs_emission_tv_numero }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class NumeroDemissionTvsEmissionTvNumerosController < ApplicationController
   def update
     respond_to do |format|
       if @_numero_demission_tvs_emission_tv_numero.update(_numero_demission_tvs_emission_tv_numero_params)
-        format.html { redirect_to _numero_demission_tvs_emission_tv_numero_url(@_numero_demission_tvs_emission_tv_numero), notice: "Numero demission tvs emission tv numero was successfully updated." }
+        format.html { redirect_to numero_demission_tvs_emission_tv_numero_url(@_numero_demission_tvs_emission_tv_numero), notice: "Numero demission tvs emission tv numero was successfully updated." }
         format.json { render :show, status: :ok, location: @_numero_demission_tvs_emission_tv_numero }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class NumeroDemissionTvsEmissionTvNumerosController < ApplicationController
     @_numero_demission_tvs_emission_tv_numero.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _numero_demission_tvs_emission_tv_numeros_url, notice: "Numero demission tvs emission tv numero was successfully destroyed." }
+      format.html { redirect_to numero_demission_tvs_emission_tv_numeros_url, notice: "Numero demission tvs emission tv numero was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class NumeroDemissionTvsEmissionTvNumerosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _numero_demission_tvs_emission_tv_numero_params
-      params.require(:_numero_demission_tvs_emission_tv_numero).permit(:name)
+      params.require(:numero_demission_tvs_emission_tv_numero).permit(:name)
     end
 end

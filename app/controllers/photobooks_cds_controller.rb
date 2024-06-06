@@ -25,7 +25,7 @@ class PhotobooksCdsController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_cd.save
-        format.html { redirect_to _photobooks_cd_url(@_photobooks_cd), notice: "Photobooks cd was successfully created." }
+        format.html { redirect_to photobooks_cd_url(@_photobooks_cd), notice: "Photobooks cd was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_cd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksCdsController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_cd.update(_photobooks_cd_params)
-        format.html { redirect_to _photobooks_cd_url(@_photobooks_cd), notice: "Photobooks cd was successfully updated." }
+        format.html { redirect_to photobooks_cd_url(@_photobooks_cd), notice: "Photobooks cd was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_cd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksCdsController < ApplicationController
     @_photobooks_cd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_cds_url, notice: "Photobooks cd was successfully destroyed." }
+      format.html { redirect_to photobooks_cds_url, notice: "Photobooks cd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksCdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_cd_params
-      params.require(:_photobooks_cd).permit(:name)
+      params.require(:photobooks_cd).permit(:name)
     end
 end

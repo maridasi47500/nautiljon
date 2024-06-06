@@ -25,7 +25,7 @@ class CdsBonusController < ApplicationController
 
     respond_to do |format|
       if @_cds_bonu.save
-        format.html { redirect_to _cds_bonu_url(@_cds_bonu), notice: "Cds bonu was successfully created." }
+        format.html { redirect_to cds_bonu_url(@_cds_bonu), notice: "Cds bonu was successfully created." }
         format.json { render :show, status: :created, location: @_cds_bonu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsBonusController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_bonu.update(_cds_bonu_params)
-        format.html { redirect_to _cds_bonu_url(@_cds_bonu), notice: "Cds bonu was successfully updated." }
+        format.html { redirect_to cds_bonu_url(@_cds_bonu), notice: "Cds bonu was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_bonu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsBonusController < ApplicationController
     @_cds_bonu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_bonus_url, notice: "Cds bonu was successfully destroyed." }
+      format.html { redirect_to cds_bonus_url, notice: "Cds bonu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsBonusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_bonu_params
-      params.require(:_cds_bonu).permit(:name)
+      params.require(:cds_bonu).permit(:name)
     end
 end

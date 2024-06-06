@@ -25,7 +25,7 @@ class PersonnageDanimesAnimesController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_anime.save
-        format.html { redirect_to _personnage_danimes_anime_url(@_personnage_danimes_anime), notice: "Personnage danimes anime was successfully created." }
+        format.html { redirect_to personnage_danimes_anime_url(@_personnage_danimes_anime), notice: "Personnage danimes anime was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_anime.update(_personnage_danimes_anime_params)
-        format.html { redirect_to _personnage_danimes_anime_url(@_personnage_danimes_anime), notice: "Personnage danimes anime was successfully updated." }
+        format.html { redirect_to personnage_danimes_anime_url(@_personnage_danimes_anime), notice: "Personnage danimes anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesAnimesController < ApplicationController
     @_personnage_danimes_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_animes_url, notice: "Personnage danimes anime was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_animes_url, notice: "Personnage danimes anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_anime_params
-      params.require(:_personnage_danimes_anime).permit(:name)
+      params.require(:personnage_danimes_anime).permit(:name)
     end
 end

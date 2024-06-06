@@ -25,7 +25,7 @@ class PersonnageDeMangasPersosController < ApplicationController
 
     respond_to do |format|
       if @_personnage_de_mangas_perso.save
-        format.html { redirect_to _personnage_de_mangas_perso_url(@_personnage_de_mangas_perso), notice: "Personnage de mangas perso was successfully created." }
+        format.html { redirect_to personnage_de_mangas_perso_url(@_personnage_de_mangas_perso), notice: "Personnage de mangas perso was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_de_mangas_perso }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDeMangasPersosController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_de_mangas_perso.update(_personnage_de_mangas_perso_params)
-        format.html { redirect_to _personnage_de_mangas_perso_url(@_personnage_de_mangas_perso), notice: "Personnage de mangas perso was successfully updated." }
+        format.html { redirect_to personnage_de_mangas_perso_url(@_personnage_de_mangas_perso), notice: "Personnage de mangas perso was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_de_mangas_perso }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDeMangasPersosController < ApplicationController
     @_personnage_de_mangas_perso.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_de_mangas_persos_url, notice: "Personnage de mangas perso was successfully destroyed." }
+      format.html { redirect_to personnage_de_mangas_persos_url, notice: "Personnage de mangas perso was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDeMangasPersosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_de_mangas_perso_params
-      params.require(:_personnage_de_mangas_perso).permit(:name)
+      params.require(:personnage_de_mangas_perso).permit(:name)
     end
 end

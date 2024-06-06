@@ -25,7 +25,7 @@ class BrevesAnimesController < ApplicationController
 
     respond_to do |format|
       if @_breves_anime.save
-        format.html { redirect_to _breves_anime_url(@_breves_anime), notice: "Breves anime was successfully created." }
+        format.html { redirect_to breves_anime_url(@_breves_anime), notice: "Breves anime was successfully created." }
         format.json { render :show, status: :created, location: @_breves_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_anime.update(_breves_anime_params)
-        format.html { redirect_to _breves_anime_url(@_breves_anime), notice: "Breves anime was successfully updated." }
+        format.html { redirect_to breves_anime_url(@_breves_anime), notice: "Breves anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesAnimesController < ApplicationController
     @_breves_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_animes_url, notice: "Breves anime was successfully destroyed." }
+      format.html { redirect_to breves_animes_url, notice: "Breves anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_anime_params
-      params.require(:_breves_anime).permit(:name)
+      params.require(:breves_anime).permit(:name)
     end
 end

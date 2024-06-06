@@ -25,7 +25,7 @@ class BrevesDvdsController < ApplicationController
 
     respond_to do |format|
       if @_breves_dvd.save
-        format.html { redirect_to _breves_dvd_url(@_breves_dvd), notice: "Breves dvd was successfully created." }
+        format.html { redirect_to breves_dvd_url(@_breves_dvd), notice: "Breves dvd was successfully created." }
         format.json { render :show, status: :created, location: @_breves_dvd }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesDvdsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_dvd.update(_breves_dvd_params)
-        format.html { redirect_to _breves_dvd_url(@_breves_dvd), notice: "Breves dvd was successfully updated." }
+        format.html { redirect_to breves_dvd_url(@_breves_dvd), notice: "Breves dvd was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_dvd }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesDvdsController < ApplicationController
     @_breves_dvd.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_dvds_url, notice: "Breves dvd was successfully destroyed." }
+      format.html { redirect_to breves_dvds_url, notice: "Breves dvd was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesDvdsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_dvd_params
-      params.require(:_breves_dvd).permit(:name)
+      params.require(:breves_dvd).permit(:name)
     end
 end

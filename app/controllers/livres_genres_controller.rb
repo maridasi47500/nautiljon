@@ -25,7 +25,7 @@ class LivresGenresController < ApplicationController
 
     respond_to do |format|
       if @_livres_genre.save
-        format.html { redirect_to _livres_genre_url(@_livres_genre), notice: "Livres genre was successfully created." }
+        format.html { redirect_to livres_genre_url(@_livres_genre), notice: "Livres genre was successfully created." }
         format.json { render :show, status: :created, location: @_livres_genre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresGenresController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_genre.update(_livres_genre_params)
-        format.html { redirect_to _livres_genre_url(@_livres_genre), notice: "Livres genre was successfully updated." }
+        format.html { redirect_to livres_genre_url(@_livres_genre), notice: "Livres genre was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_genre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresGenresController < ApplicationController
     @_livres_genre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_genres_url, notice: "Livres genre was successfully destroyed." }
+      format.html { redirect_to livres_genres_url, notice: "Livres genre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresGenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_genre_params
-      params.require(:_livres_genre).permit(:name)
+      params.require(:livres_genre).permit(:name)
     end
 end

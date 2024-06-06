@@ -25,7 +25,7 @@ class JeuxVideosThemesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_theme.save
-        format.html { redirect_to _jeux_videos_theme_url(@_jeux_videos_theme), notice: "Jeux videos theme was successfully created." }
+        format.html { redirect_to jeux_videos_theme_url(@_jeux_videos_theme), notice: "Jeux videos theme was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_theme.update(_jeux_videos_theme_params)
-        format.html { redirect_to _jeux_videos_theme_url(@_jeux_videos_theme), notice: "Jeux videos theme was successfully updated." }
+        format.html { redirect_to jeux_videos_theme_url(@_jeux_videos_theme), notice: "Jeux videos theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosThemesController < ApplicationController
     @_jeux_videos_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_themes_url, notice: "Jeux videos theme was successfully destroyed." }
+      format.html { redirect_to jeux_videos_themes_url, notice: "Jeux videos theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_theme_params
-      params.require(:_jeux_videos_theme).permit(:name)
+      params.require(:jeux_videos_theme).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class PersonnageDanimesGoodiesController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_goody.save
-        format.html { redirect_to _personnage_danimes_goody_url(@_personnage_danimes_goody), notice: "Personnage danimes goody was successfully created." }
+        format.html { redirect_to personnage_danimes_goody_url(@_personnage_danimes_goody), notice: "Personnage danimes goody was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_goody }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesGoodiesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_goody.update(_personnage_danimes_goody_params)
-        format.html { redirect_to _personnage_danimes_goody_url(@_personnage_danimes_goody), notice: "Personnage danimes goody was successfully updated." }
+        format.html { redirect_to personnage_danimes_goody_url(@_personnage_danimes_goody), notice: "Personnage danimes goody was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_goody }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesGoodiesController < ApplicationController
     @_personnage_danimes_goody.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_goodies_url, notice: "Personnage danimes goody was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_goodies_url, notice: "Personnage danimes goody was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesGoodiesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_goody_params
-      params.require(:_personnage_danimes_goody).permit(:name)
+      params.require(:personnage_danimes_goody).permit(:name)
     end
 end

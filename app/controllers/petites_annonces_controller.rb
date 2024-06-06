@@ -25,7 +25,7 @@ class PetitesAnnoncesController < ApplicationController
 
     respond_to do |format|
       if @_petites_annonce.save
-        format.html { redirect_to _petites_annonce_url(@_petites_annonce), notice: "Petites annonce was successfully created." }
+        format.html { redirect_to petites_annonce_url(@_petites_annonce), notice: "Petites annonce was successfully created." }
         format.json { render :show, status: :created, location: @_petites_annonce }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PetitesAnnoncesController < ApplicationController
   def update
     respond_to do |format|
       if @_petites_annonce.update(_petites_annonce_params)
-        format.html { redirect_to _petites_annonce_url(@_petites_annonce), notice: "Petites annonce was successfully updated." }
+        format.html { redirect_to petites_annonce_url(@_petites_annonce), notice: "Petites annonce was successfully updated." }
         format.json { render :show, status: :ok, location: @_petites_annonce }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PetitesAnnoncesController < ApplicationController
     @_petites_annonce.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _petites_annonces_url, notice: "Petites annonce was successfully destroyed." }
+      format.html { redirect_to petites_annonces_url, notice: "Petites annonce was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PetitesAnnoncesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _petites_annonce_params
-      params.require(:_petites_annonce).permit(:type, :type, :titre, :image, :_petites_annonces_section_id, :etat_produit, :etat_produit, :etat_produit, :etat_produit, :etat_produit, :_petites_annonces_pays_id, :_petites_annonces_lieu_id, :prix, :description, :statut, :statut, :comment, :acceptregles)
+      params.require(:petites_annonce).permit(:type, :type, :titre, :image, :_petites_annonces_section_id, :etat_produit, :etat_produit, :etat_produit, :etat_produit, :etat_produit, :_petites_annonces_pays_id, :_petites_annonces_lieu_id, :prix, :description, :statut, :statut, :comment, :acceptregles)
     end
 end

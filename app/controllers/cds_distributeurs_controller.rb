@@ -25,7 +25,7 @@ class CdsDistributeursController < ApplicationController
 
     respond_to do |format|
       if @_cds_distributeur.save
-        format.html { redirect_to _cds_distributeur_url(@_cds_distributeur), notice: "Cds distributeur was successfully created." }
+        format.html { redirect_to cds_distributeur_url(@_cds_distributeur), notice: "Cds distributeur was successfully created." }
         format.json { render :show, status: :created, location: @_cds_distributeur }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsDistributeursController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_distributeur.update(_cds_distributeur_params)
-        format.html { redirect_to _cds_distributeur_url(@_cds_distributeur), notice: "Cds distributeur was successfully updated." }
+        format.html { redirect_to cds_distributeur_url(@_cds_distributeur), notice: "Cds distributeur was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_distributeur }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsDistributeursController < ApplicationController
     @_cds_distributeur.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_distributeurs_url, notice: "Cds distributeur was successfully destroyed." }
+      format.html { redirect_to cds_distributeurs_url, notice: "Cds distributeur was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsDistributeursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_distributeur_params
-      params.require(:_cds_distributeur).permit(:name)
+      params.require(:cds_distributeur).permit(:name)
     end
 end

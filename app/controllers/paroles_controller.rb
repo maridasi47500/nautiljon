@@ -25,7 +25,7 @@ class ParolesController < ApplicationController
 
     respond_to do |format|
       if @_parole.save
-        format.html { redirect_to _parole_url(@_parole), notice: "Parole was successfully created." }
+        format.html { redirect_to parole_url(@_parole), notice: "Parole was successfully created." }
         format.json { render :show, status: :created, location: @_parole }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ParolesController < ApplicationController
   def update
     respond_to do |format|
       if @_parole.update(_parole_params)
-        format.html { redirect_to _parole_url(@_parole), notice: "Parole was successfully updated." }
+        format.html { redirect_to parole_url(@_parole), notice: "Parole was successfully updated." }
         format.json { render :show, status: :ok, location: @_parole }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ParolesController < ApplicationController
     @_parole.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _paroles_url, notice: "Parole was successfully destroyed." }
+      format.html { redirect_to paroles_url, notice: "Parole was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class ParolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _parole_params
-      params.require(:_parole).permit(:titre, :titre_original, :titre_alternatif, :titre_original_latin, :_paroles_staff_role_id, :_paroles_staff_people_id, :_paroles_staff_role_id, :_paroles_staff_people_id, :paroles, :paroles_trad, :membre_show, :membre_show, :source, :description, :instrumental, :instrumental, :_paroles_parole_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:parole).permit(:titre, :titre_original, :titre_alternatif, :titre_original_latin, :_paroles_staff_role_id, :_paroles_staff_people_id, :_paroles_staff_role_id, :_paroles_staff_people_id, :paroles, :paroles_trad, :membre_show, :membre_show, :source, :description, :instrumental, :instrumental, :_paroles_parole_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

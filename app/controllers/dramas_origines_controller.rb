@@ -25,7 +25,7 @@ class DramasOriginesController < ApplicationController
 
     respond_to do |format|
       if @_dramas_origine.save
-        format.html { redirect_to _dramas_origine_url(@_dramas_origine), notice: "Dramas origine was successfully created." }
+        format.html { redirect_to dramas_origine_url(@_dramas_origine), notice: "Dramas origine was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_origine }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasOriginesController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_origine.update(_dramas_origine_params)
-        format.html { redirect_to _dramas_origine_url(@_dramas_origine), notice: "Dramas origine was successfully updated." }
+        format.html { redirect_to dramas_origine_url(@_dramas_origine), notice: "Dramas origine was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_origine }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasOriginesController < ApplicationController
     @_dramas_origine.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_origines_url, notice: "Dramas origine was successfully destroyed." }
+      format.html { redirect_to dramas_origines_url, notice: "Dramas origine was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasOriginesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_origine_params
-      params.require(:_dramas_origine).permit(:name)
+      params.require(:dramas_origine).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class MangasQuizzsController < ApplicationController
 
     respond_to do |format|
       if @_mangas_quizz.save
-        format.html { redirect_to _mangas_quizz_url(@_mangas_quizz), notice: "Mangas quizz was successfully created." }
+        format.html { redirect_to mangas_quizz_url(@_mangas_quizz), notice: "Mangas quizz was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_quizz }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasQuizzsController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_quizz.update(_mangas_quizz_params)
-        format.html { redirect_to _mangas_quizz_url(@_mangas_quizz), notice: "Mangas quizz was successfully updated." }
+        format.html { redirect_to mangas_quizz_url(@_mangas_quizz), notice: "Mangas quizz was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_quizz }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasQuizzsController < ApplicationController
     @_mangas_quizz.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_quizzs_url, notice: "Mangas quizz was successfully destroyed." }
+      format.html { redirect_to mangas_quizzs_url, notice: "Mangas quizz was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasQuizzsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_quizz_params
-      params.require(:_mangas_quizz).permit(:name)
+      params.require(:mangas_quizz).permit(:name)
     end
 end

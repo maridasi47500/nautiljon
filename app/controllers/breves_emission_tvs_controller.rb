@@ -25,7 +25,7 @@ class BrevesEmissionTvsController < ApplicationController
 
     respond_to do |format|
       if @_breves_emission_tv.save
-        format.html { redirect_to _breves_emission_tv_url(@_breves_emission_tv), notice: "Breves emission tv was successfully created." }
+        format.html { redirect_to breves_emission_tv_url(@_breves_emission_tv), notice: "Breves emission tv was successfully created." }
         format.json { render :show, status: :created, location: @_breves_emission_tv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesEmissionTvsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_emission_tv.update(_breves_emission_tv_params)
-        format.html { redirect_to _breves_emission_tv_url(@_breves_emission_tv), notice: "Breves emission tv was successfully updated." }
+        format.html { redirect_to breves_emission_tv_url(@_breves_emission_tv), notice: "Breves emission tv was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_emission_tv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesEmissionTvsController < ApplicationController
     @_breves_emission_tv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_emission_tvs_url, notice: "Breves emission tv was successfully destroyed." }
+      format.html { redirect_to breves_emission_tvs_url, notice: "Breves emission tv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesEmissionTvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_emission_tv_params
-      params.require(:_breves_emission_tv).permit(:name)
+      params.require(:breves_emission_tv).permit(:name)
     end
 end

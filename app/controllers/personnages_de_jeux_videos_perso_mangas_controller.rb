@@ -25,7 +25,7 @@ class PersonnagesDeJeuxVideosPersoMangasController < ApplicationController
 
     respond_to do |format|
       if @_personnages_de_jeux_videos_perso_manga.save
-        format.html { redirect_to _personnages_de_jeux_videos_perso_manga_url(@_personnages_de_jeux_videos_perso_manga), notice: "Personnages de jeux videos perso manga was successfully created." }
+        format.html { redirect_to personnages_de_jeux_videos_perso_manga_url(@_personnages_de_jeux_videos_perso_manga), notice: "Personnages de jeux videos perso manga was successfully created." }
         format.json { render :show, status: :created, location: @_personnages_de_jeux_videos_perso_manga }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnagesDeJeuxVideosPersoMangasController < ApplicationController
   def update
     respond_to do |format|
       if @_personnages_de_jeux_videos_perso_manga.update(_personnages_de_jeux_videos_perso_manga_params)
-        format.html { redirect_to _personnages_de_jeux_videos_perso_manga_url(@_personnages_de_jeux_videos_perso_manga), notice: "Personnages de jeux videos perso manga was successfully updated." }
+        format.html { redirect_to personnages_de_jeux_videos_perso_manga_url(@_personnages_de_jeux_videos_perso_manga), notice: "Personnages de jeux videos perso manga was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnages_de_jeux_videos_perso_manga }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnagesDeJeuxVideosPersoMangasController < ApplicationController
     @_personnages_de_jeux_videos_perso_manga.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnages_de_jeux_videos_perso_mangas_url, notice: "Personnages de jeux videos perso manga was successfully destroyed." }
+      format.html { redirect_to personnages_de_jeux_videos_perso_mangas_url, notice: "Personnages de jeux videos perso manga was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnagesDeJeuxVideosPersoMangasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnages_de_jeux_videos_perso_manga_params
-      params.require(:_personnages_de_jeux_videos_perso_manga).permit(:name)
+      params.require(:personnages_de_jeux_videos_perso_manga).permit(:name)
     end
 end

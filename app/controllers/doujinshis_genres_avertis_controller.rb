@@ -25,7 +25,7 @@ class DoujinshisGenresAvertisController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_genres_averti.save
-        format.html { redirect_to _doujinshis_genres_averti_url(@_doujinshis_genres_averti), notice: "Doujinshis genres averti was successfully created." }
+        format.html { redirect_to doujinshis_genres_averti_url(@_doujinshis_genres_averti), notice: "Doujinshis genres averti was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_genres_averti }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisGenresAvertisController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_genres_averti.update(_doujinshis_genres_averti_params)
-        format.html { redirect_to _doujinshis_genres_averti_url(@_doujinshis_genres_averti), notice: "Doujinshis genres averti was successfully updated." }
+        format.html { redirect_to doujinshis_genres_averti_url(@_doujinshis_genres_averti), notice: "Doujinshis genres averti was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_genres_averti }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisGenresAvertisController < ApplicationController
     @_doujinshis_genres_averti.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_genres_avertis_url, notice: "Doujinshis genres averti was successfully destroyed." }
+      format.html { redirect_to doujinshis_genres_avertis_url, notice: "Doujinshis genres averti was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisGenresAvertisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_genres_averti_params
-      params.require(:_doujinshis_genres_averti).permit(:name)
+      params.require(:doujinshis_genres_averti).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class LivresThemesController < ApplicationController
 
     respond_to do |format|
       if @_livres_theme.save
-        format.html { redirect_to _livres_theme_url(@_livres_theme), notice: "Livres theme was successfully created." }
+        format.html { redirect_to livres_theme_url(@_livres_theme), notice: "Livres theme was successfully created." }
         format.json { render :show, status: :created, location: @_livres_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LivresThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_livres_theme.update(_livres_theme_params)
-        format.html { redirect_to _livres_theme_url(@_livres_theme), notice: "Livres theme was successfully updated." }
+        format.html { redirect_to livres_theme_url(@_livres_theme), notice: "Livres theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_livres_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LivresThemesController < ApplicationController
     @_livres_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _livres_themes_url, notice: "Livres theme was successfully destroyed." }
+      format.html { redirect_to livres_themes_url, notice: "Livres theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LivresThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _livres_theme_params
-      params.require(:_livres_theme).permit(:name)
+      params.require(:livres_theme).permit(:name)
     end
 end

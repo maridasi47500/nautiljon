@@ -25,7 +25,7 @@ class DoujinsController < ApplicationController
 
     respond_to do |format|
       if @_doujin.save
-        format.html { redirect_to _doujin_url(@_doujin), notice: "Doujin was successfully created." }
+        format.html { redirect_to doujin_url(@_doujin), notice: "Doujin was successfully created." }
         format.json { render :show, status: :created, location: @_doujin }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsController < ApplicationController
   def update
     respond_to do |format|
       if @_doujin.update(_doujin_params)
-        format.html { redirect_to _doujin_url(@_doujin), notice: "Doujin was successfully updated." }
+        format.html { redirect_to doujin_url(@_doujin), notice: "Doujin was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujin }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsController < ApplicationController
     @_doujin.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_url, notice: "Doujin was successfully destroyed." }
+      format.html { redirect_to doujins_url, notice: "Doujin was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujin_params
-      params.require(:_doujin).permit(:titre, :titre_original_latin, :titre_original, :titre_alternatif, :_doujins_conventions_id, :_doujins_conventions_id, :ref, :date_jj, :date_mm, :date_aaaa, :_doujins_role_id, :_doujins_people_id, :_doujins_role_id, :_doujins_people_id, :cercle, :image, :infos, :_doujins_genres_id, :_doujins_genres_id, :_doujins_groupes_id, :_doujins_anime_id, :_doujins_ln_id, :_doujins_drama_id, :_doujins_am_id, :_doujins_jv_id, :_doujins_doujin_id, :_doujins_artbook_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:doujin).permit(:titre, :titre_original_latin, :titre_original, :titre_alternatif, :_doujins_conventions_id, :_doujins_conventions_id, :ref, :date_jj, :date_mm, :date_aaaa, :_doujins_role_id, :_doujins_people_id, :_doujins_role_id, :_doujins_people_id, :cercle, :image, :infos, :_doujins_genres_id, :_doujins_genres_id, :_doujins_groupes_id, :_doujins_anime_id, :_doujins_ln_id, :_doujins_drama_id, :_doujins_am_id, :_doujins_jv_id, :_doujins_doujin_id, :_doujins_artbook_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

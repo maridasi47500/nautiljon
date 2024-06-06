@@ -25,7 +25,7 @@ class FilmsAsiatiquesOriginesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_origine.save
-        format.html { redirect_to _films_asiatiques_origine_url(@_films_asiatiques_origine), notice: "Films asiatiques origine was successfully created." }
+        format.html { redirect_to films_asiatiques_origine_url(@_films_asiatiques_origine), notice: "Films asiatiques origine was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_origine }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesOriginesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_origine.update(_films_asiatiques_origine_params)
-        format.html { redirect_to _films_asiatiques_origine_url(@_films_asiatiques_origine), notice: "Films asiatiques origine was successfully updated." }
+        format.html { redirect_to films_asiatiques_origine_url(@_films_asiatiques_origine), notice: "Films asiatiques origine was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_origine }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesOriginesController < ApplicationController
     @_films_asiatiques_origine.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_origines_url, notice: "Films asiatiques origine was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_origines_url, notice: "Films asiatiques origine was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesOriginesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_origine_params
-      params.require(:_films_asiatiques_origine).permit(:name)
+      params.require(:films_asiatiques_origine).permit(:name)
     end
 end

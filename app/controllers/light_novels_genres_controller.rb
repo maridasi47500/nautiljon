@@ -25,7 +25,7 @@ class LightNovelsGenresController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_genre.save
-        format.html { redirect_to _light_novels_genre_url(@_light_novels_genre), notice: "Light novels genre was successfully created." }
+        format.html { redirect_to light_novels_genre_url(@_light_novels_genre), notice: "Light novels genre was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_genre }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsGenresController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_genre.update(_light_novels_genre_params)
-        format.html { redirect_to _light_novels_genre_url(@_light_novels_genre), notice: "Light novels genre was successfully updated." }
+        format.html { redirect_to light_novels_genre_url(@_light_novels_genre), notice: "Light novels genre was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_genre }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsGenresController < ApplicationController
     @_light_novels_genre.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_genres_url, notice: "Light novels genre was successfully destroyed." }
+      format.html { redirect_to light_novels_genres_url, notice: "Light novels genre was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsGenresController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_genre_params
-      params.require(:_light_novels_genre).permit(:name)
+      params.require(:light_novels_genre).permit(:name)
     end
 end

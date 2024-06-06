@@ -25,7 +25,7 @@ class MangasThemesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_theme.save
-        format.html { redirect_to _mangas_theme_url(@_mangas_theme), notice: "Mangas theme was successfully created." }
+        format.html { redirect_to mangas_theme_url(@_mangas_theme), notice: "Mangas theme was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_theme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasThemesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_theme.update(_mangas_theme_params)
-        format.html { redirect_to _mangas_theme_url(@_mangas_theme), notice: "Mangas theme was successfully updated." }
+        format.html { redirect_to mangas_theme_url(@_mangas_theme), notice: "Mangas theme was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_theme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasThemesController < ApplicationController
     @_mangas_theme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_themes_url, notice: "Mangas theme was successfully destroyed." }
+      format.html { redirect_to mangas_themes_url, notice: "Mangas theme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasThemesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_theme_params
-      params.require(:_mangas_theme).permit(:name)
+      params.require(:mangas_theme).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class ParolesStaffRolesController < ApplicationController
 
     respond_to do |format|
       if @_paroles_staff_role.save
-        format.html { redirect_to _paroles_staff_role_url(@_paroles_staff_role), notice: "Paroles staff role was successfully created." }
+        format.html { redirect_to paroles_staff_role_url(@_paroles_staff_role), notice: "Paroles staff role was successfully created." }
         format.json { render :show, status: :created, location: @_paroles_staff_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class ParolesStaffRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_paroles_staff_role.update(_paroles_staff_role_params)
-        format.html { redirect_to _paroles_staff_role_url(@_paroles_staff_role), notice: "Paroles staff role was successfully updated." }
+        format.html { redirect_to paroles_staff_role_url(@_paroles_staff_role), notice: "Paroles staff role was successfully updated." }
         format.json { render :show, status: :ok, location: @_paroles_staff_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class ParolesStaffRolesController < ApplicationController
     @_paroles_staff_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _paroles_staff_roles_url, notice: "Paroles staff role was successfully destroyed." }
+      format.html { redirect_to paroles_staff_roles_url, notice: "Paroles staff role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class ParolesStaffRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _paroles_staff_role_params
-      params.require(:_paroles_staff_role).permit(:name)
+      params.require(:paroles_staff_role).permit(:name)
     end
 end

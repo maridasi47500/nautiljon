@@ -25,7 +25,7 @@ class PersonnageDanimesDoubleurPeopleController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_doubleur_person.save
-        format.html { redirect_to _personnage_danimes_doubleur_person_url(@_personnage_danimes_doubleur_person), notice: "Personnage danimes doubleur person was successfully created." }
+        format.html { redirect_to personnage_danimes_doubleur_person_url(@_personnage_danimes_doubleur_person), notice: "Personnage danimes doubleur person was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_doubleur_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesDoubleurPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_doubleur_person.update(_personnage_danimes_doubleur_person_params)
-        format.html { redirect_to _personnage_danimes_doubleur_person_url(@_personnage_danimes_doubleur_person), notice: "Personnage danimes doubleur person was successfully updated." }
+        format.html { redirect_to personnage_danimes_doubleur_person_url(@_personnage_danimes_doubleur_person), notice: "Personnage danimes doubleur person was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_doubleur_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesDoubleurPeopleController < ApplicationController
     @_personnage_danimes_doubleur_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_doubleur_people_url, notice: "Personnage danimes doubleur person was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_doubleur_people_url, notice: "Personnage danimes doubleur person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesDoubleurPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_doubleur_person_params
-      params.require(:_personnage_danimes_doubleur_person).permit(:name)
+      params.require(:personnage_danimes_doubleur_person).permit(:name)
     end
 end

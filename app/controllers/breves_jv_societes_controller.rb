@@ -25,7 +25,7 @@ class BrevesJvSocietesController < ApplicationController
 
     respond_to do |format|
       if @_breves_jv_societe.save
-        format.html { redirect_to _breves_jv_societe_url(@_breves_jv_societe), notice: "Breves jv societe was successfully created." }
+        format.html { redirect_to breves_jv_societe_url(@_breves_jv_societe), notice: "Breves jv societe was successfully created." }
         format.json { render :show, status: :created, location: @_breves_jv_societe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesJvSocietesController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_jv_societe.update(_breves_jv_societe_params)
-        format.html { redirect_to _breves_jv_societe_url(@_breves_jv_societe), notice: "Breves jv societe was successfully updated." }
+        format.html { redirect_to breves_jv_societe_url(@_breves_jv_societe), notice: "Breves jv societe was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_jv_societe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesJvSocietesController < ApplicationController
     @_breves_jv_societe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_jv_societes_url, notice: "Breves jv societe was successfully destroyed." }
+      format.html { redirect_to breves_jv_societes_url, notice: "Breves jv societe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesJvSocietesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_jv_societe_params
-      params.require(:_breves_jv_societe).permit(:name)
+      params.require(:breves_jv_societe).permit(:name)
     end
 end

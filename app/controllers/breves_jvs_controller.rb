@@ -25,7 +25,7 @@ class BrevesJvsController < ApplicationController
 
     respond_to do |format|
       if @_breves_jv.save
-        format.html { redirect_to _breves_jv_url(@_breves_jv), notice: "Breves jv was successfully created." }
+        format.html { redirect_to breves_jv_url(@_breves_jv), notice: "Breves jv was successfully created." }
         format.json { render :show, status: :created, location: @_breves_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_jv.update(_breves_jv_params)
-        format.html { redirect_to _breves_jv_url(@_breves_jv), notice: "Breves jv was successfully updated." }
+        format.html { redirect_to breves_jv_url(@_breves_jv), notice: "Breves jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesJvsController < ApplicationController
     @_breves_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_jvs_url, notice: "Breves jv was successfully destroyed." }
+      format.html { redirect_to breves_jvs_url, notice: "Breves jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_jv_params
-      params.require(:_breves_jv).permit(:name)
+      params.require(:breves_jv).permit(:name)
     end
 end

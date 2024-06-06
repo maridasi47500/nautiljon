@@ -25,7 +25,7 @@ class JeuxVideosStaffSocietesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_staff_societe.save
-        format.html { redirect_to _jeux_videos_staff_societe_url(@_jeux_videos_staff_societe), notice: "Jeux videos staff societe was successfully created." }
+        format.html { redirect_to jeux_videos_staff_societe_url(@_jeux_videos_staff_societe), notice: "Jeux videos staff societe was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_staff_societe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosStaffSocietesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_staff_societe.update(_jeux_videos_staff_societe_params)
-        format.html { redirect_to _jeux_videos_staff_societe_url(@_jeux_videos_staff_societe), notice: "Jeux videos staff societe was successfully updated." }
+        format.html { redirect_to jeux_videos_staff_societe_url(@_jeux_videos_staff_societe), notice: "Jeux videos staff societe was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_staff_societe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosStaffSocietesController < ApplicationController
     @_jeux_videos_staff_societe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_staff_societes_url, notice: "Jeux videos staff societe was successfully destroyed." }
+      format.html { redirect_to jeux_videos_staff_societes_url, notice: "Jeux videos staff societe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosStaffSocietesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_staff_societe_params
-      params.require(:_jeux_videos_staff_societe).permit(:name)
+      params.require(:jeux_videos_staff_societe).permit(:name)
     end
 end

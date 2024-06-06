@@ -25,7 +25,7 @@ class GoodiesAnimesController < ApplicationController
 
     respond_to do |format|
       if @_goodies_anime.save
-        format.html { redirect_to _goodies_anime_url(@_goodies_anime), notice: "Goodies anime was successfully created." }
+        format.html { redirect_to goodies_anime_url(@_goodies_anime), notice: "Goodies anime was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_anime.update(_goodies_anime_params)
-        format.html { redirect_to _goodies_anime_url(@_goodies_anime), notice: "Goodies anime was successfully updated." }
+        format.html { redirect_to goodies_anime_url(@_goodies_anime), notice: "Goodies anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesAnimesController < ApplicationController
     @_goodies_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_animes_url, notice: "Goodies anime was successfully destroyed." }
+      format.html { redirect_to goodies_animes_url, notice: "Goodies anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_anime_params
-      params.require(:_goodies_anime).permit(:name)
+      params.require(:goodies_anime).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class MangasArtbooksController < ApplicationController
 
     respond_to do |format|
       if @_mangas_artbook.save
-        format.html { redirect_to _mangas_artbook_url(@_mangas_artbook), notice: "Mangas artbook was successfully created." }
+        format.html { redirect_to mangas_artbook_url(@_mangas_artbook), notice: "Mangas artbook was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_artbook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasArtbooksController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_artbook.update(_mangas_artbook_params)
-        format.html { redirect_to _mangas_artbook_url(@_mangas_artbook), notice: "Mangas artbook was successfully updated." }
+        format.html { redirect_to mangas_artbook_url(@_mangas_artbook), notice: "Mangas artbook was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_artbook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasArtbooksController < ApplicationController
     @_mangas_artbook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_artbooks_url, notice: "Mangas artbook was successfully destroyed." }
+      format.html { redirect_to mangas_artbooks_url, notice: "Mangas artbook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasArtbooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_artbook_params
-      params.require(:_mangas_artbook).permit(:name)
+      params.require(:mangas_artbook).permit(:name)
     end
 end

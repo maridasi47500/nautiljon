@@ -25,7 +25,7 @@ class DoujinshisController < ApplicationController
 
     respond_to do |format|
       if @_doujinshi.save
-        format.html { redirect_to _doujinshi_url(@_doujinshi), notice: "Doujinshi was successfully created." }
+        format.html { redirect_to doujinshi_url(@_doujinshi), notice: "Doujinshi was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshi }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshi.update(_doujinshi_params)
-        format.html { redirect_to _doujinshi_url(@_doujinshi), notice: "Doujinshi was successfully updated." }
+        format.html { redirect_to doujinshi_url(@_doujinshi), notice: "Doujinshi was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshi }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisController < ApplicationController
     @_doujinshi.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_url, notice: "Doujinshi was successfully destroyed." }
+      format.html { redirect_to doujinshis_url, notice: "Doujinshi was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshi_params
-      params.require(:_doujinshi).permit(:_doujinshis_france_id, :titre, :titre_alternatif, :titre_alternatif_suite, :titre_original_latin, :titre_original, :image, :image_vo, :_doujinshis_origine_id, :_doujinshis_pays_id, :_doujinshis_pays_id, :_doujinshis_type_id, :numerique, :_doujinshis_genres_id, :_doujinshis_genres_id, :_doujinshis_themes_id, :_doujinshis_themes_id, :_doujinshis_genres_averti_id, :_doujinshis_genres_averti_id, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :nb_page, :_doujinshis_conventions_id, :_doujinshis_conventions_id, :_doujinshis_role_id, :_doujinshis_staff_people_id, :_doujinshis_role_id, :_doujinshis_staff_people_id, :staff_txt, :_doujinshis_public_averti_id, :_doujinshis_censure_id, :tags, :prix, :_doujinshis_gratuit_id, :lien_achat, :infos, :resume, :_doujinshis_groupes_id, :_doujinshis_anime_id, :_doujinshis_anime_plus_id, :_doujinshis_manga_id, :_doujinshis_manga_plus_id, :_doujinshis_ln_id, :_doujinshis_ln_plus_id, :_doujinshis_doujinshi_id, :_doujinshis_doujinshi_plus_id, :_doujinshis_drama_id, :_doujinshis_drama_plus_id, :_doujinshis_jv_id, :_doujinshis_jv_plus_id, :_doujinshis_am_id, :_doujinshis_am_plus_id, :_doujinshis_litterature_asiatique_id, :_doujinshis_litterature_asiatique_plus_id, :_doujinshis_artbook_id, :_doujinshis_actualite_id, :_doujinshis_culture_id, :_doujinshis_actualite_mini_id, :_doujinshis_perso_id, :_doujinshis_perso_plus_id, :_doujinshis_perso_manga_id, :_doujinshis_jv_perso_id, :_doujinshis_quizz_id, :_doujinshis_people_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:doujinshi).permit(:_doujinshis_france_id, :titre, :titre_alternatif, :titre_alternatif_suite, :titre_original_latin, :titre_original, :image, :image_vo, :_doujinshis_origine_id, :_doujinshis_pays_id, :_doujinshis_pays_id, :_doujinshis_type_id, :numerique, :_doujinshis_genres_id, :_doujinshis_genres_id, :_doujinshis_themes_id, :_doujinshis_themes_id, :_doujinshis_genres_averti_id, :_doujinshis_genres_averti_id, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :nb_page, :_doujinshis_conventions_id, :_doujinshis_conventions_id, :_doujinshis_role_id, :_doujinshis_staff_people_id, :_doujinshis_role_id, :_doujinshis_staff_people_id, :staff_txt, :_doujinshis_public_averti_id, :_doujinshis_censure_id, :tags, :prix, :_doujinshis_gratuit_id, :lien_achat, :infos, :resume, :_doujinshis_groupes_id, :_doujinshis_anime_id, :_doujinshis_anime_plus_id, :_doujinshis_manga_id, :_doujinshis_manga_plus_id, :_doujinshis_ln_id, :_doujinshis_ln_plus_id, :_doujinshis_doujinshi_id, :_doujinshis_doujinshi_plus_id, :_doujinshis_drama_id, :_doujinshis_drama_plus_id, :_doujinshis_jv_id, :_doujinshis_jv_plus_id, :_doujinshis_am_id, :_doujinshis_am_plus_id, :_doujinshis_litterature_asiatique_id, :_doujinshis_litterature_asiatique_plus_id, :_doujinshis_artbook_id, :_doujinshis_actualite_id, :_doujinshis_culture_id, :_doujinshis_actualite_mini_id, :_doujinshis_perso_id, :_doujinshis_perso_plus_id, :_doujinshis_perso_manga_id, :_doujinshis_jv_perso_id, :_doujinshis_quizz_id, :_doujinshis_people_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

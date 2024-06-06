@@ -25,7 +25,7 @@ class PhotobooksAnimesController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_anime.save
-        format.html { redirect_to _photobooks_anime_url(@_photobooks_anime), notice: "Photobooks anime was successfully created." }
+        format.html { redirect_to photobooks_anime_url(@_photobooks_anime), notice: "Photobooks anime was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_anime.update(_photobooks_anime_params)
-        format.html { redirect_to _photobooks_anime_url(@_photobooks_anime), notice: "Photobooks anime was successfully updated." }
+        format.html { redirect_to photobooks_anime_url(@_photobooks_anime), notice: "Photobooks anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksAnimesController < ApplicationController
     @_photobooks_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_animes_url, notice: "Photobooks anime was successfully destroyed." }
+      format.html { redirect_to photobooks_animes_url, notice: "Photobooks anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_anime_params
-      params.require(:_photobooks_anime).permit(:name)
+      params.require(:photobooks_anime).permit(:name)
     end
 end

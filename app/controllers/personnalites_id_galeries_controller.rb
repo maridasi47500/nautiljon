@@ -25,7 +25,7 @@ class PersonnalitesIdGaleriesController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_id_galery.save
-        format.html { redirect_to _personnalites_id_galery_url(@_personnalites_id_galery), notice: "Personnalites id galerie was successfully created." }
+        format.html { redirect_to personnalites_id_galery_url(@_personnalites_id_galery), notice: "Personnalites id galerie was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_id_galery }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesIdGaleriesController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_id_galery.update(_personnalites_id_galery_params)
-        format.html { redirect_to _personnalites_id_galery_url(@_personnalites_id_galery), notice: "Personnalites id galerie was successfully updated." }
+        format.html { redirect_to personnalites_id_galery_url(@_personnalites_id_galery), notice: "Personnalites id galerie was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_id_galery }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesIdGaleriesController < ApplicationController
     @_personnalites_id_galery.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_id_galeries_url, notice: "Personnalites id galerie was successfully destroyed." }
+      format.html { redirect_to personnalites_id_galeries_url, notice: "Personnalites id galerie was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesIdGaleriesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_id_galery_params
-      params.require(:_personnalites_id_galery).permit(:name)
+      params.require(:personnalites_id_galery).permit(:name)
     end
 end

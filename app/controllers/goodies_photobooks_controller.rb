@@ -25,7 +25,7 @@ class GoodiesPhotobooksController < ApplicationController
 
     respond_to do |format|
       if @_goodies_photobook.save
-        format.html { redirect_to _goodies_photobook_url(@_goodies_photobook), notice: "Goodies photobook was successfully created." }
+        format.html { redirect_to goodies_photobook_url(@_goodies_photobook), notice: "Goodies photobook was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_photobook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesPhotobooksController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_photobook.update(_goodies_photobook_params)
-        format.html { redirect_to _goodies_photobook_url(@_goodies_photobook), notice: "Goodies photobook was successfully updated." }
+        format.html { redirect_to goodies_photobook_url(@_goodies_photobook), notice: "Goodies photobook was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_photobook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesPhotobooksController < ApplicationController
     @_goodies_photobook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_photobooks_url, notice: "Goodies photobook was successfully destroyed." }
+      format.html { redirect_to goodies_photobooks_url, notice: "Goodies photobook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesPhotobooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_photobook_params
-      params.require(:_goodies_photobook).permit(:name)
+      params.require(:goodies_photobook).permit(:name)
     end
 end

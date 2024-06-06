@@ -25,7 +25,7 @@ class RecettesDifficultesController < ApplicationController
 
     respond_to do |format|
       if @_recettes_difficulte.save
-        format.html { redirect_to _recettes_difficulte_url(@_recettes_difficulte), notice: "Recettes difficulte was successfully created." }
+        format.html { redirect_to recettes_difficulte_url(@_recettes_difficulte), notice: "Recettes difficulte was successfully created." }
         format.json { render :show, status: :created, location: @_recettes_difficulte }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class RecettesDifficultesController < ApplicationController
   def update
     respond_to do |format|
       if @_recettes_difficulte.update(_recettes_difficulte_params)
-        format.html { redirect_to _recettes_difficulte_url(@_recettes_difficulte), notice: "Recettes difficulte was successfully updated." }
+        format.html { redirect_to recettes_difficulte_url(@_recettes_difficulte), notice: "Recettes difficulte was successfully updated." }
         format.json { render :show, status: :ok, location: @_recettes_difficulte }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class RecettesDifficultesController < ApplicationController
     @_recettes_difficulte.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _recettes_difficultes_url, notice: "Recettes difficulte was successfully destroyed." }
+      format.html { redirect_to recettes_difficultes_url, notice: "Recettes difficulte was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class RecettesDifficultesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _recettes_difficulte_params
-      params.require(:_recettes_difficulte).permit(:name)
+      params.require(:recettes_difficulte).permit(:name)
     end
 end

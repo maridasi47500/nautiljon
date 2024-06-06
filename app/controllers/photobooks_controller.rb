@@ -25,7 +25,7 @@ class PhotobooksController < ApplicationController
 
     respond_to do |format|
       if @_photobook.save
-        format.html { redirect_to _photobook_url(@_photobook), notice: "Photobook was successfully created." }
+        format.html { redirect_to photobook_url(@_photobook), notice: "Photobook was successfully created." }
         format.json { render :show, status: :created, location: @_photobook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksController < ApplicationController
   def update
     respond_to do |format|
       if @_photobook.update(_photobook_params)
-        format.html { redirect_to _photobook_url(@_photobook), notice: "Photobook was successfully updated." }
+        format.html { redirect_to photobook_url(@_photobook), notice: "Photobook was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksController < ApplicationController
     @_photobook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_url, notice: "Photobook was successfully destroyed." }
+      format.html { redirect_to photobooks_url, notice: "Photobook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobook_params
-      params.require(:_photobook).permit(:_photobooks_france_id, :_photobooks_pays_id, :titre, :titre_alternatif, :titre_original_latin, :titre_original, :image, :image_vo, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :prix, :ean, :ref, :_photobooks_disponibilite_id, :nb_pages, :site, :_photobooks_illustrations_id, :_photobooks_type_id, :_photobooks_editeurs_vo_id, :_photobooks_editeurs_vo_id, :_photobooks_editeurs_vf_id, :_photobooks_editeurs_vf_id, :_photobooks_role_id, :_photobooks_people_id, :_photobooks_role_id, :_photobooks_people_id, :_photobooks_societe_role_id, :_photobooks_societe_people_id, :_photobooks_societe_role_id, :_photobooks_societe_people_id, :resume, :infos, :_photobooks_public_averti_id, :_photobooks_groupes_id, :_photobooks_drama_id, :_photobooks_am_id, :_photobooks_cd_id, :_photobooks_photobook_id, :_photobooks_anime_id, :_photobooks_bonus_id, :_photobooks_actualite_id, :_photobooks_actualite_mini_id, :_photobooks_goodies_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:photobook).permit(:_photobooks_france_id, :_photobooks_pays_id, :titre, :titre_alternatif, :titre_original_latin, :titre_original, :image, :image_vo, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :prix, :ean, :ref, :_photobooks_disponibilite_id, :nb_pages, :site, :_photobooks_illustrations_id, :_photobooks_type_id, :_photobooks_editeurs_vo_id, :_photobooks_editeurs_vo_id, :_photobooks_editeurs_vf_id, :_photobooks_editeurs_vf_id, :_photobooks_role_id, :_photobooks_people_id, :_photobooks_role_id, :_photobooks_people_id, :_photobooks_societe_role_id, :_photobooks_societe_people_id, :_photobooks_societe_role_id, :_photobooks_societe_people_id, :resume, :infos, :_photobooks_public_averti_id, :_photobooks_groupes_id, :_photobooks_drama_id, :_photobooks_am_id, :_photobooks_cd_id, :_photobooks_photobook_id, :_photobooks_anime_id, :_photobooks_bonus_id, :_photobooks_actualite_id, :_photobooks_actualite_mini_id, :_photobooks_goodies_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

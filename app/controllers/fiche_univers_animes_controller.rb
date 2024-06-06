@@ -25,7 +25,7 @@ class FicheUniversAnimesController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_anime.save
-        format.html { redirect_to _fiche_univers_anime_url(@_fiche_univers_anime), notice: "Fiche univers anime was successfully created." }
+        format.html { redirect_to fiche_univers_anime_url(@_fiche_univers_anime), notice: "Fiche univers anime was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_anime }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversAnimesController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_anime.update(_fiche_univers_anime_params)
-        format.html { redirect_to _fiche_univers_anime_url(@_fiche_univers_anime), notice: "Fiche univers anime was successfully updated." }
+        format.html { redirect_to fiche_univers_anime_url(@_fiche_univers_anime), notice: "Fiche univers anime was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_anime }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversAnimesController < ApplicationController
     @_fiche_univers_anime.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_animes_url, notice: "Fiche univers anime was successfully destroyed." }
+      format.html { redirect_to fiche_univers_animes_url, notice: "Fiche univers anime was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversAnimesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_anime_params
-      params.require(:_fiche_univers_anime).permit(:name)
+      params.require(:fiche_univers_anime).permit(:name)
     end
 end

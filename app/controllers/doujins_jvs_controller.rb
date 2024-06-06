@@ -25,7 +25,7 @@ class DoujinsJvsController < ApplicationController
 
     respond_to do |format|
       if @_doujins_jv.save
-        format.html { redirect_to _doujins_jv_url(@_doujins_jv), notice: "Doujins jv was successfully created." }
+        format.html { redirect_to doujins_jv_url(@_doujins_jv), notice: "Doujins jv was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_jv.update(_doujins_jv_params)
-        format.html { redirect_to _doujins_jv_url(@_doujins_jv), notice: "Doujins jv was successfully updated." }
+        format.html { redirect_to doujins_jv_url(@_doujins_jv), notice: "Doujins jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsJvsController < ApplicationController
     @_doujins_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_jvs_url, notice: "Doujins jv was successfully destroyed." }
+      format.html { redirect_to doujins_jvs_url, notice: "Doujins jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_jv_params
-      params.require(:_doujins_jv).permit(:name)
+      params.require(:doujins_jv).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class TablaturesController < ApplicationController
 
     respond_to do |format|
       if @_tablature.save
-        format.html { redirect_to _tablature_url(@_tablature), notice: "Tablature was successfully created." }
+        format.html { redirect_to tablature_url(@_tablature), notice: "Tablature was successfully created." }
         format.json { render :show, status: :created, location: @_tablature }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class TablaturesController < ApplicationController
   def update
     respond_to do |format|
       if @_tablature.update(_tablature_params)
-        format.html { redirect_to _tablature_url(@_tablature), notice: "Tablature was successfully updated." }
+        format.html { redirect_to tablature_url(@_tablature), notice: "Tablature was successfully updated." }
         format.json { render :show, status: :ok, location: @_tablature }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class TablaturesController < ApplicationController
     @_tablature.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _tablatures_url, notice: "Tablature was successfully destroyed." }
+      format.html { redirect_to tablatures_url, notice: "Tablature was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class TablaturesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _tablature_params
-      params.require(:_tablature).permit(:titre, :_tablatures_people_id, :_tablatures_people_id, :infos, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:tablature).permit(:titre, :_tablatures_people_id, :_tablatures_people_id, :infos, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

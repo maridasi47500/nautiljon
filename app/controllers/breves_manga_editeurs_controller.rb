@@ -25,7 +25,7 @@ class BrevesMangaEditeursController < ApplicationController
 
     respond_to do |format|
       if @_breves_manga_editeur.save
-        format.html { redirect_to _breves_manga_editeur_url(@_breves_manga_editeur), notice: "Breves manga editeur was successfully created." }
+        format.html { redirect_to breves_manga_editeur_url(@_breves_manga_editeur), notice: "Breves manga editeur was successfully created." }
         format.json { render :show, status: :created, location: @_breves_manga_editeur }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesMangaEditeursController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_manga_editeur.update(_breves_manga_editeur_params)
-        format.html { redirect_to _breves_manga_editeur_url(@_breves_manga_editeur), notice: "Breves manga editeur was successfully updated." }
+        format.html { redirect_to breves_manga_editeur_url(@_breves_manga_editeur), notice: "Breves manga editeur was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_manga_editeur }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesMangaEditeursController < ApplicationController
     @_breves_manga_editeur.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_manga_editeurs_url, notice: "Breves manga editeur was successfully destroyed." }
+      format.html { redirect_to breves_manga_editeurs_url, notice: "Breves manga editeur was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesMangaEditeursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_manga_editeur_params
-      params.require(:_breves_manga_editeur).permit(:name)
+      params.require(:breves_manga_editeur).permit(:name)
     end
 end

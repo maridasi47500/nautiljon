@@ -25,7 +25,7 @@ class BrevesEvenementsController < ApplicationController
 
     respond_to do |format|
       if @_breves_evenement.save
-        format.html { redirect_to _breves_evenement_url(@_breves_evenement), notice: "Breves evenement was successfully created." }
+        format.html { redirect_to breves_evenement_url(@_breves_evenement), notice: "Breves evenement was successfully created." }
         format.json { render :show, status: :created, location: @_breves_evenement }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesEvenementsController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_evenement.update(_breves_evenement_params)
-        format.html { redirect_to _breves_evenement_url(@_breves_evenement), notice: "Breves evenement was successfully updated." }
+        format.html { redirect_to breves_evenement_url(@_breves_evenement), notice: "Breves evenement was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_evenement }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesEvenementsController < ApplicationController
     @_breves_evenement.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_evenements_url, notice: "Breves evenement was successfully destroyed." }
+      format.html { redirect_to breves_evenements_url, notice: "Breves evenement was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesEvenementsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_evenement_params
-      params.require(:_breves_evenement).permit(:name)
+      params.require(:breves_evenement).permit(:name)
     end
 end

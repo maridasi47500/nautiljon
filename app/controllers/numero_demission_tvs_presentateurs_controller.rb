@@ -25,7 +25,7 @@ class NumeroDemissionTvsPresentateursController < ApplicationController
 
     respond_to do |format|
       if @_numero_demission_tvs_presentateur.save
-        format.html { redirect_to _numero_demission_tvs_presentateur_url(@_numero_demission_tvs_presentateur), notice: "Numero demission tvs presentateur was successfully created." }
+        format.html { redirect_to numero_demission_tvs_presentateur_url(@_numero_demission_tvs_presentateur), notice: "Numero demission tvs presentateur was successfully created." }
         format.json { render :show, status: :created, location: @_numero_demission_tvs_presentateur }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class NumeroDemissionTvsPresentateursController < ApplicationController
   def update
     respond_to do |format|
       if @_numero_demission_tvs_presentateur.update(_numero_demission_tvs_presentateur_params)
-        format.html { redirect_to _numero_demission_tvs_presentateur_url(@_numero_demission_tvs_presentateur), notice: "Numero demission tvs presentateur was successfully updated." }
+        format.html { redirect_to numero_demission_tvs_presentateur_url(@_numero_demission_tvs_presentateur), notice: "Numero demission tvs presentateur was successfully updated." }
         format.json { render :show, status: :ok, location: @_numero_demission_tvs_presentateur }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class NumeroDemissionTvsPresentateursController < ApplicationController
     @_numero_demission_tvs_presentateur.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _numero_demission_tvs_presentateurs_url, notice: "Numero demission tvs presentateur was successfully destroyed." }
+      format.html { redirect_to numero_demission_tvs_presentateurs_url, notice: "Numero demission tvs presentateur was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class NumeroDemissionTvsPresentateursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _numero_demission_tvs_presentateur_params
-      params.require(:_numero_demission_tvs_presentateur).permit(:name)
+      params.require(:numero_demission_tvs_presentateur).permit(:name)
     end
 end

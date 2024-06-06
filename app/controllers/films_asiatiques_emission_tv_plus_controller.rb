@@ -25,7 +25,7 @@ class FilmsAsiatiquesEmissionTvPlusController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_emission_tv_plu.save
-        format.html { redirect_to _films_asiatiques_emission_tv_plu_url(@_films_asiatiques_emission_tv_plu), notice: "Films asiatiques emission tv plu was successfully created." }
+        format.html { redirect_to films_asiatiques_emission_tv_plu_url(@_films_asiatiques_emission_tv_plu), notice: "Films asiatiques emission tv plu was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_emission_tv_plu }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEmissionTvPlusController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_emission_tv_plu.update(_films_asiatiques_emission_tv_plu_params)
-        format.html { redirect_to _films_asiatiques_emission_tv_plu_url(@_films_asiatiques_emission_tv_plu), notice: "Films asiatiques emission tv plu was successfully updated." }
+        format.html { redirect_to films_asiatiques_emission_tv_plu_url(@_films_asiatiques_emission_tv_plu), notice: "Films asiatiques emission tv plu was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_emission_tv_plu }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEmissionTvPlusController < ApplicationController
     @_films_asiatiques_emission_tv_plu.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_emission_tv_plus_url, notice: "Films asiatiques emission tv plu was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_emission_tv_plus_url, notice: "Films asiatiques emission tv plu was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEmissionTvPlusController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_emission_tv_plu_params
-      params.require(:_films_asiatiques_emission_tv_plu).permit(:name)
+      params.require(:films_asiatiques_emission_tv_plu).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class DoujinsArtbooksController < ApplicationController
 
     respond_to do |format|
       if @_doujins_artbook.save
-        format.html { redirect_to _doujins_artbook_url(@_doujins_artbook), notice: "Doujins artbook was successfully created." }
+        format.html { redirect_to doujins_artbook_url(@_doujins_artbook), notice: "Doujins artbook was successfully created." }
         format.json { render :show, status: :created, location: @_doujins_artbook }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinsArtbooksController < ApplicationController
   def update
     respond_to do |format|
       if @_doujins_artbook.update(_doujins_artbook_params)
-        format.html { redirect_to _doujins_artbook_url(@_doujins_artbook), notice: "Doujins artbook was successfully updated." }
+        format.html { redirect_to doujins_artbook_url(@_doujins_artbook), notice: "Doujins artbook was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujins_artbook }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinsArtbooksController < ApplicationController
     @_doujins_artbook.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujins_artbooks_url, notice: "Doujins artbook was successfully destroyed." }
+      format.html { redirect_to doujins_artbooks_url, notice: "Doujins artbook was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinsArtbooksController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujins_artbook_params
-      params.require(:_doujins_artbook).permit(:name)
+      params.require(:doujins_artbook).permit(:name)
     end
 end

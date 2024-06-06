@@ -25,7 +25,7 @@ class VideosIdCatsController < ApplicationController
 
     respond_to do |format|
       if @_videos_id_cat.save
-        format.html { redirect_to _videos_id_cat_url(@_videos_id_cat), notice: "Videos id cat was successfully created." }
+        format.html { redirect_to videos_id_cat_url(@_videos_id_cat), notice: "Videos id cat was successfully created." }
         format.json { render :show, status: :created, location: @_videos_id_cat }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VideosIdCatsController < ApplicationController
   def update
     respond_to do |format|
       if @_videos_id_cat.update(_videos_id_cat_params)
-        format.html { redirect_to _videos_id_cat_url(@_videos_id_cat), notice: "Videos id cat was successfully updated." }
+        format.html { redirect_to videos_id_cat_url(@_videos_id_cat), notice: "Videos id cat was successfully updated." }
         format.json { render :show, status: :ok, location: @_videos_id_cat }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VideosIdCatsController < ApplicationController
     @_videos_id_cat.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _videos_id_cats_url, notice: "Videos id cat was successfully destroyed." }
+      format.html { redirect_to videos_id_cats_url, notice: "Videos id cat was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VideosIdCatsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _videos_id_cat_params
-      params.require(:_videos_id_cat).permit(:name)
+      params.require(:videos_id_cat).permit(:name)
     end
 end

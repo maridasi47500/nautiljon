@@ -25,7 +25,7 @@ class GeneriqueDeJeuVideosStaffPeopleController < ApplicationController
 
     respond_to do |format|
       if @_generique_de_jeu_videos_staff_person.save
-        format.html { redirect_to _generique_de_jeu_videos_staff_person_url(@_generique_de_jeu_videos_staff_person), notice: "Generique de jeu videos staff person was successfully created." }
+        format.html { redirect_to generique_de_jeu_videos_staff_person_url(@_generique_de_jeu_videos_staff_person), notice: "Generique de jeu videos staff person was successfully created." }
         format.json { render :show, status: :created, location: @_generique_de_jeu_videos_staff_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriqueDeJeuVideosStaffPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_generique_de_jeu_videos_staff_person.update(_generique_de_jeu_videos_staff_person_params)
-        format.html { redirect_to _generique_de_jeu_videos_staff_person_url(@_generique_de_jeu_videos_staff_person), notice: "Generique de jeu videos staff person was successfully updated." }
+        format.html { redirect_to generique_de_jeu_videos_staff_person_url(@_generique_de_jeu_videos_staff_person), notice: "Generique de jeu videos staff person was successfully updated." }
         format.json { render :show, status: :ok, location: @_generique_de_jeu_videos_staff_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriqueDeJeuVideosStaffPeopleController < ApplicationController
     @_generique_de_jeu_videos_staff_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generique_de_jeu_videos_staff_people_url, notice: "Generique de jeu videos staff person was successfully destroyed." }
+      format.html { redirect_to generique_de_jeu_videos_staff_people_url, notice: "Generique de jeu videos staff person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriqueDeJeuVideosStaffPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generique_de_jeu_videos_staff_person_params
-      params.require(:_generique_de_jeu_videos_staff_person).permit(:name)
+      params.require(:generique_de_jeu_videos_staff_person).permit(:name)
     end
 end

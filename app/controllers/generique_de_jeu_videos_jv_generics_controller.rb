@@ -25,7 +25,7 @@ class GeneriqueDeJeuVideosJvGenericsController < ApplicationController
 
     respond_to do |format|
       if @_generique_de_jeu_videos_jv_generic.save
-        format.html { redirect_to _generique_de_jeu_videos_jv_generic_url(@_generique_de_jeu_videos_jv_generic), notice: "Generique de jeu videos jv generic was successfully created." }
+        format.html { redirect_to generique_de_jeu_videos_jv_generic_url(@_generique_de_jeu_videos_jv_generic), notice: "Generique de jeu videos jv generic was successfully created." }
         format.json { render :show, status: :created, location: @_generique_de_jeu_videos_jv_generic }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriqueDeJeuVideosJvGenericsController < ApplicationController
   def update
     respond_to do |format|
       if @_generique_de_jeu_videos_jv_generic.update(_generique_de_jeu_videos_jv_generic_params)
-        format.html { redirect_to _generique_de_jeu_videos_jv_generic_url(@_generique_de_jeu_videos_jv_generic), notice: "Generique de jeu videos jv generic was successfully updated." }
+        format.html { redirect_to generique_de_jeu_videos_jv_generic_url(@_generique_de_jeu_videos_jv_generic), notice: "Generique de jeu videos jv generic was successfully updated." }
         format.json { render :show, status: :ok, location: @_generique_de_jeu_videos_jv_generic }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriqueDeJeuVideosJvGenericsController < ApplicationController
     @_generique_de_jeu_videos_jv_generic.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generique_de_jeu_videos_jv_generics_url, notice: "Generique de jeu videos jv generic was successfully destroyed." }
+      format.html { redirect_to generique_de_jeu_videos_jv_generics_url, notice: "Generique de jeu videos jv generic was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriqueDeJeuVideosJvGenericsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generique_de_jeu_videos_jv_generic_params
-      params.require(:_generique_de_jeu_videos_jv_generic).permit(:name)
+      params.require(:generique_de_jeu_videos_jv_generic).permit(:name)
     end
 end

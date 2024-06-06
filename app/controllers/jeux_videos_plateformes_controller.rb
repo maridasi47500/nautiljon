@@ -25,7 +25,7 @@ class JeuxVideosPlateformesController < ApplicationController
 
     respond_to do |format|
       if @_jeux_videos_plateforme.save
-        format.html { redirect_to _jeux_videos_plateforme_url(@_jeux_videos_plateforme), notice: "Jeux videos plateforme was successfully created." }
+        format.html { redirect_to jeux_videos_plateforme_url(@_jeux_videos_plateforme), notice: "Jeux videos plateforme was successfully created." }
         format.json { render :show, status: :created, location: @_jeux_videos_plateforme }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class JeuxVideosPlateformesController < ApplicationController
   def update
     respond_to do |format|
       if @_jeux_videos_plateforme.update(_jeux_videos_plateforme_params)
-        format.html { redirect_to _jeux_videos_plateforme_url(@_jeux_videos_plateforme), notice: "Jeux videos plateforme was successfully updated." }
+        format.html { redirect_to jeux_videos_plateforme_url(@_jeux_videos_plateforme), notice: "Jeux videos plateforme was successfully updated." }
         format.json { render :show, status: :ok, location: @_jeux_videos_plateforme }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class JeuxVideosPlateformesController < ApplicationController
     @_jeux_videos_plateforme.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _jeux_videos_plateformes_url, notice: "Jeux videos plateforme was successfully destroyed." }
+      format.html { redirect_to jeux_videos_plateformes_url, notice: "Jeux videos plateforme was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class JeuxVideosPlateformesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _jeux_videos_plateforme_params
-      params.require(:_jeux_videos_plateforme).permit(:name)
+      params.require(:jeux_videos_plateforme).permit(:name)
     end
 end

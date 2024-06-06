@@ -25,7 +25,7 @@ class DoujinshisConventionsController < ApplicationController
 
     respond_to do |format|
       if @_doujinshis_convention.save
-        format.html { redirect_to _doujinshis_convention_url(@_doujinshis_convention), notice: "Doujinshis convention was successfully created." }
+        format.html { redirect_to doujinshis_convention_url(@_doujinshis_convention), notice: "Doujinshis convention was successfully created." }
         format.json { render :show, status: :created, location: @_doujinshis_convention }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DoujinshisConventionsController < ApplicationController
   def update
     respond_to do |format|
       if @_doujinshis_convention.update(_doujinshis_convention_params)
-        format.html { redirect_to _doujinshis_convention_url(@_doujinshis_convention), notice: "Doujinshis convention was successfully updated." }
+        format.html { redirect_to doujinshis_convention_url(@_doujinshis_convention), notice: "Doujinshis convention was successfully updated." }
         format.json { render :show, status: :ok, location: @_doujinshis_convention }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DoujinshisConventionsController < ApplicationController
     @_doujinshis_convention.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _doujinshis_conventions_url, notice: "Doujinshis convention was successfully destroyed." }
+      format.html { redirect_to doujinshis_conventions_url, notice: "Doujinshis convention was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DoujinshisConventionsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _doujinshis_convention_params
-      params.require(:_doujinshis_convention).permit(:name)
+      params.require(:doujinshis_convention).permit(:name)
     end
 end

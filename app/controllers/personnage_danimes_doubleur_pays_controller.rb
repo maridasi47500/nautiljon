@@ -25,7 +25,7 @@ class PersonnageDanimesDoubleurPaysController < ApplicationController
 
     respond_to do |format|
       if @_personnage_danimes_doubleur_pay.save
-        format.html { redirect_to _personnage_danimes_doubleur_pay_url(@_personnage_danimes_doubleur_pay), notice: "Personnage danimes doubleur pay was successfully created." }
+        format.html { redirect_to personnage_danimes_doubleur_pay_url(@_personnage_danimes_doubleur_pay), notice: "Personnage danimes doubleur pay was successfully created." }
         format.json { render :show, status: :created, location: @_personnage_danimes_doubleur_pay }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnageDanimesDoubleurPaysController < ApplicationController
   def update
     respond_to do |format|
       if @_personnage_danimes_doubleur_pay.update(_personnage_danimes_doubleur_pay_params)
-        format.html { redirect_to _personnage_danimes_doubleur_pay_url(@_personnage_danimes_doubleur_pay), notice: "Personnage danimes doubleur pay was successfully updated." }
+        format.html { redirect_to personnage_danimes_doubleur_pay_url(@_personnage_danimes_doubleur_pay), notice: "Personnage danimes doubleur pay was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnage_danimes_doubleur_pay }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnageDanimesDoubleurPaysController < ApplicationController
     @_personnage_danimes_doubleur_pay.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnage_danimes_doubleur_pays_url, notice: "Personnage danimes doubleur pay was successfully destroyed." }
+      format.html { redirect_to personnage_danimes_doubleur_pays_url, notice: "Personnage danimes doubleur pay was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnageDanimesDoubleurPaysController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnage_danimes_doubleur_pay_params
-      params.require(:_personnage_danimes_doubleur_pay).permit(:name)
+      params.require(:personnage_danimes_doubleur_pay).permit(:name)
     end
 end

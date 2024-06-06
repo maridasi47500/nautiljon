@@ -25,7 +25,7 @@ class MangasPrepubliesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_prepubly.save
-        format.html { redirect_to _mangas_prepubly_url(@_mangas_prepubly), notice: "Mangas prepublie was successfully created." }
+        format.html { redirect_to mangas_prepubly_url(@_mangas_prepubly), notice: "Mangas prepublie was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_prepubly }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasPrepubliesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_prepubly.update(_mangas_prepubly_params)
-        format.html { redirect_to _mangas_prepubly_url(@_mangas_prepubly), notice: "Mangas prepublie was successfully updated." }
+        format.html { redirect_to mangas_prepubly_url(@_mangas_prepubly), notice: "Mangas prepublie was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_prepubly }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasPrepubliesController < ApplicationController
     @_mangas_prepubly.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_prepublies_url, notice: "Mangas prepublie was successfully destroyed." }
+      format.html { redirect_to mangas_prepublies_url, notice: "Mangas prepublie was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasPrepubliesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_prepubly_params
-      params.require(:_mangas_prepubly).permit(:name)
+      params.require(:mangas_prepubly).permit(:name)
     end
 end

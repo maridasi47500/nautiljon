@@ -25,7 +25,7 @@ class NumeroDemissionTvsController < ApplicationController
 
     respond_to do |format|
       if @_numero_demission_tv.save
-        format.html { redirect_to _numero_demission_tv_url(@_numero_demission_tv), notice: "Numero demission tv was successfully created." }
+        format.html { redirect_to numero_demission_tv_url(@_numero_demission_tv), notice: "Numero demission tv was successfully created." }
         format.json { render :show, status: :created, location: @_numero_demission_tv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class NumeroDemissionTvsController < ApplicationController
   def update
     respond_to do |format|
       if @_numero_demission_tv.update(_numero_demission_tv_params)
-        format.html { redirect_to _numero_demission_tv_url(@_numero_demission_tv), notice: "Numero demission tv was successfully updated." }
+        format.html { redirect_to numero_demission_tv_url(@_numero_demission_tv), notice: "Numero demission tv was successfully updated." }
         format.json { render :show, status: :ok, location: @_numero_demission_tv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class NumeroDemissionTvsController < ApplicationController
     @_numero_demission_tv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _numero_demission_tvs_url, notice: "Numero demission tv was successfully destroyed." }
+      format.html { redirect_to numero_demission_tvs_url, notice: "Numero demission tv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class NumeroDemissionTvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _numero_demission_tv_params
-      params.require(:_numero_demission_tv).permit(:_numero_demission_tvs_id_emission_tv_id, :titre, :titre_original, :date_jj, :date_mm, :date_aaaa, :_numero_demission_tvs_special_id, :duree, :_numero_demission_tvs_presentateur_id, :_numero_demission_tvs_presentateur_id, :_numero_demission_tvs_people_id, :_numero_demission_tvs_people_id, :image, :infos, :youtube, :_numero_demission_tvs_emission_tv_numero_id, :_numero_demission_tvs_clip_id, :comment, :statut_prop, :statut_prop, :acceptregles)
+      params.require(:numero_demission_tv).permit(:_numero_demission_tvs_id_emission_tv_id, :titre, :titre_original, :date_jj, :date_mm, :date_aaaa, :_numero_demission_tvs_special_id, :duree, :_numero_demission_tvs_presentateur_id, :_numero_demission_tvs_presentateur_id, :_numero_demission_tvs_people_id, :_numero_demission_tvs_people_id, :image, :infos, :youtube, :_numero_demission_tvs_emission_tv_numero_id, :_numero_demission_tvs_clip_id, :comment, :statut_prop, :statut_prop, :acceptregles)
     end
 end

@@ -25,7 +25,7 @@ class MangasJvsController < ApplicationController
 
     respond_to do |format|
       if @_mangas_jv.save
-        format.html { redirect_to _mangas_jv_url(@_mangas_jv), notice: "Mangas jv was successfully created." }
+        format.html { redirect_to mangas_jv_url(@_mangas_jv), notice: "Mangas jv was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_jv }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasJvsController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_jv.update(_mangas_jv_params)
-        format.html { redirect_to _mangas_jv_url(@_mangas_jv), notice: "Mangas jv was successfully updated." }
+        format.html { redirect_to mangas_jv_url(@_mangas_jv), notice: "Mangas jv was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_jv }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasJvsController < ApplicationController
     @_mangas_jv.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_jvs_url, notice: "Mangas jv was successfully destroyed." }
+      format.html { redirect_to mangas_jvs_url, notice: "Mangas jv was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasJvsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_jv_params
-      params.require(:_mangas_jv).permit(:name)
+      params.require(:mangas_jv).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class DramasGeneriquesParolesController < ApplicationController
 
     respond_to do |format|
       if @_dramas_generiques_parole.save
-        format.html { redirect_to _dramas_generiques_parole_url(@_dramas_generiques_parole), notice: "Dramas generiques parole was successfully created." }
+        format.html { redirect_to dramas_generiques_parole_url(@_dramas_generiques_parole), notice: "Dramas generiques parole was successfully created." }
         format.json { render :show, status: :created, location: @_dramas_generiques_parole }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class DramasGeneriquesParolesController < ApplicationController
   def update
     respond_to do |format|
       if @_dramas_generiques_parole.update(_dramas_generiques_parole_params)
-        format.html { redirect_to _dramas_generiques_parole_url(@_dramas_generiques_parole), notice: "Dramas generiques parole was successfully updated." }
+        format.html { redirect_to dramas_generiques_parole_url(@_dramas_generiques_parole), notice: "Dramas generiques parole was successfully updated." }
         format.json { render :show, status: :ok, location: @_dramas_generiques_parole }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class DramasGeneriquesParolesController < ApplicationController
     @_dramas_generiques_parole.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _dramas_generiques_paroles_url, notice: "Dramas generiques parole was successfully destroyed." }
+      format.html { redirect_to dramas_generiques_paroles_url, notice: "Dramas generiques parole was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class DramasGeneriquesParolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _dramas_generiques_parole_params
-      params.require(:_dramas_generiques_parole).permit(:name)
+      params.require(:dramas_generiques_parole).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class CdsLnsController < ApplicationController
 
     respond_to do |format|
       if @_cds_ln.save
-        format.html { redirect_to _cds_ln_url(@_cds_ln), notice: "Cds ln was successfully created." }
+        format.html { redirect_to cds_ln_url(@_cds_ln), notice: "Cds ln was successfully created." }
         format.json { render :show, status: :created, location: @_cds_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_ln.update(_cds_ln_params)
-        format.html { redirect_to _cds_ln_url(@_cds_ln), notice: "Cds ln was successfully updated." }
+        format.html { redirect_to cds_ln_url(@_cds_ln), notice: "Cds ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsLnsController < ApplicationController
     @_cds_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_lns_url, notice: "Cds ln was successfully destroyed." }
+      format.html { redirect_to cds_lns_url, notice: "Cds ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_ln_params
-      params.require(:_cds_ln).permit(:name)
+      params.require(:cds_ln).permit(:name)
     end
 end

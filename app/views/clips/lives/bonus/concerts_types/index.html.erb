@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<h1>Concerts types</h1>
+
+
+
+<div id="_clips_lives_bonus_concerts_types">
+
+  <% @_clips_lives_bonus_concerts_types.each do |_clips_lives_bonus_concerts_type| %>
+
+    <%= render _clips_lives_bonus_concerts_type %>
+
+    <p>
+
+      <%= link_to "Show this concerts type", clips_lives_bonus_concerts_type %>
+
+    </p>
+
+  <% end %>
+
+</div>
+
+
+
+<%= link_to "New concerts type", new_clips_lives_bonus_concerts_type_path %>

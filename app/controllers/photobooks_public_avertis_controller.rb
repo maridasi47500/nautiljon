@@ -25,7 +25,7 @@ class PhotobooksPublicAvertisController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_public_averti.save
-        format.html { redirect_to _photobooks_public_averti_url(@_photobooks_public_averti), notice: "Photobooks public averti was successfully created." }
+        format.html { redirect_to photobooks_public_averti_url(@_photobooks_public_averti), notice: "Photobooks public averti was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_public_averti }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksPublicAvertisController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_public_averti.update(_photobooks_public_averti_params)
-        format.html { redirect_to _photobooks_public_averti_url(@_photobooks_public_averti), notice: "Photobooks public averti was successfully updated." }
+        format.html { redirect_to photobooks_public_averti_url(@_photobooks_public_averti), notice: "Photobooks public averti was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_public_averti }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksPublicAvertisController < ApplicationController
     @_photobooks_public_averti.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_public_avertis_url, notice: "Photobooks public averti was successfully destroyed." }
+      format.html { redirect_to photobooks_public_avertis_url, notice: "Photobooks public averti was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksPublicAvertisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_public_averti_params
-      params.require(:_photobooks_public_averti).permit(:name)
+      params.require(:photobooks_public_averti).permit(:name)
     end
 end

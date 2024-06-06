@@ -25,7 +25,7 @@ class FilmsAsiatiquesEnSallesPaysOriginesController < ApplicationController
 
     respond_to do |format|
       if @_films_asiatiques_en_salles_pays_origine.save
-        format.html { redirect_to _films_asiatiques_en_salles_pays_origine_url(@_films_asiatiques_en_salles_pays_origine), notice: "Films asiatiques en salles pays origine was successfully created." }
+        format.html { redirect_to films_asiatiques_en_salles_pays_origine_url(@_films_asiatiques_en_salles_pays_origine), notice: "Films asiatiques en salles pays origine was successfully created." }
         format.json { render :show, status: :created, location: @_films_asiatiques_en_salles_pays_origine }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FilmsAsiatiquesEnSallesPaysOriginesController < ApplicationController
   def update
     respond_to do |format|
       if @_films_asiatiques_en_salles_pays_origine.update(_films_asiatiques_en_salles_pays_origine_params)
-        format.html { redirect_to _films_asiatiques_en_salles_pays_origine_url(@_films_asiatiques_en_salles_pays_origine), notice: "Films asiatiques en salles pays origine was successfully updated." }
+        format.html { redirect_to films_asiatiques_en_salles_pays_origine_url(@_films_asiatiques_en_salles_pays_origine), notice: "Films asiatiques en salles pays origine was successfully updated." }
         format.json { render :show, status: :ok, location: @_films_asiatiques_en_salles_pays_origine }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FilmsAsiatiquesEnSallesPaysOriginesController < ApplicationController
     @_films_asiatiques_en_salles_pays_origine.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _films_asiatiques_en_salles_pays_origines_url, notice: "Films asiatiques en salles pays origine was successfully destroyed." }
+      format.html { redirect_to films_asiatiques_en_salles_pays_origines_url, notice: "Films asiatiques en salles pays origine was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FilmsAsiatiquesEnSallesPaysOriginesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _films_asiatiques_en_salles_pays_origine_params
-      params.require(:_films_asiatiques_en_salles_pays_origine).permit(:name)
+      params.require(:films_asiatiques_en_salles_pays_origine).permit(:name)
     end
 end

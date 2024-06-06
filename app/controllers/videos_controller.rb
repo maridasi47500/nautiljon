@@ -25,7 +25,7 @@ class VideosController < ApplicationController
 
     respond_to do |format|
       if @_video.save
-        format.html { redirect_to _video_url(@_video), notice: "Video was successfully created." }
+        format.html { redirect_to video_url(@_video), notice: "Video was successfully created." }
         format.json { render :show, status: :created, location: @_video }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class VideosController < ApplicationController
   def update
     respond_to do |format|
       if @_video.update(_video_params)
-        format.html { redirect_to _video_url(@_video), notice: "Video was successfully updated." }
+        format.html { redirect_to video_url(@_video), notice: "Video was successfully updated." }
         format.json { render :show, status: :ok, location: @_video }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class VideosController < ApplicationController
     @_video.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _videos_url, notice: "Video was successfully destroyed." }
+      format.html { redirect_to videos_url, notice: "Video was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class VideosController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _video_params
-      params.require(:_video).permit(:titre, :_videos_id_cat_id, :url, :tags)
+      params.require(:video).permit(:titre, :_videos_id_cat_id, :url, :tags)
     end
 end

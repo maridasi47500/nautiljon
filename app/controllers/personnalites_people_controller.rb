@@ -25,7 +25,7 @@ class PersonnalitesPeopleController < ApplicationController
 
     respond_to do |format|
       if @_personnalites_person.save
-        format.html { redirect_to _personnalites_person_url(@_personnalites_person), notice: "Personnalites person was successfully created." }
+        format.html { redirect_to personnalites_person_url(@_personnalites_person), notice: "Personnalites person was successfully created." }
         format.json { render :show, status: :created, location: @_personnalites_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PersonnalitesPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_personnalites_person.update(_personnalites_person_params)
-        format.html { redirect_to _personnalites_person_url(@_personnalites_person), notice: "Personnalites person was successfully updated." }
+        format.html { redirect_to personnalites_person_url(@_personnalites_person), notice: "Personnalites person was successfully updated." }
         format.json { render :show, status: :ok, location: @_personnalites_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PersonnalitesPeopleController < ApplicationController
     @_personnalites_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _personnalites_people_url, notice: "Personnalites person was successfully destroyed." }
+      format.html { redirect_to personnalites_people_url, notice: "Personnalites person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PersonnalitesPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _personnalites_person_params
-      params.require(:_personnalites_person).permit(:name)
+      params.require(:personnalites_person).permit(:name)
     end
 end

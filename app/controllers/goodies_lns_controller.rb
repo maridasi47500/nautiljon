@@ -25,7 +25,7 @@ class GoodiesLnsController < ApplicationController
 
     respond_to do |format|
       if @_goodies_ln.save
-        format.html { redirect_to _goodies_ln_url(@_goodies_ln), notice: "Goodies ln was successfully created." }
+        format.html { redirect_to goodies_ln_url(@_goodies_ln), notice: "Goodies ln was successfully created." }
         format.json { render :show, status: :created, location: @_goodies_ln }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GoodiesLnsController < ApplicationController
   def update
     respond_to do |format|
       if @_goodies_ln.update(_goodies_ln_params)
-        format.html { redirect_to _goodies_ln_url(@_goodies_ln), notice: "Goodies ln was successfully updated." }
+        format.html { redirect_to goodies_ln_url(@_goodies_ln), notice: "Goodies ln was successfully updated." }
         format.json { render :show, status: :ok, location: @_goodies_ln }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GoodiesLnsController < ApplicationController
     @_goodies_ln.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _goodies_lns_url, notice: "Goodies ln was successfully destroyed." }
+      format.html { redirect_to goodies_lns_url, notice: "Goodies ln was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GoodiesLnsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _goodies_ln_params
-      params.require(:_goodies_ln).permit(:name)
+      params.require(:goodies_ln).permit(:name)
     end
 end

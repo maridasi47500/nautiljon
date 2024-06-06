@@ -25,7 +25,7 @@ class LightNovelsGroupesController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_groupe.save
-        format.html { redirect_to _light_novels_groupe_url(@_light_novels_groupe), notice: "Light novels groupe was successfully created." }
+        format.html { redirect_to light_novels_groupe_url(@_light_novels_groupe), notice: "Light novels groupe was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_groupe }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsGroupesController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_groupe.update(_light_novels_groupe_params)
-        format.html { redirect_to _light_novels_groupe_url(@_light_novels_groupe), notice: "Light novels groupe was successfully updated." }
+        format.html { redirect_to light_novels_groupe_url(@_light_novels_groupe), notice: "Light novels groupe was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_groupe }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsGroupesController < ApplicationController
     @_light_novels_groupe.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_groupes_url, notice: "Light novels groupe was successfully destroyed." }
+      format.html { redirect_to light_novels_groupes_url, notice: "Light novels groupe was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsGroupesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_groupe_params
-      params.require(:_light_novels_groupe).permit(:name)
+      params.require(:light_novels_groupe).permit(:name)
     end
 end

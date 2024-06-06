@@ -25,7 +25,7 @@ class PhotobooksRolesController < ApplicationController
 
     respond_to do |format|
       if @_photobooks_role.save
-        format.html { redirect_to _photobooks_role_url(@_photobooks_role), notice: "Photobooks role was successfully created." }
+        format.html { redirect_to photobooks_role_url(@_photobooks_role), notice: "Photobooks role was successfully created." }
         format.json { render :show, status: :created, location: @_photobooks_role }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class PhotobooksRolesController < ApplicationController
   def update
     respond_to do |format|
       if @_photobooks_role.update(_photobooks_role_params)
-        format.html { redirect_to _photobooks_role_url(@_photobooks_role), notice: "Photobooks role was successfully updated." }
+        format.html { redirect_to photobooks_role_url(@_photobooks_role), notice: "Photobooks role was successfully updated." }
         format.json { render :show, status: :ok, location: @_photobooks_role }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class PhotobooksRolesController < ApplicationController
     @_photobooks_role.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _photobooks_roles_url, notice: "Photobooks role was successfully destroyed." }
+      format.html { redirect_to photobooks_roles_url, notice: "Photobooks role was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class PhotobooksRolesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _photobooks_role_params
-      params.require(:_photobooks_role).permit(:name)
+      params.require(:photobooks_role).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class MangasClipsController < ApplicationController
 
     respond_to do |format|
       if @_mangas_clip.save
-        format.html { redirect_to _mangas_clip_url(@_mangas_clip), notice: "Mangas clip was successfully created." }
+        format.html { redirect_to mangas_clip_url(@_mangas_clip), notice: "Mangas clip was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_clip }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasClipsController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_clip.update(_mangas_clip_params)
-        format.html { redirect_to _mangas_clip_url(@_mangas_clip), notice: "Mangas clip was successfully updated." }
+        format.html { redirect_to mangas_clip_url(@_mangas_clip), notice: "Mangas clip was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_clip }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasClipsController < ApplicationController
     @_mangas_clip.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_clips_url, notice: "Mangas clip was successfully destroyed." }
+      format.html { redirect_to mangas_clips_url, notice: "Mangas clip was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasClipsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_clip_params
-      params.require(:_mangas_clip).permit(:name)
+      params.require(:mangas_clip).permit(:name)
     end
 end

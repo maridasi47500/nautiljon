@@ -25,7 +25,7 @@ class LightNovelsPrepubliesController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_prepubly.save
-        format.html { redirect_to _light_novels_prepubly_url(@_light_novels_prepubly), notice: "Light novels prepublie was successfully created." }
+        format.html { redirect_to light_novels_prepubly_url(@_light_novels_prepubly), notice: "Light novels prepublie was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_prepubly }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsPrepubliesController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_prepubly.update(_light_novels_prepubly_params)
-        format.html { redirect_to _light_novels_prepubly_url(@_light_novels_prepubly), notice: "Light novels prepublie was successfully updated." }
+        format.html { redirect_to light_novels_prepubly_url(@_light_novels_prepubly), notice: "Light novels prepublie was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_prepubly }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsPrepubliesController < ApplicationController
     @_light_novels_prepubly.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_prepublies_url, notice: "Light novels prepublie was successfully destroyed." }
+      format.html { redirect_to light_novels_prepublies_url, notice: "Light novels prepublie was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsPrepubliesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_prepubly_params
-      params.require(:_light_novels_prepubly).permit(:name)
+      params.require(:light_novels_prepubly).permit(:name)
     end
 end

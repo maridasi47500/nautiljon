@@ -25,7 +25,7 @@ class GeneriqueDeJeuVideosTypesController < ApplicationController
 
     respond_to do |format|
       if @_generique_de_jeu_videos_type.save
-        format.html { redirect_to _generique_de_jeu_videos_type_url(@_generique_de_jeu_videos_type), notice: "Generique de jeu videos type was successfully created." }
+        format.html { redirect_to generique_de_jeu_videos_type_url(@_generique_de_jeu_videos_type), notice: "Generique de jeu videos type was successfully created." }
         format.json { render :show, status: :created, location: @_generique_de_jeu_videos_type }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class GeneriqueDeJeuVideosTypesController < ApplicationController
   def update
     respond_to do |format|
       if @_generique_de_jeu_videos_type.update(_generique_de_jeu_videos_type_params)
-        format.html { redirect_to _generique_de_jeu_videos_type_url(@_generique_de_jeu_videos_type), notice: "Generique de jeu videos type was successfully updated." }
+        format.html { redirect_to generique_de_jeu_videos_type_url(@_generique_de_jeu_videos_type), notice: "Generique de jeu videos type was successfully updated." }
         format.json { render :show, status: :ok, location: @_generique_de_jeu_videos_type }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class GeneriqueDeJeuVideosTypesController < ApplicationController
     @_generique_de_jeu_videos_type.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _generique_de_jeu_videos_types_url, notice: "Generique de jeu videos type was successfully destroyed." }
+      format.html { redirect_to generique_de_jeu_videos_types_url, notice: "Generique de jeu videos type was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class GeneriqueDeJeuVideosTypesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _generique_de_jeu_videos_type_params
-      params.require(:_generique_de_jeu_videos_type).permit(:name)
+      params.require(:generique_de_jeu_videos_type).permit(:name)
     end
 end

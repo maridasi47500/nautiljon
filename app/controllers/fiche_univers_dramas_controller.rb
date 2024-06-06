@@ -25,7 +25,7 @@ class FicheUniversDramasController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_drama.save
-        format.html { redirect_to _fiche_univers_drama_url(@_fiche_univers_drama), notice: "Fiche univers drama was successfully created." }
+        format.html { redirect_to fiche_univers_drama_url(@_fiche_univers_drama), notice: "Fiche univers drama was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_drama }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversDramasController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_drama.update(_fiche_univers_drama_params)
-        format.html { redirect_to _fiche_univers_drama_url(@_fiche_univers_drama), notice: "Fiche univers drama was successfully updated." }
+        format.html { redirect_to fiche_univers_drama_url(@_fiche_univers_drama), notice: "Fiche univers drama was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_drama }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversDramasController < ApplicationController
     @_fiche_univers_drama.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_dramas_url, notice: "Fiche univers drama was successfully destroyed." }
+      format.html { redirect_to fiche_univers_dramas_url, notice: "Fiche univers drama was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversDramasController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_drama_params
-      params.require(:_fiche_univers_drama).permit(:name)
+      params.require(:fiche_univers_drama).permit(:name)
     end
 end

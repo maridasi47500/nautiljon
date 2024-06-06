@@ -25,7 +25,7 @@ class CdsPeopleController < ApplicationController
 
     respond_to do |format|
       if @_cds_person.save
-        format.html { redirect_to _cds_person_url(@_cds_person), notice: "Cds person was successfully created." }
+        format.html { redirect_to cds_person_url(@_cds_person), notice: "Cds person was successfully created." }
         format.json { render :show, status: :created, location: @_cds_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class CdsPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_cds_person.update(_cds_person_params)
-        format.html { redirect_to _cds_person_url(@_cds_person), notice: "Cds person was successfully updated." }
+        format.html { redirect_to cds_person_url(@_cds_person), notice: "Cds person was successfully updated." }
         format.json { render :show, status: :ok, location: @_cds_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class CdsPeopleController < ApplicationController
     @_cds_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _cds_people_url, notice: "Cds person was successfully destroyed." }
+      format.html { redirect_to cds_people_url, notice: "Cds person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class CdsPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _cds_person_params
-      params.require(:_cds_person).permit(:name)
+      params.require(:cds_person).permit(:name)
     end
 end

@@ -25,7 +25,7 @@ class LightNovelsPublicAvertisController < ApplicationController
 
     respond_to do |format|
       if @_light_novels_public_averti.save
-        format.html { redirect_to _light_novels_public_averti_url(@_light_novels_public_averti), notice: "Light novels public averti was successfully created." }
+        format.html { redirect_to light_novels_public_averti_url(@_light_novels_public_averti), notice: "Light novels public averti was successfully created." }
         format.json { render :show, status: :created, location: @_light_novels_public_averti }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class LightNovelsPublicAvertisController < ApplicationController
   def update
     respond_to do |format|
       if @_light_novels_public_averti.update(_light_novels_public_averti_params)
-        format.html { redirect_to _light_novels_public_averti_url(@_light_novels_public_averti), notice: "Light novels public averti was successfully updated." }
+        format.html { redirect_to light_novels_public_averti_url(@_light_novels_public_averti), notice: "Light novels public averti was successfully updated." }
         format.json { render :show, status: :ok, location: @_light_novels_public_averti }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class LightNovelsPublicAvertisController < ApplicationController
     @_light_novels_public_averti.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _light_novels_public_avertis_url, notice: "Light novels public averti was successfully destroyed." }
+      format.html { redirect_to light_novels_public_avertis_url, notice: "Light novels public averti was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class LightNovelsPublicAvertisController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _light_novels_public_averti_params
-      params.require(:_light_novels_public_averti).permit(:name)
+      params.require(:light_novels_public_averti).permit(:name)
     end
 end

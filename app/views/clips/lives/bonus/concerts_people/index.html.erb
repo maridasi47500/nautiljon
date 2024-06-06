@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<h1>Concerts people</h1>
+
+
+
+<div id="_clips_lives_bonus_concerts_people">
+
+  <% @_clips_lives_bonus_concerts_people.each do |_clips_lives_bonus_concerts_person| %>
+
+    <%= render _clips_lives_bonus_concerts_person %>
+
+    <p>
+
+      <%= link_to "Show this concerts person", clips_lives_bonus_concerts_person %>
+
+    </p>
+
+  <% end %>
+
+</div>
+
+
+
+<%= link_to "New concerts person", new_clips_lives_bonus_concerts_person_path %>

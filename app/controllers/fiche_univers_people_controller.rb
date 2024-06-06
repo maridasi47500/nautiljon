@@ -25,7 +25,7 @@ class FicheUniversPeopleController < ApplicationController
 
     respond_to do |format|
       if @_fiche_univers_person.save
-        format.html { redirect_to _fiche_univers_person_url(@_fiche_univers_person), notice: "Fiche univers person was successfully created." }
+        format.html { redirect_to fiche_univers_person_url(@_fiche_univers_person), notice: "Fiche univers person was successfully created." }
         format.json { render :show, status: :created, location: @_fiche_univers_person }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class FicheUniversPeopleController < ApplicationController
   def update
     respond_to do |format|
       if @_fiche_univers_person.update(_fiche_univers_person_params)
-        format.html { redirect_to _fiche_univers_person_url(@_fiche_univers_person), notice: "Fiche univers person was successfully updated." }
+        format.html { redirect_to fiche_univers_person_url(@_fiche_univers_person), notice: "Fiche univers person was successfully updated." }
         format.json { render :show, status: :ok, location: @_fiche_univers_person }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class FicheUniversPeopleController < ApplicationController
     @_fiche_univers_person.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _fiche_univers_people_url, notice: "Fiche univers person was successfully destroyed." }
+      format.html { redirect_to fiche_univers_people_url, notice: "Fiche univers person was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class FicheUniversPeopleController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _fiche_univers_person_params
-      params.require(:_fiche_univers_person).permit(:name)
+      params.require(:fiche_univers_person).permit(:name)
     end
 end

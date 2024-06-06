@@ -1,0 +1,43 @@
+<%= form_with(model: _clips_lives_bonus_concerts_type_bonu) do |form| %>
+
+  <% if _clips_lives_bonus_concerts_type_bonu.errors.any? %>
+
+    <div style="color: red">
+
+      <h2><%= pluralize(_clips_lives_bonus_concerts_type_bonu.errors.count, "error") %> prohibited this _clips_lives_bonus_concerts_type_bonu from being saved:</h2>
+
+
+
+      <ul>
+
+        <% _clips_lives_bonus_concerts_type_bonu.errors.each do |error| %>
+
+          <li><%= error.full_message %></li>
+
+        <% end %>
+
+      </ul>
+
+    </div>
+
+  <% end %>
+
+
+
+  <div>
+
+    <%= form.label :name, style: "display: block" %>
+
+    <%= form.text_field :name %>
+
+  </div>
+
+
+
+  <div>
+
+    <%= form.submit %>
+
+  </div>
+
+<% end %>

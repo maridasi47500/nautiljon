@@ -25,7 +25,7 @@ class BrevesConcoursController < ApplicationController
 
     respond_to do |format|
       if @_breves_concour.save
-        format.html { redirect_to _breves_concour_url(@_breves_concour), notice: "Breves concour was successfully created." }
+        format.html { redirect_to breves_concour_url(@_breves_concour), notice: "Breves concour was successfully created." }
         format.json { render :show, status: :created, location: @_breves_concour }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class BrevesConcoursController < ApplicationController
   def update
     respond_to do |format|
       if @_breves_concour.update(_breves_concour_params)
-        format.html { redirect_to _breves_concour_url(@_breves_concour), notice: "Breves concour was successfully updated." }
+        format.html { redirect_to breves_concour_url(@_breves_concour), notice: "Breves concour was successfully updated." }
         format.json { render :show, status: :ok, location: @_breves_concour }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class BrevesConcoursController < ApplicationController
     @_breves_concour.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _breves_concours_url, notice: "Breves concour was successfully destroyed." }
+      format.html { redirect_to breves_concours_url, notice: "Breves concour was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class BrevesConcoursController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _breves_concour_params
-      params.require(:_breves_concour).permit(:name)
+      params.require(:breves_concour).permit(:name)
     end
 end

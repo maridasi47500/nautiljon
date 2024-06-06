@@ -25,7 +25,7 @@ class MangasCommercesController < ApplicationController
 
     respond_to do |format|
       if @_mangas_commerce.save
-        format.html { redirect_to _mangas_commerce_url(@_mangas_commerce), notice: "Mangas commerce was successfully created." }
+        format.html { redirect_to mangas_commerce_url(@_mangas_commerce), notice: "Mangas commerce was successfully created." }
         format.json { render :show, status: :created, location: @_mangas_commerce }
       else
         format.html { render :new, status: :unprocessable_entity }
@@ -38,7 +38,7 @@ class MangasCommercesController < ApplicationController
   def update
     respond_to do |format|
       if @_mangas_commerce.update(_mangas_commerce_params)
-        format.html { redirect_to _mangas_commerce_url(@_mangas_commerce), notice: "Mangas commerce was successfully updated." }
+        format.html { redirect_to mangas_commerce_url(@_mangas_commerce), notice: "Mangas commerce was successfully updated." }
         format.json { render :show, status: :ok, location: @_mangas_commerce }
       else
         format.html { render :edit, status: :unprocessable_entity }
@@ -52,7 +52,7 @@ class MangasCommercesController < ApplicationController
     @_mangas_commerce.destroy!
 
     respond_to do |format|
-      format.html { redirect_to _mangas_commerces_url, notice: "Mangas commerce was successfully destroyed." }
+      format.html { redirect_to mangas_commerces_url, notice: "Mangas commerce was successfully destroyed." }
       format.json { head :no_content }
     end
   end
@@ -65,6 +65,6 @@ class MangasCommercesController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def _mangas_commerce_params
-      params.require(:_mangas_commerce).permit(:name)
+      params.require(:mangas_commerce).permit(:name)
     end
 end
