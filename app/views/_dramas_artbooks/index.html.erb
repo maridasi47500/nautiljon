@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dramas artbooks</h1>
+
+<div id="_dramas_artbooks">
+  <% @_dramas_artbooks.each do |_dramas_artbook| %>
+    <%= render _dramas_artbook %>
+    <p>
+      <%= link_to "Show this dramas artbook", _dramas_artbook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dramas artbook", new__dramas_artbook_path %>

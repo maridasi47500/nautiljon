@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_genre %>
+
+<div>
+  <%= link_to "Edit this dramas genre", edit__dramas_genre_path(@_dramas_genre) %> |
+  <%= link_to "Back to dramas genres", _dramas_genres_path %>
+
+  <%= button_to "Destroy this dramas genre", @_dramas_genre, method: :delete %>
+</div>

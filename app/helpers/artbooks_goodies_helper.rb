@@ -1,0 +1,2 @@
+module ArtbooksGoodiesHelper
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_personnage_danimes_perso %>
+
+<div>
+  <%= link_to "Edit this personnage danimes perso", edit__personnage_danimes_perso_path(@_personnage_danimes_perso) %> |
+  <%= link_to "Back to personnage danimes persos", _personnage_danimes_persos_path %>
+
+  <%= button_to "Destroy this personnage danimes perso", @_personnage_danimes_perso, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+module LightNovelsQuizzsHelper
+end

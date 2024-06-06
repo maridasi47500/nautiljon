@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_theme %>
+
+<div>
+  <%= link_to "Edit this dramas theme", edit__dramas_theme_path(@_dramas_theme) %> |
+  <%= link_to "Back to dramas themes", _dramas_themes_path %>
+
+  <%= button_to "Destroy this dramas theme", @_dramas_theme, method: :delete %>
+</div>

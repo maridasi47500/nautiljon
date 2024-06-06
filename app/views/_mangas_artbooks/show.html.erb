@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_artbook %>
+
+<div>
+  <%= link_to "Edit this mangas artbook", edit__mangas_artbook_path(@_mangas_artbook) %> |
+  <%= link_to "Back to mangas artbooks", _mangas_artbooks_path %>
+
+  <%= button_to "Destroy this mangas artbook", @_mangas_artbook, method: :delete %>
+</div>

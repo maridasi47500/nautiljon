@@ -1,0 +1,2 @@
+module JeuxVideosConcoursHelper
+end

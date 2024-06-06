@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves emission tvs</h1>
+
+<div id="_breves_emission_tvs">
+  <% @_breves_emission_tvs.each do |_breves_emission_tv| %>
+    <%= render _breves_emission_tv %>
+    <p>
+      <%= link_to "Show this breves emission tv", _breves_emission_tv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves emission tv", new__breves_emission_tv_path %>

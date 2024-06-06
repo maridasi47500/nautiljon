@@ -1,0 +1,2 @@
+module GoodiesLnsHelper
+end

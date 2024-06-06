@@ -1,0 +1,2 @@
+module BrevesLitteratureAsiatiquesHelper
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dramas editeurs vf roles</h1>
+
+<div id="_dramas_editeurs_vf_roles">
+  <% @_dramas_editeurs_vf_roles.each do |_dramas_editeurs_vf_role| %>
+    <%= render _dramas_editeurs_vf_role %>
+    <p>
+      <%= link_to "Show this dramas editeurs vf role", _dramas_editeurs_vf_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dramas editeurs vf role", new__dramas_editeurs_vf_role_path %>

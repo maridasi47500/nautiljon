@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves lns</h1>
+
+<div id="_breves_lns">
+  <% @_breves_lns.each do |_breves_ln| %>
+    <%= render _breves_ln %>
+    <p>
+      <%= link_to "Show this breves ln", _breves_ln %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves ln", new__breves_ln_path %>

@@ -1,0 +1,2 @@
+module LightNovelsActualitesHelper
+end

@@ -1,0 +1,2 @@
+module JeuxVideosLnsHelper
+end

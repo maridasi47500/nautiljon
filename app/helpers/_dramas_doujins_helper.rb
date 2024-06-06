@@ -1,0 +1,2 @@
+module DramasDoujinsHelper
+end

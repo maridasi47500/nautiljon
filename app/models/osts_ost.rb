@@ -1,0 +1,2 @@
+class OstsOst < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module PetitesAnnoncesPaysHelper
+end

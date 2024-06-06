@@ -1,0 +1,55 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  titre_original: MyString
+  _generique_de_jeu_videos_type_id: 1
+  number: MyString
+  _generique_de_jeu_videos_staff_role_id: 1
+  _generique_de_jeu_videos_staff_people_id: 1
+  _generique_de_jeu_videos_staff_role_id: 1
+  _generique_de_jeu_videos_staff_people_id: 1
+  description: MyText
+  instrumental: MyString
+  instrumental: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  youtube: MyString
+  paroles: MyText
+  paroles_trad: MyText
+  membre_show: MyString
+  membre_show: MyString
+  _generique_de_jeu_videos_jv_id: 1
+  _generique_de_jeu_videos_jv_generic_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  titre: MyString
+  titre_original: MyString
+  _generique_de_jeu_videos_type_id: 1
+  number: MyString
+  _generique_de_jeu_videos_staff_role_id: 1
+  _generique_de_jeu_videos_staff_people_id: 1
+  _generique_de_jeu_videos_staff_role_id: 1
+  _generique_de_jeu_videos_staff_people_id: 1
+  description: MyText
+  instrumental: MyString
+  instrumental: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  youtube: MyString
+  paroles: MyText
+  paroles_trad: MyText
+  membre_show: MyString
+  membre_show: MyString
+  _generique_de_jeu_videos_jv_id: 1
+  _generique_de_jeu_videos_jv_generic_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

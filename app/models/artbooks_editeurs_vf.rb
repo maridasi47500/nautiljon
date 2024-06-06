@@ -1,0 +1,2 @@
+class ArtbooksEditeursVf < ApplicationRecord
+end

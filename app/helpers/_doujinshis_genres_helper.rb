@@ -1,0 +1,2 @@
+module DoujinshisGenresHelper
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres cultures</h1>
+
+<div id="_livres_cultures">
+  <% @_livres_cultures.each do |_livres_culture| %>
+    <%= render _livres_culture %>
+    <p>
+      <%= link_to "Show this livres culture", _livres_culture %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres culture", new__livres_culture_path %>

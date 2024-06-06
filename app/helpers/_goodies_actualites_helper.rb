@@ -1,0 +1,2 @@
+module GoodiesActualitesHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "_dramas_editeurs_vf_roles/_dramas_editeurs_vf_role", _dramas_editeurs_vf_role: @_dramas_editeurs_vf_role

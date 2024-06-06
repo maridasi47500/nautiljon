@@ -1,0 +1,77 @@
+<%= form_with(model: _concert) do |form| %>
+  <% if _concert.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_concert.errors.count, "error") %> prohibited this _concert from being saved:</h2>
+
+      <ul>
+        <% _concert.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :date, style: "display: block" %>
+    <%= form.text_field :date %>
+  </div>
+
+  <div>
+    <%= form.label :_concerts_artiste_id, style: "display: block" %>
+    <%= form.number_field :_concerts_artiste_id %>
+  </div>
+
+  <div>
+    <%= form.label :nom, style: "display: block" %>
+    <%= form.text_field :nom %>
+  </div>
+
+  <div>
+    <%= form.label :endroit, style: "display: block" %>
+    <%= form.text_field :endroit %>
+  </div>
+
+  <div>
+    <%= form.label :adresse, style: "display: block" %>
+    <%= form.text_field :adresse %>
+  </div>
+
+  <div>
+    <%= form.label :ville, style: "display: block" %>
+    <%= form.text_field :ville %>
+  </div>
+
+  <div>
+    <%= form.label :_concerts_pays_id, style: "display: block" %>
+    <%= form.number_field :_concerts_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :infos, style: "display: block" %>
+    <%= form.text_area :infos %>
+  </div>
+
+  <div>
+    <%= form.label :lien, style: "display: block" %>
+    <%= form.text_field :lien %>
+  </div>
+
+  <div>
+    <%= form.label :prix, style: "display: block" %>
+    <%= form.text_field :prix %>
+  </div>
+
+  <div>
+    <%= form.label :heure, style: "display: block" %>
+    <%= form.text_field :heure %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

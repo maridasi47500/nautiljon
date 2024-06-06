@@ -1,0 +1,1 @@
+json.array! @_generique_de_jeu_videos_jv_generics, partial: "_generique_de_jeu_videos_jv_generics/_generique_de_jeu_videos_jv_generic", as: :_generique_de_jeu_videos_jv_generic

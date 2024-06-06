@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnages de jeux videos perso plus</h1>
+
+<div id="_personnages_de_jeux_videos_perso_plus">
+  <% @_personnages_de_jeux_videos_perso_plus.each do |_personnages_de_jeux_videos_perso_plu| %>
+    <%= render _personnages_de_jeux_videos_perso_plu %>
+    <p>
+      <%= link_to "Show this personnages de jeux videos perso plu", _personnages_de_jeux_videos_perso_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnages de jeux videos perso plu", new__personnages_de_jeux_videos_perso_plu_path %>

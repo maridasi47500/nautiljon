@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujinshis_convention %>
+
+<div>
+  <%= link_to "Edit this doujinshis convention", edit__doujinshis_convention_path(@_doujinshis_convention) %> |
+  <%= link_to "Back to doujinshis conventions", _doujinshis_conventions_path %>
+
+  <%= button_to "Destroy this doujinshis convention", @_doujinshis_convention, method: :delete %>
+</div>

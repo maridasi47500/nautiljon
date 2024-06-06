@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnages de jeux videos doubleur people</h1>
+
+<div id="_personnages_de_jeux_videos_doubleur_people">
+  <% @_personnages_de_jeux_videos_doubleur_people.each do |_personnages_de_jeux_videos_doubleur_person| %>
+    <%= render _personnages_de_jeux_videos_doubleur_person %>
+    <p>
+      <%= link_to "Show this personnages de jeux videos doubleur person", _personnages_de_jeux_videos_doubleur_person %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnages de jeux videos doubleur person", new__personnages_de_jeux_videos_doubleur_person_path %>

@@ -1,0 +1,22 @@
+<%= form_with(model: _cds_monnaie) do |form| %>
+  <% if _cds_monnaie.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_cds_monnaie.errors.count, "error") %> prohibited this _cds_monnaie from being saved:</h2>
+
+      <ul>
+        <% _cds_monnaie.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

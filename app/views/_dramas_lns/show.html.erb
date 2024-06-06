@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_ln %>
+
+<div>
+  <%= link_to "Edit this dramas ln", edit__dramas_ln_path(@_dramas_ln) %> |
+  <%= link_to "Back to dramas lns", _dramas_lns_path %>
+
+  <%= button_to "Destroy this dramas ln", @_dramas_ln, method: :delete %>
+</div>

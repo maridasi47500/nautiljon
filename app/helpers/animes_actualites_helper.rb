@@ -1,0 +1,2 @@
+module AnimesActualitesHelper
+end

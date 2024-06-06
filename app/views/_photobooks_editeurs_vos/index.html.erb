@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Photobooks editeurs vos</h1>
+
+<div id="_photobooks_editeurs_vos">
+  <% @_photobooks_editeurs_vos.each do |_photobooks_editeurs_vo| %>
+    <%= render _photobooks_editeurs_vo %>
+    <p>
+      <%= link_to "Show this photobooks editeurs vo", _photobooks_editeurs_vo %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New photobooks editeurs vo", new__photobooks_editeurs_vo_path %>

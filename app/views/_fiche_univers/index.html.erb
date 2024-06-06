@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fiche univers</h1>
+
+<div id="_fiche_univers">
+  <% @_fiche_univers.each do |_fiche_univer| %>
+    <%= render _fiche_univer %>
+    <p>
+      <%= link_to "Show this fiche univer", _fiche_univer %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fiche univer", new__fiche_univer_path %>

@@ -1,0 +1,2 @@
+module DoujinshisDramasHelper
+end

@@ -1,0 +1,2 @@
+module LightNovelsAnimesHelper
+end

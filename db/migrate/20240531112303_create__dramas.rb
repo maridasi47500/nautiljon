@@ -1,0 +1,86 @@
+class CreateDramas < ActiveRecord::Migration[7.1]
+  def change
+    create_table :_dramas do |t|
+      t.string :titre
+      t.string :titre_alternatif
+      t.string :titre_alternatif_suite
+      t.string :titre_original_latin
+      t.string :titre_original
+      t.string :image
+      t.integer :_dramas_origine_id
+      t.integer :_dramas_encours_id
+      t.string :date_debut_jj
+      t.string :date_debut_mm
+      t.string :date_debut_aaaa
+      t.string :date_fin_jj
+      t.string :date_fin_mm
+      t.string :date_fin_aaaa
+      t.string :nb_ep
+      t.string :total_ep_inconnu
+      t.integer :_dramas_pays_id
+      t.string :duree
+      t.string :age
+      t.integer :_dramas_genres_id
+      t.integer :_dramas_themes_id
+      t.integer :_dramas_staff_role_id
+      t.integer :_dramas_staff_people_id
+      t.integer :_dramas_societe_role_id
+      t.integer :_dramas_societe_people_id
+      t.integer :_dramas_type_id
+      t.integer :_dramas_acteurs_id
+      t.text :synopsis
+      t.string :youtube
+      t.string :webdrama
+      t.integer :_dramas_editeurs_vf_role_id
+      t.integer :_dramas_editeurs_vf_id
+      t.string :date_debut_simulcast_jj
+      t.string :date_debut_simulcast_mm
+      t.string :date_debut_simulcast_aaaa
+      t.string :licencie
+      t.string :date_vf_jj
+      t.string :date_vf_mm
+      t.string :date_vf_aaaa
+      t.string :site
+      t.string :site2
+      t.integer :_dramas_programme_id
+      t.text :episodes
+      t.integer :_dramas_generiques_type_id
+      t.integer :_dramas_generiques_people_id
+      t.integer :_dramas_generiques_people2_id
+      t.integer :_dramas_generiques_clip_id
+      t.integer :_dramas_generiques_parole_id
+      t.text :infos
+      t.integer :_dramas_groupes_id
+      t.integer :_dramas_anime_id
+      t.integer :_dramas_anime_plus_id
+      t.integer :_dramas_ln_id
+      t.integer :_dramas_ln_plus_id
+      t.integer :_dramas_manga_id
+      t.integer :_dramas_manga_plus_id
+      t.integer :_dramas_drama_id
+      t.integer :_dramas_drama_plus_id
+      t.integer :_dramas_jv_id
+      t.integer :_dramas_jv_plus_id
+      t.integer :_dramas_am_id
+      t.integer :_dramas_am_plus_id
+      t.integer :_dramas_univers_id
+      t.integer :_dramas_litterature_asiatique_id
+      t.integer :_dramas_litterature_asiatique_plus_id
+      t.integer :_dramas_actualite_id
+      t.integer :_dramas_culture_id
+      t.integer :_dramas_actualite_mini_id
+      t.integer :_dramas_ost_id
+      t.integer :_dramas_doujin_id
+      t.integer :_dramas_cd_id
+      t.integer :_dramas_dvd_id
+      t.integer :_dramas_artbook_id
+      t.integer :_dramas_emission_tv_id
+      t.integer :_dramas_emission_tv_plus_id
+      t.text :comment
+      t.string :statut_prop
+      t.string :acceptregles
+
+      t.timestamps
+    end
+  end
+end

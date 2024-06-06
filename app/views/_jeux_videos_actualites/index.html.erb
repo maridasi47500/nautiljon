@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos actualites</h1>
+
+<div id="_jeux_videos_actualites">
+  <% @_jeux_videos_actualites.each do |_jeux_videos_actualite| %>
+    <%= render _jeux_videos_actualite %>
+    <p>
+      <%= link_to "Show this jeux videos actualite", _jeux_videos_actualite %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos actualite", new__jeux_videos_actualite_path %>

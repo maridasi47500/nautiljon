@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques litterature asiatique plus</h1>
+
+<div id="_films_asiatiques_litterature_asiatique_plus">
+  <% @_films_asiatiques_litterature_asiatique_plus.each do |_films_asiatiques_litterature_asiatique_plu| %>
+    <%= render _films_asiatiques_litterature_asiatique_plu %>
+    <p>
+      <%= link_to "Show this films asiatiques litterature asiatique plu", _films_asiatiques_litterature_asiatique_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques litterature asiatique plu", new__films_asiatiques_litterature_asiatique_plu_path %>

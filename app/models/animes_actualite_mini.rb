@@ -1,0 +1,2 @@
+class AnimesActualiteMini < ApplicationRecord
+end

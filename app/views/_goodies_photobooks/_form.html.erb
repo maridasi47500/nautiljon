@@ -1,0 +1,22 @@
+<%= form_with(model: _goodies_photobook) do |form| %>
+  <% if _goodies_photobook.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_goodies_photobook.errors.count, "error") %> prohibited this _goodies_photobook from being saved:</h2>
+
+      <ul>
+        <% _goodies_photobook.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

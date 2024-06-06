@@ -1,0 +1,2 @@
+module FilmsAsiatiquesGeneriquesTypesHelper
+end

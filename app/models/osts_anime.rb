@@ -1,0 +1,2 @@
+class OstsAnime < ApplicationRecord
+end

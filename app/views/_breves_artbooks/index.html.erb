@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves artbooks</h1>
+
+<div id="_breves_artbooks">
+  <% @_breves_artbooks.each do |_breves_artbook| %>
+    <%= render _breves_artbook %>
+    <p>
+      <%= link_to "Show this breves artbook", _breves_artbook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves artbook", new__breves_artbook_path %>

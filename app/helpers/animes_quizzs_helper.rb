@@ -1,0 +1,2 @@
+module AnimesQuizzsHelper
+end

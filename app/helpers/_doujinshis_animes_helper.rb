@@ -1,0 +1,2 @@
+module DoujinshisAnimesHelper
+end

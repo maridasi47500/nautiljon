@@ -1,0 +1,2 @@
+module DramasActualitesHelper
+end

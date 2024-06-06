@@ -1,0 +1,2 @@
+module DoujinsGroupesHelper
+end

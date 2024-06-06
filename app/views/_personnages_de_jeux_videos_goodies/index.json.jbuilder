@@ -1,0 +1,1 @@
+json.array! @_personnages_de_jeux_videos_goodies, partial: "_personnages_de_jeux_videos_goodies/_personnages_de_jeux_videos_goody", as: :_personnages_de_jeux_videos_goody

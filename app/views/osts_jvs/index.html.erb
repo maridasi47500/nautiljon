@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Osts jvs</h1>
+
+<div id="osts_jvs">
+  <% @osts_jvs.each do |osts_jv| %>
+    <%= render osts_jv %>
+    <p>
+      <%= link_to "Show this osts jv", osts_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New osts jv", new_osts_jv_path %>

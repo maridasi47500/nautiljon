@@ -1,0 +1,1 @@
+json.partial! "_mangas_editeurs_vf_collections/_mangas_editeurs_vf_collection", _mangas_editeurs_vf_collection: @_mangas_editeurs_vf_collection

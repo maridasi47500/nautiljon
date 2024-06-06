@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_actualite %>
+
+<div>
+  <%= link_to "Edit this breves actualite", edit__breves_actualite_path(@_breves_actualite) %> |
+  <%= link_to "Back to breves actualites", _breves_actualites_path %>
+
+  <%= button_to "Destroy this breves actualite", @_breves_actualite, method: :delete %>
+</div>

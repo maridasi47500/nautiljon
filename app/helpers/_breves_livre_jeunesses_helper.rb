@@ -1,0 +1,2 @@
+module BrevesLivreJeunessesHelper
+end

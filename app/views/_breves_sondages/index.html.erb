@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves sondages</h1>
+
+<div id="_breves_sondages">
+  <% @_breves_sondages.each do |_breves_sondage| %>
+    <%= render _breves_sondage %>
+    <p>
+      <%= link_to "Show this breves sondage", _breves_sondage %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves sondage", new__breves_sondage_path %>

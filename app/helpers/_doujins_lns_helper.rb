@@ -1,0 +1,2 @@
+module DoujinsLnsHelper
+end

@@ -1,0 +1,2 @@
+class AnimesJvPlu < ApplicationRecord
+end

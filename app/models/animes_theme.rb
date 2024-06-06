@@ -1,0 +1,2 @@
+class AnimesTheme < ApplicationRecord
+end

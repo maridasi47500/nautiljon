@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques en salles staff roles</h1>
+
+<div id="_films_asiatiques_en_salles_staff_roles">
+  <% @_films_asiatiques_en_salles_staff_roles.each do |_films_asiatiques_en_salles_staff_role| %>
+    <%= render _films_asiatiques_en_salles_staff_role %>
+    <p>
+      <%= link_to "Show this films asiatiques en salles staff role", _films_asiatiques_en_salles_staff_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques en salles staff role", new__films_asiatiques_en_salles_staff_role_path %>

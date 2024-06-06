@@ -1,0 +1,2 @@
+json.extract! _generique, :id, :titre, :titre_original, :_generiques_id_anime_id, :_generiques_type_id, :number, :_generiques_staff_role_id, :_generiques_staff_people_id, :_generiques_staff_role_id, :_generiques_staff_people_id, :description, :instrumental, :instrumental, :date_jj, :date_mm, :date_aaaa, :youtube, :paroles, :paroles_trad, :membre_show, :membre_show, :episodes, :_generiques_generic_id, :comment, :statut_prop, :statut_prop, :acceptregles, :created_at, :updated_at
+json.url _generique_url(_generique, format: :json)

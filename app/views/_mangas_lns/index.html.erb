@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mangas lns</h1>
+
+<div id="_mangas_lns">
+  <% @_mangas_lns.each do |_mangas_ln| %>
+    <%= render _mangas_ln %>
+    <p>
+      <%= link_to "Show this mangas ln", _mangas_ln %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mangas ln", new__mangas_ln_path %>

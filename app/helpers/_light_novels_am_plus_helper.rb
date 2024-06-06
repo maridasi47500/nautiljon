@@ -1,0 +1,2 @@
+module LightNovelsAmPlusHelper
+end

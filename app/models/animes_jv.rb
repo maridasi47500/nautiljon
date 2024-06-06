@@ -1,0 +1,2 @@
+class AnimesJv < ApplicationRecord
+end

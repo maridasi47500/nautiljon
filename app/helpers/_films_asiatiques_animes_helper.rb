@@ -1,0 +1,2 @@
+module FilmsAsiatiquesAnimesHelper
+end

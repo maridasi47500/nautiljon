@@ -1,0 +1,3 @@
+class FilmsAsiatiquesLitteratureAsiatiquePlu < ApplicationRecord
+self.table_name = "_films_asiatiques_litterature_asiatique_plus"
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujins artbooks</h1>
+
+<div id="_doujins_artbooks">
+  <% @_doujins_artbooks.each do |_doujins_artbook| %>
+    <%= render _doujins_artbook %>
+    <p>
+      <%= link_to "Show this doujins artbook", _doujins_artbook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujins artbook", new__doujins_artbook_path %>

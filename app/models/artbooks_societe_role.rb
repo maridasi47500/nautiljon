@@ -1,0 +1,2 @@
+class ArtbooksSocieteRole < ApplicationRecord
+end

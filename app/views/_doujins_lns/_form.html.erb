@@ -1,0 +1,22 @@
+<%= form_with(model: _doujins_ln) do |form| %>
+  <% if _doujins_ln.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_doujins_ln.errors.count, "error") %> prohibited this _doujins_ln from being saved:</h2>
+
+      <ul>
+        <% _doujins_ln.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

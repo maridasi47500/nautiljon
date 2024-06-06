@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres litterature asiatiques</h1>
+
+<div id="_livres_litterature_asiatiques">
+  <% @_livres_litterature_asiatiques.each do |_livres_litterature_asiatique| %>
+    <%= render _livres_litterature_asiatique %>
+    <p>
+      <%= link_to "Show this livres litterature asiatique", _livres_litterature_asiatique %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres litterature asiatique", new__livres_litterature_asiatique_path %>

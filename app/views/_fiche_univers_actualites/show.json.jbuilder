@@ -1,0 +1,1 @@
+json.partial! "_fiche_univers_actualites/_fiche_univers_actualite", _fiche_univers_actualite: @_fiche_univers_actualite

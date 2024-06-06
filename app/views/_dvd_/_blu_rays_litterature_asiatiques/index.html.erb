@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blu rays litterature asiatiques</h1>
+
+<div id="_dvd___blu_rays_litterature_asiatiques">
+  <% @_dvd___blu_rays_litterature_asiatiques.each do |_dvd___blu_rays_litterature_asiatique| %>
+    <%= render _dvd___blu_rays_litterature_asiatique %>
+    <p>
+      <%= link_to "Show this blu rays litterature asiatique", _dvd___blu_rays_litterature_asiatique %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blu rays litterature asiatique", new__dvd___blu_rays_litterature_asiatique_path %>

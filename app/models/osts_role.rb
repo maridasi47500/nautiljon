@@ -1,0 +1,2 @@
+class OstsRole < ApplicationRecord
+end

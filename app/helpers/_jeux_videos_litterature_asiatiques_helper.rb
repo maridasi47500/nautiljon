@@ -1,0 +1,2 @@
+module JeuxVideosLitteratureAsiatiquesHelper
+end

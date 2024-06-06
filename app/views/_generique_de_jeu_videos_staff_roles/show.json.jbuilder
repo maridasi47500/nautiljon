@@ -1,0 +1,1 @@
+json.partial! "_generique_de_jeu_videos_staff_roles/_generique_de_jeu_videos_staff_role", _generique_de_jeu_videos_staff_role: @_generique_de_jeu_videos_staff_role

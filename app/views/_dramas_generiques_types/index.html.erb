@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dramas generiques types</h1>
+
+<div id="_dramas_generiques_types">
+  <% @_dramas_generiques_types.each do |_dramas_generiques_type| %>
+    <%= render _dramas_generiques_type %>
+    <p>
+      <%= link_to "Show this dramas generiques type", _dramas_generiques_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dramas generiques type", new__dramas_generiques_type_path %>

@@ -1,0 +1,2 @@
+module FilmsAsiatiquesEditeursVfsHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "_personnalites_labels_exes/_personnalites_labels_ex", _personnalites_labels_ex: @_personnalites_labels_ex

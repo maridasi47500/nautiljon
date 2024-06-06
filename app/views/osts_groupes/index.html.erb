@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Osts groupes</h1>
+
+<div id="osts_groupes">
+  <% @osts_groupes.each do |osts_groupe| %>
+    <%= render osts_groupe %>
+    <p>
+      <%= link_to "Show this osts groupe", osts_groupe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New osts groupe", new_osts_groupe_path %>

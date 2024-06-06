@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Numero demission tvs emission tv numeros</h1>
+
+<div id="_numero_demission_tvs_emission_tv_numeros">
+  <% @_numero_demission_tvs_emission_tv_numeros.each do |_numero_demission_tvs_emission_tv_numero| %>
+    <%= render _numero_demission_tvs_emission_tv_numero %>
+    <p>
+      <%= link_to "Show this numero demission tvs emission tv numero", _numero_demission_tvs_emission_tv_numero %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New numero demission tvs emission tv numero", new__numero_demission_tvs_emission_tv_numero_path %>

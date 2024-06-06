@@ -1,0 +1,2 @@
+module Dvd::BluRaysAmsHelper
+end

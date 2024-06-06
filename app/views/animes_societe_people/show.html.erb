@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_societe_person %>
+
+<div>
+  <%= link_to "Edit this animes societe person", edit_animes_societe_person_path(@animes_societe_person) %> |
+  <%= link_to "Back to animes societe people", animes_societe_people_path %>
+
+  <%= button_to "Destroy this animes societe person", @animes_societe_person, method: :delete %>
+</div>

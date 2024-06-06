@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Petites annonces pays</h1>
+
+<div id="_petites_annonces_pays">
+  <% @_petites_annonces_pays.each do |_petites_annonces_pay| %>
+    <%= render _petites_annonces_pay %>
+    <p>
+      <%= link_to "Show this petites annonces pay", _petites_annonces_pay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New petites annonces pay", new__petites_annonces_pay_path %>

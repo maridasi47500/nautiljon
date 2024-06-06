@@ -1,0 +1,2 @@
+module MangasEditeursVosHelper
+end

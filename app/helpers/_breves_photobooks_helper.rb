@@ -1,0 +1,2 @@
+module BrevesPhotobooksHelper
+end

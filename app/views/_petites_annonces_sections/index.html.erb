@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Petites annonces sections</h1>
+
+<div id="_petites_annonces_sections">
+  <% @_petites_annonces_sections.each do |_petites_annonces_section| %>
+    <%= render _petites_annonces_section %>
+    <p>
+      <%= link_to "Show this petites annonces section", _petites_annonces_section %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New petites annonces section", new__petites_annonces_section_path %>

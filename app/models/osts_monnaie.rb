@@ -1,0 +1,2 @@
+class OstsMonnaie < ApplicationRecord
+end

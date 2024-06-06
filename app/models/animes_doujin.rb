@@ -1,0 +1,2 @@
+class AnimesDoujin < ApplicationRecord
+end

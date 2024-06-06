@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Light novels themes</h1>
+
+<div id="_light_novels_themes">
+  <% @_light_novels_themes.each do |_light_novels_theme| %>
+    <%= render _light_novels_theme %>
+    <p>
+      <%= link_to "Show this light novels theme", _light_novels_theme %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New light novels theme", new__light_novels_theme_path %>

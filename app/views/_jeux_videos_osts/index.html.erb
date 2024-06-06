@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos osts</h1>
+
+<div id="_jeux_videos_osts">
+  <% @_jeux_videos_osts.each do |_jeux_videos_ost| %>
+    <%= render _jeux_videos_ost %>
+    <p>
+      <%= link_to "Show this jeux videos ost", _jeux_videos_ost %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos ost", new__jeux_videos_ost_path %>

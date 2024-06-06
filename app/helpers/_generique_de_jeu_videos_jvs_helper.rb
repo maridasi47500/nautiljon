@@ -1,0 +1,2 @@
+module GeneriqueDeJeuVideosJvsHelper
+end

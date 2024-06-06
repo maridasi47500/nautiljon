@@ -1,0 +1,2 @@
+class ArtbooksFrance < ApplicationRecord
+end

@@ -1,0 +1,2 @@
+module PersonnalitesLabelsExesHelper
+end

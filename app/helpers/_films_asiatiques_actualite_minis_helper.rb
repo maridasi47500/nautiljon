@@ -1,0 +1,2 @@
+module FilmsAsiatiquesActualiteMinisHelper
+end

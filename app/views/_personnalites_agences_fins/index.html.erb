@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites agences fins</h1>
+
+<div id="_personnalites_agences_fins">
+  <% @_personnalites_agences_fins.each do |_personnalites_agences_fin| %>
+    <%= render _personnalites_agences_fin %>
+    <p>
+      <%= link_to "Show this personnalites agences fin", _personnalites_agences_fin %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalites agences fin", new__personnalites_agences_fin_path %>

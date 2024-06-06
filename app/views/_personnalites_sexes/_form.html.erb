@@ -1,0 +1,22 @@
+<%= form_with(model: _personnalites_sex) do |form| %>
+  <% if _personnalites_sex.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_personnalites_sex.errors.count, "error") %> prohibited this _personnalites_sex from being saved:</h2>
+
+      <ul>
+        <% _personnalites_sex.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

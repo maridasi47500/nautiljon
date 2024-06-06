@@ -1,0 +1,2 @@
+module ParolesStaffPeopleHelper
+end

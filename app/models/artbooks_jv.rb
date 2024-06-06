@@ -1,0 +1,2 @@
+class ArtbooksJv < ApplicationRecord
+end

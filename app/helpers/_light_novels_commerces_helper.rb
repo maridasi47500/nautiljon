@@ -1,0 +1,2 @@
+module LightNovelsCommercesHelper
+end

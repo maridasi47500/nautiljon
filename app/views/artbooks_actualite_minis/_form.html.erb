@@ -1,0 +1,22 @@
+<%= form_with(model: artbooks_actualite_mini) do |form| %>
+  <% if artbooks_actualite_mini.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(artbooks_actualite_mini.errors.count, "error") %> prohibited this artbooks_actualite_mini from being saved:</h2>
+
+      <ul>
+        <% artbooks_actualite_mini.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

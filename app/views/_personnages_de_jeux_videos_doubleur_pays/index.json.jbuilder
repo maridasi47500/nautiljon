@@ -1,0 +1,1 @@
+json.array! @_personnages_de_jeux_videos_doubleur_pays, partial: "_personnages_de_jeux_videos_doubleur_pays/_personnages_de_jeux_videos_doubleur_pay", as: :_personnages_de_jeux_videos_doubleur_pay

@@ -1,0 +1,2 @@
+class Artbook < ApplicationRecord
+end

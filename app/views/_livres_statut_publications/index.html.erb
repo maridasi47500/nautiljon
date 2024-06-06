@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres statut publications</h1>
+
+<div id="_livres_statut_publications">
+  <% @_livres_statut_publications.each do |_livres_statut_publication| %>
+    <%= render _livres_statut_publication %>
+    <p>
+      <%= link_to "Show this livres statut publication", _livres_statut_publication %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres statut publication", new__livres_statut_publication_path %>

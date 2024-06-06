@@ -1,0 +1,2 @@
+class AmvsMaker < ApplicationRecord
+end

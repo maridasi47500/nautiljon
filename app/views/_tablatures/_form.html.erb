@@ -1,0 +1,57 @@
+<%= form_with(model: _tablature) do |form| %>
+  <% if _tablature.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_tablature.errors.count, "error") %> prohibited this _tablature from being saved:</h2>
+
+      <ul>
+        <% _tablature.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :_tablatures_people_id, style: "display: block" %>
+    <%= form.number_field :_tablatures_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_tablatures_people_id, style: "display: block" %>
+    <%= form.number_field :_tablatures_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :infos, style: "display: block" %>
+    <%= form.text_area :infos %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

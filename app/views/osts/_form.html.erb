@@ -1,0 +1,207 @@
+<%= form_with(model: ost) do |form| %>
+  <% if ost.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(ost.errors.count, "error") %> prohibited this ost from being saved:</h2>
+
+      <ul>
+        <% ost.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original_latin, style: "display: block" %>
+    <%= form.text_field :titre_original_latin %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :titre_us, style: "display: block" %>
+    <%= form.text_field :titre_us %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif, style: "display: block" %>
+    <%= form.text_field :titre_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :osts_type_id, style: "display: block" %>
+    <%= form.number_field :osts_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_plateforme_id, style: "display: block" %>
+    <%= form.number_field :osts_plateforme_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_plateforme_id, style: "display: block" %>
+    <%= form.number_field :osts_plateforme_id %>
+  </div>
+
+  <div>
+    <%= form.label :ref, style: "display: block" %>
+    <%= form.text_field :ref %>
+  </div>
+
+  <div>
+    <%= form.label :date_jj, style: "display: block" %>
+    <%= form.text_field :date_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_mm, style: "display: block" %>
+    <%= form.text_field :date_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_aaaa, style: "display: block" %>
+    <%= form.text_field :date_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :prix, style: "display: block" %>
+    <%= form.text_field :prix %>
+  </div>
+
+  <div>
+    <%= form.label :osts_monnaie_id, style: "display: block" %>
+    <%= form.number_field :osts_monnaie_id %>
+  </div>
+
+  <div>
+    <%= form.label :bonus_cd, style: "display: block" %>
+    <%= form.text_field :bonus_cd %>
+  </div>
+
+  <div>
+    <%= form.label :osts_role_id, style: "display: block" %>
+    <%= form.number_field :osts_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_people_id, style: "display: block" %>
+    <%= form.number_field :osts_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_role_id, style: "display: block" %>
+    <%= form.number_field :osts_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_people_id, style: "display: block" %>
+    <%= form.number_field :osts_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :sametracklist, style: "display: block" %>
+    <%= form.text_field :sametracklist %>
+  </div>
+
+  <div>
+    <%= form.label :osts_labels_id, style: "display: block" %>
+    <%= form.number_field :osts_labels_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_labels_id, style: "display: block" %>
+    <%= form.number_field :osts_labels_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_distributeurs_id, style: "display: block" %>
+    <%= form.number_field :osts_distributeurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_distributeurs_id, style: "display: block" %>
+    <%= form.number_field :osts_distributeurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :infos, style: "display: block" %>
+    <%= form.text_area :infos %>
+  </div>
+
+  <div>
+    <%= form.label :osts_groupes_id, style: "display: block" %>
+    <%= form.number_field :osts_groupes_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_anime_id, style: "display: block" %>
+    <%= form.number_field :osts_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_ln_id, style: "display: block" %>
+    <%= form.number_field :osts_ln_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_drama_id, style: "display: block" %>
+    <%= form.number_field :osts_drama_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_am_id, style: "display: block" %>
+    <%= form.number_field :osts_am_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_jv_id, style: "display: block" %>
+    <%= form.number_field :osts_jv_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_ost_id, style: "display: block" %>
+    <%= form.number_field :osts_ost_id %>
+  </div>
+
+  <div>
+    <%= form.label :osts_emission_tv_id, style: "display: block" %>
+    <%= form.number_field :osts_emission_tv_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

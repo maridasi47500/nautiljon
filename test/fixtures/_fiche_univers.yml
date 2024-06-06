@@ -1,0 +1,61 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  image: MyString
+  _fiche_univers_cat_id: 1
+  description: MyText
+  _fiche_univers_groupes_id: 1
+  _fiche_univers_univers_id: 1
+  _fiche_univers_anime_id: 1
+  _fiche_univers_perso_id: 1
+  _fiche_univers_manga_id: 1
+  _fiche_univers_perso_manga_id: 1
+  _fiche_univers_ln_id: 1
+  _fiche_univers_doujinshi_id: 1
+  _fiche_univers_jv_id: 1
+  _fiche_univers_jv_perso_id: 1
+  _fiche_univers_drama_id: 1
+  _fiche_univers_am_id: 1
+  _fiche_univers_litterature_asiatique_id: 1
+  _fiche_univers_people_id: 1
+  _fiche_univers_actualite_id: 1
+  _fiche_univers_actualite_mini_id: 1
+  _fiche_univers_culture_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  image: MyString
+  _fiche_univers_cat_id: 1
+  description: MyText
+  _fiche_univers_groupes_id: 1
+  _fiche_univers_univers_id: 1
+  _fiche_univers_anime_id: 1
+  _fiche_univers_perso_id: 1
+  _fiche_univers_manga_id: 1
+  _fiche_univers_perso_manga_id: 1
+  _fiche_univers_ln_id: 1
+  _fiche_univers_doujinshi_id: 1
+  _fiche_univers_jv_id: 1
+  _fiche_univers_jv_perso_id: 1
+  _fiche_univers_drama_id: 1
+  _fiche_univers_am_id: 1
+  _fiche_univers_litterature_asiatique_id: 1
+  _fiche_univers_people_id: 1
+  _fiche_univers_actualite_id: 1
+  _fiche_univers_actualite_mini_id: 1
+  _fiche_univers_culture_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

@@ -1,0 +1,2 @@
+module MangasCulturesHelper
+end

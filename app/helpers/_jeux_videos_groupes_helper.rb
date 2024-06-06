@@ -1,0 +1,2 @@
+module JeuxVideosGroupesHelper
+end

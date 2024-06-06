@@ -1,0 +1,2 @@
+module Dvd::BluRaysPaysHelper
+end

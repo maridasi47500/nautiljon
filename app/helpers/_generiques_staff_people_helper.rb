@@ -1,0 +1,2 @@
+module GeneriquesStaffPeopleHelper
+end

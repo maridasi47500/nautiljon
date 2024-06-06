@@ -1,0 +1,2 @@
+json.extract! _volume, :id, :_volumes_ln_id, :numero, :_volumes_type_id, :numerique, :image, :image_nc, :image_vo, :image_vo2, :date_parution_vo_jj, :date_parution_vo_mm, :date_parution_vo_aaaa, :date_parution_vf_jj, :date_parution_vf_mm, :date_parution_vf_aaaa, :prix, :prix_vo, :pages, :_volumes_illustrations_id, :ean, :relie, :sous_jaquette, :resume, :chapitres, :infos, :preview, :comment, :statut_prop, :statut_prop, :acceptregles, :created_at, :updated_at
+json.url _volume_url(_volume, format: :json)

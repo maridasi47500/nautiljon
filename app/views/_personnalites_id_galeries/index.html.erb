@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites id galeries</h1>
+
+<div id="_personnalites_id_galeries">
+  <% @_personnalites_id_galeries.each do |_personnalites_id_galery| %>
+    <%= render _personnalites_id_galery %>
+    <p>
+      <%= link_to "Show this personnalites id galerie", _personnalites_id_galery %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalites id galerie", new__personnalites_id_galery_path %>

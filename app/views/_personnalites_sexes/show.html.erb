@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_personnalites_sex %>
+
+<div>
+  <%= link_to "Edit this personnalites sexe", edit__personnalites_sex_path(@_personnalites_sex) %> |
+  <%= link_to "Back to personnalites sexes", _personnalites_sexes_path %>
+
+  <%= button_to "Destroy this personnalites sexe", @_personnalites_sex, method: :delete %>
+</div>

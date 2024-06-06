@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes editeurs vf roles</h1>
+
+<div id="animes_editeurs_vf_roles">
+  <% @animes_editeurs_vf_roles.each do |animes_editeurs_vf_role| %>
+    <%= render animes_editeurs_vf_role %>
+    <p>
+      <%= link_to "Show this animes editeurs vf role", animes_editeurs_vf_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes editeurs vf role", new_animes_editeurs_vf_role_path %>

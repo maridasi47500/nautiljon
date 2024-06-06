@@ -1,0 +1,2 @@
+class OstsJv < ApplicationRecord
+end

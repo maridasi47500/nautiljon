@@ -1,0 +1,2 @@
+module PhotobooksCdsHelper
+end

@@ -1,0 +1,2 @@
+module ArtbooksActualitesHelper
+end

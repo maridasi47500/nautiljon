@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_dvd %>
+
+<div>
+  <%= link_to "Edit this animes dvd", edit_animes_dvd_path(@animes_dvd) %> |
+  <%= link_to "Back to animes dvds", animes_dvds_path %>
+
+  <%= button_to "Destroy this animes dvd", @animes_dvd, method: :delete %>
+</div>

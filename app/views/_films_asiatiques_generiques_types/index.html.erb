@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques generiques types</h1>
+
+<div id="_films_asiatiques_generiques_types">
+  <% @_films_asiatiques_generiques_types.each do |_films_asiatiques_generiques_type| %>
+    <%= render _films_asiatiques_generiques_type %>
+    <p>
+      <%= link_to "Show this films asiatiques generiques type", _films_asiatiques_generiques_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques generiques type", new__films_asiatiques_generiques_type_path %>

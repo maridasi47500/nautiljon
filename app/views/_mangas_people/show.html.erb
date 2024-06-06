@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_person %>
+
+<div>
+  <%= link_to "Edit this mangas person", edit__mangas_person_path(@_mangas_person) %> |
+  <%= link_to "Back to mangas people", _mangas_people_path %>
+
+  <%= button_to "Destroy this mangas person", @_mangas_person, method: :delete %>
+</div>

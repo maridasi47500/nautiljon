@@ -1,0 +1,2 @@
+module MangasJvsHelper
+end

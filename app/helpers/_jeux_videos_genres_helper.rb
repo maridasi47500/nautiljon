@@ -1,0 +1,2 @@
+module JeuxVideosGenresHelper
+end

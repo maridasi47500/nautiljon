@@ -1,0 +1,2 @@
+class EvenementsPerson < ApplicationRecord
+end

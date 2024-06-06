@@ -1,0 +1,2 @@
+class AnimesDvd < ApplicationRecord
+end

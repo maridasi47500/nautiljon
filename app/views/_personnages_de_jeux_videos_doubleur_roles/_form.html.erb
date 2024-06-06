@@ -1,0 +1,22 @@
+<%= form_with(model: _personnages_de_jeux_videos_doubleur_role) do |form| %>
+  <% if _personnages_de_jeux_videos_doubleur_role.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_personnages_de_jeux_videos_doubleur_role.errors.count, "error") %> prohibited this _personnages_de_jeux_videos_doubleur_role from being saved:</h2>
+
+      <ul>
+        <% _personnages_de_jeux_videos_doubleur_role.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

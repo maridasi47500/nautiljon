@@ -1,0 +1,1 @@
+json.partial! "_personnalites_type_people/_personnalites_type_person", _personnalites_type_person: @_personnalites_type_person

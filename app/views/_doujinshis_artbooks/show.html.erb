@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujinshis_artbook %>
+
+<div>
+  <%= link_to "Edit this doujinshis artbook", edit__doujinshis_artbook_path(@_doujinshis_artbook) %> |
+  <%= link_to "Back to doujinshis artbooks", _doujinshis_artbooks_path %>
+
+  <%= button_to "Destroy this doujinshis artbook", @_doujinshis_artbook, method: :delete %>
+</div>

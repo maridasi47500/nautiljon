@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Generiques id animes</h1>
+
+<div id="_generiques_id_animes">
+  <% @_generiques_id_animes.each do |_generiques_id_anime| %>
+    <%= render _generiques_id_anime %>
+    <p>
+      <%= link_to "Show this generiques id anime", _generiques_id_anime %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generiques id anime", new__generiques_id_anime_path %>

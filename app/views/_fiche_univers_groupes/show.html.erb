@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_fiche_univers_groupe %>
+
+<div>
+  <%= link_to "Edit this fiche univers groupe", edit__fiche_univers_groupe_path(@_fiche_univers_groupe) %> |
+  <%= link_to "Back to fiche univers groupes", _fiche_univers_groupes_path %>
+
+  <%= button_to "Destroy this fiche univers groupe", @_fiche_univers_groupe, method: :delete %>
+</div>

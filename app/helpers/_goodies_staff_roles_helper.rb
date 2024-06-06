@@ -1,0 +1,2 @@
+module GoodiesStaffRolesHelper
+end

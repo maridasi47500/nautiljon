@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_groupe %>
+
+<div>
+  <%= link_to "Edit this dramas groupe", edit__dramas_groupe_path(@_dramas_groupe) %> |
+  <%= link_to "Back to dramas groupes", _dramas_groupes_path %>
+
+  <%= button_to "Destroy this dramas groupe", @_dramas_groupe, method: :delete %>
+</div>

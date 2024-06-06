@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos litterature asiatique plus</h1>
+
+<div id="_jeux_videos_litterature_asiatique_plus">
+  <% @_jeux_videos_litterature_asiatique_plus.each do |_jeux_videos_litterature_asiatique_plu| %>
+    <%= render _jeux_videos_litterature_asiatique_plu %>
+    <p>
+      <%= link_to "Show this jeux videos litterature asiatique plu", _jeux_videos_litterature_asiatique_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos litterature asiatique plu", new__jeux_videos_litterature_asiatique_plu_path %>

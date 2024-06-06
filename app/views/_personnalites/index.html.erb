@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites</h1>
+
+<div id="_personnalites">
+  <% @_personnalites.each do |_personnalite| %>
+    <%= render _personnalite %>
+    <p>
+      <%= link_to "Show this personnalite", _personnalite %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalite", new__personnalite_path %>

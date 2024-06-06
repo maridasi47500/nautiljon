@@ -1,0 +1,2 @@
+class OstsPerson < ApplicationRecord
+end

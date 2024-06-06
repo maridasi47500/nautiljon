@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_staff_person %>
+
+<div>
+  <%= link_to "Edit this dramas staff person", edit__dramas_staff_person_path(@_dramas_staff_person) %> |
+  <%= link_to "Back to dramas staff people", _dramas_staff_people_path %>
+
+  <%= button_to "Destroy this dramas staff person", @_dramas_staff_person, method: :delete %>
+</div>

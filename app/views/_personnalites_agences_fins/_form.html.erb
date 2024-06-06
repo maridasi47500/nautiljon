@@ -1,0 +1,22 @@
+<%= form_with(model: _personnalites_agences_fin) do |form| %>
+  <% if _personnalites_agences_fin.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_personnalites_agences_fin.errors.count, "error") %> prohibited this _personnalites_agences_fin from being saved:</h2>
+
+      <ul>
+        <% _personnalites_agences_fin.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

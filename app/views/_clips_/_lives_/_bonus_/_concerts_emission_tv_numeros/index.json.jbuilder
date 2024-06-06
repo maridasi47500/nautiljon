@@ -1,0 +1,1 @@
+json.array! @_clips___lives___bonus___concerts_emission_tv_numeros, partial: "_clips_/_lives_/_bonus_/_concerts_emission_tv_numeros/_clips___lives___bonus___concerts_emission_tv_numero", as: :_clips___lives___bonus___concerts_emission_tv_numero

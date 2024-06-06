@@ -1,0 +1,2 @@
+class AnimesManga < ApplicationRecord
+end

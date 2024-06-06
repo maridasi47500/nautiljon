@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Recettes types</h1>
+
+<div id="_recettes_types">
+  <% @_recettes_types.each do |_recettes_type| %>
+    <%= render _recettes_type %>
+    <p>
+      <%= link_to "Show this recettes type", _recettes_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New recettes type", new__recettes_type_path %>

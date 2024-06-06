@@ -1,0 +1,1 @@
+json.partial! "_dvd_/_blu_rays_type_editions/_dvd___blu_rays_type_edition", _dvd___blu_rays_type_edition: @_dvd___blu_rays_type_edition

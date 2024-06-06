@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos concours</h1>
+
+<div id="_jeux_videos_concours">
+  <% @_jeux_videos_concours.each do |_jeux_videos_concour| %>
+    <%= render _jeux_videos_concour %>
+    <p>
+      <%= link_to "Show this jeux videos concour", _jeux_videos_concour %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos concour", new__jeux_videos_concour_path %>

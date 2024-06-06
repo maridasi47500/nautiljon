@@ -1,0 +1,1 @@
+json.partial! "_personnage_de_mangas_goodies/_personnage_de_mangas_goody", _personnage_de_mangas_goody: @_personnage_de_mangas_goody

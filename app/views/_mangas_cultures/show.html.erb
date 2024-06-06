@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_culture %>
+
+<div>
+  <%= link_to "Edit this mangas culture", edit__mangas_culture_path(@_mangas_culture) %> |
+  <%= link_to "Back to mangas cultures", _mangas_cultures_path %>
+
+  <%= button_to "Destroy this mangas culture", @_mangas_culture, method: :delete %>
+</div>

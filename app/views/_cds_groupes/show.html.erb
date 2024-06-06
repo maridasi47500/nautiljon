@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_cds_groupe %>
+
+<div>
+  <%= link_to "Edit this cds groupe", edit__cds_groupe_path(@_cds_groupe) %> |
+  <%= link_to "Back to cds groupes", _cds_groupes_path %>
+
+  <%= button_to "Destroy this cds groupe", @_cds_groupe, method: :delete %>
+</div>

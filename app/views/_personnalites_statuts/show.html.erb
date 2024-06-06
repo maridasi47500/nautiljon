@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_personnalites_statut %>
+
+<div>
+  <%= link_to "Edit this personnalites statut", edit__personnalites_statut_path(@_personnalites_statut) %> |
+  <%= link_to "Back to personnalites statuts", _personnalites_statuts_path %>
+
+  <%= button_to "Destroy this personnalites statut", @_personnalites_statut, method: :delete %>
+</div>

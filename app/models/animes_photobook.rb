@@ -1,0 +1,2 @@
+class AnimesPhotobook < ApplicationRecord
+end

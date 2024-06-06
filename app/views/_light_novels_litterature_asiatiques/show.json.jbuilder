@@ -1,0 +1,1 @@
+json.partial! "_light_novels_litterature_asiatiques/_light_novels_litterature_asiatique", _light_novels_litterature_asiatique: @_light_novels_litterature_asiatique

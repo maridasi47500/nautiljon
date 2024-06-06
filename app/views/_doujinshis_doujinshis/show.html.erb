@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujinshis_doujinshi %>
+
+<div>
+  <%= link_to "Edit this doujinshis doujinshi", edit__doujinshis_doujinshi_path(@_doujinshis_doujinshi) %> |
+  <%= link_to "Back to doujinshis doujinshis", _doujinshis_doujinshis_path %>
+
+  <%= button_to "Destroy this doujinshis doujinshi", @_doujinshis_doujinshi, method: :delete %>
+</div>

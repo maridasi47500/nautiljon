@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_cds_manga %>
+
+<div>
+  <%= link_to "Edit this cds manga", edit__cds_manga_path(@_cds_manga) %> |
+  <%= link_to "Back to cds mangas", _cds_mangas_path %>
+
+  <%= button_to "Destroy this cds manga", @_cds_manga, method: :delete %>
+</div>

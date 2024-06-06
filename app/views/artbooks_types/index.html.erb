@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Artbooks types</h1>
+
+<div id="artbooks_types">
+  <% @artbooks_types.each do |artbooks_type| %>
+    <%= render artbooks_type %>
+    <p>
+      <%= link_to "Show this artbooks type", artbooks_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New artbooks type", new_artbooks_type_path %>

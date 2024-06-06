@@ -1,0 +1,2 @@
+class ArtbooksPublicAverti < ApplicationRecord
+end

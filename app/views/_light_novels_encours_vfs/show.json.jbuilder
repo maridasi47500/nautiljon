@@ -1,0 +1,1 @@
+json.partial! "_light_novels_encours_vfs/_light_novels_encours_vf", _light_novels_encours_vf: @_light_novels_encours_vf

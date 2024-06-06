@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_genre %>
+
+<div>
+  <%= link_to "Edit this mangas genre", edit__mangas_genre_path(@_mangas_genre) %> |
+  <%= link_to "Back to mangas genres", _mangas_genres_path %>
+
+  <%= button_to "Destroy this mangas genre", @_mangas_genre, method: :delete %>
+</div>

@@ -1,0 +1,22 @@
+<%= form_with(model: _goodies_matiere) do |form| %>
+  <% if _goodies_matiere.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_goodies_matiere.errors.count, "error") %> prohibited this _goodies_matiere from being saved:</h2>
+
+      <ul>
+        <% _goodies_matiere.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+module JeuxVideosMangaPlusHelper
+end

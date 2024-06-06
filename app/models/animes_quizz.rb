@@ -1,0 +1,2 @@
+class AnimesQuizz < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cds</h1>
+
+<div id="_cds">
+  <% @_cds.each do |_cd| %>
+    <%= render _cd %>
+    <p>
+      <%= link_to "Show this cd", _cd %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cd", new__cd_path %>

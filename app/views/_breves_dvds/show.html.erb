@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_dvd %>
+
+<div>
+  <%= link_to "Edit this breves dvd", edit__breves_dvd_path(@_breves_dvd) %> |
+  <%= link_to "Back to breves dvds", _breves_dvds_path %>
+
+  <%= button_to "Destroy this breves dvd", @_breves_dvd, method: :delete %>
+</div>

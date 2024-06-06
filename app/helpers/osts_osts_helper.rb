@@ -1,0 +1,2 @@
+module OstsOstsHelper
+end

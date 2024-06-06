@@ -1,0 +1,2 @@
+module AmvsMakersHelper
+end

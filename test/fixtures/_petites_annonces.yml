@@ -1,0 +1,41 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  type: 
+  titre: MyString
+  image: MyString
+  _petites_annonces_section_id: 1
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  _petites_annonces_pays_id: 1
+  _petites_annonces_lieu_id: 1
+  prix: MyString
+  description: MyText
+  statut: MyString
+  statut: MyString
+  comment: MyText
+  acceptregles: MyString
+
+two:
+  type: 
+  type: 
+  titre: MyString
+  image: MyString
+  _petites_annonces_section_id: 1
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  etat_produit: MyString
+  _petites_annonces_pays_id: 1
+  _petites_annonces_lieu_id: 1
+  prix: MyString
+  description: MyText
+  statut: MyString
+  statut: MyString
+  comment: MyText
+  acceptregles: MyString

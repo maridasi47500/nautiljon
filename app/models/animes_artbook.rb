@@ -1,0 +1,2 @@
+class AnimesArtbook < ApplicationRecord
+end

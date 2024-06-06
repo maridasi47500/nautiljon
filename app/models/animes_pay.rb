@@ -1,0 +1,2 @@
+class AnimesPay < ApplicationRecord
+end

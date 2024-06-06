@@ -1,0 +1,2 @@
+class AnimesPublicAverti < ApplicationRecord
+end

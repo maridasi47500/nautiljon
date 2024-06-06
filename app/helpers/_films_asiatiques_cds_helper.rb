@@ -1,0 +1,2 @@
+module FilmsAsiatiquesCdsHelper
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_petites_annonces_section %>
+
+<div>
+  <%= link_to "Edit this petites annonces section", edit__petites_annonces_section_path(@_petites_annonces_section) %> |
+  <%= link_to "Back to petites annonces sections", _petites_annonces_sections_path %>
+
+  <%= button_to "Destroy this petites annonces section", @_petites_annonces_section, method: :delete %>
+</div>

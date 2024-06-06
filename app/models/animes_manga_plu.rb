@@ -1,0 +1,2 @@
+class AnimesMangaPlu < ApplicationRecord
+end

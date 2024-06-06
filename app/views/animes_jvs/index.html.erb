@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes jvs</h1>
+
+<div id="animes_jvs">
+  <% @animes_jvs.each do |animes_jv| %>
+    <%= render animes_jv %>
+    <p>
+      <%= link_to "Show this animes jv", animes_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes jv", new_animes_jv_path %>

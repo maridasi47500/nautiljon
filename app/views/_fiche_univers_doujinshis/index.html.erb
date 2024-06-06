@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fiche univers doujinshis</h1>
+
+<div id="_fiche_univers_doujinshis">
+  <% @_fiche_univers_doujinshis.each do |_fiche_univers_doujinshi| %>
+    <%= render _fiche_univers_doujinshi %>
+    <p>
+      <%= link_to "Show this fiche univers doujinshi", _fiche_univers_doujinshi %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fiche univers doujinshi", new__fiche_univers_doujinshi_path %>

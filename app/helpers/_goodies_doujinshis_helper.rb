@@ -1,0 +1,2 @@
+module GoodiesDoujinshisHelper
+end

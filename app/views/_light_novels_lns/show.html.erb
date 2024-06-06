@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_light_novels_ln %>
+
+<div>
+  <%= link_to "Edit this light novels ln", edit__light_novels_ln_path(@_light_novels_ln) %> |
+  <%= link_to "Back to light novels lns", _light_novels_lns_path %>
+
+  <%= button_to "Destroy this light novels ln", @_light_novels_ln, method: :delete %>
+</div>

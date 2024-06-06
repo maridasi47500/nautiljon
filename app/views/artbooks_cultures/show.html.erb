@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @artbooks_culture %>
+
+<div>
+  <%= link_to "Edit this artbooks culture", edit_artbooks_culture_path(@artbooks_culture) %> |
+  <%= link_to "Back to artbooks cultures", artbooks_cultures_path %>
+
+  <%= button_to "Destroy this artbooks culture", @artbooks_culture, method: :delete %>
+</div>

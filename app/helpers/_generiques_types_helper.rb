@@ -1,0 +1,2 @@
+module GeneriquesTypesHelper
+end

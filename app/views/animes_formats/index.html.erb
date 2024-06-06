@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes formats</h1>
+
+<div id="animes_formats">
+  <% @animes_formats.each do |animes_format| %>
+    <%= render animes_format %>
+    <p>
+      <%= link_to "Show this animes format", animes_format %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes format", new_animes_format_path %>

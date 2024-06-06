@@ -1,0 +1,2 @@
+module GoodiesPhotobooksHelper
+end

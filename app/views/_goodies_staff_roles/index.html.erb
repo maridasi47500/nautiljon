@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Goodies staff roles</h1>
+
+<div id="_goodies_staff_roles">
+  <% @_goodies_staff_roles.each do |_goodies_staff_role| %>
+    <%= render _goodies_staff_role %>
+    <p>
+      <%= link_to "Show this goodies staff role", _goodies_staff_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New goodies staff role", new__goodies_staff_role_path %>

@@ -1,0 +1,2 @@
+module DoujinshisLnPlusHelper
+end

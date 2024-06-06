@@ -1,0 +1,2 @@
+class AnimesLitteratureAsiatique < ApplicationRecord
+end

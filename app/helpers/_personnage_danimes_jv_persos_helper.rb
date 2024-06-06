@@ -1,0 +1,2 @@
+module PersonnageDanimesJvPersosHelper
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dramas actualite minis</h1>
+
+<div id="_dramas_actualite_minis">
+  <% @_dramas_actualite_minis.each do |_dramas_actualite_mini| %>
+    <%= render _dramas_actualite_mini %>
+    <p>
+      <%= link_to "Show this dramas actualite mini", _dramas_actualite_mini %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dramas actualite mini", new__dramas_actualite_mini_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes origines</h1>
+
+<div id="animes_origines">
+  <% @animes_origines.each do |animes_origine| %>
+    <%= render animes_origine %>
+    <p>
+      <%= link_to "Show this animes origine", animes_origine %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes origine", new_animes_origine_path %>

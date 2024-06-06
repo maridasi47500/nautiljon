@@ -1,0 +1,2 @@
+module LightNovelsMangaPlusHelper
+end

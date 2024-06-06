@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blu rays emission tvs</h1>
+
+<div id="_dvd___blu_rays_emission_tvs">
+  <% @_dvd___blu_rays_emission_tvs.each do |_dvd___blu_rays_emission_tv| %>
+    <%= render _dvd___blu_rays_emission_tv %>
+    <p>
+      <%= link_to "Show this blu rays emission tv", _dvd___blu_rays_emission_tv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blu rays emission tv", new__dvd___blu_rays_emission_tv_path %>

@@ -1,0 +1,3 @@
+class PersonnagesDeJeuxVideosPersoPlu < ApplicationRecord
+self.table_name = "_personnages_de_jeux_videos_perso_plus"
+end

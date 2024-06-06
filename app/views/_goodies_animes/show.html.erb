@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_goodies_anime %>
+
+<div>
+  <%= link_to "Edit this goodies anime", edit__goodies_anime_path(@_goodies_anime) %> |
+  <%= link_to "Back to goodies animes", _goodies_animes_path %>
+
+  <%= button_to "Destroy this goodies anime", @_goodies_anime, method: :delete %>
+</div>

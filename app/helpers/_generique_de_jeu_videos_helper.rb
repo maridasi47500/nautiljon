@@ -1,0 +1,2 @@
+module GeneriqueDeJeuVideosHelper
+end

@@ -1,0 +1,2 @@
+class ArtbooksLn < ApplicationRecord
+end

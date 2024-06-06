@@ -1,0 +1,1 @@
+json.partial! "_numero_demission_tvs_people/_numero_demission_tvs_person", _numero_demission_tvs_person: @_numero_demission_tvs_person

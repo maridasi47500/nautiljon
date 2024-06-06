@@ -1,0 +1,22 @@
+<%= form_with(model: animes_societe_role) do |form| %>
+  <% if animes_societe_role.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(animes_societe_role.errors.count, "error") %> prohibited this animes_societe_role from being saved:</h2>
+
+      <ul>
+        <% animes_societe_role.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

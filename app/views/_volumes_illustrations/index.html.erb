@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Volumes illustrations</h1>
+
+<div id="_volumes_illustrations">
+  <% @_volumes_illustrations.each do |_volumes_illustration| %>
+    <%= render _volumes_illustration %>
+    <p>
+      <%= link_to "Show this volumes illustration", _volumes_illustration %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New volumes illustration", new__volumes_illustration_path %>

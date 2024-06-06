@@ -1,0 +1,2 @@
+module GoodiesActualiteMinisHelper
+end

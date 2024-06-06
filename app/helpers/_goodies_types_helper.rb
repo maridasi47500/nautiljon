@@ -1,0 +1,2 @@
+module GoodiesTypesHelper
+end

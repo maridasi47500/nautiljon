@@ -1,0 +1,2 @@
+json.extract! _parole, :id, :titre, :titre_original, :titre_alternatif, :titre_original_latin, :_paroles_staff_role_id, :_paroles_staff_people_id, :_paroles_staff_role_id, :_paroles_staff_people_id, :paroles, :paroles_trad, :membre_show, :membre_show, :source, :description, :instrumental, :instrumental, :_paroles_parole_id, :comment, :statut_prop, :statut_prop, :acceptregles, :created_at, :updated_at
+json.url _parole_url(_parole, format: :json)

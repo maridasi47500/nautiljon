@@ -1,0 +1,2 @@
+class OstsGroupe < ApplicationRecord
+end

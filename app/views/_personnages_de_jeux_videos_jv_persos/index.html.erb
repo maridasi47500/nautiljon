@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnages de jeux videos jv persos</h1>
+
+<div id="_personnages_de_jeux_videos_jv_persos">
+  <% @_personnages_de_jeux_videos_jv_persos.each do |_personnages_de_jeux_videos_jv_perso| %>
+    <%= render _personnages_de_jeux_videos_jv_perso %>
+    <p>
+      <%= link_to "Show this personnages de jeux videos jv perso", _personnages_de_jeux_videos_jv_perso %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnages de jeux videos jv perso", new__personnages_de_jeux_videos_jv_perso_path %>

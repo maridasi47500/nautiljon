@@ -1,0 +1,147 @@
+<%= form_with(model: _generique) do |form| %>
+  <% if _generique.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_generique.errors.count, "error") %> prohibited this _generique from being saved:</h2>
+
+      <ul>
+        <% _generique.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_id_anime_id, style: "display: block" %>
+    <%= form.number_field :_generiques_id_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_type_id, style: "display: block" %>
+    <%= form.number_field :_generiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :number, style: "display: block" %>
+    <%= form.text_field :number %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_generiques_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_generiques_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_generiques_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_generiques_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :instrumental, style: "display: block" %>
+    <%= form.text_field :instrumental %>
+  </div>
+
+  <div>
+    <%= form.label :instrumental, style: "display: block" %>
+    <%= form.text_field :instrumental %>
+  </div>
+
+  <div>
+    <%= form.label :date_jj, style: "display: block" %>
+    <%= form.text_field :date_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_mm, style: "display: block" %>
+    <%= form.text_field :date_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_aaaa, style: "display: block" %>
+    <%= form.text_field :date_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :youtube, style: "display: block" %>
+    <%= form.text_field :youtube %>
+  </div>
+
+  <div>
+    <%= form.label :paroles, style: "display: block" %>
+    <%= form.text_area :paroles %>
+  </div>
+
+  <div>
+    <%= form.label :paroles_trad, style: "display: block" %>
+    <%= form.text_area :paroles_trad %>
+  </div>
+
+  <div>
+    <%= form.label :membre_show, style: "display: block" %>
+    <%= form.text_field :membre_show %>
+  </div>
+
+  <div>
+    <%= form.label :membre_show, style: "display: block" %>
+    <%= form.text_field :membre_show %>
+  </div>
+
+  <div>
+    <%= form.label :episodes, style: "display: block" %>
+    <%= form.text_field :episodes %>
+  </div>
+
+  <div>
+    <%= form.label :_generiques_generic_id, style: "display: block" %>
+    <%= form.number_field :_generiques_generic_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

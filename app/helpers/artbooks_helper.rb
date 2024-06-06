@@ -1,0 +1,2 @@
+module ArtbooksHelper
+end

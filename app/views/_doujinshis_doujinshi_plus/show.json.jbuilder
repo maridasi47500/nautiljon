@@ -1,0 +1,1 @@
+json.partial! "_doujinshis_doujinshi_plus/_doujinshis_doujinshi_plu", _doujinshis_doujinshi_plu: @_doujinshis_doujinshi_plu

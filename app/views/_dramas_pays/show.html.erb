@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_pay %>
+
+<div>
+  <%= link_to "Edit this dramas pay", edit__dramas_pay_path(@_dramas_pay) %> |
+  <%= link_to "Back to dramas pays", _dramas_pays_path %>
+
+  <%= button_to "Destroy this dramas pay", @_dramas_pay, method: :delete %>
+</div>

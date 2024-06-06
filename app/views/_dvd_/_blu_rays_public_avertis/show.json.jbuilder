@@ -1,0 +1,1 @@
+json.partial! "_dvd_/_blu_rays_public_avertis/_dvd___blu_rays_public_averti", _dvd___blu_rays_public_averti: @_dvd___blu_rays_public_averti

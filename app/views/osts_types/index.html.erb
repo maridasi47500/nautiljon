@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Osts types</h1>
+
+<div id="osts_types">
+  <% @osts_types.each do |osts_type| %>
+    <%= render osts_type %>
+    <p>
+      <%= link_to "Show this osts type", osts_type %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New osts type", new_osts_type_path %>

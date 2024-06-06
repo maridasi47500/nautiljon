@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @osts_role %>
+
+<div>
+  <%= link_to "Edit this osts role", edit_osts_role_path(@osts_role) %> |
+  <%= link_to "Back to osts roles", osts_roles_path %>
+
+  <%= button_to "Destroy this osts role", @osts_role, method: :delete %>
+</div>

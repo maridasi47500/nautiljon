@@ -1,0 +1,3 @@
+class LightNovelsLitteratureAsiatiquePlu < ApplicationRecord
+self.table_name = "_light_novels_litterature_asiatique_plus"
+end

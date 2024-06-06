@@ -1,0 +1,1 @@
+json.partial! "_personnages_de_jeux_videos_jv_persos/_personnages_de_jeux_videos_jv_perso", _personnages_de_jeux_videos_jv_perso: @_personnages_de_jeux_videos_jv_perso

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Numero demission tvs people</h1>
+
+<div id="_numero_demission_tvs_people">
+  <% @_numero_demission_tvs_people.each do |_numero_demission_tvs_person| %>
+    <%= render _numero_demission_tvs_person %>
+    <p>
+      <%= link_to "Show this numero demission tvs person", _numero_demission_tvs_person %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New numero demission tvs person", new__numero_demission_tvs_person_path %>

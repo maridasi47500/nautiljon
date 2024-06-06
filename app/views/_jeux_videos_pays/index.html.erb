@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos pays</h1>
+
+<div id="_jeux_videos_pays">
+  <% @_jeux_videos_pays.each do |_jeux_videos_pay| %>
+    <%= render _jeux_videos_pay %>
+    <p>
+      <%= link_to "Show this jeux videos pay", _jeux_videos_pay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos pay", new__jeux_videos_pay_path %>

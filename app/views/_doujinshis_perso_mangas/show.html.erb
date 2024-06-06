@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujinshis_perso_manga %>
+
+<div>
+  <%= link_to "Edit this doujinshis perso manga", edit__doujinshis_perso_manga_path(@_doujinshis_perso_manga) %> |
+  <%= link_to "Back to doujinshis perso mangas", _doujinshis_perso_mangas_path %>
+
+  <%= button_to "Destroy this doujinshis perso manga", @_doujinshis_perso_manga, method: :delete %>
+</div>

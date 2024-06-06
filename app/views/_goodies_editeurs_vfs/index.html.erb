@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Goodies editeurs vfs</h1>
+
+<div id="_goodies_editeurs_vfs">
+  <% @_goodies_editeurs_vfs.each do |_goodies_editeurs_vf| %>
+    <%= render _goodies_editeurs_vf %>
+    <p>
+      <%= link_to "Show this goodies editeurs vf", _goodies_editeurs_vf %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New goodies editeurs vf", new__goodies_editeurs_vf_path %>

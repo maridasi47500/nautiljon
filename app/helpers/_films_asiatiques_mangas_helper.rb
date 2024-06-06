@@ -1,0 +1,2 @@
+module FilmsAsiatiquesMangasHelper
+end

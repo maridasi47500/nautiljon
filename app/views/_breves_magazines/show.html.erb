@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_magazine %>
+
+<div>
+  <%= link_to "Edit this breves magazine", edit__breves_magazine_path(@_breves_magazine) %> |
+  <%= link_to "Back to breves magazines", _breves_magazines_path %>
+
+  <%= button_to "Destroy this breves magazine", @_breves_magazine, method: :delete %>
+</div>

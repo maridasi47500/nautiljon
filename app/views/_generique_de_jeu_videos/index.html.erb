@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Generique de jeu videos</h1>
+
+<div id="_generique_de_jeu_videos">
+  <% @_generique_de_jeu_videos.each do |_generique_de_jeu_video| %>
+    <%= render _generique_de_jeu_video %>
+    <p>
+      <%= link_to "Show this generique de jeu video", _generique_de_jeu_video %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generique de jeu video", new__generique_de_jeu_video_path %>

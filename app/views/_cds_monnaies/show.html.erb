@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_cds_monnaie %>
+
+<div>
+  <%= link_to "Edit this cds monnaie", edit__cds_monnaie_path(@_cds_monnaie) %> |
+  <%= link_to "Back to cds monnaies", _cds_monnaies_path %>
+
+  <%= button_to "Destroy this cds monnaie", @_cds_monnaie, method: :delete %>
+</div>

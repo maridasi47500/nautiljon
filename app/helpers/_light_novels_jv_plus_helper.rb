@@ -1,0 +1,2 @@
+module LightNovelsJvPlusHelper
+end

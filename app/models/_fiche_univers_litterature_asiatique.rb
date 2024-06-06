@@ -1,0 +1,3 @@
+class FicheUniversLitteratureAsiatique < ApplicationRecord
+self.table_name = "_fiche_univers_litterature_asiatiques"
+end

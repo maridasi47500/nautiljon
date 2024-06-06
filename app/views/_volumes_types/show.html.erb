@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_volumes_type %>
+
+<div>
+  <%= link_to "Edit this volumes type", edit__volumes_type_path(@_volumes_type) %> |
+  <%= link_to "Back to volumes types", _volumes_types_path %>
+
+  <%= button_to "Destroy this volumes type", @_volumes_type, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+module GoodiesClipsHelper
+end

@@ -1,0 +1,2 @@
+module PersonnageDanimesDoubleurRolesHelper
+end

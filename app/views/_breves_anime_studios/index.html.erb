@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves anime studios</h1>
+
+<div id="_breves_anime_studios">
+  <% @_breves_anime_studios.each do |_breves_anime_studio| %>
+    <%= render _breves_anime_studio %>
+    <p>
+      <%= link_to "Show this breves anime studio", _breves_anime_studio %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves anime studio", new__breves_anime_studio_path %>

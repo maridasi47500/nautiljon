@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos artbooks</h1>
+
+<div id="_jeux_videos_artbooks">
+  <% @_jeux_videos_artbooks.each do |_jeux_videos_artbook| %>
+    <%= render _jeux_videos_artbook %>
+    <p>
+      <%= link_to "Show this jeux videos artbook", _jeux_videos_artbook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos artbook", new__jeux_videos_artbook_path %>

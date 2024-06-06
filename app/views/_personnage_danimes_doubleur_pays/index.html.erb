@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnage danimes doubleur pays</h1>
+
+<div id="_personnage_danimes_doubleur_pays">
+  <% @_personnage_danimes_doubleur_pays.each do |_personnage_danimes_doubleur_pay| %>
+    <%= render _personnage_danimes_doubleur_pay %>
+    <p>
+      <%= link_to "Show this personnage danimes doubleur pay", _personnage_danimes_doubleur_pay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnage danimes doubleur pay", new__personnage_danimes_doubleur_pay_path %>

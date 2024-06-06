@@ -1,0 +1,1 @@
+json.partial! "_livres_litterature_asiatique_plus/_livres_litterature_asiatique_plu", _livres_litterature_asiatique_plu: @_livres_litterature_asiatique_plu

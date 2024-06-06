@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_photobooks_photobook %>
+
+<div>
+  <%= link_to "Edit this photobooks photobook", edit__photobooks_photobook_path(@_photobooks_photobook) %> |
+  <%= link_to "Back to photobooks photobooks", _photobooks_photobooks_path %>
+
+  <%= button_to "Destroy this photobooks photobook", @_photobooks_photobook, method: :delete %>
+</div>

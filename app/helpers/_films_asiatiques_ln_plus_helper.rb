@@ -1,0 +1,2 @@
+module FilmsAsiatiquesLnPlusHelper
+end

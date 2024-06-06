@@ -1,0 +1,2 @@
+class AnimesEditeursVfRole < ApplicationRecord
+end

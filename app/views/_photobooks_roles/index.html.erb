@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Photobooks roles</h1>
+
+<div id="_photobooks_roles">
+  <% @_photobooks_roles.each do |_photobooks_role| %>
+    <%= render _photobooks_role %>
+    <p>
+      <%= link_to "Show this photobooks role", _photobooks_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New photobooks role", new__photobooks_role_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Osts labels</h1>
+
+<div id="osts_labels">
+  <% @osts_labels.each do |osts_label| %>
+    <%= render osts_label %>
+    <p>
+      <%= link_to "Show this osts label", osts_label %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New osts label", new_osts_label_path %>

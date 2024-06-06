@@ -1,0 +1,3 @@
+class FilmsAsiatiquesEnSallesActualite < ApplicationRecord
+self.table_name = "_films_asiatiques_en_salles_actualites"
+end

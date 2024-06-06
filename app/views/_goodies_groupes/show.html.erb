@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_goodies_groupe %>
+
+<div>
+  <%= link_to "Edit this goodies groupe", edit__goodies_groupe_path(@_goodies_groupe) %> |
+  <%= link_to "Back to goodies groupes", _goodies_groupes_path %>
+
+  <%= button_to "Destroy this goodies groupe", @_goodies_groupe, method: :delete %>
+</div>

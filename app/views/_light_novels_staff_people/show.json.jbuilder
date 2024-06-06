@@ -1,0 +1,1 @@
+json.partial! "_light_novels_staff_people/_light_novels_staff_person", _light_novels_staff_person: @_light_novels_staff_person

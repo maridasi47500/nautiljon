@@ -1,0 +1,2 @@
+module DramasGeneriquesPeople2sHelper
+end

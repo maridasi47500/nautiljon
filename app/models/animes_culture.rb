@@ -1,0 +1,2 @@
+class AnimesCulture < ApplicationRecord
+end

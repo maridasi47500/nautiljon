@@ -1,0 +1,2 @@
+module LightNovelsDramasHelper
+end

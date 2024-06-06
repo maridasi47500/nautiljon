@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_goody %>
+
+<div>
+  <%= link_to "Edit this goody", edit__goody_path(@_goody) %> |
+  <%= link_to "Back to goodies", _goodies_path %>
+
+  <%= button_to "Destroy this goody", @_goody, method: :delete %>
+</div>

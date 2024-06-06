@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites labels debuts</h1>
+
+<div id="_personnalites_labels_debuts">
+  <% @_personnalites_labels_debuts.each do |_personnalites_labels_debut| %>
+    <%= render _personnalites_labels_debut %>
+    <p>
+      <%= link_to "Show this personnalites labels debut", _personnalites_labels_debut %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalites labels debut", new__personnalites_labels_debut_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Goodies jvs</h1>
+
+<div id="_goodies_jvs">
+  <% @_goodies_jvs.each do |_goodies_jv| %>
+    <%= render _goodies_jv %>
+    <p>
+      <%= link_to "Show this goodies jv", _goodies_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New goodies jv", new__goodies_jv_path %>

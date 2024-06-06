@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Generiques generics</h1>
+
+<div id="_generiques_generics">
+  <% @_generiques_generics.each do |_generiques_generic| %>
+    <%= render _generiques_generic %>
+    <p>
+      <%= link_to "Show this generiques generic", _generiques_generic %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generiques generic", new__generiques_generic_path %>

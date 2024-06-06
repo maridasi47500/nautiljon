@@ -1,0 +1,2 @@
+module JeuxVideosDoujinsHelper
+end

@@ -1,0 +1,2 @@
+module VolumesMangasHelper
+end

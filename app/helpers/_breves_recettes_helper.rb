@@ -1,0 +1,2 @@
+module BrevesRecettesHelper
+end

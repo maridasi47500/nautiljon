@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mangas sondages</h1>
+
+<div id="_mangas_sondages">
+  <% @_mangas_sondages.each do |_mangas_sondage| %>
+    <%= render _mangas_sondage %>
+    <p>
+      <%= link_to "Show this mangas sondage", _mangas_sondage %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mangas sondage", new__mangas_sondage_path %>

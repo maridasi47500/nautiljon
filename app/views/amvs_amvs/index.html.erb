@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Amvs amvs</h1>
+
+<div id="amvs_amvs">
+  <% @amvs_amvs.each do |amvs_amv| %>
+    <%= render amvs_amv %>
+    <p>
+      <%= link_to "Show this amvs amv", amvs_amv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New amvs amv", new_amvs_amv_path %>

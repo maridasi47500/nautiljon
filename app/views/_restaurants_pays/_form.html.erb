@@ -1,0 +1,22 @@
+<%= form_with(model: _restaurants_pay) do |form| %>
+  <% if _restaurants_pay.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_restaurants_pay.errors.count, "error") %> prohibited this _restaurants_pay from being saved:</h2>
+
+      <ul>
+        <% _restaurants_pay.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques dramas</h1>
+
+<div id="_films_asiatiques_dramas">
+  <% @_films_asiatiques_dramas.each do |_films_asiatiques_drama| %>
+    <%= render _films_asiatiques_drama %>
+    <p>
+      <%= link_to "Show this films asiatiques drama", _films_asiatiques_drama %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques drama", new__films_asiatiques_drama_path %>

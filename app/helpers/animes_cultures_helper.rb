@@ -1,0 +1,2 @@
+module AnimesCulturesHelper
+end

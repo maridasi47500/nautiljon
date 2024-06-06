@@ -1,0 +1,2 @@
+class ArtbooksEditeursVo < ApplicationRecord
+end

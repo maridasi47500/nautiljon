@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes societe roles</h1>
+
+<div id="animes_societe_roles">
+  <% @animes_societe_roles.each do |animes_societe_role| %>
+    <%= render animes_societe_role %>
+    <p>
+      <%= link_to "Show this animes societe role", animes_societe_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes societe role", new_animes_societe_role_path %>

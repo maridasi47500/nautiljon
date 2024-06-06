@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques editeurs vfs</h1>
+
+<div id="_films_asiatiques_editeurs_vfs">
+  <% @_films_asiatiques_editeurs_vfs.each do |_films_asiatiques_editeurs_vf| %>
+    <%= render _films_asiatiques_editeurs_vf %>
+    <p>
+      <%= link_to "Show this films asiatiques editeurs vf", _films_asiatiques_editeurs_vf %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques editeurs vf", new__films_asiatiques_editeurs_vf_path %>

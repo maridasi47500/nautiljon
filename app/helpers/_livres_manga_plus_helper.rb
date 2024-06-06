@@ -1,0 +1,2 @@
+module LivresMangaPlusHelper
+end

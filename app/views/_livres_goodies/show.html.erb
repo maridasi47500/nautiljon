@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_livres_goody %>
+
+<div>
+  <%= link_to "Edit this livres goody", edit__livres_goody_path(@_livres_goody) %> |
+  <%= link_to "Back to livres goodies", _livres_goodies_path %>
+
+  <%= button_to "Destroy this livres goody", @_livres_goody, method: :delete %>
+</div>

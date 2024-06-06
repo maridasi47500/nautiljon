@@ -1,0 +1,1 @@
+json.array! @_films_asiatiques_generiques_clips, partial: "_films_asiatiques_generiques_clips/_films_asiatiques_generiques_clip", as: :_films_asiatiques_generiques_clip

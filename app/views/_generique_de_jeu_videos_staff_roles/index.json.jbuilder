@@ -1,0 +1,1 @@
+json.array! @_generique_de_jeu_videos_staff_roles, partial: "_generique_de_jeu_videos_staff_roles/_generique_de_jeu_videos_staff_role", as: :_generique_de_jeu_videos_staff_role

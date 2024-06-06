@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis themes</h1>
+
+<div id="_doujinshis_themes">
+  <% @_doujinshis_themes.each do |_doujinshis_theme| %>
+    <%= render _doujinshis_theme %>
+    <p>
+      <%= link_to "Show this doujinshis theme", _doujinshis_theme %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis theme", new__doujinshis_theme_path %>

@@ -1,0 +1,2 @@
+module FilmsAsiatiquesGenresHelper
+end

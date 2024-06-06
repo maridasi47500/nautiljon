@@ -1,0 +1,2 @@
+module DoujinshisJvPersosHelper
+end

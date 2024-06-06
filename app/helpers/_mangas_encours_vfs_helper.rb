@@ -1,0 +1,2 @@
+module MangasEncoursVfsHelper
+end

@@ -1,0 +1,1 @@
+json.partial! "_films_asiatiques_societe_people/_films_asiatiques_societe_person", _films_asiatiques_societe_person: @_films_asiatiques_societe_person

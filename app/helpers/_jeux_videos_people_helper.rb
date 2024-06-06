@@ -1,0 +1,2 @@
+module JeuxVideosPeopleHelper
+end

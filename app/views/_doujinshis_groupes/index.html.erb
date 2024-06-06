@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis groupes</h1>
+
+<div id="_doujinshis_groupes">
+  <% @_doujinshis_groupes.each do |_doujinshis_groupe| %>
+    <%= render _doujinshis_groupe %>
+    <p>
+      <%= link_to "Show this doujinshis groupe", _doujinshis_groupe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis groupe", new__doujinshis_groupe_path %>

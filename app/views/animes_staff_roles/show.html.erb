@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_staff_role %>
+
+<div>
+  <%= link_to "Edit this animes staff role", edit_animes_staff_role_path(@animes_staff_role) %> |
+  <%= link_to "Back to animes staff roles", animes_staff_roles_path %>
+
+  <%= button_to "Destroy this animes staff role", @animes_staff_role, method: :delete %>
+</div>

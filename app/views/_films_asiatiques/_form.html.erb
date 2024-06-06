@@ -1,0 +1,502 @@
+<%= form_with(model: _films_asiatique) do |form| %>
+  <% if _films_asiatique.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_films_asiatique.errors.count, "error") %> prohibited this _films_asiatique from being saved:</h2>
+
+      <ul>
+        <% _films_asiatique.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif, style: "display: block" %>
+    <%= form.text_field :titre_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif_suite, style: "display: block" %>
+    <%= form.text_field :titre_alternatif_suite %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original_latin, style: "display: block" %>
+    <%= form.text_field :titre_original_latin %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :image_internationale, style: "display: block" %>
+    <%= form.text_field :image_internationale %>
+  </div>
+
+  <div>
+    <%= form.label :image_francaise, style: "display: block" %>
+    <%= form.text_field :image_francaise %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_origine_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_origine_id %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_jj, style: "display: block" %>
+    <%= form.text_field :date_debut_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_mm, style: "display: block" %>
+    <%= form.text_field :date_debut_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_aaaa, style: "display: block" %>
+    <%= form.text_field :date_debut_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_pays_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_pays_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :duree, style: "display: block" %>
+    <%= form.text_field :duree %>
+  </div>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_genres_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_genres_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_themes_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_themes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_themes_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_themes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_societe_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_societe_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_societe_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_societe_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_acteurs_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_acteurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_acteurs_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_acteurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_acteurs_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_acteurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_acteurs_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_acteurs_id %>
+  </div>
+
+  <div>
+    <%= form.label :synopsis, style: "display: block" %>
+    <%= form.text_area :synopsis %>
+  </div>
+
+  <div>
+    <%= form.label :youtube, style: "display: block" %>
+    <%= form.text_field :youtube %>
+  </div>
+
+  <div>
+    <%= form.label :licencie, style: "display: block" %>
+    <%= form.text_field :licencie %>
+  </div>
+
+  <div>
+    <%= form.label :licencie, style: "display: block" %>
+    <%= form.text_field :licencie %>
+  </div>
+
+  <div>
+    <%= form.label :date_vf_jj, style: "display: block" %>
+    <%= form.text_field :date_vf_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_vf_mm, style: "display: block" %>
+    <%= form.text_field :date_vf_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_vf_aaaa, style: "display: block" %>
+    <%= form.text_field :date_vf_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_editeurs_vf_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_editeurs_vf_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_editeurs_vf_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_editeurs_vf_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_editeurs_vf_role_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_editeurs_vf_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_editeurs_vf_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_editeurs_vf_id %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_simulcast_jj, style: "display: block" %>
+    <%= form.text_field :date_debut_simulcast_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_simulcast_mm, style: "display: block" %>
+    <%= form.text_field :date_debut_simulcast_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_debut_simulcast_aaaa, style: "display: block" %>
+    <%= form.text_field :date_debut_simulcast_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :site, style: "display: block" %>
+    <%= form.text_field :site %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_people2_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_people2_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_clip_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_clip_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_parole_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_parole_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_type_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_type_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_people2_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_people2_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_clip_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_clip_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_generiques_parole_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_generiques_parole_id %>
+  </div>
+
+  <div>
+    <%= form.label :infos, style: "display: block" %>
+    <%= form.text_area :infos %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_groupes_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_groupes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_anime_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_anime_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_anime_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_ln_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_ln_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_ln_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_ln_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_manga_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_manga_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_manga_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_manga_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_drama_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_drama_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_drama_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_drama_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_jv_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_jv_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_jv_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_jv_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_am_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_am_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_am_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_am_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_cinema_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_cinema_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_univers_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_univers_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_people_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_litterature_asiatique_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_litterature_asiatique_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_litterature_asiatique_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_litterature_asiatique_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_actualite_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_actualite_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_culture_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_culture_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_emission_tv_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_emission_tv_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_emission_tv_plus_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_emission_tv_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_actualite_mini_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_actualite_mini_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_ost_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_ost_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_doujin_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_doujin_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_cd_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_cd_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_sondage_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_sondage_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_quizz_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_quizz_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_concours_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_concours_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_dvd_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_dvd_id %>
+  </div>
+
+  <div>
+    <%= form.label :_films_asiatiques_artbook_id, style: "display: block" %>
+    <%= form.number_field :_films_asiatiques_artbook_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

@@ -1,0 +1,2 @@
+class OstsDistributeur < ApplicationRecord
+end

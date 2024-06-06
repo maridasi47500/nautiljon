@@ -1,0 +1,2 @@
+module ConcertsArtistesHelper
+end

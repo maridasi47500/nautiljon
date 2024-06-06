@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_photobook %>
+
+<div>
+  <%= link_to "Edit this breves photobook", edit__breves_photobook_path(@_breves_photobook) %> |
+  <%= link_to "Back to breves photobooks", _breves_photobooks_path %>
+
+  <%= button_to "Destroy this breves photobook", @_breves_photobook, method: :delete %>
+</div>

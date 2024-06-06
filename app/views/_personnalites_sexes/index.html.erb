@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites sexes</h1>
+
+<div id="_personnalites_sexes">
+  <% @_personnalites_sexes.each do |_personnalites_sex| %>
+    <%= render _personnalites_sex %>
+    <p>
+      <%= link_to "Show this personnalites sexe", _personnalites_sex %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalites sexe", new__personnalites_sex_path %>

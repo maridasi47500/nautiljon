@@ -1,0 +1,2 @@
+module GoodiesCdsHelper
+end

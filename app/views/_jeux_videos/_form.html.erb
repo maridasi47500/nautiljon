@@ -1,0 +1,417 @@
+<%= form_with(model: _jeux_video) do |form| %>
+  <% if _jeux_video.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_jeux_video.errors.count, "error") %> prohibited this _jeux_video from being saved:</h2>
+
+      <ul>
+        <% _jeux_video.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre_fr, style: "display: block" %>
+    <%= form.text_field :titre_fr %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original_latin, style: "display: block" %>
+    <%= form.text_field :titre_original_latin %>
+  </div>
+
+  <div>
+    <%= form.label :titre_us, style: "display: block" %>
+    <%= form.text_field :titre_us %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif, style: "display: block" %>
+    <%= form.text_field :titre_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_plateforme_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_plateforme_id %>
+  </div>
+
+  <div>
+    <%= form.label :date_fr_jj, style: "display: block" %>
+    <%= form.text_field :date_fr_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_fr_mm, style: "display: block" %>
+    <%= form.text_field :date_fr_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_fr_aaaa, style: "display: block" %>
+    <%= form.text_field :date_fr_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_pays_date_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_pays_date_id %>
+  </div>
+
+  <div>
+    <%= form.label :date_originale_jj, style: "display: block" %>
+    <%= form.text_field :date_originale_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_originale_mm, style: "display: block" %>
+    <%= form.text_field :date_originale_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_originale_aaaa, style: "display: block" %>
+    <%= form.text_field :date_originale_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :date_us_jj, style: "display: block" %>
+    <%= form.text_field :date_us_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_us_mm, style: "display: block" %>
+    <%= form.text_field :date_us_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_us_aaaa, style: "display: block" %>
+    <%= form.text_field :date_us_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :date_jap_jj, style: "display: block" %>
+    <%= form.text_field :date_jap_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_jap_mm, style: "display: block" %>
+    <%= form.text_field :date_jap_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_jap_aaaa, style: "display: block" %>
+    <%= form.text_field :date_jap_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_pays_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_pays_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_etat_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_etat_id %>
+  </div>
+
+  <div>
+    <%= form.label :prix, style: "display: block" %>
+    <%= form.text_field :prix %>
+  </div>
+
+  <div>
+    <%= form.label :ean, style: "display: block" %>
+    <%= form.text_field :ean %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_themes_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_themes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_themes_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_themes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_genres_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_genres_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :multi, style: "display: block" %>
+    <%= form.text_field :multi %>
+  </div>
+
+  <div>
+    <%= form.label :multi, style: "display: block" %>
+    <%= form.text_field :multi %>
+  </div>
+
+  <div>
+    <%= form.label :multi_nb, style: "display: block" %>
+    <%= form.text_field :multi_nb %>
+  </div>
+
+  <div>
+    <%= form.label :online, style: "display: block" %>
+    <%= form.text_field :online %>
+  </div>
+
+  <div>
+    <%= form.label :online, style: "display: block" %>
+    <%= form.text_field :online %>
+  </div>
+
+  <div>
+    <%= form.label :age, style: "display: block" %>
+    <%= form.text_field :age %>
+  </div>
+
+  <div>
+    <%= form.label :site, style: "display: block" %>
+    <%= form.text_field :site %>
+  </div>
+
+  <div>
+    <%= form.label :pochette_eu, style: "display: block" %>
+    <%= form.text_field :pochette_eu %>
+  </div>
+
+  <div>
+    <%= form.label :pochette_asie, style: "display: block" %>
+    <%= form.text_field :pochette_asie %>
+  </div>
+
+  <div>
+    <%= form.label :pochette_us, style: "display: block" %>
+    <%= form.text_field :pochette_us %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_societe_role_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_societe_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_societe_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_societe_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_societe_role_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_societe_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_societe_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_societe_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :youtube, style: "display: block" %>
+    <%= form.text_field :youtube %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_groupes_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_groupes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_actualite_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_actualite_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_actualite_mini_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_actualite_mini_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_anime_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_anime_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_anime_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_ln_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_ln_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_ln_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_ln_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_manga_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_manga_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_manga_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_manga_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_jv_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_jv_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_jv_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_jv_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_am_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_am_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_am_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_am_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_drama_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_drama_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_drama_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_drama_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_univers_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_univers_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_dvd_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_dvd_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_artbook_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_artbook_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_litterature_asiatique_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_litterature_asiatique_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_litterature_asiatique_plus_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_litterature_asiatique_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_culture_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_culture_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_ost_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_ost_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_cd_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_cd_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_doujin_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_doujin_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_amv_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_amv_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_sondage_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_sondage_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_quizz_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_quizz_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_concours_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_concours_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_people_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_jeux_videos_topic_id, style: "display: block" %>
+    <%= form.number_field :_jeux_videos_topic_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

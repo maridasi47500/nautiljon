@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres pays themes</h1>
+
+<div id="_livres_pays_themes">
+  <% @_livres_pays_themes.each do |_livres_pays_theme| %>
+    <%= render _livres_pays_theme %>
+    <p>
+      <%= link_to "Show this livres pays theme", _livres_pays_theme %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres pays theme", new__livres_pays_theme_path %>

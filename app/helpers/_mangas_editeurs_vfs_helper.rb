@@ -1,0 +1,2 @@
+module MangasEditeursVfsHelper
+end

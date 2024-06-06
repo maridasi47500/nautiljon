@@ -1,0 +1,67 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  titre_original_latin: MyString
+  titre_original: MyString
+  titre_alternatif: MyString
+  _doujins_conventions_id: 1
+  _doujins_conventions_id: 1
+  ref: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  _doujins_role_id: 1
+  _doujins_people_id: 1
+  _doujins_role_id: 1
+  _doujins_people_id: 1
+  cercle: MyString
+  image: MyString
+  infos: MyText
+  _doujins_genres_id: 1
+  _doujins_genres_id: 1
+  _doujins_groupes_id: 1
+  _doujins_anime_id: 1
+  _doujins_ln_id: 1
+  _doujins_drama_id: 1
+  _doujins_am_id: 1
+  _doujins_jv_id: 1
+  _doujins_doujin_id: 1
+  _doujins_artbook_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  titre: MyString
+  titre_original_latin: MyString
+  titre_original: MyString
+  titre_alternatif: MyString
+  _doujins_conventions_id: 1
+  _doujins_conventions_id: 1
+  ref: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  _doujins_role_id: 1
+  _doujins_people_id: 1
+  _doujins_role_id: 1
+  _doujins_people_id: 1
+  cercle: MyString
+  image: MyString
+  infos: MyText
+  _doujins_genres_id: 1
+  _doujins_genres_id: 1
+  _doujins_groupes_id: 1
+  _doujins_anime_id: 1
+  _doujins_ln_id: 1
+  _doujins_drama_id: 1
+  _doujins_am_id: 1
+  _doujins_jv_id: 1
+  _doujins_doujin_id: 1
+  _doujins_artbook_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

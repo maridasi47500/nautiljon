@@ -1,0 +1,2 @@
+module FicheUniversLnsHelper
+end

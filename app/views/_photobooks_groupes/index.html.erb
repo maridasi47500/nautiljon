@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Photobooks groupes</h1>
+
+<div id="_photobooks_groupes">
+  <% @_photobooks_groupes.each do |_photobooks_groupe| %>
+    <%= render _photobooks_groupe %>
+    <p>
+      <%= link_to "Show this photobooks groupe", _photobooks_groupe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New photobooks groupe", new__photobooks_groupe_path %>

@@ -1,0 +1,61 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  _personnages_de_jeux_videos_jv_id: 1
+  _personnages_de_jeux_videos_jv_id: 1
+  jouable: MyString
+  jouable: MyString
+  muet: MyString
+  _personnages_de_jeux_videos_doubleur_pays_id: 1
+  _personnages_de_jeux_videos_doubleur_people_id: 1
+  : MyString
+  _personnages_de_jeux_videos_doubleur_role_id: 1
+  _personnages_de_jeux_videos_doubleur_pays_id: 1
+  _personnages_de_jeux_videos_doubleur_people_id: 1
+  : MyString
+  _personnages_de_jeux_videos_doubleur_role_id: 1
+  _personnages_de_jeux_videos_jv_perso_id: 1
+  _personnages_de_jeux_videos_perso_id: 1
+  _personnages_de_jeux_videos_perso_plus_id: 1
+  _personnages_de_jeux_videos_perso_manga_id: 1
+  _personnages_de_jeux_videos_goodies_id: 1
+  image: MyString
+  description: MyText
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  _personnages_de_jeux_videos_jv_id: 1
+  _personnages_de_jeux_videos_jv_id: 1
+  jouable: MyString
+  jouable: MyString
+  muet: MyString
+  _personnages_de_jeux_videos_doubleur_pays_id: 1
+  _personnages_de_jeux_videos_doubleur_people_id: 1
+  : MyString
+  _personnages_de_jeux_videos_doubleur_role_id: 1
+  _personnages_de_jeux_videos_doubleur_pays_id: 1
+  _personnages_de_jeux_videos_doubleur_people_id: 1
+  : MyString
+  _personnages_de_jeux_videos_doubleur_role_id: 1
+  _personnages_de_jeux_videos_jv_perso_id: 1
+  _personnages_de_jeux_videos_perso_id: 1
+  _personnages_de_jeux_videos_perso_plus_id: 1
+  _personnages_de_jeux_videos_perso_manga_id: 1
+  _personnages_de_jeux_videos_goodies_id: 1
+  image: MyString
+  description: MyText
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

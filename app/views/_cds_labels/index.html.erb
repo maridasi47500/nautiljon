@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cds labels</h1>
+
+<div id="_cds_labels">
+  <% @_cds_labels.each do |_cds_label| %>
+    <%= render _cds_label %>
+    <p>
+      <%= link_to "Show this cds label", _cds_label %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cds label", new__cds_label_path %>

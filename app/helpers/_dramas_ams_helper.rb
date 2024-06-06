@@ -1,0 +1,2 @@
+module DramasAmsHelper
+end

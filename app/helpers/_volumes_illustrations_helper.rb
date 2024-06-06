@@ -1,0 +1,2 @@
+module VolumesIllustrationsHelper
+end

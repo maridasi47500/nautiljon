@@ -1,0 +1,172 @@
+<%= form_with(model: _doujin) do |form| %>
+  <% if _doujin.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_doujin.errors.count, "error") %> prohibited this _doujin from being saved:</h2>
+
+      <ul>
+        <% _doujin.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original_latin, style: "display: block" %>
+    <%= form.text_field :titre_original_latin %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif, style: "display: block" %>
+    <%= form.text_field :titre_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_conventions_id, style: "display: block" %>
+    <%= form.number_field :_doujins_conventions_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_conventions_id, style: "display: block" %>
+    <%= form.number_field :_doujins_conventions_id %>
+  </div>
+
+  <div>
+    <%= form.label :ref, style: "display: block" %>
+    <%= form.text_field :ref %>
+  </div>
+
+  <div>
+    <%= form.label :date_jj, style: "display: block" %>
+    <%= form.text_field :date_jj %>
+  </div>
+
+  <div>
+    <%= form.label :date_mm, style: "display: block" %>
+    <%= form.text_field :date_mm %>
+  </div>
+
+  <div>
+    <%= form.label :date_aaaa, style: "display: block" %>
+    <%= form.text_field :date_aaaa %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_role_id, style: "display: block" %>
+    <%= form.number_field :_doujins_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_people_id, style: "display: block" %>
+    <%= form.number_field :_doujins_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_role_id, style: "display: block" %>
+    <%= form.number_field :_doujins_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_people_id, style: "display: block" %>
+    <%= form.number_field :_doujins_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :cercle, style: "display: block" %>
+    <%= form.text_field :cercle %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :infos, style: "display: block" %>
+    <%= form.text_area :infos %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_genres_id, style: "display: block" %>
+    <%= form.number_field :_doujins_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_genres_id, style: "display: block" %>
+    <%= form.number_field :_doujins_genres_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_groupes_id, style: "display: block" %>
+    <%= form.number_field :_doujins_groupes_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_anime_id, style: "display: block" %>
+    <%= form.number_field :_doujins_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_ln_id, style: "display: block" %>
+    <%= form.number_field :_doujins_ln_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_drama_id, style: "display: block" %>
+    <%= form.number_field :_doujins_drama_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_am_id, style: "display: block" %>
+    <%= form.number_field :_doujins_am_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_jv_id, style: "display: block" %>
+    <%= form.number_field :_doujins_jv_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_doujin_id, style: "display: block" %>
+    <%= form.number_field :_doujins_doujin_id %>
+  </div>
+
+  <div>
+    <%= form.label :_doujins_artbook_id, style: "display: block" %>
+    <%= form.number_field :_doujins_artbook_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

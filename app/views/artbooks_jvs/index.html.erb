@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Artbooks jvs</h1>
+
+<div id="artbooks_jvs">
+  <% @artbooks_jvs.each do |artbooks_jv| %>
+    <%= render artbooks_jv %>
+    <p>
+      <%= link_to "Show this artbooks jv", artbooks_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New artbooks jv", new_artbooks_jv_path %>

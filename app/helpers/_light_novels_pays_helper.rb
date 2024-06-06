@@ -1,0 +1,2 @@
+module LightNovelsPaysHelper
+end

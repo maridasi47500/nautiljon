@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  date: MyString
+  _concerts_artiste_id: 1
+  nom: MyString
+  endroit: MyString
+  adresse: MyString
+  ville: MyString
+  _concerts_pays_id: 1
+  infos: MyText
+  lien: MyString
+  prix: MyString
+  heure: MyString
+  acceptregles: MyString
+
+two:
+  date: MyString
+  _concerts_artiste_id: 1
+  nom: MyString
+  endroit: MyString
+  adresse: MyString
+  ville: MyString
+  _concerts_pays_id: 1
+  infos: MyText
+  lien: MyString
+  prix: MyString
+  heure: MyString
+  acceptregles: MyString

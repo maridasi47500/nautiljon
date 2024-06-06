@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Dramas cultures</h1>
+
+<div id="_dramas_cultures">
+  <% @_dramas_cultures.each do |_dramas_culture| %>
+    <%= render _dramas_culture %>
+    <p>
+      <%= link_to "Show this dramas culture", _dramas_culture %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New dramas culture", new__dramas_culture_path %>

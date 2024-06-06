@@ -1,0 +1,2 @@
+module PersonnageDeMangasPersoPlusHelper
+end

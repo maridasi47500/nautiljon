@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_ost %>
+
+<div>
+  <%= link_to "Edit this breves ost", edit__breves_ost_path(@_breves_ost) %> |
+  <%= link_to "Back to breves osts", _breves_osts_path %>
+
+  <%= button_to "Destroy this breves ost", @_breves_ost, method: :delete %>
+</div>

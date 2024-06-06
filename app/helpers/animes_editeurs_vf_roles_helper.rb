@@ -1,0 +1,2 @@
+module AnimesEditeursVfRolesHelper
+end

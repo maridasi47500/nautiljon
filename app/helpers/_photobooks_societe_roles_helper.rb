@@ -1,0 +1,2 @@
+module PhotobooksSocieteRolesHelper
+end

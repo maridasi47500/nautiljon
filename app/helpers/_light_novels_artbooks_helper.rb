@@ -1,0 +1,2 @@
+module LightNovelsArtbooksHelper
+end

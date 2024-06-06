@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Paroles</h1>
+
+<div id="_paroles">
+  <% @_paroles.each do |_parole| %>
+    <%= render _parole %>
+    <p>
+      <%= link_to "Show this parole", _parole %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New parole", new__parole_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis jv persos</h1>
+
+<div id="_doujinshis_jv_persos">
+  <% @_doujinshis_jv_persos.each do |_doujinshis_jv_perso| %>
+    <%= render _doujinshis_jv_perso %>
+    <p>
+      <%= link_to "Show this doujinshis jv perso", _doujinshis_jv_perso %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis jv perso", new__doujinshis_jv_perso_path %>

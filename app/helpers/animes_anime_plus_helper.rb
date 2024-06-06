@@ -1,0 +1,2 @@
+module AnimesAnimePlusHelper
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Blu rays frances</h1>
+
+<div id="_dvd___blu_rays_frances">
+  <% @_dvd___blu_rays_frances.each do |_dvd___blu_rays_france| %>
+    <%= render _dvd___blu_rays_france %>
+    <p>
+      <%= link_to "Show this blu rays france", _dvd___blu_rays_france %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New blu rays france", new__dvd___blu_rays_france_path %>

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Light novels societe people</h1>
+
+<div id="_light_novels_societe_people">
+  <% @_light_novels_societe_people.each do |_light_novels_societe_person| %>
+    <%= render _light_novels_societe_person %>
+    <p>
+      <%= link_to "Show this light novels societe person", _light_novels_societe_person %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New light novels societe person", new__light_novels_societe_person_path %>

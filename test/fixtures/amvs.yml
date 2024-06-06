@@ -1,0 +1,55 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  image: MyString
+  amvs_makers_id: 1
+  amvs_makers_id: 1
+  youtube: MyString
+  lien: MyString
+  song: MyText
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  duree: MyString
+  amvs_type_id: 1
+  amvs_type_id: 1
+  description: MyText
+  amvs_conventions_id: 1
+  amvs_conventions_id: 1
+  amvs_groupes_id: 1
+  amvs_anime_id: 1
+  amvs_jv_id: 1
+  amvs_amv_id: 1
+  autre: MyString
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  titre: MyString
+  image: MyString
+  amvs_makers_id: 1
+  amvs_makers_id: 1
+  youtube: MyString
+  lien: MyString
+  song: MyText
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  duree: MyString
+  amvs_type_id: 1
+  amvs_type_id: 1
+  description: MyText
+  amvs_conventions_id: 1
+  amvs_conventions_id: 1
+  amvs_groupes_id: 1
+  amvs_anime_id: 1
+  amvs_jv_id: 1
+  amvs_amv_id: 1
+  autre: MyString
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

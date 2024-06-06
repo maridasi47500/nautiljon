@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujinshis_pay %>
+
+<div>
+  <%= link_to "Edit this doujinshis pay", edit__doujinshis_pay_path(@_doujinshis_pay) %> |
+  <%= link_to "Back to doujinshis pays", _doujinshis_pays_path %>
+
+  <%= button_to "Destroy this doujinshis pay", @_doujinshis_pay, method: :delete %>
+</div>

@@ -1,0 +1,39 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  _personnage_de_mangas_manga_id: 1
+  _personnage_de_mangas_manga_id: 1
+  image: MyString
+  description: MyText
+  _personnage_de_mangas_perso_manga_id: 1
+  _personnage_de_mangas_perso_id: 1
+  _personnage_de_mangas_perso_plus_id: 1
+  _personnage_de_mangas_jv_perso_id: 1
+  _personnage_de_mangas_goodies_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  nom: MyString
+  nom_alternatif: MyString
+  nom_suite: MyString
+  nom_original: MyString
+  _personnage_de_mangas_manga_id: 1
+  _personnage_de_mangas_manga_id: 1
+  image: MyString
+  description: MyText
+  _personnage_de_mangas_perso_manga_id: 1
+  _personnage_de_mangas_perso_id: 1
+  _personnage_de_mangas_perso_plus_id: 1
+  _personnage_de_mangas_jv_perso_id: 1
+  _personnage_de_mangas_goodies_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

@@ -1,0 +1,2 @@
+module LivresGoodiesHelper
+end

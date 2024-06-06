@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @artbooks_am %>
+
+<div>
+  <%= link_to "Edit this artbooks am", edit_artbooks_am_path(@artbooks_am) %> |
+  <%= link_to "Back to artbooks ams", artbooks_ams_path %>
+
+  <%= button_to "Destroy this artbooks am", @artbooks_am, method: :delete %>
+</div>

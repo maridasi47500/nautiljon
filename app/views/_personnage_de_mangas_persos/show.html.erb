@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_personnage_de_mangas_perso %>
+
+<div>
+  <%= link_to "Edit this personnage de mangas perso", edit__personnage_de_mangas_perso_path(@_personnage_de_mangas_perso) %> |
+  <%= link_to "Back to personnage de mangas persos", _personnage_de_mangas_persos_path %>
+
+  <%= button_to "Destroy this personnage de mangas perso", @_personnage_de_mangas_perso, method: :delete %>
+</div>

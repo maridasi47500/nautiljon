@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_goodies_ost %>
+
+<div>
+  <%= link_to "Edit this goodies ost", edit__goodies_ost_path(@_goodies_ost) %> |
+  <%= link_to "Back to goodies osts", _goodies_osts_path %>
+
+  <%= button_to "Destroy this goodies ost", @_goodies_ost, method: :delete %>
+</div>

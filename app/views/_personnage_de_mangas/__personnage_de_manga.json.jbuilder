@@ -1,0 +1,2 @@
+json.extract! _personnage_de_manga, :id, :nom, :nom_alternatif, :nom_suite, :nom_original, :_personnage_de_mangas_manga_id, :_personnage_de_mangas_manga_id, :image, :description, :_personnage_de_mangas_perso_manga_id, :_personnage_de_mangas_perso_id, :_personnage_de_mangas_perso_plus_id, :_personnage_de_mangas_jv_perso_id, :_personnage_de_mangas_goodies_id, :comment, :statut_prop, :statut_prop, :acceptregles, :created_at, :updated_at
+json.url _personnage_de_manga_url(_personnage_de_manga, format: :json)

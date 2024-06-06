@@ -1,0 +1,2 @@
+module DoujinshisConventionsHelper
+end

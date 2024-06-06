@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_ln %>
+
+<div>
+  <%= link_to "Edit this mangas ln", edit__mangas_ln_path(@_mangas_ln) %> |
+  <%= link_to "Back to mangas lns", _mangas_lns_path %>
+
+  <%= button_to "Destroy this mangas ln", @_mangas_ln, method: :delete %>
+</div>

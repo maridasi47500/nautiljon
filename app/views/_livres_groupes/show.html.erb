@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_livres_groupe %>
+
+<div>
+  <%= link_to "Edit this livres groupe", edit__livres_groupe_path(@_livres_groupe) %> |
+  <%= link_to "Back to livres groupes", _livres_groupes_path %>
+
+  <%= button_to "Destroy this livres groupe", @_livres_groupe, method: :delete %>
+</div>

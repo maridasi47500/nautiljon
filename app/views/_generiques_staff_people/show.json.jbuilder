@@ -1,0 +1,1 @@
+json.partial! "_generiques_staff_people/_generiques_staff_person", _generiques_staff_person: @_generiques_staff_person

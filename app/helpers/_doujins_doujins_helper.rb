@@ -1,0 +1,2 @@
+module DoujinsDoujinsHelper
+end

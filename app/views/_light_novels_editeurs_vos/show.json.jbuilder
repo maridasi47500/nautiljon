@@ -1,0 +1,1 @@
+json.partial! "_light_novels_editeurs_vos/_light_novels_editeurs_vo", _light_novels_editeurs_vo: @_light_novels_editeurs_vo

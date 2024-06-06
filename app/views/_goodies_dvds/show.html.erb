@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_goodies_dvd %>
+
+<div>
+  <%= link_to "Edit this goodies dvd", edit__goodies_dvd_path(@_goodies_dvd) %> |
+  <%= link_to "Back to goodies dvds", _goodies_dvds_path %>
+
+  <%= button_to "Destroy this goodies dvd", @_goodies_dvd, method: :delete %>
+</div>

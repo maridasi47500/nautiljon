@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  titre: MyString
+  _tablatures_people_id: 1
+  _tablatures_people_id: 1
+  infos: MyText
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  titre: MyString
+  _tablatures_people_id: 1
+  _tablatures_people_id: 1
+  infos: MyText
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

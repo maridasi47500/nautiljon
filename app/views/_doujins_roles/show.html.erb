@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujins_role %>
+
+<div>
+  <%= link_to "Edit this doujins role", edit__doujins_role_path(@_doujins_role) %> |
+  <%= link_to "Back to doujins roles", _doujins_roles_path %>
+
+  <%= button_to "Destroy this doujins role", @_doujins_role, method: :delete %>
+</div>

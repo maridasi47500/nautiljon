@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @artbooks_groupe %>
+
+<div>
+  <%= link_to "Edit this artbooks groupe", edit_artbooks_groupe_path(@artbooks_groupe) %> |
+  <%= link_to "Back to artbooks groupes", artbooks_groupes_path %>
+
+  <%= button_to "Destroy this artbooks groupe", @artbooks_groupe, method: :delete %>
+</div>

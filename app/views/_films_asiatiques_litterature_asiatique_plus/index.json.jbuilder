@@ -1,0 +1,1 @@
+json.array! @_films_asiatiques_litterature_asiatique_plus, partial: "_films_asiatiques_litterature_asiatique_plus/_films_asiatiques_litterature_asiatique_plu", as: :_films_asiatiques_litterature_asiatique_plu

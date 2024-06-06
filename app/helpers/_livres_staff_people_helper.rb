@@ -1,0 +1,2 @@
+module LivresStaffPeopleHelper
+end

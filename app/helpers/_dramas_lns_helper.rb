@@ -1,0 +1,2 @@
+module DramasLnsHelper
+end

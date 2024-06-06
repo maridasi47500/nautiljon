@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cds groupes</h1>
+
+<div id="_cds_groupes">
+  <% @_cds_groupes.each do |_cds_groupe| %>
+    <%= render _cds_groupe %>
+    <p>
+      <%= link_to "Show this cds groupe", _cds_groupe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cds groupe", new__cds_groupe_path %>

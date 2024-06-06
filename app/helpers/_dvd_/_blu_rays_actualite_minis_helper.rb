@@ -1,0 +1,2 @@
+module Dvd::BluRaysActualiteMinisHelper
+end

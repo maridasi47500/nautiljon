@@ -1,0 +1,2 @@
+module FilmsAsiatiquesEnSallesDramasHelper
+end

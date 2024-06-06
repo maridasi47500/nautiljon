@@ -1,0 +1,2 @@
+module DramasTypesHelper
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @amvs_maker %>
+
+<div>
+  <%= link_to "Edit this amvs maker", edit_amvs_maker_path(@amvs_maker) %> |
+  <%= link_to "Back to amvs makers", amvs_makers_path %>
+
+  <%= button_to "Destroy this amvs maker", @amvs_maker, method: :delete %>
+</div>

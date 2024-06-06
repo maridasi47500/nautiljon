@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujins_genre %>
+
+<div>
+  <%= link_to "Edit this doujins genre", edit__doujins_genre_path(@_doujins_genre) %> |
+  <%= link_to "Back to doujins genres", _doujins_genres_path %>
+
+  <%= button_to "Destroy this doujins genre", @_doujins_genre, method: :delete %>
+</div>

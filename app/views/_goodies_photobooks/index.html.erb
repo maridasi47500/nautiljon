@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Goodies photobooks</h1>
+
+<div id="_goodies_photobooks">
+  <% @_goodies_photobooks.each do |_goodies_photobook| %>
+    <%= render _goodies_photobook %>
+    <p>
+      <%= link_to "Show this goodies photobook", _goodies_photobook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New goodies photobook", new__goodies_photobook_path %>

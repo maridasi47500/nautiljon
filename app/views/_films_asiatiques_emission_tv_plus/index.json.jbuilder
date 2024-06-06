@@ -1,0 +1,1 @@
+json.array! @_films_asiatiques_emission_tv_plus, partial: "_films_asiatiques_emission_tv_plus/_films_asiatiques_emission_tv_plu", as: :_films_asiatiques_emission_tv_plu

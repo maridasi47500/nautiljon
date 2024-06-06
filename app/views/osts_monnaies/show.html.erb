@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @osts_monnaie %>
+
+<div>
+  <%= link_to "Edit this osts monnaie", edit_osts_monnaie_path(@osts_monnaie) %> |
+  <%= link_to "Back to osts monnaies", osts_monnaies_path %>
+
+  <%= button_to "Destroy this osts monnaie", @osts_monnaie, method: :delete %>
+</div>

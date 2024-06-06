@@ -1,0 +1,2 @@
+module DoujinshisLnsHelper
+end

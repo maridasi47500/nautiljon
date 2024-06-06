@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_doujin %>
+
+<div>
+  <%= link_to "Edit this animes doujin", edit_animes_doujin_path(@animes_doujin) %> |
+  <%= link_to "Back to animes doujins", animes_doujins_path %>
+
+  <%= button_to "Destroy this animes doujin", @animes_doujin, method: :delete %>
+</div>

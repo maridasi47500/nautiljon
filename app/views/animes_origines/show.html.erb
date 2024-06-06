@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_origine %>
+
+<div>
+  <%= link_to "Edit this animes origine", edit_animes_origine_path(@animes_origine) %> |
+  <%= link_to "Back to animes origines", animes_origines_path %>
+
+  <%= button_to "Destroy this animes origine", @animes_origine, method: :delete %>
+</div>

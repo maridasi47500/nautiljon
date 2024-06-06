@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Photobooks public avertis</h1>
+
+<div id="_photobooks_public_avertis">
+  <% @_photobooks_public_avertis.each do |_photobooks_public_averti| %>
+    <%= render _photobooks_public_averti %>
+    <p>
+      <%= link_to "Show this photobooks public averti", _photobooks_public_averti %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New photobooks public averti", new__photobooks_public_averti_path %>

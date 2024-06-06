@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_fiche_univers_anime %>
+
+<div>
+  <%= link_to "Edit this fiche univers anime", edit__fiche_univers_anime_path(@_fiche_univers_anime) %> |
+  <%= link_to "Back to fiche univers animes", _fiche_univers_animes_path %>
+
+  <%= button_to "Destroy this fiche univers anime", @_fiche_univers_anime, method: :delete %>
+</div>

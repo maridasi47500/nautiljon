@@ -1,0 +1,1 @@
+json.partial! "_films_asiatiques_generiques_paroles/_films_asiatiques_generiques_parole", _films_asiatiques_generiques_parole: @_films_asiatiques_generiques_parole

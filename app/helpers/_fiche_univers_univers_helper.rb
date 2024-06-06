@@ -1,0 +1,2 @@
+module FicheUniversUniversHelper
+end

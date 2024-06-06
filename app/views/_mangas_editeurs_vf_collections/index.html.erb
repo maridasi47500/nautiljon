@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mangas editeurs vf collections</h1>
+
+<div id="_mangas_editeurs_vf_collections">
+  <% @_mangas_editeurs_vf_collections.each do |_mangas_editeurs_vf_collection| %>
+    <%= render _mangas_editeurs_vf_collection %>
+    <p>
+      <%= link_to "Show this mangas editeurs vf collection", _mangas_editeurs_vf_collection %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mangas editeurs vf collection", new__mangas_editeurs_vf_collection_path %>

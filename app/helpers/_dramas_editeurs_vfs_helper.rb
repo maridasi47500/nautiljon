@@ -1,0 +1,2 @@
+module DramasEditeursVfsHelper
+end

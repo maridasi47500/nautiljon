@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques en salles actualite minis</h1>
+
+<div id="_films_asiatiques_en_salles_actualite_minis">
+  <% @_films_asiatiques_en_salles_actualite_minis.each do |_films_asiatiques_en_salles_actualite_mini| %>
+    <%= render _films_asiatiques_en_salles_actualite_mini %>
+    <p>
+      <%= link_to "Show this films asiatiques en salles actualite mini", _films_asiatiques_en_salles_actualite_mini %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques en salles actualite mini", new__films_asiatiques_en_salles_actualite_mini_path %>

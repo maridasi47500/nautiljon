@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnage danimes doubleur roles</h1>
+
+<div id="_personnage_danimes_doubleur_roles">
+  <% @_personnage_danimes_doubleur_roles.each do |_personnage_danimes_doubleur_role| %>
+    <%= render _personnage_danimes_doubleur_role %>
+    <p>
+      <%= link_to "Show this personnage danimes doubleur role", _personnage_danimes_doubleur_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnage danimes doubleur role", new__personnage_danimes_doubleur_role_path %>

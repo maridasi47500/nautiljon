@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Recettes plats</h1>
+
+<div id="_recettes_plats">
+  <% @_recettes_plats.each do |_recettes_plat| %>
+    <%= render _recettes_plat %>
+    <p>
+      <%= link_to "Show this recettes plat", _recettes_plat %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New recettes plat", new__recettes_plat_path %>

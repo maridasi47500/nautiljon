@@ -1,0 +1,1 @@
+json.partial! "_photobooks_illustrations/_photobooks_illustration", _photobooks_illustration: @_photobooks_illustration

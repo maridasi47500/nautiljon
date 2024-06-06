@@ -1,0 +1,2 @@
+class ArtbooksManga < ApplicationRecord
+end

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_dramas_ost %>
+
+<div>
+  <%= link_to "Edit this dramas ost", edit__dramas_ost_path(@_dramas_ost) %> |
+  <%= link_to "Back to dramas osts", _dramas_osts_path %>
+
+  <%= button_to "Destroy this dramas ost", @_dramas_ost, method: :delete %>
+</div>

@@ -1,0 +1,2 @@
+module BrevesJvSocietesHelper
+end

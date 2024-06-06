@@ -1,0 +1,2 @@
+class AmvsConvention < ApplicationRecord
+end

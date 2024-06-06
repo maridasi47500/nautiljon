@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cds distributeurs</h1>
+
+<div id="_cds_distributeurs">
+  <% @_cds_distributeurs.each do |_cds_distributeur| %>
+    <%= render _cds_distributeur %>
+    <p>
+      <%= link_to "Show this cds distributeur", _cds_distributeur %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cds distributeur", new__cds_distributeur_path %>

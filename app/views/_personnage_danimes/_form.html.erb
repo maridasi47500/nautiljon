@@ -1,0 +1,157 @@
+<%= form_with(model: _personnage_danime) do |form| %>
+  <% if _personnage_danime.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_personnage_danime.errors.count, "error") %> prohibited this _personnage_danime from being saved:</h2>
+
+      <ul>
+        <% _personnage_danime.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :nom, style: "display: block" %>
+    <%= form.text_field :nom %>
+  </div>
+
+  <div>
+    <%= form.label :nom_alternatif, style: "display: block" %>
+    <%= form.text_field :nom_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :nom_suite, style: "display: block" %>
+    <%= form.text_field :nom_suite %>
+  </div>
+
+  <div>
+    <%= form.label :nom_original, style: "display: block" %>
+    <%= form.text_field :nom_original %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_sexe_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_sexe_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_anime_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_anime_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_anime_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_pays_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_people_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :, style: "display: block" %>
+    <%= form.text_field : %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_role_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_pays_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_pays_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_people_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :, style: "display: block" %>
+    <%= form.text_field : %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_doubleur_role_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_doubleur_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :special, style: "display: block" %>
+    <%= form.text_field :special %>
+  </div>
+
+  <div>
+    <%= form.label :special, style: "display: block" %>
+    <%= form.text_field :special %>
+  </div>
+
+  <div>
+    <%= form.label :image, style: "display: block" %>
+    <%= form.text_field :image %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_perso_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_perso_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_perso_plus_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_perso_plus_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_perso_manga_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_perso_manga_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_jv_perso_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_jv_perso_id %>
+  </div>
+
+  <div>
+    <%= form.label :_personnage_danimes_goodies_id, style: "display: block" %>
+    <%= form.number_field :_personnage_danimes_goodies_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

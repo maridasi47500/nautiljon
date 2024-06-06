@@ -1,0 +1,1 @@
+json.partial! "_films_asiatiques_en_salles_types/_films_asiatiques_en_salles_type", _films_asiatiques_en_salles_type: @_films_asiatiques_en_salles_type

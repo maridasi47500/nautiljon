@@ -1,0 +1,2 @@
+module Dvd::BluRaysFrancesHelper
+end

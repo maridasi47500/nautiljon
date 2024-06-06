@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques en salles genres</h1>
+
+<div id="_films_asiatiques_en_salles_genres">
+  <% @_films_asiatiques_en_salles_genres.each do |_films_asiatiques_en_salles_genre| %>
+    <%= render _films_asiatiques_en_salles_genre %>
+    <p>
+      <%= link_to "Show this films asiatiques en salles genre", _films_asiatiques_en_salles_genre %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques en salles genre", new__films_asiatiques_en_salles_genre_path %>

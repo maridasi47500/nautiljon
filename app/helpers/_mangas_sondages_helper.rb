@@ -1,0 +1,2 @@
+module MangasSondagesHelper
+end

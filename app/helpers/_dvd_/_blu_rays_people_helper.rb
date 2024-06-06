@@ -1,0 +1,2 @@
+module Dvd::BluRaysPeopleHelper
+end

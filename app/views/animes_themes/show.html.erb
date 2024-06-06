@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @animes_theme %>
+
+<div>
+  <%= link_to "Edit this animes theme", edit_animes_theme_path(@animes_theme) %> |
+  <%= link_to "Back to animes themes", animes_themes_path %>
+
+  <%= button_to "Destroy this animes theme", @animes_theme, method: :delete %>
+</div>

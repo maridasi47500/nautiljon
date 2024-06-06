@@ -1,0 +1,2 @@
+module LightNovelsEditeursVfsHelper
+end

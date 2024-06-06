@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Films asiatiques en salles acteurs</h1>
+
+<div id="_films_asiatiques_en_salles_acteurs">
+  <% @_films_asiatiques_en_salles_acteurs.each do |_films_asiatiques_en_salles_acteur| %>
+    <%= render _films_asiatiques_en_salles_acteur %>
+    <p>
+      <%= link_to "Show this films asiatiques en salles acteur", _films_asiatiques_en_salles_acteur %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New films asiatiques en salles acteur", new__films_asiatiques_en_salles_acteur_path %>

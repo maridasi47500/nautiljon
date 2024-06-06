@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnage de mangas goodies</h1>
+
+<div id="_personnage_de_mangas_goodies">
+  <% @_personnage_de_mangas_goodies.each do |_personnage_de_mangas_goody| %>
+    <%= render _personnage_de_mangas_goody %>
+    <p>
+      <%= link_to "Show this personnage de mangas goody", _personnage_de_mangas_goody %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnage de mangas goody", new__personnage_de_mangas_goody_path %>

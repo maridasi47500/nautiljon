@@ -1,0 +1,2 @@
+module GoodiesStaffPeopleHelper
+end

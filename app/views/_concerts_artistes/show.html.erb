@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_concerts_artiste %>
+
+<div>
+  <%= link_to "Edit this concerts artiste", edit__concerts_artiste_path(@_concerts_artiste) %> |
+  <%= link_to "Back to concerts artistes", _concerts_artistes_path %>
+
+  <%= button_to "Destroy this concerts artiste", @_concerts_artiste, method: :delete %>
+</div>

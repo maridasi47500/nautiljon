@@ -1,0 +1,2 @@
+module BrevesMangaEditeursHelper
+end

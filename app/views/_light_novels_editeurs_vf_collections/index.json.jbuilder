@@ -1,0 +1,1 @@
+json.array! @_light_novels_editeurs_vf_collections, partial: "_light_novels_editeurs_vf_collections/_light_novels_editeurs_vf_collection", as: :_light_novels_editeurs_vf_collection

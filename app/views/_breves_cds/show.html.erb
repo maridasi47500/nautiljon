@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_cd %>
+
+<div>
+  <%= link_to "Edit this breves cd", edit__breves_cd_path(@_breves_cd) %> |
+  <%= link_to "Back to breves cds", _breves_cds_path %>
+
+  <%= button_to "Destroy this breves cd", @_breves_cd, method: :delete %>
+</div>

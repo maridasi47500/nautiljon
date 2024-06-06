@@ -1,0 +1,2 @@
+class ArtbooksDoujin < ApplicationRecord
+end

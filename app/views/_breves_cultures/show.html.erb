@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_culture %>
+
+<div>
+  <%= link_to "Edit this breves culture", edit__breves_culture_path(@_breves_culture) %> |
+  <%= link_to "Back to breves cultures", _breves_cultures_path %>
+
+  <%= button_to "Destroy this breves culture", @_breves_culture, method: :delete %>
+</div>

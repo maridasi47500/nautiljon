@@ -1,0 +1,2 @@
+module LightNovelsSocieteRolesHelper
+end

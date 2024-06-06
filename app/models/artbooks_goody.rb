@@ -1,0 +1,2 @@
+class ArtbooksGoody < ApplicationRecord
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Evenements pays</h1>
+
+<div id="evenements_pays">
+  <% @evenements_pays.each do |evenements_pay| %>
+    <%= render evenements_pay %>
+    <p>
+      <%= link_to "Show this evenements pay", evenements_pay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New evenements pay", new_evenements_pay_path %>

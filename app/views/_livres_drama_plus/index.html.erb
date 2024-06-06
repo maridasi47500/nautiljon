@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres drama plus</h1>
+
+<div id="_livres_drama_plus">
+  <% @_livres_drama_plus.each do |_livres_drama_plu| %>
+    <%= render _livres_drama_plu %>
+    <p>
+      <%= link_to "Show this livres drama plu", _livres_drama_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres drama plu", new__livres_drama_plu_path %>

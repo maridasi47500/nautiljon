@@ -1,0 +1,2 @@
+module DoujinsArtbooksHelper
+end

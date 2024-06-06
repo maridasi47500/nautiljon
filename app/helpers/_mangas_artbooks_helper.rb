@@ -1,0 +1,2 @@
+module MangasArtbooksHelper
+end

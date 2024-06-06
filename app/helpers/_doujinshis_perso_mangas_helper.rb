@@ -1,0 +1,2 @@
+module DoujinshisPersoMangasHelper
+end

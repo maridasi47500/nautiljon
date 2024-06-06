@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves dvds</h1>
+
+<div id="_breves_dvds">
+  <% @_breves_dvds.each do |_breves_dvd| %>
+    <%= render _breves_dvd %>
+    <p>
+      <%= link_to "Show this breves dvd", _breves_dvd %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves dvd", new__breves_dvd_path %>

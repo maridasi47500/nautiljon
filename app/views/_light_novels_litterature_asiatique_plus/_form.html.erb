@@ -1,0 +1,22 @@
+<%= form_with(model: _light_novels_litterature_asiatique_plu) do |form| %>
+  <% if _light_novels_litterature_asiatique_plu.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_light_novels_litterature_asiatique_plu.errors.count, "error") %> prohibited this _light_novels_litterature_asiatique_plu from being saved:</h2>
+
+      <ul>
+        <% _light_novels_litterature_asiatique_plu.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

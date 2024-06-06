@@ -1,0 +1,1 @@
+json.partial! "_mangas_litterature_asiatique_plus/_mangas_litterature_asiatique_plu", _mangas_litterature_asiatique_plu: @_mangas_litterature_asiatique_plu

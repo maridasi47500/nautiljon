@@ -1,0 +1,2 @@
+module FicheUniversAmsHelper
+end

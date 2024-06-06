@@ -1,0 +1,2 @@
+class AnimesLitteratureAsiatiquePlu < ApplicationRecord
+end

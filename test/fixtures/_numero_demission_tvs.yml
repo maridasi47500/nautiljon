@@ -1,0 +1,47 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  _numero_demission_tvs_id_emission_tv_id: 1
+  titre: MyString
+  titre_original: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  _numero_demission_tvs_special_id: 1
+  duree: MyString
+  _numero_demission_tvs_presentateur_id: 1
+  _numero_demission_tvs_presentateur_id: 1
+  _numero_demission_tvs_people_id: 1
+  _numero_demission_tvs_people_id: 1
+  image: MyString
+  infos: MyText
+  youtube: MyString
+  _numero_demission_tvs_emission_tv_numero_id: 1
+  _numero_demission_tvs_clip_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  _numero_demission_tvs_id_emission_tv_id: 1
+  titre: MyString
+  titre_original: MyString
+  date_jj: MyString
+  date_mm: MyString
+  date_aaaa: MyString
+  _numero_demission_tvs_special_id: 1
+  duree: MyString
+  _numero_demission_tvs_presentateur_id: 1
+  _numero_demission_tvs_presentateur_id: 1
+  _numero_demission_tvs_people_id: 1
+  _numero_demission_tvs_people_id: 1
+  image: MyString
+  infos: MyText
+  youtube: MyString
+  _numero_demission_tvs_emission_tv_numero_id: 1
+  _numero_demission_tvs_clip_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

@@ -1,0 +1,2 @@
+module MangasPrepubliesHelper
+end

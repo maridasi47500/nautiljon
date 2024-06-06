@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_quizz %>
+
+<div>
+  <%= link_to "Edit this breves quizz", edit__breves_quizz_path(@_breves_quizz) %> |
+  <%= link_to "Back to breves quizzs", _breves_quizzs_path %>
+
+  <%= button_to "Destroy this breves quizz", @_breves_quizz, method: :delete %>
+</div>

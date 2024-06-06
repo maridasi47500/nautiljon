@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Generiques staff roles</h1>
+
+<div id="_generiques_staff_roles">
+  <% @_generiques_staff_roles.each do |_generiques_staff_role| %>
+    <%= render _generiques_staff_role %>
+    <p>
+      <%= link_to "Show this generiques staff role", _generiques_staff_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New generiques staff role", new__generiques_staff_role_path %>

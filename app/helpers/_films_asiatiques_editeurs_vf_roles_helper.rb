@@ -1,0 +1,2 @@
+module FilmsAsiatiquesEditeursVfRolesHelper
+end

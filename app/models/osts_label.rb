@@ -1,0 +1,2 @@
+class OstsLabel < ApplicationRecord
+end

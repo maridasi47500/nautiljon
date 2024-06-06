@@ -1,0 +1,1 @@
+json.array! @_films_asiatiques_en_salles_acteurs, partial: "_films_asiatiques_en_salles_acteurs/_films_asiatiques_en_salles_acteur", as: :_films_asiatiques_en_salles_acteur

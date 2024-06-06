@@ -1,0 +1,2 @@
+module GeneriqueDeJeuVideosStaffPeopleHelper
+end

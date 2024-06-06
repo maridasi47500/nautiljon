@@ -1,0 +1,2 @@
+module AnimesSocietePeopleHelper
+end

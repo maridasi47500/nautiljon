@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos doujins</h1>
+
+<div id="_jeux_videos_doujins">
+  <% @_jeux_videos_doujins.each do |_jeux_videos_doujin| %>
+    <%= render _jeux_videos_doujin %>
+    <p>
+      <%= link_to "Show this jeux videos doujin", _jeux_videos_doujin %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos doujin", new__jeux_videos_doujin_path %>

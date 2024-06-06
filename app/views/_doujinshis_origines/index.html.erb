@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis origines</h1>
+
+<div id="_doujinshis_origines">
+  <% @_doujinshis_origines.each do |_doujinshis_origine| %>
+    <%= render _doujinshis_origine %>
+    <p>
+      <%= link_to "Show this doujinshis origine", _doujinshis_origine %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis origine", new__doujinshis_origine_path %>

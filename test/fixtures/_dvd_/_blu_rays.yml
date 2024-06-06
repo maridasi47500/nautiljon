@@ -1,0 +1,93 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  type: 
+  type: 
+  type: 
+  type: 
+  type: 
+  type: 
+  _dvd_/_blu_rays_france_id: 1
+  _dvd_/_blu_rays_pays_id: 1
+  titre: MyString
+  titre_alternatif: MyString
+  titre_original: MyString
+  image: MyString
+  date_parution_jj: MyString
+  date_parution_mm: MyString
+  date_parution_aaaa: MyString
+  prix: MyString
+  ean: MyString
+  ref: MyString
+  _dvd_/_blu_rays_format_id: 1
+  _dvd_/_blu_rays_type_edition_id: 1
+  _dvd_/_blu_rays_editeurs_id: 1
+  _dvd_/_blu_rays_editeurs_id: 1
+  audiodescription: MyString
+  duree: MyString
+  nb_disque: MyString
+  resume: MyText
+  episodes: MyText
+  infos: MyText
+  youtube: MyString
+  _dvd_/_blu_rays_public_averti_id: 1
+  _dvd_/_blu_rays_groupes_id: 1
+  _dvd_/_blu_rays_anime_id: 1
+  _dvd_/_blu_rays_drama_id: 1
+  _dvd_/_blu_rays_am_id: 1
+  _dvd_/_blu_rays_litterature_asiatique_id: 1
+  _dvd_/_blu_rays_jv_id: 1
+  _dvd_/_blu_rays_people_id: 1
+  _dvd_/_blu_rays_emission_tv_id: 1
+  _dvd_/_blu_rays_actualite_id: 1
+  _dvd_/_blu_rays_actualite_mini_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  type: 
+  type: 
+  type: 
+  type: 
+  type: 
+  type: 
+  _dvd_/_blu_rays_france_id: 1
+  _dvd_/_blu_rays_pays_id: 1
+  titre: MyString
+  titre_alternatif: MyString
+  titre_original: MyString
+  image: MyString
+  date_parution_jj: MyString
+  date_parution_mm: MyString
+  date_parution_aaaa: MyString
+  prix: MyString
+  ean: MyString
+  ref: MyString
+  _dvd_/_blu_rays_format_id: 1
+  _dvd_/_blu_rays_type_edition_id: 1
+  _dvd_/_blu_rays_editeurs_id: 1
+  _dvd_/_blu_rays_editeurs_id: 1
+  audiodescription: MyString
+  duree: MyString
+  nb_disque: MyString
+  resume: MyText
+  episodes: MyText
+  infos: MyText
+  youtube: MyString
+  _dvd_/_blu_rays_public_averti_id: 1
+  _dvd_/_blu_rays_groupes_id: 1
+  _dvd_/_blu_rays_anime_id: 1
+  _dvd_/_blu_rays_drama_id: 1
+  _dvd_/_blu_rays_am_id: 1
+  _dvd_/_blu_rays_litterature_asiatique_id: 1
+  _dvd_/_blu_rays_jv_id: 1
+  _dvd_/_blu_rays_people_id: 1
+  _dvd_/_blu_rays_emission_tv_id: 1
+  _dvd_/_blu_rays_actualite_id: 1
+  _dvd_/_blu_rays_actualite_mini_id: 1
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

@@ -1,0 +1,2 @@
+module FilmsAsiatiquesGeneriquesPeople2sHelper
+end

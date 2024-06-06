@@ -1,0 +1,2 @@
+class AnimesSocieteRole < ApplicationRecord
+end

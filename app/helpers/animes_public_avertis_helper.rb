@@ -1,0 +1,2 @@
+module AnimesPublicAvertisHelper
+end

@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnalites labels</h1>
+
+<div id="_personnalites_labels">
+  <% @_personnalites_labels.each do |_personnalites_label| %>
+    <%= render _personnalites_label %>
+    <p>
+      <%= link_to "Show this personnalites label", _personnalites_label %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnalites label", new__personnalites_label_path %>

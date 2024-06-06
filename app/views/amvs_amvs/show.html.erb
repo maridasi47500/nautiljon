@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @amvs_amv %>
+
+<div>
+  <%= link_to "Edit this amvs amv", edit_amvs_amv_path(@amvs_amv) %> |
+  <%= link_to "Back to amvs amvs", amvs_amvs_path %>
+
+  <%= button_to "Destroy this amvs amv", @amvs_amv, method: :delete %>
+</div>

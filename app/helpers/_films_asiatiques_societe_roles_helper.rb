@@ -1,0 +1,2 @@
+module FilmsAsiatiquesSocieteRolesHelper
+end

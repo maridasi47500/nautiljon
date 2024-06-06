@@ -1,0 +1,2 @@
+module LightNovelsStaffRolesHelper
+end

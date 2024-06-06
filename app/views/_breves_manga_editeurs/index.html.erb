@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves manga editeurs</h1>
+
+<div id="_breves_manga_editeurs">
+  <% @_breves_manga_editeurs.each do |_breves_manga_editeur| %>
+    <%= render _breves_manga_editeur %>
+    <p>
+      <%= link_to "Show this breves manga editeur", _breves_manga_editeur %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves manga editeur", new__breves_manga_editeur_path %>

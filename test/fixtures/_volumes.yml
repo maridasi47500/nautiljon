@@ -1,0 +1,63 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  _volumes_ln_id: 1
+  numero: MyString
+  _volumes_type_id: 1
+  numerique: MyString
+  image: MyString
+  image_nc: MyString
+  image_vo: MyString
+  image_vo2: MyString
+  date_parution_vo_jj: MyString
+  date_parution_vo_mm: MyString
+  date_parution_vo_aaaa: MyString
+  date_parution_vf_jj: MyString
+  date_parution_vf_mm: MyString
+  date_parution_vf_aaaa: MyString
+  prix: MyString
+  prix_vo: MyString
+  pages: MyString
+  _volumes_illustrations_id: 1
+  ean: MyString
+  relie: MyString
+  sous_jaquette: MyString
+  resume: MyText
+  chapitres: MyText
+  infos: MyText
+  preview: MyString
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString
+
+two:
+  _volumes_ln_id: 1
+  numero: MyString
+  _volumes_type_id: 1
+  numerique: MyString
+  image: MyString
+  image_nc: MyString
+  image_vo: MyString
+  image_vo2: MyString
+  date_parution_vo_jj: MyString
+  date_parution_vo_mm: MyString
+  date_parution_vo_aaaa: MyString
+  date_parution_vf_jj: MyString
+  date_parution_vf_mm: MyString
+  date_parution_vf_aaaa: MyString
+  prix: MyString
+  prix_vo: MyString
+  pages: MyString
+  _volumes_illustrations_id: 1
+  ean: MyString
+  relie: MyString
+  sous_jaquette: MyString
+  resume: MyText
+  chapitres: MyText
+  infos: MyText
+  preview: MyString
+  comment: MyText
+  statut_prop: MyString
+  statut_prop: MyString
+  acceptregles: MyString

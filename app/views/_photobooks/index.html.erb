@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Photobooks</h1>
+
+<div id="_photobooks">
+  <% @_photobooks.each do |_photobook| %>
+    <%= render _photobook %>
+    <p>
+      <%= link_to "Show this photobook", _photobook %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New photobook", new__photobook_path %>

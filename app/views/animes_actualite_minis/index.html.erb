@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Animes actualite minis</h1>
+
+<div id="animes_actualite_minis">
+  <% @animes_actualite_minis.each do |animes_actualite_mini| %>
+    <%= render animes_actualite_mini %>
+    <p>
+      <%= link_to "Show this animes actualite mini", animes_actualite_mini %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New animes actualite mini", new_animes_actualite_mini_path %>

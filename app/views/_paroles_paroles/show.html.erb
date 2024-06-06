@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_paroles_parole %>
+
+<div>
+  <%= link_to "Edit this paroles parole", edit__paroles_parole_path(@_paroles_parole) %> |
+  <%= link_to "Back to paroles paroles", _paroles_paroles_path %>
+
+  <%= button_to "Destroy this paroles parole", @_paroles_parole, method: :delete %>
+</div>

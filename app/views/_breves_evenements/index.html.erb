@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves evenements</h1>
+
+<div id="_breves_evenements">
+  <% @_breves_evenements.each do |_breves_evenement| %>
+    <%= render _breves_evenement %>
+    <p>
+      <%= link_to "Show this breves evenement", _breves_evenement %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves evenement", new__breves_evenement_path %>

@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_breves_manga %>
+
+<div>
+  <%= link_to "Edit this breves manga", edit__breves_manga_path(@_breves_manga) %> |
+  <%= link_to "Back to breves mangas", _breves_mangas_path %>
+
+  <%= button_to "Destroy this breves manga", @_breves_manga, method: :delete %>
+</div>

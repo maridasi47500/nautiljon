@@ -1,0 +1,2 @@
+class ArtbooksDoujinshi < ApplicationRecord
+end

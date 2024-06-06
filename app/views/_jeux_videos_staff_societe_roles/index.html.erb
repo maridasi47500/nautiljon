@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Jeux videos staff societe roles</h1>
+
+<div id="_jeux_videos_staff_societe_roles">
+  <% @_jeux_videos_staff_societe_roles.each do |_jeux_videos_staff_societe_role| %>
+    <%= render _jeux_videos_staff_societe_role %>
+    <p>
+      <%= link_to "Show this jeux videos staff societe role", _jeux_videos_staff_societe_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New jeux videos staff societe role", new__jeux_videos_staff_societe_role_path %>

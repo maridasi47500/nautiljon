@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujins dramas</h1>
+
+<div id="_doujins_dramas">
+  <% @_doujins_dramas.each do |_doujins_drama| %>
+    <%= render _doujins_drama %>
+    <p>
+      <%= link_to "Show this doujins drama", _doujins_drama %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujins drama", new__doujins_drama_path %>

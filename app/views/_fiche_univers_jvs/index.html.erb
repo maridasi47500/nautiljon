@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Fiche univers jvs</h1>
+
+<div id="_fiche_univers_jvs">
+  <% @_fiche_univers_jvs.each do |_fiche_univers_jv| %>
+    <%= render _fiche_univers_jv %>
+    <p>
+      <%= link_to "Show this fiche univers jv", _fiche_univers_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New fiche univers jv", new__fiche_univers_jv_path %>

@@ -1,0 +1,1 @@
+json.partial! "_personnage_danimes_animes/_personnage_danimes_anime", _personnage_danimes_anime: @_personnage_danimes_anime

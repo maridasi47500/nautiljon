@@ -1,0 +1,2 @@
+module GoodiesDramasHelper
+end

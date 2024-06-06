@@ -1,0 +1,1 @@
+json.partial! "_photobooks_societe_roles/_photobooks_societe_role", _photobooks_societe_role: @_photobooks_societe_role

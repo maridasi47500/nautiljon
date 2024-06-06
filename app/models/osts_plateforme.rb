@@ -1,0 +1,2 @@
+class OstsPlateforme < ApplicationRecord
+end

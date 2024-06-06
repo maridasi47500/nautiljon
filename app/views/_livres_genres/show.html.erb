@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_livres_genre %>
+
+<div>
+  <%= link_to "Edit this livres genre", edit__livres_genre_path(@_livres_genre) %> |
+  <%= link_to "Back to livres genres", _livres_genres_path %>
+
+  <%= button_to "Destroy this livres genre", @_livres_genre, method: :delete %>
+</div>

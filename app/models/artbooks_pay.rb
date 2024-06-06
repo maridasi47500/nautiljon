@@ -1,0 +1,2 @@
+class ArtbooksPay < ApplicationRecord
+end

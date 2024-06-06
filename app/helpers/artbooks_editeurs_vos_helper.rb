@@ -1,0 +1,2 @@
+module ArtbooksEditeursVosHelper
+end

@@ -1,0 +1,2 @@
+module AnimesCinemasHelper
+end

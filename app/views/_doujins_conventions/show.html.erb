@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_doujins_convention %>
+
+<div>
+  <%= link_to "Edit this doujins convention", edit__doujins_convention_path(@_doujins_convention) %> |
+  <%= link_to "Back to doujins conventions", _doujins_conventions_path %>
+
+  <%= button_to "Destroy this doujins convention", @_doujins_convention, method: :delete %>
+</div>

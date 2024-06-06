@@ -1,0 +1,2 @@
+module FilmsAsiatiquesCulturesHelper
+end

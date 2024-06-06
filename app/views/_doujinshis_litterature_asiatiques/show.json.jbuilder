@@ -1,0 +1,1 @@
+json.partial! "_doujinshis_litterature_asiatiques/_doujinshis_litterature_asiatique", _doujinshis_litterature_asiatique: @_doujinshis_litterature_asiatique

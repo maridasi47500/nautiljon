@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Mangas genres</h1>
+
+<div id="_mangas_genres">
+  <% @_mangas_genres.each do |_mangas_genre| %>
+    <%= render _mangas_genre %>
+    <p>
+      <%= link_to "Show this mangas genre", _mangas_genre %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New mangas genre", new__mangas_genre_path %>

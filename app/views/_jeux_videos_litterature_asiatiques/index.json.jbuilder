@@ -1,0 +1,1 @@
+json.array! @_jeux_videos_litterature_asiatiques, partial: "_jeux_videos_litterature_asiatiques/_jeux_videos_litterature_asiatique", as: :_jeux_videos_litterature_asiatique

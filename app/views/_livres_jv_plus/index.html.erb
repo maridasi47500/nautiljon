@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres jv plus</h1>
+
+<div id="_livres_jv_plus">
+  <% @_livres_jv_plus.each do |_livres_jv_plu| %>
+    <%= render _livres_jv_plu %>
+    <p>
+      <%= link_to "Show this livres jv plu", _livres_jv_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres jv plu", new__livres_jv_plu_path %>

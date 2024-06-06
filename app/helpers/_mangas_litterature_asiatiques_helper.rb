@@ -1,0 +1,2 @@
+module MangasLitteratureAsiatiquesHelper
+end

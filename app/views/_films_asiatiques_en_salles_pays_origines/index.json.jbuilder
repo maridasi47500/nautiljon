@@ -1,0 +1,1 @@
+json.array! @_films_asiatiques_en_salles_pays_origines, partial: "_films_asiatiques_en_salles_pays_origines/_films_asiatiques_en_salles_pays_origine", as: :_films_asiatiques_en_salles_pays_origine

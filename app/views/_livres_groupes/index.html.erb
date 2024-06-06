@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Livres groupes</h1>
+
+<div id="_livres_groupes">
+  <% @_livres_groupes.each do |_livres_groupe| %>
+    <%= render _livres_groupe %>
+    <p>
+      <%= link_to "Show this livres groupe", _livres_groupe %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New livres groupe", new__livres_groupe_path %>

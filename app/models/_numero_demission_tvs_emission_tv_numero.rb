@@ -1,0 +1,3 @@
+class NumeroDemissionTvsEmissionTvNumero < ApplicationRecord
+self.table_name = "_numero_demission_tvs_emission_tv_numeros"
+end

@@ -1,0 +1,2 @@
+module DramasMangasHelper
+end

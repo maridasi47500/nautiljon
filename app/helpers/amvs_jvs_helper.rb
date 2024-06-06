@@ -1,0 +1,2 @@
+module AmvsJvsHelper
+end

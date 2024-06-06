@@ -1,0 +1,2 @@
+module JeuxVideosCulturesHelper
+end

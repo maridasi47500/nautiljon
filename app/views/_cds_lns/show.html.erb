@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_cds_ln %>
+
+<div>
+  <%= link_to "Edit this cds ln", edit__cds_ln_path(@_cds_ln) %> |
+  <%= link_to "Back to cds lns", _cds_lns_path %>
+
+  <%= button_to "Destroy this cds ln", @_cds_ln, method: :delete %>
+</div>

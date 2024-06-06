@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Light novels staff roles</h1>
+
+<div id="_light_novels_staff_roles">
+  <% @_light_novels_staff_roles.each do |_light_novels_staff_role| %>
+    <%= render _light_novels_staff_role %>
+    <p>
+      <%= link_to "Show this light novels staff role", _light_novels_staff_role %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New light novels staff role", new__light_novels_staff_role_path %>

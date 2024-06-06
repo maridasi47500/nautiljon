@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis genres</h1>
+
+<div id="_doujinshis_genres">
+  <% @_doujinshis_genres.each do |_doujinshis_genre| %>
+    <%= render _doujinshis_genre %>
+    <p>
+      <%= link_to "Show this doujinshis genre", _doujinshis_genre %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis genre", new__doujinshis_genre_path %>

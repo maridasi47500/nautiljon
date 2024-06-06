@@ -1,0 +1,2 @@
+module JeuxVideosQuizzsHelper
+end

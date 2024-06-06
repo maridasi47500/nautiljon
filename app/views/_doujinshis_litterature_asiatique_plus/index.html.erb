@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Doujinshis litterature asiatique plus</h1>
+
+<div id="_doujinshis_litterature_asiatique_plus">
+  <% @_doujinshis_litterature_asiatique_plus.each do |_doujinshis_litterature_asiatique_plu| %>
+    <%= render _doujinshis_litterature_asiatique_plu %>
+    <p>
+      <%= link_to "Show this doujinshis litterature asiatique plu", _doujinshis_litterature_asiatique_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New doujinshis litterature asiatique plu", new__doujinshis_litterature_asiatique_plu_path %>

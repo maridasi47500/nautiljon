@@ -1,0 +1,15 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nom: MyString
+  url: MyString
+  description: MyText
+  _sites_dachats_pays_id: 1
+  acceptregles: MyString
+
+two:
+  nom: MyString
+  url: MyString
+  description: MyText
+  _sites_dachats_pays_id: 1
+  acceptregles: MyString

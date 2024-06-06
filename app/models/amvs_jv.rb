@@ -1,0 +1,2 @@
+class AmvsJv < ApplicationRecord
+end

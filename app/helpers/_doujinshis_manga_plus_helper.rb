@@ -1,0 +1,2 @@
+module DoujinshisMangaPlusHelper
+end

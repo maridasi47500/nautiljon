@@ -1,0 +1,1 @@
+json.partial! "_jeux_videos_litterature_asiatiques/_jeux_videos_litterature_asiatique", _jeux_videos_litterature_asiatique: @_jeux_videos_litterature_asiatique

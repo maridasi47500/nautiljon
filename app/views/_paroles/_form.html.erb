@@ -1,0 +1,122 @@
+<%= form_with(model: _parole) do |form| %>
+  <% if _parole.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_parole.errors.count, "error") %> prohibited this _parole from being saved:</h2>
+
+      <ul>
+        <% _parole.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :titre, style: "display: block" %>
+    <%= form.text_field :titre %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original, style: "display: block" %>
+    <%= form.text_field :titre_original %>
+  </div>
+
+  <div>
+    <%= form.label :titre_alternatif, style: "display: block" %>
+    <%= form.text_field :titre_alternatif %>
+  </div>
+
+  <div>
+    <%= form.label :titre_original_latin, style: "display: block" %>
+    <%= form.text_field :titre_original_latin %>
+  </div>
+
+  <div>
+    <%= form.label :_paroles_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_paroles_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_paroles_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_paroles_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :_paroles_staff_role_id, style: "display: block" %>
+    <%= form.number_field :_paroles_staff_role_id %>
+  </div>
+
+  <div>
+    <%= form.label :_paroles_staff_people_id, style: "display: block" %>
+    <%= form.number_field :_paroles_staff_people_id %>
+  </div>
+
+  <div>
+    <%= form.label :paroles, style: "display: block" %>
+    <%= form.text_area :paroles %>
+  </div>
+
+  <div>
+    <%= form.label :paroles_trad, style: "display: block" %>
+    <%= form.text_area :paroles_trad %>
+  </div>
+
+  <div>
+    <%= form.label :membre_show, style: "display: block" %>
+    <%= form.text_field :membre_show %>
+  </div>
+
+  <div>
+    <%= form.label :membre_show, style: "display: block" %>
+    <%= form.text_field :membre_show %>
+  </div>
+
+  <div>
+    <%= form.label :source, style: "display: block" %>
+    <%= form.text_field :source %>
+  </div>
+
+  <div>
+    <%= form.label :description, style: "display: block" %>
+    <%= form.text_area :description %>
+  </div>
+
+  <div>
+    <%= form.label :instrumental, style: "display: block" %>
+    <%= form.text_field :instrumental %>
+  </div>
+
+  <div>
+    <%= form.label :instrumental, style: "display: block" %>
+    <%= form.text_field :instrumental %>
+  </div>
+
+  <div>
+    <%= form.label :_paroles_parole_id, style: "display: block" %>
+    <%= form.number_field :_paroles_parole_id %>
+  </div>
+
+  <div>
+    <%= form.label :comment, style: "display: block" %>
+    <%= form.text_area :comment %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :statut_prop, style: "display: block" %>
+    <%= form.text_field :statut_prop %>
+  </div>
+
+  <div>
+    <%= form.label :acceptregles, style: "display: block" %>
+    <%= form.text_field :acceptregles %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

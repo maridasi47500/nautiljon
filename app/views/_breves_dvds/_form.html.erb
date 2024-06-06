@@ -1,0 +1,22 @@
+<%= form_with(model: _breves_dvd) do |form| %>
+  <% if _breves_dvd.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(_breves_dvd.errors.count, "error") %> prohibited this _breves_dvd from being saved:</h2>
+
+      <ul>
+        <% _breves_dvd.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :name, style: "display: block" %>
+    <%= form.text_field :name %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>

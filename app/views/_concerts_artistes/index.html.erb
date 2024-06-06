@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Concerts artistes</h1>
+
+<div id="_concerts_artistes">
+  <% @_concerts_artistes.each do |_concerts_artiste| %>
+    <%= render _concerts_artiste %>
+    <p>
+      <%= link_to "Show this concerts artiste", _concerts_artiste %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New concerts artiste", new__concerts_artiste_path %>

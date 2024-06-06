@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_tablatures_person %>
+
+<div>
+  <%= link_to "Edit this tablatures person", edit__tablatures_person_path(@_tablatures_person) %> |
+  <%= link_to "Back to tablatures people", _tablatures_people_path %>
+
+  <%= button_to "Destroy this tablatures person", @_tablatures_person, method: :delete %>
+</div>

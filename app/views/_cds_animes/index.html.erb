@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Cds animes</h1>
+
+<div id="_cds_animes">
+  <% @_cds_animes.each do |_cds_anime| %>
+    <%= render _cds_anime %>
+    <p>
+      <%= link_to "Show this cds anime", _cds_anime %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New cds anime", new__cds_anime_path %>

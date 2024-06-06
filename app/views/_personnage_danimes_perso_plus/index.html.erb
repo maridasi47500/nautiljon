@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnage danimes perso plus</h1>
+
+<div id="_personnage_danimes_perso_plus">
+  <% @_personnage_danimes_perso_plus.each do |_personnage_danimes_perso_plu| %>
+    <%= render _personnage_danimes_perso_plu %>
+    <p>
+      <%= link_to "Show this personnage danimes perso plu", _personnage_danimes_perso_plu %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnage danimes perso plu", new__personnage_danimes_perso_plu_path %>

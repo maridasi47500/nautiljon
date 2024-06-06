@@ -1,0 +1,2 @@
+class AnimesStaffRole < ApplicationRecord
+end

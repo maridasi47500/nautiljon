@@ -1,0 +1,2 @@
+class AmvsAnime < ApplicationRecord
+end

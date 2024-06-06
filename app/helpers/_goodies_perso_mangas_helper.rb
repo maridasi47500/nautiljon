@@ -1,0 +1,2 @@
+module GoodiesPersoMangasHelper
+end

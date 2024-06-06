@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Breves jvs</h1>
+
+<div id="_breves_jvs">
+  <% @_breves_jvs.each do |_breves_jv| %>
+    <%= render _breves_jv %>
+    <p>
+      <%= link_to "Show this breves jv", _breves_jv %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New breves jv", new__breves_jv_path %>

@@ -1,0 +1,2 @@
+module CdsBonusHelper
+end

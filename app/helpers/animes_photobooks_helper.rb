@@ -1,0 +1,2 @@
+module AnimesPhotobooksHelper
+end

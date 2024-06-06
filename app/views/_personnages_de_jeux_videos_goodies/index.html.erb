@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Personnages de jeux videos goodies</h1>
+
+<div id="_personnages_de_jeux_videos_goodies">
+  <% @_personnages_de_jeux_videos_goodies.each do |_personnages_de_jeux_videos_goody| %>
+    <%= render _personnages_de_jeux_videos_goody %>
+    <p>
+      <%= link_to "Show this personnages de jeux videos goody", _personnages_de_jeux_videos_goody %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New personnages de jeux videos goody", new__personnages_de_jeux_videos_goody_path %>

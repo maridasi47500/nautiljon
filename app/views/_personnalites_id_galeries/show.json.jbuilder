@@ -1,0 +1,1 @@
+json.partial! "_personnalites_id_galeries/_personnalites_id_galery", _personnalites_id_galery: @_personnalites_id_galery

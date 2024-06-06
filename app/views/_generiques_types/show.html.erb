@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_generiques_type %>
+
+<div>
+  <%= link_to "Edit this generiques type", edit__generiques_type_path(@_generiques_type) %> |
+  <%= link_to "Back to generiques types", _generiques_types_path %>
+
+  <%= button_to "Destroy this generiques type", @_generiques_type, method: :delete %>
+</div>

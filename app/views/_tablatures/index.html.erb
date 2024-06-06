@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Tablatures</h1>
+
+<div id="_tablatures">
+  <% @_tablatures.each do |_tablature| %>
+    <%= render _tablature %>
+    <p>
+      <%= link_to "Show this tablature", _tablature %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New tablature", new__tablature_path %>

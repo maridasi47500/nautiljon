@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Sites dachats pays</h1>
+
+<div id="_sites_dachats_pays">
+  <% @_sites_dachats_pays.each do |_sites_dachats_pay| %>
+    <%= render _sites_dachats_pay %>
+    <p>
+      <%= link_to "Show this sites dachats pay", _sites_dachats_pay %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New sites dachats pay", new__sites_dachats_pay_path %>

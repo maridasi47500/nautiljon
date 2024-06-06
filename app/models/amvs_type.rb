@@ -1,0 +1,2 @@
+class AmvsType < ApplicationRecord
+end

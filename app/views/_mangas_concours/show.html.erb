@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @_mangas_concour %>
+
+<div>
+  <%= link_to "Edit this mangas concour", edit__mangas_concour_path(@_mangas_concour) %> |
+  <%= link_to "Back to mangas concours", _mangas_concours_path %>
+
+  <%= button_to "Destroy this mangas concour", @_mangas_concour, method: :delete %>
+</div>

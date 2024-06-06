@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @osts_groupe %>
+
+<div>
+  <%= link_to "Edit this osts groupe", edit_osts_groupe_path(@osts_groupe) %> |
+  <%= link_to "Back to osts groupes", osts_groupes_path %>
+
+  <%= button_to "Destroy this osts groupe", @osts_groupe, method: :delete %>
+</div>

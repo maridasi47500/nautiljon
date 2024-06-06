@@ -1,0 +1,2 @@
+json.extract! amv, :id, :titre, :image, :amvs_makers_id, :amvs_makers_id, :youtube, :lien, :song, :date_jj, :date_mm, :date_aaaa, :duree, :amvs_type_id, :amvs_type_id, :description, :amvs_conventions_id, :amvs_conventions_id, :amvs_groupes_id, :amvs_anime_id, :amvs_jv_id, :amvs_amv_id, :autre, :comment, :statut_prop, :statut_prop, :acceptregles, :created_at, :updated_at
+json.url amv_url(amv, format: :json)
