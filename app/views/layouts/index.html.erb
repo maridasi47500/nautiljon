@@ -1,0 +1,8 @@
+
+<h1>voir tous les Layouts</h1>
+<%@_layouts.each do |x|%>
+<%=render x%>
+<%end%>
+<p>
+<%=link_to "nouveau  Layouts", new_layout_path%>
+</p>

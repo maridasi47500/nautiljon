@@ -32,7 +32,7 @@ ActiveRecord::Base.connection.tables.each do |x|
   @k["fr"]["activerecord"]["attributes"][z] ||= {}
   @k["fr"]["models"][z] = ""
   ActiveRecord::Base.connection.columns(x).map(&:name).each do |y|
-    @k["fr"]["activerecord"]["attributes"][z][y]=""
+    @k["fr"]["activerecord"]["attributes"][z][y]=y.titleize
   end
 end
 

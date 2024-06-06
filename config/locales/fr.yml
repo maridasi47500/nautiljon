@@ -1,0 +1,5259 @@
+---
+fr:
+  models:
+    schema_migration: ''
+    ar_internal_metadata: ''
+    user: ''
+    osts_type: ''
+    osts_plateforme: ''
+    osts_monnaie: ''
+    osts_role: ''
+    osts_people: ''
+    osts_label: ''
+    osts_distributeur: ''
+    osts_groupe: ''
+    osts_anime: ''
+    osts_ln: ''
+    osts_drama: ''
+    osts_am: ''
+    osts_jv: ''
+    osts_ost: ''
+    osts_emission_tv: ''
+    ost: ''
+    animes_format: ''
+    animes_origine: ''
+    animes_encour: ''
+    animes_pay: ''
+    animes_genre: ''
+    animes_theme: ''
+    animes_staff_role: ''
+    animes_staff_people: ''
+    animes_societe_role: ''
+    animes_societe_people: ''
+    animes_public_averti: ''
+    animes_editeurs_vf_role: ''
+    animes_editeurs_vf: ''
+    animes_groupe: ''
+    animes_actualite: ''
+    animes_actualite_mini: ''
+    animes_anime: ''
+    animes_anime_plu: ''
+    animes_ln: ''
+    animes_ln_plu: ''
+    animes_manga: ''
+    animes_manga_plu: ''
+    animes_jv: ''
+    animes_jv_plu: ''
+    animes_am: ''
+    animes_am_plu: ''
+    animes_drama: ''
+    animes_drama_plu: ''
+    animes_people: ''
+    animes_dvd: ''
+    animes_artbook: ''
+    animes_photobook: ''
+    animes_litterature_asiatique: ''
+    animes_litterature_asiatique_plu: ''
+    animes_culture: ''
+    animes_ost: ''
+    animes_cd: ''
+    animes_doujin: ''
+    animes_amv: ''
+    animes_cinema: ''
+    animes_quizz: ''
+    animes_topic: ''
+    anime: ''
+    evenements_pay: ''
+    evenements_people: ''
+    evenement: ''
+    artbooks_france: ''
+    artbooks_pay: ''
+    artbooks_illustration: ''
+    artbooks_type: ''
+    artbooks_editeurs_vo: ''
+    artbooks_editeurs_vf: ''
+    artbooks_role: ''
+    artbooks_people: ''
+    artbooks_societe_role: ''
+    artbooks_societe_people: ''
+    artbooks_public_averti: ''
+    artbooks_groupe: ''
+    artbooks_anime: ''
+    artbooks_manga: ''
+    artbooks_ln: ''
+    artbooks_doujinshi: ''
+    artbooks_jv: ''
+    artbooks_drama: ''
+    artbooks_am: ''
+    artbooks_litterature_asiatique: ''
+    artbooks_artbook: ''
+    artbooks_goodie: ''
+    artbooks_doujin: ''
+    artbooks_actualite: ''
+    artbooks_actualite_mini: ''
+    artbooks_culture: ''
+    artbook: ''
+    cds_type: ''
+    cds_monnaie: ''
+    cds_role: ''
+    cds_people: ''
+    cds_label: ''
+    cds_distributeur: ''
+    cds_groupe: ''
+    cds_cd: ''
+    cds_anime: ''
+    cds_ln: ''
+    cds_drama: ''
+    cds_am: ''
+    cds_jv: ''
+    cds_emission_tv: ''
+    cds_bonu: ''
+    cds_manga: ''
+    cd: ''
+    dvd___blu_rays_france: ''
+    dvd___blu_rays_pay: ''
+    dvd___blu_rays_format: ''
+    dvd___blu_rays_type_edition: ''
+    dvd___blu_rays_editeur: ''
+    dvd___blu_rays_public_averti: ''
+    dvd___blu_rays_groupe: ''
+    dvd___blu_rays_anime: ''
+    dvd___blu_rays_drama: ''
+    dvd___blu_rays_am: ''
+    dvd___blu_rays_litterature_asiatique: ''
+    dvd___blu_rays_jv: ''
+    dvd___blu_rays_people: ''
+    dvd___blu_rays_emission_tv: ''
+    dvd___blu_rays_actualite: ''
+    dvd___blu_rays_actualite_mini: ''
+    dvd___blu_ray: ''
+    goodies_type: ''
+    goodies_pay: ''
+    goodies_matiere: ''
+    goodies_editeurs_vo: ''
+    goodies_editeurs_vf: ''
+    goodies_staff_role: ''
+    goodies_staff_people: ''
+    goodies_societe_role: ''
+    goodies_societe_people: ''
+    goodies_public_averti: ''
+    goodies_groupe: ''
+    goodies_anime: ''
+    goodies_perso: ''
+    goodies_manga: ''
+    goodies_perso_manga: ''
+    goodies_jv: ''
+    goodies_jv_perso: ''
+    goodies_ln: ''
+    goodies_drama: ''
+    goodies_am: ''
+    goodies_artbook: ''
+    goodies_photobook: ''
+    goodies_doujinshi: ''
+    goodies_dvd: ''
+    goodies_cd: ''
+    goodies_ost: ''
+    goodies_people: ''
+    goodies_goodie: ''
+    goodies_clip: ''
+    goodies_bonu: ''
+    goodies_litterature_asiatique: ''
+    goodies_actualite: ''
+    goodies_actualite_mini: ''
+    goodie: ''
+    photobooks_france: ''
+    photobooks_pay: ''
+    photobooks_disponibilite: ''
+    photobooks_illustration: ''
+    photobooks_type: ''
+    photobooks_editeurs_vo: ''
+    photobooks_editeurs_vf: ''
+    photobooks_role: ''
+    photobooks_people: ''
+    photobooks_societe_role: ''
+    photobooks_societe_people: ''
+    photobooks_public_averti: ''
+    photobooks_groupe: ''
+    photobooks_drama: ''
+    photobooks_am: ''
+    photobooks_cd: ''
+    photobooks_photobook: ''
+    photobooks_anime: ''
+    photobooks_bonu: ''
+    photobooks_actualite: ''
+    photobooks_actualite_mini: ''
+    photobooks_goodie: ''
+    photobook: ''
+    boutiques_pay: ''
+    boutique: ''
+    breves_cat: ''
+    breves_actualite: ''
+    breves_actualite_mini: ''
+    breves_people: ''
+    breves_anime: ''
+    breves_ln: ''
+    breves_manga: ''
+    breves_drama: ''
+    breves_am: ''
+    breves_litterature_asiatique: ''
+    breves_livre_jeunesse: ''
+    breves_magazine: ''
+    breves_beau_livre: ''
+    breves_jv: ''
+    breves_dvd: ''
+    breves_artbook: ''
+    breves_photobook: ''
+    breves_goodie: ''
+    breves_cinema: ''
+    breves_evenement: ''
+    breves_concert: ''
+    breves_recette: ''
+    breves_cd: ''
+    breves_ost: ''
+    breves_amv: ''
+    breves_clip: ''
+    breves_emission_tv: ''
+    breves_emission_tv_numero: ''
+    breves_sondage: ''
+    breves_quizz: ''
+    breves_concour: ''
+    breves_manga_editeur: ''
+    breves_anime_studio: ''
+    breves_jv_societe: ''
+    breves_societe: ''
+    breves_culture: ''
+    breve: ''
+    clips___lives___bonus___concerts_type: ''
+    clips___lives___bonus___concerts_type_bonu: ''
+    clips___lives___bonus___concerts_role: ''
+    clips___lives___bonus___concerts_people: ''
+    clips___lives___bonus___concerts_clip: ''
+    clips___lives___bonus___concerts_emission_tv_numero: ''
+    clips___lives___bonus___concert: ''
+    concerts_artiste: ''
+    concerts_pay: ''
+    concert: ''
+    doujins_convention: ''
+    doujins_role: ''
+    doujins_people: ''
+    doujins_genre: ''
+    doujins_groupe: ''
+    doujins_anime: ''
+    doujins_ln: ''
+    doujins_drama: ''
+    doujins_am: ''
+    doujins_jv: ''
+    doujins_doujin: ''
+    doujins_artbook: ''
+    doujin: ''
+    doujinshis_france: ''
+    doujinshis_origine: ''
+    doujinshis_pay: ''
+    doujinshis_type: ''
+    doujinshis_genre: ''
+    doujinshis_theme: ''
+    doujinshis_genres_averti: ''
+    doujinshis_convention: ''
+    doujinshis_role: ''
+    doujinshis_staff_people: ''
+    doujinshis_public_averti: ''
+    doujinshis_censure: ''
+    doujinshis_gratuit: ''
+    doujinshis_groupe: ''
+    doujinshis_anime: ''
+    doujinshis_anime_plu: ''
+    doujinshis_manga: ''
+    doujinshis_manga_plu: ''
+    doujinshis_ln: ''
+    doujinshis_ln_plu: ''
+    doujinshis_doujinshi: ''
+    doujinshis_doujinshi_plu: ''
+    doujinshis_drama: ''
+    doujinshis_drama_plu: ''
+    doujinshis_jv: ''
+    doujinshis_jv_plu: ''
+    doujinshis_am: ''
+    doujinshis_am_plu: ''
+    doujinshis_litterature_asiatique: ''
+    doujinshis_litterature_asiatique_plu: ''
+    doujinshis_artbook: ''
+    doujinshis_actualite: ''
+    doujinshis_culture: ''
+    doujinshis_actualite_mini: ''
+    doujinshis_perso: ''
+    doujinshis_perso_plu: ''
+    doujinshis_perso_manga: ''
+    doujinshis_jv_perso: ''
+    doujinshis_quizz: ''
+    doujinshis_people: ''
+    doujinshi: ''
+    dramas_origine: ''
+    dramas_encour: ''
+    dramas_pay: ''
+    dramas_genre: ''
+    dramas_theme: ''
+    dramas_staff_role: ''
+    dramas_staff_people: ''
+    dramas_societe_role: ''
+    dramas_societe_people: ''
+    dramas_type: ''
+    dramas_acteur: ''
+    dramas_editeurs_vf_role: ''
+    dramas_editeurs_vf: ''
+    dramas_programme: ''
+    dramas_generiques_type: ''
+    dramas_generiques_people: ''
+    dramas_generiques_people2: ''
+    dramas_generiques_clip: ''
+    dramas_generiques_parole: ''
+    dramas_groupe: ''
+    dramas_anime: ''
+    dramas_anime_plu: ''
+    dramas_ln: ''
+    dramas_ln_plu: ''
+    dramas_manga: ''
+    dramas_manga_plu: ''
+    dramas_drama: ''
+    dramas_drama_plu: ''
+    dramas_jv: ''
+    dramas_jv_plu: ''
+    dramas_am: ''
+    dramas_am_plu: ''
+    dramas_univer: ''
+    dramas_litterature_asiatique: ''
+    dramas_litterature_asiatique_plu: ''
+    dramas_actualite: ''
+    dramas_culture: ''
+    dramas_actualite_mini: ''
+    dramas_ost: ''
+    dramas_doujin: ''
+    dramas_cd: ''
+    dramas_dvd: ''
+    dramas_artbook: ''
+    dramas_emission_tv: ''
+    dramas_emission_tv_plu: ''
+    drama: ''
+    fiche_univers_cat: ''
+    fiche_univers_groupe: ''
+    fiche_univers_univer: ''
+    fiche_univers_anime: ''
+    fiche_univers_perso: ''
+    fiche_univers_manga: ''
+    fiche_univers_perso_manga: ''
+    fiche_univers_ln: ''
+    fiche_univers_doujinshi: ''
+    fiche_univers_jv: ''
+    fiche_univers_jv_perso: ''
+    fiche_univers_drama: ''
+    fiche_univers_am: ''
+    fiche_univers_litterature_asiatique: ''
+    fiche_univers_people: ''
+    fiche_univers_actualite: ''
+    fiche_univers_actualite_mini: ''
+    fiche_univers_culture: ''
+    fiche_univer: ''
+    films_asiatiques_en_salles_pay: ''
+    films_asiatiques_en_salles_langue: ''
+    films_asiatiques_en_salles_pays_origine: ''
+    films_asiatiques_en_salles_genre: ''
+    films_asiatiques_en_salles_staff_role: ''
+    films_asiatiques_en_salles_staff_people: ''
+    films_asiatiques_en_salles_type: ''
+    films_asiatiques_en_salles_acteur: ''
+    films_asiatiques_en_salles_anime: ''
+    films_asiatiques_en_salles_am: ''
+    films_asiatiques_en_salles_drama: ''
+    films_asiatiques_en_salles_actualite: ''
+    films_asiatiques_en_salles_actualite_mini: ''
+    films_asiatiques_en_salle: ''
+    films_asiatiques_origine: ''
+    films_asiatiques_pay: ''
+    films_asiatiques_genre: ''
+    films_asiatiques_theme: ''
+    films_asiatiques_staff_role: ''
+    films_asiatiques_staff_people: ''
+    films_asiatiques_societe_role: ''
+    films_asiatiques_societe_people: ''
+    films_asiatiques_type: ''
+    films_asiatiques_acteur: ''
+    films_asiatiques_editeurs_vf_role: ''
+    films_asiatiques_editeurs_vf: ''
+    films_asiatiques_generiques_type: ''
+    films_asiatiques_generiques_people: ''
+    films_asiatiques_generiques_people2: ''
+    films_asiatiques_generiques_clip: ''
+    films_asiatiques_generiques_parole: ''
+    films_asiatiques_groupe: ''
+    films_asiatiques_anime: ''
+    films_asiatiques_anime_plu: ''
+    films_asiatiques_ln: ''
+    films_asiatiques_ln_plu: ''
+    films_asiatiques_manga: ''
+    films_asiatiques_manga_plu: ''
+    films_asiatiques_drama: ''
+    films_asiatiques_drama_plu: ''
+    films_asiatiques_jv: ''
+    films_asiatiques_jv_plu: ''
+    films_asiatiques_am: ''
+    films_asiatiques_am_plu: ''
+    films_asiatiques_cinema: ''
+    films_asiatiques_univer: ''
+    films_asiatiques_people: ''
+    films_asiatiques_litterature_asiatique: ''
+    films_asiatiques_litterature_asiatique_plu: ''
+    films_asiatiques_actualite: ''
+    films_asiatiques_culture: ''
+    films_asiatiques_emission_tv: ''
+    films_asiatiques_emission_tv_plu: ''
+    films_asiatiques_actualite_mini: ''
+    films_asiatiques_ost: ''
+    films_asiatiques_doujin: ''
+    films_asiatiques_cd: ''
+    films_asiatiques_sondage: ''
+    films_asiatiques_quizz: ''
+    films_asiatiques_concour: ''
+    films_asiatiques_dvd: ''
+    films_asiatiques_artbook: ''
+    films_asiatique: ''
+    generique_de_jeu_videos_type: ''
+    generique_de_jeu_videos_staff_role: ''
+    generique_de_jeu_videos_staff_people: ''
+    generique_de_jeu_videos_jv: ''
+    generique_de_jeu_videos_jv_generic: ''
+    generique_de_jeu_video: ''
+    generiques_id_anime: ''
+    generiques_type: ''
+    generiques_staff_role: ''
+    generiques_staff_people: ''
+    generiques_generic: ''
+    generique: ''
+    jeux_videos_plateforme: ''
+    jeux_videos_pays_date: ''
+    jeux_videos_pay: ''
+    jeux_videos_etat: ''
+    jeux_videos_theme: ''
+    jeux_videos_genre: ''
+    jeux_videos_staff_societe_role: ''
+    jeux_videos_staff_societe: ''
+    jeux_videos_staff_role: ''
+    jeux_videos_staff_people: ''
+    jeux_videos_groupe: ''
+    jeux_videos_actualite: ''
+    jeux_videos_actualite_mini: ''
+    jeux_videos_anime: ''
+    jeux_videos_anime_plu: ''
+    jeux_videos_ln: ''
+    jeux_videos_ln_plu: ''
+    jeux_videos_manga: ''
+    jeux_videos_manga_plu: ''
+    jeux_videos_jv: ''
+    jeux_videos_jv_plu: ''
+    jeux_videos_am: ''
+    jeux_videos_am_plu: ''
+    jeux_videos_drama: ''
+    jeux_videos_drama_plu: ''
+    jeux_videos_univer: ''
+    jeux_videos_dvd: ''
+    jeux_videos_artbook: ''
+    jeux_videos_litterature_asiatique: ''
+    jeux_videos_litterature_asiatique_plu: ''
+    jeux_videos_culture: ''
+    jeux_videos_ost: ''
+    jeux_videos_cd: ''
+    jeux_videos_doujin: ''
+    jeux_videos_amv: ''
+    jeux_videos_sondage: ''
+    jeux_videos_quizz: ''
+    jeux_videos_concour: ''
+    jeux_videos_people: ''
+    jeux_videos_topic: ''
+    jeux_video: ''
+    light_novels_pay: ''
+    light_novels_genre: ''
+    light_novels_theme: ''
+    light_novels_encours_vo: ''
+    light_novels_encours_vf: ''
+    light_novels_editeurs_vo: ''
+    light_novels_editeurs_vf: ''
+    light_novels_editeurs_vf_collection: ''
+    light_novels_prepublie: ''
+    light_novels_staff_role: ''
+    light_novels_staff_people: ''
+    light_novels_societe_role: ''
+    light_novels_societe_people: ''
+    light_novels_public_averti: ''
+    light_novels_commerce: ''
+    light_novels_groupe: ''
+    light_novels_anime: ''
+    light_novels_anime_plu: ''
+    light_novels_manga: ''
+    light_novels_manga_plu: ''
+    light_novels_ln: ''
+    light_novels_ln_plu: ''
+    light_novels_drama: ''
+    light_novels_drama_plu: ''
+    light_novels_jv: ''
+    light_novels_jv_plu: ''
+    light_novels_am: ''
+    light_novels_am_plu: ''
+    light_novels_litterature_asiatique: ''
+    light_novels_litterature_asiatique_plu: ''
+    light_novels_ost: ''
+    light_novels_artbook: ''
+    light_novels_actualite: ''
+    light_novels_culture: ''
+    light_novels_actualite_mini: ''
+    light_novels_quizz: ''
+    light_novel: ''
+    livres_type: ''
+    livres_type_secondaire: ''
+    livres_pay: ''
+    livres_statut_publication: ''
+    livres_staff_role: ''
+    livres_staff_people: ''
+    livres_editeurs_vo: ''
+    livres_editeurs_vf: ''
+    livres_genre: ''
+    livres_theme: ''
+    livres_pays_theme: ''
+    livres_public_averti: ''
+    livres_groupe: ''
+    livres_anime: ''
+    livres_anime_plu: ''
+    livres_ln: ''
+    livres_ln_plu: ''
+    livres_manga: ''
+    livres_manga_plu: ''
+    livres_drama: ''
+    livres_drama_plu: ''
+    livres_am: ''
+    livres_am_plu: ''
+    livres_litterature_asiatique: ''
+    livres_litterature_asiatique_plu: ''
+    livres_goodie: ''
+    livres_actualite: ''
+    livres_culture: ''
+    livres_actualite_mini: ''
+    livres_people: ''
+    livres_jv: ''
+    livres_jv_plu: ''
+    livre: ''
+    mangas_pay: ''
+    mangas_type: ''
+    mangas_genre: ''
+    mangas_theme: ''
+    mangas_encours_vo: ''
+    mangas_encours_vf: ''
+    mangas_editeurs_vo: ''
+    mangas_editeurs_vf: ''
+    mangas_editeurs_vf_collection: ''
+    mangas_prepublie: ''
+    mangas_staff_role: ''
+    mangas_staff_people: ''
+    mangas_societe_role: ''
+    mangas_societe_people: ''
+    mangas_public_averti: ''
+    mangas_commerce: ''
+    mangas_groupe: ''
+    mangas_anime: ''
+    mangas_anime_plu: ''
+    mangas_ln: ''
+    mangas_ln_plu: ''
+    mangas_manga: ''
+    mangas_manga_plu: ''
+    mangas_drama: ''
+    mangas_drama_plu: ''
+    mangas_jv: ''
+    mangas_jv_plu: ''
+    mangas_am: ''
+    mangas_am_plu: ''
+    mangas_litterature_asiatique: ''
+    mangas_litterature_asiatique_plu: ''
+    mangas_artbook: ''
+    mangas_actualite: ''
+    mangas_culture: ''
+    mangas_actualite_mini: ''
+    mangas_sondage: ''
+    mangas_quizz: ''
+    mangas_concour: ''
+    mangas_people: ''
+    mangas_clip: ''
+    manga: ''
+    numero_demission_tvs_id_emission_tv: ''
+    numero_demission_tvs_special: ''
+    numero_demission_tvs_presentateur: ''
+    numero_demission_tvs_people: ''
+    numero_demission_tvs_emission_tv_numero: ''
+    numero_demission_tvs_clip: ''
+    numero_demission_tv: ''
+    paroles_staff_role: ''
+    paroles_staff_people: ''
+    paroles_parole: ''
+    parole: ''
+    personnage_danimes_sexe: ''
+    personnage_danimes_anime: ''
+    personnage_danimes_doubleur_pay: ''
+    personnage_danimes_doubleur_people: ''
+    personnage_danimes_doubleur_role: ''
+    personnage_danimes_perso: ''
+    personnage_danimes_perso_plu: ''
+    personnage_danimes_perso_manga: ''
+    personnage_danimes_jv_perso: ''
+    personnage_danimes_goodie: ''
+    personnage_danime: ''
+    personnages_de_jeux_videos_jv: ''
+    personnages_de_jeux_videos_doubleur_pay: ''
+    personnages_de_jeux_videos_doubleur_people: ''
+    personnages_de_jeux_videos_doubleur_role: ''
+    personnages_de_jeux_videos_jv_perso: ''
+    personnages_de_jeux_videos_perso: ''
+    personnages_de_jeux_videos_perso_plu: ''
+    personnages_de_jeux_videos_perso_manga: ''
+    personnages_de_jeux_videos_goodie: ''
+    personnages_de_jeux_video: ''
+    personnage_de_mangas_manga: ''
+    personnage_de_mangas_perso_manga: ''
+    personnage_de_mangas_perso: ''
+    personnage_de_mangas_perso_plu: ''
+    personnage_de_mangas_jv_perso: ''
+    personnage_de_mangas_goodie: ''
+    personnage_de_manga: ''
+    personnalites_type_people: ''
+    personnalites_sexe: ''
+    personnalites_pay: ''
+    personnalites_statut: ''
+    personnalites_genre: ''
+    personnalites_label: ''
+    personnalites_labels_debut: ''
+    personnalites_labels_fin: ''
+    personnalites_labels_exe: ''
+    personnalites_agence: ''
+    personnalites_agences_debut: ''
+    personnalites_agences_fin: ''
+    personnalites_agences_exe: ''
+    personnalites_role: ''
+    personnalites_id_membre: ''
+    personnalites_exe: ''
+    personnalites_ex_debut: ''
+    personnalites_ex_fin: ''
+    personnalites_id_galerie: ''
+    personnalites_id_travauxe: ''
+    personnalites_people: ''
+    personnalites_people_plu: ''
+    personnalite: ''
+    petites_annonces_section: ''
+    petites_annonces_pay: ''
+    petites_annonces_lieu: ''
+    petites_annonce: ''
+    recettes_type: ''
+    recettes_plat: ''
+    recettes_difficulte: ''
+    recette: ''
+    restaurants_pay: ''
+    restaurant: ''
+    sites_dachats_pay: ''
+    sites_dachat: ''
+    tablatures_people: ''
+    tablature: ''
+    videos_id_cat: ''
+    video: ''
+    volumes_ln: ''
+    volumes_type: ''
+    volumes_illustration: ''
+    volume: ''
+    volumes_manga: ''
+    amvs_maker: ''
+    amvs_type: ''
+    amvs_convention: ''
+    amvs_groupe: ''
+    amvs_anime: ''
+    amvs_jv: ''
+    amvs_amv: ''
+    amv: ''
+  activerecord:
+    attributes:
+      user:
+        password: Mot de passe
+        password_confirmation: Confirmation du mot de passe
+        id: Id
+        message: Message
+        newsletter: Newsletter
+        siteweb: Siteweb
+        pseudonyme: Pseudonyme
+        affichersex: Affichersex
+        sex: Sex
+        email: Email
+        encrypted_password: Encrypted Password
+        reset_password_token: Reset Password Token
+        reset_password_sent_at: Reset Password Sent At
+        remember_created_at: Remember Created At
+        created_at: Created At
+        updated_at: Updated At
+      schema_migration:
+        version: Version
+      ar_internal_metadata:
+        key: Key
+        value: Value
+        created_at: Created At
+        updated_at: Updated At
+      osts_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_plateforme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_monnaie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_label:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_distributeur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      osts_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      ost:
+        id: Id
+        titre: Titre
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        titre_us: Titre Us
+        titre_alternatif: Titre Alternatif
+        osts_type_id: Osts Type
+        osts_plateforme_id: Osts Plateforme
+        ref: Ref
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        prix: Prix
+        osts_monnaie_id: Osts Monnaie
+        bonus_cd: Bonus Cd
+        osts_role_id: Osts Role
+        osts_people_id: Osts People
+        image: Image
+        sametracklist: Sametracklist
+        osts_labels_id: Osts Labels
+        osts_distributeurs_id: Osts Distributeurs
+        infos: Infos
+        osts_groupes_id: Osts Groupes
+        osts_anime_id: Osts Anime
+        osts_ln_id: Osts Ln
+        osts_drama_id: Osts Drama
+        osts_am_id: Osts Am
+        osts_jv_id: Osts Jv
+        osts_ost_id: Osts Ost
+        osts_emission_tv_id: Osts Emission Tv
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      animes_format:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_origine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_encour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_editeurs_vf_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_photobook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_amv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_cinema:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      animes_topic:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      anime:
+        id: Id
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        animes_format_id: Animes Format
+        animes_origine_id: Animes Origine
+        webanime: Webanime
+        animes_encours_id: Animes Encours
+        date_debut_jj: Date Debut Jj
+        date_debut_mm: Date Debut Mm
+        date_debut_aaaa: Date Debut Aaaa
+        date_fin_jj: Date Fin Jj
+        date_fin_mm: Date Fin Mm
+        date_fin_aaaa: Date Fin Aaaa
+        animes_pays_id: Animes Pays
+        animes_genres_id: Animes Genres
+        animes_themes_id: Animes Themes
+        animes_staff_role_id: Animes Staff Role
+        animes_staff_people_id: Animes Staff People
+        animes_societe_role_id: Animes Societe Role
+        animes_societe_people_id: Animes Societe People
+        animes_public_averti_id: Animes Public Averti
+        age: Age
+        nb_ep: Nb Ep
+        total_ep_inconnu: Total Ep Inconnu
+        duree: Duree
+        licencie: Licencie
+        animes_editeurs_vf_role_id: Animes Editeurs Vf Role
+        animes_editeurs_vf_id: Animes Editeurs Vf
+        date_debut_simulcast_jj: Date Debut Simulcast Jj
+        date_debut_simulcast_mm: Date Debut Simulcast Mm
+        date_debut_simulcast_aaaa: Date Debut Simulcast Aaaa
+        date_vf_jj: Date Vf Jj
+        date_vf_mm: Date Vf Mm
+        date_vf_aaaa: Date Vf Aaaa
+        image_francaise: Image Francaise
+        description: Description
+        site: Site
+        site2: Site2
+        youtube: Youtube
+        animes_groupes_id: Animes Groupes
+        animes_actualite_id: Animes Actualite
+        animes_actualite_mini_id: Animes Actualite Mini
+        animes_anime_id: Animes Anime
+        animes_anime_plus_id: Animes Anime Plus
+        animes_ln_id: Animes Ln
+        animes_ln_plus_id: Animes Ln Plus
+        animes_manga_id: Animes Manga
+        animes_manga_plus_id: Animes Manga Plus
+        animes_jv_id: Animes Jv
+        animes_jv_plus_id: Animes Jv Plus
+        animes_am_id: Animes Am
+        animes_am_plus_id: Animes Am Plus
+        animes_drama_id: Animes Drama
+        animes_drama_plus_id: Animes Drama Plus
+        animes_people_id: Animes People
+        animes_dvd_id: Animes Dvd
+        animes_artbook_id: Animes Artbook
+        animes_photobook_id: Animes Photobook
+        animes_litterature_asiatique_id: Animes Litterature Asiatique
+        animes_litterature_asiatique_plus_id: Animes Litterature Asiatique Plus
+        animes_culture_id: Animes Culture
+        animes_ost_id: Animes Ost
+        animes_cd_id: Animes Cd
+        animes_doujin_id: Animes Doujin
+        animes_amv_id: Animes Amv
+        animes_cinema_id: Animes Cinema
+        animes_quizz_id: Animes Quizz
+        animes_topic_id: Animes Topic
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      evenements_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      evenements_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      evenement:
+        id: Id
+        titre: Titre
+        description: Description
+        date: Date
+        date_fin: Date Fin
+        heure: Heure
+        prix: Prix
+        ville: Ville
+        lieu: Lieu
+        adresse: Adresse
+        evenements_pays_id: Evenements Pays
+        lien: Lien
+        site: Site
+        evenements_people_id: Evenements People
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_france:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_illustration:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_doujinshi:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbooks_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      artbook:
+        id: Id
+        artbooks_france_id: Artbooks France
+        artbooks_pays_id: Artbooks Pays
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        prix: Prix
+        ean: Ean
+        nb_pages: Nb Pages
+        artbooks_illustrations_id: Artbooks Illustrations
+        artbooks_type_id: Artbooks Type
+        crossover: Crossover
+        artbooks_editeurs_vo_id: Artbooks Editeurs Vo
+        artbooks_editeurs_vf_id: Artbooks Editeurs Vf
+        artbooks_role_id: Artbooks Role
+        artbooks_people_id: Artbooks People
+        artbooks_societe_role_id: Artbooks Societe Role
+        artbooks_societe_people_id: Artbooks Societe People
+        resume: Resume
+        infos: Infos
+        artbooks_public_averti_id: Artbooks Public Averti
+        artbooks_groupes_id: Artbooks Groupes
+        artbooks_anime_id: Artbooks Anime
+        artbooks_manga_id: Artbooks Manga
+        artbooks_ln_id: Artbooks Ln
+        artbooks_doujinshi_id: Artbooks Doujinshi
+        artbooks_jv_id: Artbooks Jv
+        artbooks_drama_id: Artbooks Drama
+        artbooks_am_id: Artbooks Am
+        artbooks_litterature_asiatique_id: Artbooks Litterature Asiatique
+        artbooks_artbook_id: Artbooks Artbook
+        artbooks_goodies_id: Artbooks Goodies
+        artbooks_doujin_id: Artbooks Doujin
+        artbooks_actualite_id: Artbooks Actualite
+        artbooks_actualite_mini_id: Artbooks Actualite Mini
+        artbooks_culture_id: Artbooks Culture
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      cds_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_monnaie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_label:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_distributeur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_bonu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cds_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      cd:
+        id: Id
+        titre: Titre
+        titre_original: Titre Original
+        titre_original_latin: Titre Original Latin
+        _cds_type_id: Cds Type
+        ref: Ref
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        prix: Prix
+        _cds_monnaie_id: Cds Monnaie
+        _cds_role_id: Cds Role
+        _cds_people_id: Cds People
+        image: Image
+        sametracklist: Sametracklist
+        _cds_labels_id: Cds Labels
+        _cds_distributeurs_id: Cds Distributeurs
+        infos: Infos
+        _cds_groupes_id: Cds Groupes
+        _cds_cd_id: Cds Cd
+        _cds_anime_id: Cds Anime
+        _cds_ln_id: Cds Ln
+        _cds_drama_id: Cds Drama
+        _cds_am_id: Cds Am
+        _cds_jv_id: Cds Jv
+        _cds_emission_tv_id: Cds Emission Tv
+        _cds_bonus_id: Cds Bonus
+        _cds_manga_id: Cds Manga
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_france:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_format:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_type_edition:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_editeur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_rays_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dvd___blu_ray:
+        id: Id
+        type: Type
+        _dvd_blu_rays_france_id: Dvd Blu Rays France
+        _dvd_blu_rays_pays_id: Dvd Blu Rays Pays
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_original: Titre Original
+        image: Image
+        date_parution_jj: Date Parution Jj
+        date_parution_mm: Date Parution Mm
+        date_parution_aaaa: Date Parution Aaaa
+        prix: Prix
+        ean: Ean
+        ref: Ref
+        _dvd_blu_rays_format_id: Dvd Blu Rays Format
+        _dvd_blu_rays_type_edition_id: Dvd Blu Rays Type Edition
+        _dvd_blu_rays_editeurs_id: Dvd Blu Rays Editeurs
+        audiodescription: Audiodescription
+        duree: Duree
+        nb_disque: Nb Disque
+        resume: Resume
+        episodes: Episodes
+        infos: Infos
+        youtube: Youtube
+        _dvd_blu_rays_public_averti_id: Dvd Blu Rays Public Averti
+        _dvd_blu_rays_groupes_id: Dvd Blu Rays Groupes
+        _dvd_blu_rays_anime_id: Dvd Blu Rays Anime
+        _dvd_blu_rays_drama_id: Dvd Blu Rays Drama
+        _dvd_blu_rays_am_id: Dvd Blu Rays Am
+        _dvd_blu_rays_litterature_asiatique_id: Dvd Blu Rays Litterature Asiatique
+        _dvd_blu_rays_jv_id: Dvd Blu Rays Jv
+        _dvd_blu_rays_people_id: Dvd Blu Rays People
+        _dvd_blu_rays_emission_tv_id: Dvd Blu Rays Emission Tv
+        _dvd_blu_rays_actualite_id: Dvd Blu Rays Actualite
+        _dvd_blu_rays_actualite_mini_id: Dvd Blu Rays Actualite Mini
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      goodies_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_matiere:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_photobook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_doujinshi:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_bonu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodies_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      goodie:
+        id: Id
+        _goodies_type_id: Goodies Type
+        _goodies_pays_id: Goodies Pays
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        date_reedition_jj: Date Reedition Jj
+        date_reedition_mm: Date Reedition Mm
+        date_reedition_aaaa: Date Reedition Aaaa
+        prix: Prix
+        commerce: Commerce
+        ean: Ean
+        ref: Ref
+        _goodies_matiere_id: Goodies Matiere
+        dimensions_h: Dimensions H
+        dimensions_w: Dimensions W
+        dimensions_z: Dimensions Z
+        poids: Poids
+        echelle: Echelle
+        articule: Articule
+        site: Site
+        _goodies_editeurs_vo_id: Goodies Editeurs Vo
+        _goodies_editeurs_vf_id: Goodies Editeurs Vf
+        _goodies_staff_role_id: Goodies Staff Role
+        _goodies_staff_people_id: Goodies Staff People
+        sculpteur: Sculpteur
+        _goodies_societe_role_id: Goodies Societe Role
+        _goodies_societe_people_id: Goodies Societe People
+        resume: Resume
+        infos: Infos
+        youtube: Youtube
+        _goodies_public_averti_id: Goodies Public Averti
+        _goodies_groupes_id: Goodies Groupes
+        _goodies_anime_id: Goodies Anime
+        _goodies_perso_id: Goodies Perso
+        _goodies_manga_id: Goodies Manga
+        _goodies_perso_manga_id: Goodies Perso Manga
+        _goodies_jv_id: Goodies Jv
+        _goodies_jv_perso_id: Goodies Jv Perso
+        _goodies_ln_id: Goodies Ln
+        _goodies_drama_id: Goodies Drama
+        _goodies_am_id: Goodies Am
+        _goodies_artbook_id: Goodies Artbook
+        _goodies_photobook_id: Goodies Photobook
+        _goodies_doujinshi_id: Goodies Doujinshi
+        _goodies_dvd_id: Goodies Dvd
+        _goodies_cd_id: Goodies Cd
+        _goodies_ost_id: Goodies Ost
+        _goodies_people_id: Goodies People
+        _goodies_goodies_id: Goodies Goodies
+        _goodies_clip_id: Goodies Clip
+        _goodies_bonus_id: Goodies Bonus
+        _goodies_litterature_asiatique_id: Goodies Litterature Asiatique
+        _goodies_actualite_id: Goodies Actualite
+        _goodies_actualite_mini_id: Goodies Actualite Mini
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_france:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_disponibilite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_illustration:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_photobook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_bonu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobooks_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      photobook:
+        id: Id
+        _photobooks_france_id: Photobooks France
+        _photobooks_pays_id: Photobooks Pays
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        prix: Prix
+        ean: Ean
+        ref: Ref
+        _photobooks_disponibilite_id: Photobooks Disponibilite
+        nb_pages: Nb Pages
+        site: Site
+        _photobooks_illustrations_id: Photobooks Illustrations
+        _photobooks_type_id: Photobooks Type
+        _photobooks_editeurs_vo_id: Photobooks Editeurs Vo
+        _photobooks_editeurs_vf_id: Photobooks Editeurs Vf
+        _photobooks_role_id: Photobooks Role
+        _photobooks_people_id: Photobooks People
+        _photobooks_societe_role_id: Photobooks Societe Role
+        _photobooks_societe_people_id: Photobooks Societe People
+        resume: Resume
+        infos: Infos
+        _photobooks_public_averti_id: Photobooks Public Averti
+        _photobooks_groupes_id: Photobooks Groupes
+        _photobooks_drama_id: Photobooks Drama
+        _photobooks_am_id: Photobooks Am
+        _photobooks_cd_id: Photobooks Cd
+        _photobooks_photobook_id: Photobooks Photobook
+        _photobooks_anime_id: Photobooks Anime
+        _photobooks_bonus_id: Photobooks Bonus
+        _photobooks_actualite_id: Photobooks Actualite
+        _photobooks_actualite_mini_id: Photobooks Actualite Mini
+        _photobooks_goodies_id: Photobooks Goodies
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      boutiques_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      boutique:
+        id: Id
+        nom: Nom
+        image: Image
+        adresse: Adresse
+        tel: Tel
+        description: Description
+        dept: Dept
+        ville: Ville
+        _boutiques_pays_id: Boutiques Pays
+        site: Site
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      breves_cat:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_livre_jeunesse:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_magazine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_beau_livre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_photobook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_cinema:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_evenement:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_concert:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_recette:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_amv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_emission_tv_numero:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_sondage:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_concour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_manga_editeur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_anime_studio:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_jv_societe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_societe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breves_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      breve:
+        id: Id
+        titre: Titre
+        _breves_cat_id: Breves Cat
+        image: Image
+        texte: Texte
+        tags: Tags
+        source: Source
+        source_url: Source Url
+        source2: Source2
+        source2_url: Source2 Url
+        source3: Source3
+        source3_url: Source3 Url
+        _breves_actualite_id: Breves Actualite
+        _breves_actualite_mini_id: Breves Actualite Mini
+        _breves_people_id: Breves People
+        _breves_anime_id: Breves Anime
+        _breves_ln_id: Breves Ln
+        _breves_manga_id: Breves Manga
+        _breves_drama_id: Breves Drama
+        _breves_am_id: Breves Am
+        _breves_litterature_asiatique_id: Breves Litterature Asiatique
+        _breves_livre_jeunesse_id: Breves Livre Jeunesse
+        _breves_magazine_id: Breves Magazine
+        _breves_beau_livre_id: Breves Beau Livre
+        _breves_jv_id: Breves Jv
+        _breves_dvd_id: Breves Dvd
+        _breves_artbook_id: Breves Artbook
+        _breves_photobook_id: Breves Photobook
+        _breves_goodies_id: Breves Goodies
+        _breves_cinema_id: Breves Cinema
+        _breves_evenement_id: Breves Evenement
+        _breves_concerts_id: Breves Concerts
+        _breves_recette_id: Breves Recette
+        _breves_cd_id: Breves Cd
+        _breves_ost_id: Breves Ost
+        _breves_amv_id: Breves Amv
+        _breves_clip_id: Breves Clip
+        _breves_emission_tv_id: Breves Emission Tv
+        _breves_emission_tv_numero_id: Breves Emission Tv Numero
+        _breves_sondage_id: Breves Sondage
+        _breves_quizz_id: Breves Quizz
+        _breves_concours_id: Breves Concours
+        _breves_manga_editeur_id: Breves Manga Editeur
+        _breves_anime_studio_id: Breves Anime Studio
+        _breves_jv_societe_id: Breves Jv Societe
+        _breves_societe_id: Breves Societe
+        _breves_culture_id: Breves Culture
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_type_bonu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concerts_emission_tv_numero:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      clips___lives___bonus___concert:
+        id: Id
+        _clips_lives_hbonus_concerts_type_id: Clips Lives Hbonus Concerts Type
+        _clips_lives_hbonus_concerts_type_bonus_id: Clips Lives Hbonus Concerts Type
+          Bonus
+        titre: Titre
+        titre_original: Titre Original
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        _clips_lives_bonus_concerts_role_id: Clips Lives Bonus Concerts Role
+        _clips_lives_bonus_concerts_people_id: Clips Lives Bonus Concerts People
+        image: Image
+        youtube: Youtube
+        infos: Infos
+        _clips_lives_bonus_concerts_clip_id: Clips Lives Bonus Concerts Clip
+        _clips_lives_bonus_concerts_emission_tv_numero_id: Clips Lives Bonus Concerts
+          Emission Tv Numero
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      concerts_artiste:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      concerts_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      concert:
+        id: Id
+        date: Date
+        _concerts_artiste_id: Concerts Artiste
+        nom: Nom
+        endroit: Endroit
+        adresse: Adresse
+        ville: Ville
+        _concerts_pays_id: Concerts Pays
+        infos: Infos
+        lien: Lien
+        prix: Prix
+        heure: Heure
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      doujins_convention:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujins_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujin:
+        id: Id
+        titre: Titre
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        titre_alternatif: Titre Alternatif
+        _doujins_conventions_id: Doujins Conventions
+        ref: Ref
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        _doujins_role_id: Doujins Role
+        _doujins_people_id: Doujins People
+        cercle: Cercle
+        image: Image
+        infos: Infos
+        _doujins_genres_id: Doujins Genres
+        _doujins_groupes_id: Doujins Groupes
+        _doujins_anime_id: Doujins Anime
+        _doujins_ln_id: Doujins Ln
+        _doujins_drama_id: Doujins Drama
+        _doujins_am_id: Doujins Am
+        _doujins_jv_id: Doujins Jv
+        _doujins_doujin_id: Doujins Doujin
+        _doujins_artbook_id: Doujins Artbook
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_france:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_origine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_genres_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_convention:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_censure:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_gratuit:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_doujinshi:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_doujinshi_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_perso_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshis_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      doujinshi:
+        id: Id
+        _doujinshis_france_id: Doujinshis France
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        _doujinshis_origine_id: Doujinshis Origine
+        _doujinshis_pays_id: Doujinshis Pays
+        _doujinshis_type_id: Doujinshis Type
+        numerique: Numerique
+        _doujinshis_genres_id: Doujinshis Genres
+        _doujinshis_themes_id: Doujinshis Themes
+        _doujinshis_genres_averti_id: Doujinshis Genres Averti
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        nb_page: Nb Page
+        _doujinshis_conventions_id: Doujinshis Conventions
+        _doujinshis_role_id: Doujinshis Role
+        _doujinshis_staff_people_id: Doujinshis Staff People
+        staff_txt: Staff Txt
+        _doujinshis_public_averti_id: Doujinshis Public Averti
+        _doujinshis_censure_id: Doujinshis Censure
+        tags: Tags
+        prix: Prix
+        _doujinshis_gratuit_id: Doujinshis Gratuit
+        lien_achat: Lien Achat
+        infos: Infos
+        resume: Resume
+        _doujinshis_groupes_id: Doujinshis Groupes
+        _doujinshis_anime_id: Doujinshis Anime
+        _doujinshis_anime_plus_id: Doujinshis Anime Plus
+        _doujinshis_manga_id: Doujinshis Manga
+        _doujinshis_manga_plus_id: Doujinshis Manga Plus
+        _doujinshis_ln_id: Doujinshis Ln
+        _doujinshis_ln_plus_id: Doujinshis Ln Plus
+        _doujinshis_doujinshi_id: Doujinshis Doujinshi
+        _doujinshis_doujinshi_plus_id: Doujinshis Doujinshi Plus
+        _doujinshis_drama_id: Doujinshis Drama
+        _doujinshis_drama_plus_id: Doujinshis Drama Plus
+        _doujinshis_jv_id: Doujinshis Jv
+        _doujinshis_jv_plus_id: Doujinshis Jv Plus
+        _doujinshis_am_id: Doujinshis Am
+        _doujinshis_am_plus_id: Doujinshis Am Plus
+        _doujinshis_litterature_asiatique_id: Doujinshis Litterature Asiatique
+        _doujinshis_litterature_asiatique_plus_id: Doujinshis Litterature Asiatique
+          Plus
+        _doujinshis_artbook_id: Doujinshis Artbook
+        _doujinshis_actualite_id: Doujinshis Actualite
+        _doujinshis_culture_id: Doujinshis Culture
+        _doujinshis_actualite_mini_id: Doujinshis Actualite Mini
+        _doujinshis_perso_id: Doujinshis Perso
+        _doujinshis_perso_plus_id: Doujinshis Perso Plus
+        _doujinshis_perso_manga_id: Doujinshis Perso Manga
+        _doujinshis_jv_perso_id: Doujinshis Jv Perso
+        _doujinshis_quizz_id: Doujinshis Quizz
+        _doujinshis_people_id: Doujinshis People
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      dramas_origine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_encour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_acteur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_editeurs_vf_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_programme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_generiques_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_generiques_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_generiques_people2:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_generiques_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_generiques_parole:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_univer:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      dramas_emission_tv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      drama:
+        id: Id
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        _dramas_origine_id: Dramas Origine
+        _dramas_encours_id: Dramas Encours
+        date_debut_jj: Date Debut Jj
+        date_debut_mm: Date Debut Mm
+        date_debut_aaaa: Date Debut Aaaa
+        date_fin_jj: Date Fin Jj
+        date_fin_mm: Date Fin Mm
+        date_fin_aaaa: Date Fin Aaaa
+        nb_ep: Nb Ep
+        total_ep_inconnu: Total Ep Inconnu
+        _dramas_pays_id: Dramas Pays
+        duree: Duree
+        age: Age
+        _dramas_genres_id: Dramas Genres
+        _dramas_themes_id: Dramas Themes
+        _dramas_staff_role_id: Dramas Staff Role
+        _dramas_staff_people_id: Dramas Staff People
+        _dramas_societe_role_id: Dramas Societe Role
+        _dramas_societe_people_id: Dramas Societe People
+        _dramas_type_id: Dramas Type
+        _dramas_acteurs_id: Dramas Acteurs
+        synopsis: Synopsis
+        youtube: Youtube
+        webdrama: Webdrama
+        _dramas_editeurs_vf_role_id: Dramas Editeurs Vf Role
+        _dramas_editeurs_vf_id: Dramas Editeurs Vf
+        date_debut_simulcast_jj: Date Debut Simulcast Jj
+        date_debut_simulcast_mm: Date Debut Simulcast Mm
+        date_debut_simulcast_aaaa: Date Debut Simulcast Aaaa
+        licencie: Licencie
+        date_vf_jj: Date Vf Jj
+        date_vf_mm: Date Vf Mm
+        date_vf_aaaa: Date Vf Aaaa
+        site: Site
+        site2: Site2
+        _dramas_programme_id: Dramas Programme
+        episodes: Episodes
+        _dramas_generiques_type_id: Dramas Generiques Type
+        _dramas_generiques_people_id: Dramas Generiques People
+        _dramas_generiques_people2_id: Dramas Generiques People2
+        _dramas_generiques_clip_id: Dramas Generiques Clip
+        _dramas_generiques_parole_id: Dramas Generiques Parole
+        infos: Infos
+        _dramas_groupes_id: Dramas Groupes
+        _dramas_anime_id: Dramas Anime
+        _dramas_anime_plus_id: Dramas Anime Plus
+        _dramas_ln_id: Dramas Ln
+        _dramas_ln_plus_id: Dramas Ln Plus
+        _dramas_manga_id: Dramas Manga
+        _dramas_manga_plus_id: Dramas Manga Plus
+        _dramas_drama_id: Dramas Drama
+        _dramas_drama_plus_id: Dramas Drama Plus
+        _dramas_jv_id: Dramas Jv
+        _dramas_jv_plus_id: Dramas Jv Plus
+        _dramas_am_id: Dramas Am
+        _dramas_am_plus_id: Dramas Am Plus
+        _dramas_univers_id: Dramas Univers
+        _dramas_litterature_asiatique_id: Dramas Litterature Asiatique
+        _dramas_litterature_asiatique_plus_id: Dramas Litterature Asiatique Plus
+        _dramas_actualite_id: Dramas Actualite
+        _dramas_culture_id: Dramas Culture
+        _dramas_actualite_mini_id: Dramas Actualite Mini
+        _dramas_ost_id: Dramas Ost
+        _dramas_doujin_id: Dramas Doujin
+        _dramas_cd_id: Dramas Cd
+        _dramas_dvd_id: Dramas Dvd
+        _dramas_artbook_id: Dramas Artbook
+        _dramas_emission_tv_id: Dramas Emission Tv
+        _dramas_emission_tv_plus_id: Dramas Emission Tv Plus
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_cat:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_univer:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_doujinshi:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univers_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      fiche_univer:
+        id: Id
+        nom: Nom
+        nom_alternatif: Nom Alternatif
+        nom_suite: Nom Suite
+        nom_original: Nom Original
+        image: Image
+        _fiche_univers_cat_id: Fiche Univers Cat
+        description: Description
+        _fiche_univers_groupes_id: Fiche Univers Groupes
+        _fiche_univers_univers_id: Fiche Univers Univers
+        _fiche_univers_anime_id: Fiche Univers Anime
+        _fiche_univers_perso_id: Fiche Univers Perso
+        _fiche_univers_manga_id: Fiche Univers Manga
+        _fiche_univers_perso_manga_id: Fiche Univers Perso Manga
+        _fiche_univers_ln_id: Fiche Univers Ln
+        _fiche_univers_doujinshi_id: Fiche Univers Doujinshi
+        _fiche_univers_jv_id: Fiche Univers Jv
+        _fiche_univers_jv_perso_id: Fiche Univers Jv Perso
+        _fiche_univers_drama_id: Fiche Univers Drama
+        _fiche_univers_am_id: Fiche Univers Am
+        _fiche_univers_litterature_asiatique_id: Fiche Univers Litterature Asiatique
+        _fiche_univers_people_id: Fiche Univers People
+        _fiche_univers_actualite_id: Fiche Univers Actualite
+        _fiche_univers_actualite_mini_id: Fiche Univers Actualite Mini
+        _fiche_univers_culture_id: Fiche Univers Culture
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_langue:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_pays_origine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_acteur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salles_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_en_salle:
+        id: Id
+        titre: Titre
+        titre_original: Titre Original
+        _films_asiatiques_en_salles_pays_id: Films Asiatiques En Salles Pays
+        _films_asiatiques_en_salles_langue_id: Films Asiatiques En Salles Langue
+        image: Image
+        annee: Annee
+        _films_asiatiques_en_salles_pays_origine_id: Films Asiatiques En Salles Pays
+          Origine
+        duree: Duree
+        age: Age
+        _films_asiatiques_en_salles_genres_id: Films Asiatiques En Salles Genres
+        youtube: Youtube
+        site: Site
+        site2: Site2
+        _films_asiatiques_en_salles_staff_role_id: Films Asiatiques En Salles Staff
+          Role
+        _films_asiatiques_en_salles_staff_people_id: Films Asiatiques En Salles Staff
+          People
+        _films_asiatiques_en_salles_type_id: Films Asiatiques En Salles Type
+        _films_asiatiques_en_salles_acteurs_id: Films Asiatiques En Salles Acteurs
+        _films_asiatiques_en_salles_anime_id: Films Asiatiques En Salles Anime
+        _films_asiatiques_en_salles_am_id: Films Asiatiques En Salles Am
+        _films_asiatiques_en_salles_drama_id: Films Asiatiques En Salles Drama
+        _films_asiatiques_en_salles_actualite_id: Films Asiatiques En Salles Actualite
+        _films_asiatiques_en_salles_actualite_mini_id: Films Asiatiques En Salles
+          Actualite Mini
+        synopsis: Synopsis
+        recompense: Recompense
+        comment: Comment
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_origine:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_acteur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_editeurs_vf_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_generiques_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_generiques_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_generiques_people2:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_generiques_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_generiques_parole:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_cinema:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_univer:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_emission_tv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_sondage:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_concour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatiques_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      films_asiatique:
+        id: Id
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_internationale: Image Internationale
+        image_francaise: Image Francaise
+        _films_asiatiques_origine_id: Films Asiatiques Origine
+        date_debut_jj: Date Debut Jj
+        date_debut_mm: Date Debut Mm
+        date_debut_aaaa: Date Debut Aaaa
+        _films_asiatiques_pays_id: Films Asiatiques Pays
+        duree: Duree
+        age: Age
+        _films_asiatiques_genres_id: Films Asiatiques Genres
+        _films_asiatiques_themes_id: Films Asiatiques Themes
+        _films_asiatiques_staff_role_id: Films Asiatiques Staff Role
+        _films_asiatiques_staff_people_id: Films Asiatiques Staff People
+        _films_asiatiques_societe_role_id: Films Asiatiques Societe Role
+        _films_asiatiques_societe_people_id: Films Asiatiques Societe People
+        _films_asiatiques_type_id: Films Asiatiques Type
+        _films_asiatiques_acteurs_id: Films Asiatiques Acteurs
+        synopsis: Synopsis
+        youtube: Youtube
+        licencie: Licencie
+        date_vf_jj: Date Vf Jj
+        date_vf_mm: Date Vf Mm
+        date_vf_aaaa: Date Vf Aaaa
+        _films_asiatiques_editeurs_vf_role_id: Films Asiatiques Editeurs Vf Role
+        _films_asiatiques_editeurs_vf_id: Films Asiatiques Editeurs Vf
+        date_debut_simulcast_jj: Date Debut Simulcast Jj
+        date_debut_simulcast_mm: Date Debut Simulcast Mm
+        date_debut_simulcast_aaaa: Date Debut Simulcast Aaaa
+        site: Site
+        _films_asiatiques_generiques_type_id: Films Asiatiques Generiques Type
+        _films_asiatiques_generiques_people_id: Films Asiatiques Generiques People
+        _films_asiatiques_generiques_people2_id: Films Asiatiques Generiques People2
+        _films_asiatiques_generiques_clip_id: Films Asiatiques Generiques Clip
+        _films_asiatiques_generiques_parole_id: Films Asiatiques Generiques Parole
+        infos: Infos
+        _films_asiatiques_groupes_id: Films Asiatiques Groupes
+        _films_asiatiques_anime_id: Films Asiatiques Anime
+        _films_asiatiques_anime_plus_id: Films Asiatiques Anime Plus
+        _films_asiatiques_ln_id: Films Asiatiques Ln
+        _films_asiatiques_ln_plus_id: Films Asiatiques Ln Plus
+        _films_asiatiques_manga_id: Films Asiatiques Manga
+        _films_asiatiques_manga_plus_id: Films Asiatiques Manga Plus
+        _films_asiatiques_drama_id: Films Asiatiques Drama
+        _films_asiatiques_drama_plus_id: Films Asiatiques Drama Plus
+        _films_asiatiques_jv_id: Films Asiatiques Jv
+        _films_asiatiques_jv_plus_id: Films Asiatiques Jv Plus
+        _films_asiatiques_am_id: Films Asiatiques Am
+        _films_asiatiques_am_plus_id: Films Asiatiques Am Plus
+        _films_asiatiques_cinema_id: Films Asiatiques Cinema
+        _films_asiatiques_univers_id: Films Asiatiques Univers
+        _films_asiatiques_people_id: Films Asiatiques People
+        _films_asiatiques_litterature_asiatique_id: Films Asiatiques Litterature Asiatique
+        _films_asiatiques_litterature_asiatique_plus_id: Films Asiatiques Litterature
+          Asiatique Plus
+        _films_asiatiques_actualite_id: Films Asiatiques Actualite
+        _films_asiatiques_culture_id: Films Asiatiques Culture
+        _films_asiatiques_emission_tv_id: Films Asiatiques Emission Tv
+        _films_asiatiques_emission_tv_plus_id: Films Asiatiques Emission Tv Plus
+        _films_asiatiques_actualite_mini_id: Films Asiatiques Actualite Mini
+        _films_asiatiques_ost_id: Films Asiatiques Ost
+        _films_asiatiques_doujin_id: Films Asiatiques Doujin
+        _films_asiatiques_cd_id: Films Asiatiques Cd
+        _films_asiatiques_sondage_id: Films Asiatiques Sondage
+        _films_asiatiques_quizz_id: Films Asiatiques Quizz
+        _films_asiatiques_concours_id: Films Asiatiques Concours
+        _films_asiatiques_dvd_id: Films Asiatiques Dvd
+        _films_asiatiques_artbook_id: Films Asiatiques Artbook
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_videos_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_videos_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_videos_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_videos_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_videos_jv_generic:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique_de_jeu_video:
+        id: Id
+        titre: Titre
+        titre_original: Titre Original
+        _generique_de_jeu_videos_type_id: Generique De Jeu Videos Type
+        number: Number
+        _generique_de_jeu_videos_staff_role_id: Generique De Jeu Videos Staff Role
+        _generique_de_jeu_videos_staff_people_id: Generique De Jeu Videos Staff People
+        description: Description
+        instrumental: Instrumental
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        youtube: Youtube
+        paroles: Paroles
+        paroles_trad: Paroles Trad
+        membre_show: Membre Show
+        _generique_de_jeu_videos_jv_id: Generique De Jeu Videos Jv
+        _generique_de_jeu_videos_jv_generic_id: Generique De Jeu Videos Jv Generic
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      generiques_id_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generiques_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generiques_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generiques_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generiques_generic:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      generique:
+        id: Id
+        titre: Titre
+        titre_original: Titre Original
+        _generiques_id_anime_id: Generiques Id Anime
+        _generiques_type_id: Generiques Type
+        number: Number
+        _generiques_staff_role_id: Generiques Staff Role
+        _generiques_staff_people_id: Generiques Staff People
+        description: Description
+        instrumental: Instrumental
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        youtube: Youtube
+        paroles: Paroles
+        paroles_trad: Paroles Trad
+        membre_show: Membre Show
+        episodes: Episodes
+        _generiques_generic_id: Generiques Generic
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_plateforme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_pays_date:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_etat:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_staff_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_staff_societe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_univer:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_dvd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_cd:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_doujin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_amv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_sondage:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_concour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_videos_topic:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      jeux_video:
+        id: Id
+        titre_fr: Titre Fr
+        titre_original_latin: Titre Original Latin
+        titre_us: Titre Us
+        titre_alternatif: Titre Alternatif
+        titre_original: Titre Original
+        _jeux_videos_plateforme_id: Jeux Videos Plateforme
+        date_fr_jj: Date Fr Jj
+        date_fr_mm: Date Fr Mm
+        date_fr_aaaa: Date Fr Aaaa
+        _jeux_videos_pays_date_id: Jeux Videos Pays Date
+        date_originale_jj: Date Originale Jj
+        date_originale_mm: Date Originale Mm
+        date_originale_aaaa: Date Originale Aaaa
+        date_us_jj: Date Us Jj
+        date_us_mm: Date Us Mm
+        date_us_aaaa: Date Us Aaaa
+        date_jap_jj: Date Jap Jj
+        date_jap_mm: Date Jap Mm
+        date_jap_aaaa: Date Jap Aaaa
+        _jeux_videos_pays_id: Jeux Videos Pays
+        _jeux_videos_etat_id: Jeux Videos Etat
+        prix: Prix
+        ean: Ean
+        _jeux_videos_themes_id: Jeux Videos Themes
+        _jeux_videos_genres_id: Jeux Videos Genres
+        multi: Multi
+        multi_nb: Multi Nb
+        online: Online
+        age: Age
+        site: Site
+        pochette_eu: Pochette Eu
+        pochette_asie: Pochette Asie
+        pochette_us: Pochette Us
+        _jeux_videos_staff_societe_role_id: Jeux Videos Staff Societe Role
+        _jeux_videos_staff_societe_id: Jeux Videos Staff Societe
+        _jeux_videos_staff_role_id: Jeux Videos Staff Role
+        _jeux_videos_staff_people_id: Jeux Videos Staff People
+        description: Description
+        youtube: Youtube
+        _jeux_videos_groupes_id: Jeux Videos Groupes
+        _jeux_videos_actualite_id: Jeux Videos Actualite
+        _jeux_videos_actualite_mini_id: Jeux Videos Actualite Mini
+        _jeux_videos_anime_id: Jeux Videos Anime
+        _jeux_videos_anime_plus_id: Jeux Videos Anime Plus
+        _jeux_videos_ln_id: Jeux Videos Ln
+        _jeux_videos_ln_plus_id: Jeux Videos Ln Plus
+        _jeux_videos_manga_id: Jeux Videos Manga
+        _jeux_videos_manga_plus_id: Jeux Videos Manga Plus
+        _jeux_videos_jv_id: Jeux Videos Jv
+        _jeux_videos_jv_plus_id: Jeux Videos Jv Plus
+        _jeux_videos_am_id: Jeux Videos Am
+        _jeux_videos_am_plus_id: Jeux Videos Am Plus
+        _jeux_videos_drama_id: Jeux Videos Drama
+        _jeux_videos_drama_plus_id: Jeux Videos Drama Plus
+        _jeux_videos_univers_id: Jeux Videos Univers
+        _jeux_videos_dvd_id: Jeux Videos Dvd
+        _jeux_videos_artbook_id: Jeux Videos Artbook
+        _jeux_videos_litterature_asiatique_id: Jeux Videos Litterature Asiatique
+        _jeux_videos_litterature_asiatique_plus_id: Jeux Videos Litterature Asiatique
+          Plus
+        _jeux_videos_culture_id: Jeux Videos Culture
+        _jeux_videos_ost_id: Jeux Videos Ost
+        _jeux_videos_cd_id: Jeux Videos Cd
+        _jeux_videos_doujin_id: Jeux Videos Doujin
+        _jeux_videos_amv_id: Jeux Videos Amv
+        _jeux_videos_sondage_id: Jeux Videos Sondage
+        _jeux_videos_quizz_id: Jeux Videos Quizz
+        _jeux_videos_concours_id: Jeux Videos Concours
+        _jeux_videos_people_id: Jeux Videos People
+        _jeux_videos_topic_id: Jeux Videos Topic
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_encours_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_encours_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_editeurs_vf_collection:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_prepublie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_commerce:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_ost:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novels_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      light_novel:
+        id: Id
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        _light_novels_pays_id: Light Novels Pays
+        _light_novels_genres_id: Light Novels Genres
+        webcomic: Webcomic
+        _light_novels_themes_id: Light Novels Themes
+        annee_vo: Annee Vo
+        annee_vf: Annee Vf
+        nb_volumes_vo: Nb Volumes Vo
+        nb_chapitres_vo: Nb Chapitres Vo
+        nb_volumes_vf: Nb Volumes Vf
+        nb_chapitres_vf: Nb Chapitres Vf
+        _light_novels_encours_vo_id: Light Novels Encours Vo
+        _light_novels_encours_vf_id: Light Novels Encours Vf
+        _light_novels_editeurs_vo_id: Light Novels Editeurs Vo
+        _light_novels_editeurs_vf_id: Light Novels Editeurs Vf
+        _light_novels_editeurs_vf_collection_id: Light Novels Editeurs Vf Collection
+        _light_novels_prepublie_id: Light Novels Prepublie
+        _light_novels_staff_role_id: Light Novels Staff Role
+        _light_novels_staff_people_id: Light Novels Staff People
+        _light_novels_societe_role_id: Light Novels Societe Role
+        _light_novels_societe_people_id: Light Novels Societe People
+        age: Age
+        _light_novels_public_averti_id: Light Novels Public Averti
+        _light_novels_commerce_id: Light Novels Commerce
+        adapte_anime: Adapte Anime
+        prix: Prix
+        resume: Resume
+        _light_novels_groupes_id: Light Novels Groupes
+        _light_novels_anime_id: Light Novels Anime
+        _light_novels_anime_plus_id: Light Novels Anime Plus
+        _light_novels_manga_id: Light Novels Manga
+        _light_novels_manga_plus_id: Light Novels Manga Plus
+        _light_novels_ln_id: Light Novels Ln
+        _light_novels_ln_plus_id: Light Novels Ln Plus
+        _light_novels_drama_id: Light Novels Drama
+        _light_novels_drama_plus_id: Light Novels Drama Plus
+        _light_novels_jv_id: Light Novels Jv
+        _light_novels_jv_plus_id: Light Novels Jv Plus
+        _light_novels_am_id: Light Novels Am
+        _light_novels_am_plus_id: Light Novels Am Plus
+        _light_novels_litterature_asiatique_id: Light Novels Litterature Asiatique
+        _light_novels_litterature_asiatique_plus_id: Light Novels Litterature Asiatique
+          Plus
+        _light_novels_ost_id: Light Novels Ost
+        _light_novels_artbook_id: Light Novels Artbook
+        _light_novels_actualite_id: Light Novels Actualite
+        _light_novels_culture_id: Light Novels Culture
+        _light_novels_actualite_mini_id: Light Novels Actualite Mini
+        _light_novels_quizz_id: Light Novels Quizz
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      livres_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_type_secondaire:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_statut_publication:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_pays_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livres_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      livre:
+        id: Id
+        _livres_type_id: Livres Type
+        _livres_type_secondaire_id: Livres Type Secondaire
+        titre: Titre
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        _livres_pays_id: Livres Pays
+        ean: Ean
+        pages: Pages
+        prix: Prix
+        gratuit: Gratuit
+        age: Age
+        _livres_statut_publication_id: Livres Statut Publication
+        _livres_staff_role_id: Livres Staff Role
+        _livres_staff_people_id: Livres Staff People
+        _livres_editeurs_vo_id: Livres Editeurs Vo
+        _livres_editeurs_vf_id: Livres Editeurs Vf
+        collection: Collection
+        traducteur: Traducteur
+        _livres_genres_id: Livres Genres
+        _livres_themes_id: Livres Themes
+        _livres_pays_theme_id: Livres Pays Theme
+        _livres_public_averti_id: Livres Public Averti
+        resume: Resume
+        preview: Preview
+        _livres_groupes_id: Livres Groupes
+        _livres_anime_id: Livres Anime
+        _livres_anime_plus_id: Livres Anime Plus
+        _livres_ln_id: Livres Ln
+        _livres_ln_plus_id: Livres Ln Plus
+        _livres_manga_id: Livres Manga
+        _livres_manga_plus_id: Livres Manga Plus
+        _livres_drama_id: Livres Drama
+        _livres_drama_plus_id: Livres Drama Plus
+        _livres_am_id: Livres Am
+        _livres_am_plus_id: Livres Am Plus
+        _livres_litterature_asiatique_id: Livres Litterature Asiatique
+        _livres_litterature_asiatique_plus_id: Livres Litterature Asiatique Plus
+        _livres_goodies_id: Livres Goodies
+        _livres_actualite_id: Livres Actualite
+        _livres_culture_id: Livres Culture
+        _livres_actualite_mini_id: Livres Actualite Mini
+        _livres_people_id: Livres People
+        _livres_jv_id: Livres Jv
+        _livres_jv_plus_id: Livres Jv Plus
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      mangas_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_theme:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_encours_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_encours_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_editeurs_vo:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_editeurs_vf:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_editeurs_vf_collection:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_prepublie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_societe_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_societe_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_public_averti:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_commerce:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_anime_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_ln_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_manga_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_drama:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_drama_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_jv_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_am:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_am_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_litterature_asiatique:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_litterature_asiatique_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_artbook:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_actualite:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_culture:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_actualite_mini:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_sondage:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_quizz:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_concour:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      mangas_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      manga:
+        id: Id
+        titre: Titre
+        titre_alternatif: Titre Alternatif
+        titre_alternatif_suite: Titre Alternatif Suite
+        titre_original_latin: Titre Original Latin
+        titre_original: Titre Original
+        image: Image
+        image_vo: Image Vo
+        _mangas_pays_id: Mangas Pays
+        _mangas_type_id: Mangas Type
+        webcomic: Webcomic
+        _mangas_genres_id: Mangas Genres
+        _mangas_themes_id: Mangas Themes
+        annee_vo: Annee Vo
+        annee_vf: Annee Vf
+        annee_defaut: Annee Defaut
+        nb_volumes_vo: Nb Volumes Vo
+        nb_chapitres_vo: Nb Chapitres Vo
+        nb_volumes_vf: Nb Volumes Vf
+        nb_chapitres_vf: Nb Chapitres Vf
+        _mangas_encours_vo_id: Mangas Encours Vo
+        _mangas_encours_vf_id: Mangas Encours Vf
+        _mangas_editeurs_vo_id: Mangas Editeurs Vo
+        _mangas_editeurs_vf_id: Mangas Editeurs Vf
+        _mangas_editeurs_vf_collection_id: Mangas Editeurs Vf Collection
+        _mangas_prepublie_id: Mangas Prepublie
+        _mangas_staff_role_id: Mangas Staff Role
+        _mangas_staff_people_id: Mangas Staff People
+        _mangas_societe_role_id: Mangas Societe Role
+        _mangas_societe_people_id: Mangas Societe People
+        age: Age
+        _mangas_public_averti_id: Mangas Public Averti
+        _mangas_commerce_id: Mangas Commerce
+        adapte_anime: Adapte Anime
+        prix: Prix
+        resume: Resume
+        infos: Infos
+        youtube: Youtube
+        _mangas_groupes_id: Mangas Groupes
+        _mangas_anime_id: Mangas Anime
+        _mangas_anime_plus_id: Mangas Anime Plus
+        _mangas_ln_id: Mangas Ln
+        _mangas_ln_plus_id: Mangas Ln Plus
+        _mangas_manga_id: Mangas Manga
+        _mangas_manga_plus_id: Mangas Manga Plus
+        _mangas_drama_id: Mangas Drama
+        _mangas_drama_plus_id: Mangas Drama Plus
+        _mangas_jv_id: Mangas Jv
+        _mangas_jv_plus_id: Mangas Jv Plus
+        _mangas_am_id: Mangas Am
+        _mangas_am_plus_id: Mangas Am Plus
+        _mangas_litterature_asiatique_id: Mangas Litterature Asiatique
+        _mangas_litterature_asiatique_plus_id: Mangas Litterature Asiatique Plus
+        _mangas_artbook_id: Mangas Artbook
+        _mangas_actualite_id: Mangas Actualite
+        _mangas_culture_id: Mangas Culture
+        _mangas_actualite_mini_id: Mangas Actualite Mini
+        _mangas_sondage_id: Mangas Sondage
+        _mangas_quizz_id: Mangas Quizz
+        _mangas_concours_id: Mangas Concours
+        _mangas_people_id: Mangas People
+        _mangas_clip_id: Mangas Clip
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_id_emission_tv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_special:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_presentateur:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_emission_tv_numero:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tvs_clip:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      numero_demission_tv:
+        id: Id
+        _numero_demission_tvs_id_emission_tv_id: Numero Demission Tvs Id Emission
+          Tv
+        titre: Titre
+        titre_original: Titre Original
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        _numero_demission_tvs_special_id: Numero Demission Tvs Special
+        duree: Duree
+        _numero_demission_tvs_presentateur_id: Numero Demission Tvs Presentateur
+        _numero_demission_tvs_people_id: Numero Demission Tvs People
+        image: Image
+        infos: Infos
+        youtube: Youtube
+        _numero_demission_tvs_emission_tv_numero_id: Numero Demission Tvs Emission
+          Tv Numero
+        _numero_demission_tvs_clip_id: Numero Demission Tvs Clip
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      paroles_staff_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      paroles_staff_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      paroles_parole:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      parole:
+        id: Id
+        titre: Titre
+        titre_original: Titre Original
+        titre_alternatif: Titre Alternatif
+        titre_original_latin: Titre Original Latin
+        _paroles_staff_role_id: Paroles Staff Role
+        _paroles_staff_people_id: Paroles Staff People
+        paroles: Paroles
+        paroles_trad: Paroles Trad
+        membre_show: Membre Show
+        source: Source
+        description: Description
+        instrumental: Instrumental
+        _paroles_parole_id: Paroles Parole
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_sexe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_doubleur_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_doubleur_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_doubleur_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_perso_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danimes_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_danime:
+        id: Id
+        nom: Nom
+        nom_alternatif: Nom Alternatif
+        nom_suite: Nom Suite
+        nom_original: Nom Original
+        _personnage_danimes_sexe_id: Personnage Danimes Sexe
+        _personnage_danimes_anime_id: Personnage Danimes Anime
+        _personnage_danimes_doubleur_pays_id: Personnage Danimes Doubleur Pays
+        _personnage_danimes_doubleur_people_id: Personnage Danimes Doubleur People
+        _personnage_danimes_doubleur_role_id: Personnage Danimes Doubleur Role
+        special: Special
+        image: Image
+        description: Description
+        _personnage_danimes_perso_id: Personnage Danimes Perso
+        _personnage_danimes_perso_plus_id: Personnage Danimes Perso Plus
+        _personnage_danimes_perso_manga_id: Personnage Danimes Perso Manga
+        _personnage_danimes_jv_perso_id: Personnage Danimes Jv Perso
+        _personnage_danimes_goodies_id: Personnage Danimes Goodies
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_doubleur_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_doubleur_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_doubleur_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_perso_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_videos_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnages_de_jeux_video:
+        id: Id
+        nom: Nom
+        nom_alternatif: Nom Alternatif
+        nom_suite: Nom Suite
+        nom_original: Nom Original
+        _personnages_de_jeux_videos_jv_id: Personnages De Jeux Videos Jv
+        jouable: Jouable
+        muet: Muet
+        _personnages_de_jeux_videos_doubleur_pays_id: Personnages De Jeux Videos Doubleur
+          Pays
+        _personnages_de_jeux_videos_doubleur_people_id: Personnages De Jeux Videos
+          Doubleur People
+        _personnages_de_jeux_videos_doubleur_role_id: Personnages De Jeux Videos Doubleur
+          Role
+        _personnages_de_jeux_videos_jv_perso_id: Personnages De Jeux Videos Jv Perso
+        _personnages_de_jeux_videos_perso_id: Personnages De Jeux Videos Perso
+        _personnages_de_jeux_videos_perso_plus_id: Personnages De Jeux Videos Perso
+          Plus
+        _personnages_de_jeux_videos_perso_manga_id: Personnages De Jeux Videos Perso
+          Manga
+        _personnages_de_jeux_videos_goodies_id: Personnages De Jeux Videos Goodies
+        image: Image
+        description: Description
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_perso_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_perso_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_jv_perso:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_mangas_goodie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnage_de_manga:
+        id: Id
+        nom: Nom
+        nom_alternatif: Nom Alternatif
+        nom_suite: Nom Suite
+        nom_original: Nom Original
+        _personnage_de_mangas_manga_id: Personnage De Mangas Manga
+        image: Image
+        description: Description
+        _personnage_de_mangas_perso_manga_id: Personnage De Mangas Perso Manga
+        _personnage_de_mangas_perso_id: Personnage De Mangas Perso
+        _personnage_de_mangas_perso_plus_id: Personnage De Mangas Perso Plus
+        _personnage_de_mangas_jv_perso_id: Personnage De Mangas Jv Perso
+        _personnage_de_mangas_goodies_id: Personnage De Mangas Goodies
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_type_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_sexe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_statut:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_genre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_label:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_labels_debut:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_labels_fin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_labels_exe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_agence:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_agences_debut:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_agences_fin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_agences_exe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_role:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_id_membre:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_exe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_ex_debut:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_ex_fin:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_id_galerie:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_id_travauxe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalites_people_plu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      personnalite:
+        id: Id
+        nom: Nom
+        nom_alternatif: Nom Alternatif
+        nom_alternatif_suite: Nom Alternatif Suite
+        nom_original_latin: Nom Original Latin
+        nom_original: Nom Original
+        nom_original_2: Nom Original 2
+        nom_original_3: Nom Original 3
+        nom_original_4: Nom Original 4
+        _personnalites_type_people_id: Personnalites Type People
+        _personnalites_sexe_id: Personnalites Sexe
+        _personnalites_pays_id: Personnalites Pays
+        decede: Decede
+        date_nais_jj: Date Nais Jj
+        date_nais_mm: Date Nais Mm
+        date_nais_aaaa: Date Nais Aaaa
+        date_deces_jj: Date Deces Jj
+        date_deces_mm: Date Deces Mm
+        date_deces_aaaa: Date Deces Aaaa
+        image: Image
+        _personnalites_statut_id: Personnalites Statut
+        debut: Debut
+        fin: Fin
+        _personnalites_genres_id: Personnalites Genres
+        _personnalites_labels_id: Personnalites Labels
+        _personnalites_labels_debut_id: Personnalites Labels Debut
+        _personnalites_labels_fin_id: Personnalites Labels Fin
+        _personnalites_labels_ex_id: Personnalites Labels Ex
+        _personnalites_agences_id: Personnalites Agences
+        _personnalites_agences_debut_id: Personnalites Agences Debut
+        _personnalites_agences_fin_id: Personnalites Agences Fin
+        _personnalites_agences_ex_id: Personnalites Agences Ex
+        _personnalites_roles_id: Personnalites Roles
+        _personnalites_id_membre_id: Personnalites Id Membre
+        _personnalites_ex_id: Personnalites Ex
+        _personnalites_ex_debut_id: Personnalites Ex Debut
+        _personnalites_ex_fin_id: Personnalites Ex Fin
+        bio: Bio
+        _personnalites_id_galerie_id: Personnalites Id Galerie
+        liaison_auto_galerie: Liaison Auto Galerie
+        _personnalites_id_travaux_id: Personnalites Id Travaux
+        liaison_auto_cosplay: Liaison Auto Cosplay
+        _personnalites_people_id: Personnalites People
+        _personnalites_people_plus_id: Personnalites People Plus
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      petites_annonces_section:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      petites_annonces_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      petites_annonces_lieu:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      petites_annonce:
+        id: Id
+        type: Type
+        titre: Titre
+        image: Image
+        _petites_annonces_section_id: Petites Annonces Section
+        etat_produit: Etat Produit
+        _petites_annonces_pays_id: Petites Annonces Pays
+        _petites_annonces_lieu_id: Petites Annonces Lieu
+        prix: Prix
+        description: Description
+        statut: Statut
+        comment: Comment
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      recettes_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      recettes_plat:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      recettes_difficulte:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      recette:
+        id: Id
+        nom: Nom
+        _recettes_type_id: Recettes Type
+        image: Image
+        preparation: Preparation
+        cuisson: Cuisson
+        nb_pers: Nb Pers
+        _recettes_plat_id: Recettes Plat
+        _recettes_difficulte_id: Recettes Difficulte
+        ingredients: Ingredients
+        texte: Texte
+        source: Source
+        comment: Comment
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      restaurants_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      restaurant:
+        id: Id
+        nom: Nom
+        image: Image
+        adresse: Adresse
+        tel: Tel
+        description: Description
+        dept: Dept
+        ville: Ville
+        _restaurants_pays_id: Restaurants Pays
+        horaires: Horaires
+        creation: Creation
+        site: Site
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      sites_dachats_pay:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      sites_dachat:
+        id: Id
+        nom: Nom
+        url: Url
+        description: Description
+        _sites_dachats_pays_id: Sites Dachats Pays
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      tablatures_people:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      tablature:
+        id: Id
+        titre: Titre
+        _tablatures_people_id: Tablatures People
+        infos: Infos
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      videos_id_cat:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      video:
+        id: Id
+        titre: Titre
+        _videos_id_cat_id: Videos Id Cat
+        url: Url
+        tags: Tags
+        created_at: Created At
+        updated_at: Updated At
+      volumes_ln:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      volumes_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      volumes_illustration:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      volume:
+        id: Id
+        _volumes_ln_id: Volumes Ln
+        numero: Numero
+        _volumes_type_id: Volumes Type
+        numerique: Numerique
+        image: Image
+        image_nc: Image Nc
+        image_vo: Image Vo
+        image_vo2: Image Vo2
+        date_parution_vo_jj: Date Parution Vo Jj
+        date_parution_vo_mm: Date Parution Vo Mm
+        date_parution_vo_aaaa: Date Parution Vo Aaaa
+        date_parution_vf_jj: Date Parution Vf Jj
+        date_parution_vf_mm: Date Parution Vf Mm
+        date_parution_vf_aaaa: Date Parution Vf Aaaa
+        prix: Prix
+        prix_vo: Prix Vo
+        pages: Pages
+        _volumes_illustrations_id: Volumes Illustrations
+        ean: Ean
+        relie: Relie
+        sous_jaquette: Sous Jaquette
+        resume: Resume
+        chapitres: Chapitres
+        infos: Infos
+        preview: Preview
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At
+      volumes_manga:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_maker:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_type:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_convention:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_groupe:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_anime:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_jv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amvs_amv:
+        id: Id
+        name: Name
+        created_at: Created At
+        updated_at: Updated At
+      amv:
+        id: Id
+        titre: Titre
+        image: Image
+        amvs_makers_id: Amvs Makers
+        youtube: Youtube
+        lien: Lien
+        song: Song
+        date_jj: Date Jj
+        date_mm: Date Mm
+        date_aaaa: Date Aaaa
+        duree: Duree
+        amvs_type_id: Amvs Type
+        description: Description
+        amvs_conventions_id: Amvs Conventions
+        amvs_groupes_id: Amvs Groupes
+        amvs_anime_id: Amvs Anime
+        amvs_jv_id: Amvs Jv
+        amvs_amv_id: Amvs Amv
+        autre: Autre
+        comment: Comment
+        statut_prop: Statut Prop
+        acceptregles: Acceptregles
+        created_at: Created At
+        updated_at: Updated At

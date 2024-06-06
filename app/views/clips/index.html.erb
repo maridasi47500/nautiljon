@@ -1,0 +1,8 @@
+
+<h1>voir tous les Clips</h1>
+<%@_clips.each do |x|%>
+<%=render x%>
+<%end%>
+<p>
+<%=link_to "nouveau  Clips", new_clip_path%>
+</p>
