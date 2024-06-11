@@ -669,7 +669,7 @@ fr:
     amvs_anime: ''
     amvs_jv: ''
     amvs_amv: ''
-    amv: ''
+    amv: "vidéoclip d'anime (anime music video)"
   activerecord:
     attributes:
       user:

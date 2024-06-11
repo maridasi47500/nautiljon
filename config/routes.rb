@@ -632,6 +632,8 @@ Rails.application.routes.draw do
     end
   end
   get "/persos", to:"personnage_danimes#index"
+  get "/lyrics",to:"generiques#index"
+  get "/amv",to:"amvs#index"
 
   resources :animes_topics
   resources :animes_quizzs
