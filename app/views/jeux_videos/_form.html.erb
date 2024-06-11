@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_plateforme_id %>
+    <%= form.select :_jeux_videos_plateforme_id, JeuxVideosPlateforme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_pays_date_id %>
+    <%= form.select :_jeux_videos_pays_date_id, JeuxVideosPaysDate.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_pays_id %>
+    <%= form.select :_jeux_videos_pays_id, JeuxVideosPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_pays_id %>
+    <%= form.select :_jeux_videos_pays_id, JeuxVideosPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_etat_id %>
+    <%= form.select :_jeux_videos_etat_id, JeuxVideosEtat.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_themes_id %>
+    <%= form.select :_jeux_videos_themes_id, JeuxVideosTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_themes_id %>
+    <%= form.select :_jeux_videos_themes_id, JeuxVideosTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_genres_id %>
+    <%= form.select :_jeux_videos_genres_id, JeuxVideosGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_genres_id %>
+    <%= form.select :_jeux_videos_genres_id, JeuxVideosGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_societe_role_id %>
+    <%= form.select :_jeux_videos_staff_societe_role_id, JeuxVideosStaffSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_societe_id %>
+    <%= form.select :_jeux_videos_staff_societe_id, JeuxVideosStaffSociete.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_societe_role_id %>
+    <%= form.select :_jeux_videos_staff_societe_role_id, JeuxVideosStaffSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_societe_id %>
+    <%= form.select :_jeux_videos_staff_societe_id, JeuxVideosStaffSociete.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_role_id %>
+    <%= form.select :_jeux_videos_staff_role_id, JeuxVideosStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_staff_people_id %>
+    <%= form.select :_jeux_videos_staff_people_id, JeuxVideosStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_groupes_id %>
+    <%= form.select :_jeux_videos_groupes_id, JeuxVideosGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_actualite_id %>
+    <%= form.select :_jeux_videos_actualite_id, JeuxVideosActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_actualite_mini_id %>
+    <%= form.select :_jeux_videos_actualite_mini_id, JeuxVideosActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_anime_id %>
+    <%= form.select :_jeux_videos_anime_id, JeuxVideosAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_anime_plus_id %>
+    <%= form.select :_jeux_videos_anime_plus_id, JeuxVideosAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_ln_id %>
+    <%= form.select :_jeux_videos_ln_id, JeuxVideosLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_ln_plus_id %>
+    <%= form.select :_jeux_videos_ln_plus_id, JeuxVideosLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_manga_id %>
+    <%= form.select :_jeux_videos_manga_id, JeuxVideosManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_manga_plus_id %>
+    <%= form.select :_jeux_videos_manga_plus_id, JeuxVideosMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_jv_id %>
+    <%= form.select :_jeux_videos_jv_id, JeuxVideosJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_jv_plus_id %>
+    <%= form.select :_jeux_videos_jv_plus_id, JeuxVideosJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_am_id %>
+    <%= form.select :_jeux_videos_am_id, JeuxVideosAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_am_plus_id %>
+    <%= form.select :_jeux_videos_am_plus_id, JeuxVideosAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_drama_id %>
+    <%= form.select :_jeux_videos_drama_id, JeuxVideosDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_drama_plus_id %>
+    <%= form.select :_jeux_videos_drama_plus_id, JeuxVideosDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_univers_id %>
+    <%= form.select :_jeux_videos_univers_id, JeuxVideosUniver.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_dvd_id %>
+    <%= form.select :_jeux_videos_dvd_id, JeuxVideosDvd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_artbook_id %>
+    <%= form.select :_jeux_videos_artbook_id, JeuxVideosArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_litterature_asiatique_id %>
+    <%= form.select :_jeux_videos_litterature_asiatique_id, JeuxVideosLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_litterature_asiatique_plus_id %>
+    <%= form.select :_jeux_videos_litterature_asiatique_plus_id, JeuxVideosLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_culture_id %>
+    <%= form.select :_jeux_videos_culture_id, JeuxVideosCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_ost_id %>
+    <%= form.select :_jeux_videos_ost_id, JeuxVideosOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_cd_id %>
+    <%= form.select :_jeux_videos_cd_id, JeuxVideosCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_doujin_id %>
+    <%= form.select :_jeux_videos_doujin_id, JeuxVideosDoujin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23358,7 +23358,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_amv_id %>
+    <%= form.select :_jeux_videos_amv_id, JeuxVideosAmv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23678,7 +23678,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_sondage_id %>
+    <%= form.select :_jeux_videos_sondage_id, JeuxVideosSondage.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23998,7 +23998,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_quizz_id %>
+    <%= form.select :_jeux_videos_quizz_id, JeuxVideosQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24318,7 +24318,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_concours_id %>
+    <%= form.select :_jeux_videos_concours_id, JeuxVideosConcour.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24638,7 +24638,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_people_id %>
+    <%= form.select :_jeux_videos_people_id, JeuxVideosPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24958,7 +24958,7 @@
 
 
 
-    <%= form.number_field :_jeux_videos_topic_id %>
+    <%= form.select :_jeux_videos_topic_id, JeuxVideosTopic.all.collect{|x|[x.name, x.id]} %>
 
 
 

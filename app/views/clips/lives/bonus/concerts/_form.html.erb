@@ -26,9 +26,9 @@
 
   <div>
 
-    <%= form.label :_clips_lives_bonus_concerts_type_id, style: "display: block" %>
+    <%= form.label :_clips_lives_hbonus_concerts_type_id, style: "display: block" %>
 
-    <%= form.number_field :_clips_lives_bonus_concerts_type_id %>
+    <%= form.select :_clips_lives_hbonus_concerts_type_id, Clips::Lives::Bonus::ConcertsType.all.collect{|h|[h.name,h.id]} %>
 
   </div>
 
@@ -36,9 +36,9 @@
 
   <div>
 
-    <%= form.label :_clips_lives_bonus_concerts_type_bonus_id, style: "display: block" %>
+    <%= form.label :_clips_lives_hbonus_concerts_type_bonus_id, style: "display: block" %>
 
-    <%= form.number_field :_clips_lives_bonus_concerts_type_bonus_id %>
+    <%= form.select :_clips_lives_hbonus_concerts_type_bonus_id, Clips::Lives::Bonus::ConcertsTypeBonu.all.collect{|h|[h.name,h.id]} %>
 
   </div>
 
@@ -118,7 +118,7 @@
 
     <%= form.label :_clips_lives_bonus_concerts_role_id, style: "display: block" %>
 
-    <%= form.number_field :_clips_lives_bonus_concerts_role_id %>
+    <%= form.select :_clips_lives_hbonus_concerts_role_id, Clips::Lives::Bonus::ConcertsRole.all.collect{|h|[h.name,h.id]} %>
 
   </div>
 

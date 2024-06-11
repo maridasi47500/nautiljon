@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_goodies_type_id %>
+    <%= form.select :_goodies_type_id, GoodiesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_goodies_pays_id %>
+    <%= form.select :_goodies_pays_id, GoodiesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_goodies_matiere_id %>
+    <%= form.select :_goodies_matiere_id, GoodiesMatiere.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_goodies_matiere_id %>
+    <%= form.select :_goodies_matiere_id, GoodiesMatiere.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_goodies_editeurs_vo_id %>
+    <%= form.select :_goodies_editeurs_vo_id, GoodiesEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_goodies_editeurs_vo_id %>
+    <%= form.select :_goodies_editeurs_vo_id, GoodiesEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_goodies_editeurs_vf_id %>
+    <%= form.select :_goodies_editeurs_vf_id, GoodiesEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_goodies_editeurs_vf_id %>
+    <%= form.select :_goodies_editeurs_vf_id, GoodiesEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_goodies_staff_role_id %>
+    <%= form.select :_goodies_staff_role_id, GoodiesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_goodies_staff_people_id %>
+    <%= form.select :_goodies_staff_people_id, GoodiesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_goodies_staff_role_id %>
+    <%= form.select :_goodies_staff_role_id, GoodiesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_goodies_staff_people_id %>
+    <%= form.select :_goodies_staff_people_id, GoodiesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_goodies_societe_role_id %>
+    <%= form.select :_goodies_societe_role_id, GoodiesSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_goodies_societe_people_id %>
+    <%= form.select :_goodies_societe_people_id, GoodiesSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_goodies_societe_role_id %>
+    <%= form.select :_goodies_societe_role_id, GoodiesSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_goodies_societe_people_id %>
+    <%= form.select :_goodies_societe_people_id, GoodiesSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_goodies_public_averti_id %>
+    <%= form.select :_goodies_public_averti_id, GoodiesPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_goodies_groupes_id %>
+    <%= form.select :_goodies_groupes_id, GoodiesGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :_goodies_anime_id %>
+    <%= form.select :_goodies_anime_id, GoodiesAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_goodies_perso_id %>
+    <%= form.select :_goodies_perso_id, GoodiesPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_goodies_manga_id %>
+    <%= form.select :_goodies_manga_id, GoodiesManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_goodies_perso_manga_id %>
+    <%= form.select :_goodies_perso_manga_id, GoodiesPersoManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_goodies_jv_id %>
+    <%= form.select :_goodies_jv_id, GoodiesJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_goodies_jv_perso_id %>
+    <%= form.select :_goodies_jv_perso_id, GoodiesJvPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_goodies_ln_id %>
+    <%= form.select :_goodies_ln_id, GoodiesLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_goodies_drama_id %>
+    <%= form.select :_goodies_drama_id, GoodiesDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :_goodies_am_id %>
+    <%= form.select :_goodies_am_id, GoodiesAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_goodies_artbook_id %>
+    <%= form.select :_goodies_artbook_id, GoodiesArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :_goodies_photobook_id %>
+    <%= form.select :_goodies_photobook_id, GoodiesPhotobook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_goodies_doujinshi_id %>
+    <%= form.select :_goodies_doujinshi_id, GoodiesDoujinshi.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_goodies_dvd_id %>
+    <%= form.select :_goodies_dvd_id, GoodiesDvd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_goodies_cd_id %>
+    <%= form.select :_goodies_cd_id, GoodiesCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_goodies_ost_id %>
+    <%= form.select :_goodies_ost_id, GoodiesOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_goodies_people_id %>
+    <%= form.select :_goodies_people_id, GoodiesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_goodies_goodies_id %>
+    <%= form.select :_goodies_goodies_id, GoodiesGoodie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_goodies_clip_id %>
+    <%= form.select :_goodies_clip_id, GoodiesClip.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :_goodies_bonus_id %>
+    <%= form.select :_goodies_bonus_id, GoodiesBonu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.number_field :_goodies_litterature_asiatique_id %>
+    <%= form.select :_goodies_litterature_asiatique_id, GoodiesLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.number_field :_goodies_actualite_id %>
+    <%= form.select :_goodies_actualite_id, GoodiesActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23358,7 +23358,7 @@
 
 
 
-    <%= form.number_field :_goodies_actualite_mini_id %>
+    <%= form.select :_goodies_actualite_mini_id, GoodiesActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 

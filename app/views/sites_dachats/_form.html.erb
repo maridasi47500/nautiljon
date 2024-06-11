@@ -1918,7 +1918,7 @@
 
 
 
-    <%= form.number_field :_sites_dachats_pays_id %>
+    <%= form.select :_sites_dachats_pays_id, SitesDachatsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 

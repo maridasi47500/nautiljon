@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_videos_id_cat_id %>
+    <%= form.select :_videos_id_cat_id, VideosIdCat.all.collect{|x|[x.name, x.id]} %>
 
 
 

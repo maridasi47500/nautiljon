@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :evenements_pays_id %>
+    <%= form.select :evenements_pays_id, EvenementsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :evenements_people_id %>
+    <%= form.select :evenements_people_id, EvenementsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 

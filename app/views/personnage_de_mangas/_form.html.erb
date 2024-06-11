@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_manga_id %>
+    <%= form.select :_personnage_de_mangas_manga_id, PersonnageDeMangasManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_manga_id %>
+    <%= form.select :_personnage_de_mangas_manga_id, PersonnageDeMangasManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_perso_manga_id %>
+    <%= form.select :_personnage_de_mangas_perso_manga_id, PersonnageDeMangasPersoManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_perso_id %>
+    <%= form.select :_personnage_de_mangas_perso_id, PersonnageDeMangasPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_perso_plus_id %>
+    <%= form.select :_personnage_de_mangas_perso_plus_id, PersonnageDeMangasPersoPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_jv_perso_id %>
+    <%= form.select :_personnage_de_mangas_jv_perso_id, PersonnageDeMangasJvPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_personnage_de_mangas_goodies_id %>
+    <%= form.select :_personnage_de_mangas_goodies_id, PersonnageDeMangasGoody.all.collect{|x|[x.name, x.id]} %>
 
 
 

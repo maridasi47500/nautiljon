@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_sexe_id %>
+    <%= form.select :_personnage_danimes_sexe_id, PersonnageDanimesSexe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_anime_id %>
+    <%= form.select :_personnage_danimes_anime_id, PersonnageDanimesAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_anime_id %>
+    <%= form.select :_personnage_danimes_anime_id, PersonnageDanimesAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_pays_id %>
+    <%= form.select :_personnage_danimes_doubleur_pays_id, PersonnageDanimesDoubleurPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_people_id %>
+    <%= form.select :_personnage_danimes_doubleur_people_id, PersonnageDanimesDoubleurPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3774,7 +3774,7 @@
 
 
 
-    <%= form.label :, style: "display: block" %>
+    
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.text_field : %>
+    
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_role_id %>
+    <%= form.select :_personnage_danimes_doubleur_role_id, PersonnageDanimesDoubleurRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_pays_id %>
+    <%= form.select :_personnage_danimes_doubleur_pays_id, PersonnageDanimesDoubleurPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_people_id %>
+    <%= form.select :_personnage_danimes_doubleur_people_id, PersonnageDanimesDoubleurPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5054,7 +5054,7 @@
 
 
 
-    <%= form.label :, style: "display: block" %>
+    
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.text_field : %>
+    
 
 
 
@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_doubleur_role_id %>
+    <%= form.select :_personnage_danimes_doubleur_role_id, PersonnageDanimesDoubleurRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_perso_id %>
+    <%= form.select :_personnage_danimes_perso_id, PersonnageDanimesPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_perso_plus_id %>
+    <%= form.select :_personnage_danimes_perso_plus_id, PersonnageDanimesPersoPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_perso_manga_id %>
+    <%= form.select :_personnage_danimes_perso_manga_id, PersonnageDanimesPersoManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_jv_perso_id %>
+    <%= form.select :_personnage_danimes_jv_perso_id, PersonnageDanimesJvPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_personnage_danimes_goodies_id %>
+    <%= form.select :_personnage_danimes_goodies_id, PersonnageDanimesGoody.all.collect{|x|[x.name, x.id]} %>
 
 
 

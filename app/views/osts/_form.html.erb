@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :osts_type_id %>
+    <%= form.select :osts_type_id, OstsType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :osts_plateforme_id %>
+    <%= form.select :osts_plateforme_id, OstsPlateforme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :osts_plateforme_id %>
+    <%= form.select :osts_plateforme_id, OstsPlateforme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :osts_monnaie_id %>
+    <%= form.select :osts_monnaie_id, OstsMonnaie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.number_field :osts_role_id %>
+    <%= form.select :osts_role_id, OstsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :osts_people_id %>
+    <%= form.select :osts_people_id, OstsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :osts_role_id %>
+    <%= form.select :osts_role_id, OstsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :osts_people_id %>
+    <%= form.select :osts_people_id, OstsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :osts_labels_id %>
+    <%= form.select :osts_labels_id, OstsLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :osts_labels_id %>
+    <%= form.select :osts_labels_id, OstsLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :osts_distributeurs_id %>
+    <%= form.select :osts_distributeurs_id, OstsDistributeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :osts_distributeurs_id %>
+    <%= form.select :osts_distributeurs_id, OstsDistributeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :osts_groupes_id %>
+    <%= form.select :osts_groupes_id, OstsGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :osts_anime_id %>
+    <%= form.select :osts_anime_id, OstsAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :osts_ln_id %>
+    <%= form.select :osts_ln_id, OstsLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :osts_drama_id %>
+    <%= form.select :osts_drama_id, OstsDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :osts_am_id %>
+    <%= form.select :osts_am_id, OstsAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :osts_jv_id %>
+    <%= form.select :osts_jv_id, OstsJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :osts_ost_id %>
+    <%= form.select :osts_ost_id, OstsOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :osts_emission_tv_id %>
+    <%= form.select :osts_emission_tv_id, OstsEmissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 

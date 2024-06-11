@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_breves_cat_id %>
+    <%= form.select :_breves_cat_id, BrevesCat.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_breves_actualite_id %>
+    <%= form.select :_breves_actualite_id, BrevesActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_breves_actualite_mini_id %>
+    <%= form.select :_breves_actualite_mini_id, BrevesActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_breves_people_id %>
+    <%= form.select :_breves_people_id, BrevesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.number_field :_breves_anime_id %>
+    <%= form.select :_breves_anime_id, BrevesAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.number_field :_breves_ln_id %>
+    <%= form.select :_breves_ln_id, BrevesLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_breves_manga_id %>
+    <%= form.select :_breves_manga_id, BrevesManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_breves_drama_id %>
+    <%= form.select :_breves_drama_id, BrevesDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :_breves_am_id %>
+    <%= form.select :_breves_am_id, BrevesAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_breves_litterature_asiatique_id %>
+    <%= form.select :_breves_litterature_asiatique_id, BrevesLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_breves_livre_jeunesse_id %>
+    <%= form.select :_breves_livre_jeunesse_id, BrevesLivreJeunesse.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_breves_magazine_id %>
+    <%= form.select :_breves_magazine_id, BrevesMagazine.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_breves_beau_livre_id %>
+    <%= form.select :_breves_beau_livre_id, BrevesBeauLivre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_breves_jv_id %>
+    <%= form.select :_breves_jv_id, BrevesJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_breves_dvd_id %>
+    <%= form.select :_breves_dvd_id, BrevesDvd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_breves_artbook_id %>
+    <%= form.select :_breves_artbook_id, BrevesArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_breves_photobook_id %>
+    <%= form.select :_breves_photobook_id, BrevesPhotobook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_breves_goodies_id %>
+    <%= form.select :_breves_goodies_id, BrevesGoodie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_breves_cinema_id %>
+    <%= form.select :_breves_cinema_id, BrevesCinema.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_breves_evenement_id %>
+    <%= form.select :_breves_evenement_id, BrevesEvenement.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_breves_concerts_id %>
+    <%= form.select :_breves_concerts_id, BrevesConcert.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_breves_recette_id %>
+    <%= form.select :_breves_recette_id, BrevesRecette.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_breves_cd_id %>
+    <%= form.select :_breves_cd_id, BrevesCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_breves_ost_id %>
+    <%= form.select :_breves_ost_id, BrevesOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_breves_amv_id %>
+    <%= form.select :_breves_amv_id, BrevesAmv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_breves_clip_id %>
+    <%= form.select :_breves_clip_id, BrevesClip.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_breves_emission_tv_id %>
+    <%= form.select :_breves_emission_tv_id, BrevesEmissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_breves_emission_tv_numero_id %>
+    <%= form.select :_breves_emission_tv_numero_id, BrevesEmissionTvNumero.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_breves_sondage_id %>
+    <%= form.select :_breves_sondage_id, BrevesSondage.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_breves_quizz_id %>
+    <%= form.select :_breves_quizz_id, BrevesQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_breves_concours_id %>
+    <%= form.select :_breves_concours_id, BrevesConcour.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_breves_manga_editeur_id %>
+    <%= form.select :_breves_manga_editeur_id, BrevesMangaEditeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_breves_anime_studio_id %>
+    <%= form.select :_breves_anime_studio_id, BrevesAnimeStudio.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_breves_jv_societe_id %>
+    <%= form.select :_breves_jv_societe_id, BrevesJvSociete.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :_breves_societe_id %>
+    <%= form.select :_breves_societe_id, BrevesSociete.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_breves_culture_id %>
+    <%= form.select :_breves_culture_id, BrevesCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 

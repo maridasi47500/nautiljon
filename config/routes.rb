@@ -90,7 +90,12 @@ Rails.application.routes.draw do
   resources :numero_demission_tvs_presentateurs
   resources :numero_demission_tvs_specials
   resources :numero_demission_tvs_id_emission_tvs
-  resources :mangas
+  get "/planning/manga", to: "mangas#planning"
+  resources :mangas do
+    collection do
+      get "planning"
+    end
+  end
   resources :mangas_clips
   resources :mangas_people
   resources :mangas_concours
@@ -439,6 +444,8 @@ Rails.application.routes.draw do
   resources :concerts_pays
   resources :concerts_artistes
   get "concert",to:"clips/lives/bonus/concerts#index"
+  get "concerts",to:"clips/lives/bonus/concerts#agenda"
+  get "cinema",to:"films_asiatiques_en_salles#agenda"
   namespace :clips do
     namespace :lives do
       namespace :bonus do
@@ -617,11 +624,15 @@ Rails.application.routes.draw do
   resources :evenements
   resources :evenements_people
   resources :evenements_pays
+
+  get "/animes/:saispn-:annee", to: "animes#saison"
   resources :animes do
     collection do
       get "planning", to:"animes#planning"
     end
   end
+  get "/persos", to:"personnage_danimes#index"
+
   resources :animes_topics
   resources :animes_quizzs
   resources :animes_cinemas

@@ -1598,7 +1598,7 @@
 
 
 
-    <%= form.number_field :amvs_makers_id %>
+    <%= form.select :amvs_makers_id, AmvsMaker.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1918,7 +1918,7 @@
 
 
 
-    <%= form.number_field :amvs_makers_id %>
+    <%= form.select :amvs_makers_id, AmvsMaker.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :amvs_type_id %>
+    <%= form.select :amvs_type_id, AmvsType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :amvs_type_id %>
+    <%= form.select :amvs_type_id, AmvsType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.number_field :amvs_conventions_id %>
+    <%= form.select :amvs_conventions_id, AmvsConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.number_field :amvs_conventions_id %>
+    <%= form.select :amvs_conventions_id, AmvsConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :amvs_groupes_id %>
+    <%= form.select :amvs_groupes_id, AmvsGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :amvs_anime_id %>
+    <%= form.select :amvs_anime_id, AmvsAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :amvs_jv_id %>
+    <%= form.select :amvs_jv_id, AmvsJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :amvs_amv_id %>
+    <%= form.select :amvs_amv_id, AmvsAmv.all.collect{|x|[x.name, x.id]} %>
 
 
 

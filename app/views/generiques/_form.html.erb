@@ -1598,7 +1598,7 @@
 
 
 
-    <%= form.number_field :_generiques_id_anime_id %>
+    <%= form.select :_generiques_id_anime_id, GeneriquesIdAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1918,7 +1918,7 @@
 
 
 
-    <%= form.number_field :_generiques_type_id %>
+    <%= form.select :_generiques_type_id, GeneriquesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_generiques_staff_role_id %>
+    <%= form.select :_generiques_staff_role_id, GeneriquesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_generiques_staff_people_id %>
+    <%= form.select :_generiques_staff_people_id, GeneriquesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_generiques_staff_role_id %>
+    <%= form.select :_generiques_staff_role_id, GeneriquesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_generiques_staff_people_id %>
+    <%= form.select :_generiques_staff_people_id, GeneriquesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_generiques_generic_id %>
+    <%= form.select :_generiques_generic_id, GeneriquesGeneric.all.collect{|x|[x.name, x.id]} %>
 
 
 

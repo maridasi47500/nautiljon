@@ -10558,7 +10558,7 @@
 
 
 
-<li><a class="dropdown-item" href="/animes/printemps-2024.html?tri=p">Calendrier saisonnier</a></li>
+<li><a class="dropdown-item" href="/animes/<%=Date.today.season%>-<%=Date.today.month < 3 or (Date.today.month == 3 and Date.today.date < 21) ? (Date.today.year - 1) : (Date.today.year) %>.html?tri=p">Calendrier saisonnier</a></li>
 
 
 

@@ -2,9 +2,11 @@ class AnimesController < ApplicationController
   before_action :set_anime, only: %i[ show edit update destroy ]
 
   # GET /animes or /animes.json
+  def saison
+    @_animes=@animes = Anime.all
+  end
   def planning
     @_animes=@animes = Anime.all
-    render :index
   end
   def index
     @_animes=@animes = Anime.all

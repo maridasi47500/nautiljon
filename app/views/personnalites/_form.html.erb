@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_personnalites_type_people_id %>
+    <%= form.select :_personnalites_type_people_id, PersonnalitesTypePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_personnalites_sexe_id %>
+    <%= form.select :_personnalites_sexe_id, PersonnalitesSexe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_personnalites_pays_id %>
+    <%= form.select :_personnalites_pays_id, PersonnalitesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_personnalites_pays_id %>
+    <%= form.select :_personnalites_pays_id, PersonnalitesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_personnalites_statut_id %>
+    <%= form.select :_personnalites_statut_id, PersonnalitesStatut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_personnalites_genres_id %>
+    <%= form.select :_personnalites_genres_id, PersonnalitesGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_personnalites_genres_id %>
+    <%= form.select :_personnalites_genres_id, PersonnalitesGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_id %>
+    <%= form.select :_personnalites_labels_id, PersonnalitesLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_debut_id %>
+    <%= form.select :_personnalites_labels_debut_id, PersonnalitesLabelsDebut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_fin_id %>
+    <%= form.select :_personnalites_labels_fin_id, PersonnalitesLabelsFin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_id %>
+    <%= form.select :_personnalites_labels_id, PersonnalitesLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_debut_id %>
+    <%= form.select :_personnalites_labels_debut_id, PersonnalitesLabelsDebut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_personnalites_labels_fin_id %>
+    <%= form.select :_personnalites_labels_fin_id, PersonnalitesLabelsFin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_id %>
+    <%= form.select :_personnalites_agences_id, PersonnalitesAgence.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_debut_id %>
+    <%= form.select :_personnalites_agences_debut_id, PersonnalitesAgencesDebut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_fin_id %>
+    <%= form.select :_personnalites_agences_fin_id, PersonnalitesAgencesFin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_id %>
+    <%= form.select :_personnalites_agences_id, PersonnalitesAgence.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_debut_id %>
+    <%= form.select :_personnalites_agences_debut_id, PersonnalitesAgencesDebut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_personnalites_agences_fin_id %>
+    <%= form.select :_personnalites_agences_fin_id, PersonnalitesAgencesFin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_personnalites_roles_id %>
+    <%= form.select :_personnalites_roles_id, PersonnalitesRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_personnalites_roles_id %>
+    <%= form.select :_personnalites_roles_id, PersonnalitesRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_personnalites_id_membre_id %>
+    <%= form.select :_personnalites_id_membre_id, PersonnalitesIdMembre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_personnalites_ex_debut_id %>
+    <%= form.select :_personnalites_ex_debut_id, PersonnalitesExDebut.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_personnalites_ex_fin_id %>
+    <%= form.select :_personnalites_ex_fin_id, PersonnalitesExFin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_personnalites_id_galerie_id %>
+    <%= form.select :_personnalites_id_galerie_id, PersonnalitesIdGalerie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_personnalites_people_id %>
+    <%= form.select :_personnalites_people_id, PersonnalitesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_personnalites_people_plus_id %>
+    <%= form.select :_personnalites_people_plus_id, PersonnalitesPeoplePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 

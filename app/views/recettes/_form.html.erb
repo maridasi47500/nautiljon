@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_recettes_type_id %>
+    <%= form.select :_recettes_type_id, RecettesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_recettes_plat_id %>
+    <%= form.select :_recettes_plat_id, RecettesPlat.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_recettes_difficulte_id %>
+    <%= form.select :_recettes_difficulte_id, RecettesDifficulte.all.collect{|x|[x.name, x.id]} %>
 
 
 

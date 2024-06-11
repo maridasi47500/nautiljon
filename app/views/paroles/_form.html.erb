@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_paroles_staff_role_id %>
+    <%= form.select :_paroles_staff_role_id, ParolesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_paroles_staff_people_id %>
+    <%= form.select :_paroles_staff_people_id, ParolesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_paroles_staff_role_id %>
+    <%= form.select :_paroles_staff_role_id, ParolesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_paroles_staff_people_id %>
+    <%= form.select :_paroles_staff_people_id, ParolesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_paroles_parole_id %>
+    <%= form.select :_paroles_parole_id, ParolesParole.all.collect{|x|[x.name, x.id]} %>
 
 
 

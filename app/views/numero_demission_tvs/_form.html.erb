@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_id_emission_tv_id %>
+    <%= form.select :_numero_demission_tvs_id_emission_tv_id, NumeroDemissionTvsIdEmissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_special_id %>
+    <%= form.select :_numero_demission_tvs_special_id, NumeroDemissionTvsSpecial.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_presentateur_id %>
+    <%= form.select :_numero_demission_tvs_presentateur_id, NumeroDemissionTvsPresentateur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_presentateur_id %>
+    <%= form.select :_numero_demission_tvs_presentateur_id, NumeroDemissionTvsPresentateur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_people_id %>
+    <%= form.select :_numero_demission_tvs_people_id, NumeroDemissionTvsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_people_id %>
+    <%= form.select :_numero_demission_tvs_people_id, NumeroDemissionTvsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_emission_tv_numero_id %>
+    <%= form.select :_numero_demission_tvs_emission_tv_numero_id, NumeroDemissionTvsEmissionTvNumero.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_numero_demission_tvs_clip_id %>
+    <%= form.select :_numero_demission_tvs_clip_id, NumeroDemissionTvsClip.all.collect{|x|[x.name, x.id]} %>
 
 
 

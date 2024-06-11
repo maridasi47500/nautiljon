@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_restaurants_pays_id %>
+    <%= form.select :_restaurants_pays_id, RestaurantsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 

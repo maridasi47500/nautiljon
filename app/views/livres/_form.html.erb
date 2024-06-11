@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_livres_type_id %>
+    <%= form.select :_livres_type_id, LivresType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_livres_type_secondaire_id %>
+    <%= form.select :_livres_type_secondaire_id, LivresTypeSecondaire.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_livres_pays_id %>
+    <%= form.select :_livres_pays_id, LivresPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :_livres_statut_publication_id %>
+    <%= form.select :_livres_statut_publication_id, LivresStatutPublication.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_livres_staff_role_id %>
+    <%= form.select :_livres_staff_role_id, LivresStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_livres_staff_people_id %>
+    <%= form.select :_livres_staff_people_id, LivresStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_livres_staff_role_id %>
+    <%= form.select :_livres_staff_role_id, LivresStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_livres_staff_people_id %>
+    <%= form.select :_livres_staff_people_id, LivresStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_livres_editeurs_vo_id %>
+    <%= form.select :_livres_editeurs_vo_id, LivresEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_livres_editeurs_vo_id %>
+    <%= form.select :_livres_editeurs_vo_id, LivresEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_livres_editeurs_vf_id %>
+    <%= form.select :_livres_editeurs_vf_id, LivresEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_livres_editeurs_vf_id %>
+    <%= form.select :_livres_editeurs_vf_id, LivresEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_livres_genres_id %>
+    <%= form.select :_livres_genres_id, LivresGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_livres_genres_id %>
+    <%= form.select :_livres_genres_id, LivresGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_livres_themes_id %>
+    <%= form.select :_livres_themes_id, LivresTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_livres_themes_id %>
+    <%= form.select :_livres_themes_id, LivresTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_livres_pays_theme_id %>
+    <%= form.select :_livres_pays_theme_id, LivresPaysTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_livres_public_averti_id %>
+    <%= form.select :_livres_public_averti_id, LivresPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_livres_groupes_id %>
+    <%= form.select :_livres_groupes_id, LivresGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_livres_anime_id %>
+    <%= form.select :_livres_anime_id, LivresAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_livres_anime_plus_id %>
+    <%= form.select :_livres_anime_plus_id, LivresAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_livres_ln_id %>
+    <%= form.select :_livres_ln_id, LivresLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_livres_ln_plus_id %>
+    <%= form.select :_livres_ln_plus_id, LivresLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_livres_manga_id %>
+    <%= form.select :_livres_manga_id, LivresManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_livres_manga_plus_id %>
+    <%= form.select :_livres_manga_plus_id, LivresMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :_livres_drama_id %>
+    <%= form.select :_livres_drama_id, LivresDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_livres_drama_plus_id %>
+    <%= form.select :_livres_drama_plus_id, LivresDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_livres_am_id %>
+    <%= form.select :_livres_am_id, LivresAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_livres_am_plus_id %>
+    <%= form.select :_livres_am_plus_id, LivresAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_livres_litterature_asiatique_id %>
+    <%= form.select :_livres_litterature_asiatique_id, LivresLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :_livres_litterature_asiatique_plus_id %>
+    <%= form.select :_livres_litterature_asiatique_plus_id, LivresLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_livres_goodies_id %>
+    <%= form.select :_livres_goodies_id, LivresGoodie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_livres_actualite_id %>
+    <%= form.select :_livres_actualite_id, LivresActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_livres_culture_id %>
+    <%= form.select :_livres_culture_id, LivresCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_livres_actualite_mini_id %>
+    <%= form.select :_livres_actualite_mini_id, LivresActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_livres_people_id %>
+    <%= form.select :_livres_people_id, LivresPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_livres_jv_id %>
+    <%= form.select :_livres_jv_id, LivresJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_livres_jv_plus_id %>
+    <%= form.select :_livres_jv_plus_id, LivresJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 

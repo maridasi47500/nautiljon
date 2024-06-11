@@ -2,6 +2,9 @@ class MangasController < ApplicationController
   before_action :set__manga, only: %i[ show edit update destroy ]
 
   # GET /_mangas or /_mangas.json
+  def planning
+    @_mangas = Manga.all
+  end
   def index
     @_mangas = Manga.all
   end

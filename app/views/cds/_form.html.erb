@@ -1918,7 +1918,7 @@
 
 
 
-    <%= form.number_field :_cds_type_id %>
+    <%= form.select :_cds_type_id, CdsType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_cds_monnaie_id %>
+    <%= form.select :_cds_monnaie_id, CdsMonnaie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_cds_role_id %>
+    <%= form.select :_cds_role_id, CdsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_cds_people_id %>
+    <%= form.select :_cds_people_id, CdsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_cds_role_id %>
+    <%= form.select :_cds_role_id, CdsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_cds_people_id %>
+    <%= form.select :_cds_people_id, CdsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_cds_labels_id %>
+    <%= form.select :_cds_labels_id, CdsLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_cds_labels_id %>
+    <%= form.select :_cds_labels_id, CdsLabel.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :_cds_distributeurs_id %>
+    <%= form.select :_cds_distributeurs_id, CdsDistributeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_cds_distributeurs_id %>
+    <%= form.select :_cds_distributeurs_id, CdsDistributeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_cds_groupes_id %>
+    <%= form.select :_cds_groupes_id, CdsGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_cds_cd_id %>
+    <%= form.select :_cds_cd_id, CdsCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_cds_anime_id %>
+    <%= form.select :_cds_anime_id, CdsAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_cds_ln_id %>
+    <%= form.select :_cds_ln_id, CdsLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_cds_drama_id %>
+    <%= form.select :_cds_drama_id, CdsDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_cds_am_id %>
+    <%= form.select :_cds_am_id, CdsAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_cds_jv_id %>
+    <%= form.select :_cds_jv_id, CdsJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_cds_emission_tv_id %>
+    <%= form.select :_cds_emission_tv_id, CdsEmissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_cds_bonus_id %>
+    <%= form.select :_cds_bonus_id, CdsBonu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_cds_manga_id %>
+    <%= form.select :_cds_manga_id, CdsManga.all.collect{|x|[x.name, x.id]} %>
 
 
 

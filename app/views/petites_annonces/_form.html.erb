@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_petites_annonces_section_id %>
+    <%= form.select :_petites_annonces_section_id, PetitesAnnoncesSection.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_petites_annonces_pays_id %>
+    <%= form.select :_petites_annonces_pays_id, PetitesAnnoncesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_petites_annonces_lieu_id %>
+    <%= form.select :_petites_annonces_lieu_id, PetitesAnnoncesLieu.all.collect{|x|[x.name, x.id]} %>
 
 
 

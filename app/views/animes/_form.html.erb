@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :animes_format_id %>
+    <%= form.select :animes_format_id, AnimesFormat.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :animes_origine_id %>
+    <%= form.select :animes_origine_id, AnimesOrigine.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :animes_encours_id %>
+    <%= form.select :animes_encours_id, AnimesEncour.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :animes_pays_id %>
+    <%= form.select :animes_pays_id, AnimesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :animes_pays_id %>
+    <%= form.select :animes_pays_id, AnimesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :animes_genres_id %>
+    <%= form.select :animes_genres_id, AnimesGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :animes_genres_id %>
+    <%= form.select :animes_genres_id, AnimesGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :animes_themes_id %>
+    <%= form.select :animes_themes_id, AnimesTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :animes_themes_id %>
+    <%= form.select :animes_themes_id, AnimesTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :animes_staff_role_id %>
+    <%= form.select :animes_staff_role_id, AnimesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :animes_staff_people_id %>
+    <%= form.select :animes_staff_people_id, AnimesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :animes_staff_role_id %>
+    <%= form.select :animes_staff_role_id, AnimesStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :animes_staff_people_id %>
+    <%= form.select :animes_staff_people_id, AnimesStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :animes_societe_role_id %>
+    <%= form.select :animes_societe_role_id, AnimesSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :animes_societe_people_id %>
+    <%= form.select :animes_societe_people_id, AnimesSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :animes_societe_role_id %>
+    <%= form.select :animes_societe_role_id, AnimesSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :animes_societe_people_id %>
+    <%= form.select :animes_societe_people_id, AnimesSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :animes_public_averti_id %>
+    <%= form.select :animes_public_averti_id, AnimesPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :animes_editeurs_vf_role_id %>
+    <%= form.select :animes_editeurs_vf_role_id, AnimesEditeursVfRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :animes_editeurs_vf_id %>
+    <%= form.select :animes_editeurs_vf_id, AnimesEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :animes_editeurs_vf_role_id %>
+    <%= form.select :animes_editeurs_vf_role_id, AnimesEditeursVfRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :animes_editeurs_vf_id %>
+    <%= form.select :animes_editeurs_vf_id, AnimesEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :animes_groupes_id %>
+    <%= form.select :animes_groupes_id, AnimesGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :animes_actualite_id %>
+    <%= form.select :animes_actualite_id, AnimesActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :animes_actualite_mini_id %>
+    <%= form.select :animes_actualite_mini_id, AnimesActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :animes_anime_id %>
+    <%= form.select :animes_anime_id, AnimesAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :animes_anime_plus_id %>
+    <%= form.select :animes_anime_plus_id, AnimesAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :animes_ln_id %>
+    <%= form.select :animes_ln_id, AnimesLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :animes_ln_plus_id %>
+    <%= form.select :animes_ln_plus_id, AnimesLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :animes_manga_id %>
+    <%= form.select :animes_manga_id, AnimesManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :animes_manga_plus_id %>
+    <%= form.select :animes_manga_plus_id, AnimesMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :animes_jv_id %>
+    <%= form.select :animes_jv_id, AnimesJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :animes_jv_plus_id %>
+    <%= form.select :animes_jv_plus_id, AnimesJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :animes_am_id %>
+    <%= form.select :animes_am_id, AnimesAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :animes_am_plus_id %>
+    <%= form.select :animes_am_plus_id, AnimesAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :animes_drama_id %>
+    <%= form.select :animes_drama_id, AnimesDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :animes_drama_plus_id %>
+    <%= form.select :animes_drama_plus_id, AnimesDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :animes_people_id %>
+    <%= form.select :animes_people_id, AnimesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.number_field :animes_dvd_id %>
+    <%= form.select :animes_dvd_id, AnimesDvd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.number_field :animes_artbook_id %>
+    <%= form.select :animes_artbook_id, AnimesArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23358,7 +23358,7 @@
 
 
 
-    <%= form.number_field :animes_photobook_id %>
+    <%= form.select :animes_photobook_id, AnimesPhotobook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23678,7 +23678,7 @@
 
 
 
-    <%= form.number_field :animes_litterature_asiatique_id %>
+    <%= form.select :animes_litterature_asiatique_id, AnimesLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23998,7 +23998,7 @@
 
 
 
-    <%= form.number_field :animes_litterature_asiatique_plus_id %>
+    <%= form.select :animes_litterature_asiatique_plus_id, AnimesLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24318,7 +24318,7 @@
 
 
 
-    <%= form.number_field :animes_culture_id %>
+    <%= form.select :animes_culture_id, AnimesCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24638,7 +24638,7 @@
 
 
 
-    <%= form.number_field :animes_ost_id %>
+    <%= form.select :animes_ost_id, AnimesOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24958,7 +24958,7 @@
 
 
 
-    <%= form.number_field :animes_cd_id %>
+    <%= form.select :animes_cd_id, AnimesCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25278,7 +25278,7 @@
 
 
 
-    <%= form.number_field :animes_doujin_id %>
+    <%= form.select :animes_doujin_id, AnimesDoujin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25598,7 +25598,7 @@
 
 
 
-    <%= form.number_field :animes_amv_id %>
+    <%= form.select :animes_amv_id, AnimesAmv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25918,7 +25918,7 @@
 
 
 
-    <%= form.number_field :animes_cinema_id %>
+    <%= form.select :animes_cinema_id, AnimesCinema.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -26238,7 +26238,7 @@
 
 
 
-    <%= form.number_field :animes_quizz_id %>
+    <%= form.select :animes_quizz_id, AnimesQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -26558,7 +26558,7 @@
 
 
 
-    <%= form.number_field :animes_topic_id %>
+    <%= form.select :animes_topic_id, AnimesTopic.all.collect{|x|[x.name, x.id]} %>
 
 
 

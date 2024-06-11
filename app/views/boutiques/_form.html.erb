@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_boutiques_pays_id %>
+    <%= form.select :_boutiques_pays_id, BoutiquesPay.all.collect{|x|[x.name, x.id]} %>
 
 
 

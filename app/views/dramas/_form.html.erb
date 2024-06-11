@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_dramas_origine_id %>
+    <%= form.select :_dramas_origine_id, DramasOrigine.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_dramas_encours_id %>
+    <%= form.select :_dramas_encours_id, DramasEncour.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_dramas_pays_id %>
+    <%= form.select :_dramas_pays_id, DramasPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_dramas_pays_id %>
+    <%= form.select :_dramas_pays_id, DramasPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_dramas_genres_id %>
+    <%= form.select :_dramas_genres_id, DramasGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_dramas_genres_id %>
+    <%= form.select :_dramas_genres_id, DramasGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_dramas_themes_id %>
+    <%= form.select :_dramas_themes_id, DramasTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_dramas_themes_id %>
+    <%= form.select :_dramas_themes_id, DramasTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_role_id %>
+    <%= form.select :_dramas_staff_role_id, DramasStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_people_id %>
+    <%= form.select :_dramas_staff_people_id, DramasStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_role_id %>
+    <%= form.select :_dramas_staff_role_id, DramasStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_people_id %>
+    <%= form.select :_dramas_staff_people_id, DramasStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_role_id %>
+    <%= form.select :_dramas_staff_role_id, DramasStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_dramas_staff_people_id %>
+    <%= form.select :_dramas_staff_people_id, DramasStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_dramas_societe_role_id %>
+    <%= form.select :_dramas_societe_role_id, DramasSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_dramas_societe_people_id %>
+    <%= form.select :_dramas_societe_people_id, DramasSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_dramas_type_id %>
+    <%= form.select :_dramas_type_id, DramasType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_dramas_acteurs_id %>
+    <%= form.select :_dramas_acteurs_id, DramasActeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_dramas_type_id %>
+    <%= form.select :_dramas_type_id, DramasType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_dramas_acteurs_id %>
+    <%= form.select :_dramas_acteurs_id, DramasActeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_dramas_type_id %>
+    <%= form.select :_dramas_type_id, DramasType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_dramas_acteurs_id %>
+    <%= form.select :_dramas_acteurs_id, DramasActeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_dramas_type_id %>
+    <%= form.select :_dramas_type_id, DramasType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_dramas_acteurs_id %>
+    <%= form.select :_dramas_acteurs_id, DramasActeur.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :_dramas_editeurs_vf_role_id %>
+    <%= form.select :_dramas_editeurs_vf_role_id, DramasEditeursVfRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_dramas_editeurs_vf_id %>
+    <%= form.select :_dramas_editeurs_vf_id, DramasEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_dramas_editeurs_vf_role_id %>
+    <%= form.select :_dramas_editeurs_vf_role_id, DramasEditeursVfRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_dramas_editeurs_vf_id %>
+    <%= form.select :_dramas_editeurs_vf_id, DramasEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_dramas_programme_id %>
+    <%= form.select :_dramas_programme_id, DramasProgramme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_type_id %>
+    <%= form.select :_dramas_generiques_type_id, DramasGeneriquesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_people_id %>
+    <%= form.select :_dramas_generiques_people_id, DramasGeneriquesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_people2_id %>
+    <%= form.select :_dramas_generiques_people2_id, DramasGeneriquesPeople2.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_clip_id %>
+    <%= form.select :_dramas_generiques_clip_id, DramasGeneriquesClip.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_parole_id %>
+    <%= form.select :_dramas_generiques_parole_id, DramasGeneriquesParole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_type_id %>
+    <%= form.select :_dramas_generiques_type_id, DramasGeneriquesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_people_id %>
+    <%= form.select :_dramas_generiques_people_id, DramasGeneriquesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_people2_id %>
+    <%= form.select :_dramas_generiques_people2_id, DramasGeneriquesPeople2.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_clip_id %>
+    <%= form.select :_dramas_generiques_clip_id, DramasGeneriquesClip.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.number_field :_dramas_generiques_parole_id %>
+    <%= form.select :_dramas_generiques_parole_id, DramasGeneriquesParole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23678,7 +23678,7 @@
 
 
 
-    <%= form.number_field :_dramas_groupes_id %>
+    <%= form.select :_dramas_groupes_id, DramasGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23998,7 +23998,7 @@
 
 
 
-    <%= form.number_field :_dramas_anime_id %>
+    <%= form.select :_dramas_anime_id, DramasAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24318,7 +24318,7 @@
 
 
 
-    <%= form.number_field :_dramas_anime_plus_id %>
+    <%= form.select :_dramas_anime_plus_id, DramasAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24638,7 +24638,7 @@
 
 
 
-    <%= form.number_field :_dramas_ln_id %>
+    <%= form.select :_dramas_ln_id, DramasLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24958,7 +24958,7 @@
 
 
 
-    <%= form.number_field :_dramas_ln_plus_id %>
+    <%= form.select :_dramas_ln_plus_id, DramasLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25278,7 +25278,7 @@
 
 
 
-    <%= form.number_field :_dramas_manga_id %>
+    <%= form.select :_dramas_manga_id, DramasManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25598,7 +25598,7 @@
 
 
 
-    <%= form.number_field :_dramas_manga_plus_id %>
+    <%= form.select :_dramas_manga_plus_id, DramasMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -25918,7 +25918,7 @@
 
 
 
-    <%= form.number_field :_dramas_drama_id %>
+    <%= form.select :_dramas_drama_id, DramasDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -26238,7 +26238,7 @@
 
 
 
-    <%= form.number_field :_dramas_drama_plus_id %>
+    <%= form.select :_dramas_drama_plus_id, DramasDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -26558,7 +26558,7 @@
 
 
 
-    <%= form.number_field :_dramas_jv_id %>
+    <%= form.select :_dramas_jv_id, DramasJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -26878,7 +26878,7 @@
 
 
 
-    <%= form.number_field :_dramas_jv_plus_id %>
+    <%= form.select :_dramas_jv_plus_id, DramasJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -27198,7 +27198,7 @@
 
 
 
-    <%= form.number_field :_dramas_am_id %>
+    <%= form.select :_dramas_am_id, DramasAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -27518,7 +27518,7 @@
 
 
 
-    <%= form.number_field :_dramas_am_plus_id %>
+    <%= form.select :_dramas_am_plus_id, DramasAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -27838,7 +27838,7 @@
 
 
 
-    <%= form.number_field :_dramas_univers_id %>
+    <%= form.select :_dramas_univers_id, DramasUniver.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -28158,7 +28158,7 @@
 
 
 
-    <%= form.number_field :_dramas_litterature_asiatique_id %>
+    <%= form.select :_dramas_litterature_asiatique_id, DramasLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -28478,7 +28478,7 @@
 
 
 
-    <%= form.number_field :_dramas_litterature_asiatique_plus_id %>
+    <%= form.select :_dramas_litterature_asiatique_plus_id, DramasLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -28798,7 +28798,7 @@
 
 
 
-    <%= form.number_field :_dramas_actualite_id %>
+    <%= form.select :_dramas_actualite_id, DramasActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -29118,7 +29118,7 @@
 
 
 
-    <%= form.number_field :_dramas_culture_id %>
+    <%= form.select :_dramas_culture_id, DramasCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -29438,7 +29438,7 @@
 
 
 
-    <%= form.number_field :_dramas_actualite_mini_id %>
+    <%= form.select :_dramas_actualite_mini_id, DramasActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -29758,7 +29758,7 @@
 
 
 
-    <%= form.number_field :_dramas_ost_id %>
+    <%= form.select :_dramas_ost_id, DramasOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -30078,7 +30078,7 @@
 
 
 
-    <%= form.number_field :_dramas_doujin_id %>
+    <%= form.select :_dramas_doujin_id, DramasDoujin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -30398,7 +30398,7 @@
 
 
 
-    <%= form.number_field :_dramas_cd_id %>
+    <%= form.select :_dramas_cd_id, DramasCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -30718,7 +30718,7 @@
 
 
 
-    <%= form.number_field :_dramas_dvd_id %>
+    <%= form.select :_dramas_dvd_id, DramasDvd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -31038,7 +31038,7 @@
 
 
 
-    <%= form.number_field :_dramas_artbook_id %>
+    <%= form.select :_dramas_artbook_id, DramasArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -31358,7 +31358,7 @@
 
 
 
-    <%= form.number_field :_dramas_emission_tv_id %>
+    <%= form.select :_dramas_emission_tv_id, DramasEmissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -31678,7 +31678,7 @@
 
 
 
-    <%= form.number_field :_dramas_emission_tv_plus_id %>
+    <%= form.select :_dramas_emission_tv_plus_id, DramasEmissionTvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 

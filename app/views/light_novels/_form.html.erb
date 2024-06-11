@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_light_novels_pays_id %>
+    <%= form.select :_light_novels_pays_id, LightNovelsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_light_novels_pays_id %>
+    <%= form.select :_light_novels_pays_id, LightNovelsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_light_novels_genres_id %>
+    <%= form.select :_light_novels_genres_id, LightNovelsGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_light_novels_genres_id %>
+    <%= form.select :_light_novels_genres_id, LightNovelsGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_light_novels_themes_id %>
+    <%= form.select :_light_novels_themes_id, LightNovelsTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_light_novels_themes_id %>
+    <%= form.select :_light_novels_themes_id, LightNovelsTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_light_novels_encours_vo_id %>
+    <%= form.select :_light_novels_encours_vo_id, LightNovelsEncoursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_light_novels_encours_vf_id %>
+    <%= form.select :_light_novels_encours_vf_id, LightNovelsEncoursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vo_id %>
+    <%= form.select :_light_novels_editeurs_vo_id, LightNovelsEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vo_id %>
+    <%= form.select :_light_novels_editeurs_vo_id, LightNovelsEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vf_id %>
+    <%= form.select :_light_novels_editeurs_vf_id, LightNovelsEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vf_collection_id %>
+    <%= form.select :_light_novels_editeurs_vf_collection_id, LightNovelsEditeursVfCollection.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vf_id %>
+    <%= form.select :_light_novels_editeurs_vf_id, LightNovelsEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_light_novels_editeurs_vf_collection_id %>
+    <%= form.select :_light_novels_editeurs_vf_collection_id, LightNovelsEditeursVfCollection.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_light_novels_prepublie_id %>
+    <%= form.select :_light_novels_prepublie_id, LightNovelsPrepublie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_light_novels_prepublie_id %>
+    <%= form.select :_light_novels_prepublie_id, LightNovelsPrepublie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_light_novels_staff_role_id %>
+    <%= form.select :_light_novels_staff_role_id, LightNovelsStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_light_novels_staff_people_id %>
+    <%= form.select :_light_novels_staff_people_id, LightNovelsStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_light_novels_staff_role_id %>
+    <%= form.select :_light_novels_staff_role_id, LightNovelsStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_light_novels_staff_people_id %>
+    <%= form.select :_light_novels_staff_people_id, LightNovelsStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_light_novels_societe_role_id %>
+    <%= form.select :_light_novels_societe_role_id, LightNovelsSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_light_novels_societe_people_id %>
+    <%= form.select :_light_novels_societe_people_id, LightNovelsSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_light_novels_societe_role_id %>
+    <%= form.select :_light_novels_societe_role_id, LightNovelsSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_light_novels_societe_people_id %>
+    <%= form.select :_light_novels_societe_people_id, LightNovelsSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_light_novels_public_averti_id %>
+    <%= form.select :_light_novels_public_averti_id, LightNovelsPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_light_novels_commerce_id %>
+    <%= form.select :_light_novels_commerce_id, LightNovelsCommerce.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_light_novels_groupes_id %>
+    <%= form.select :_light_novels_groupes_id, LightNovelsGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_light_novels_anime_id %>
+    <%= form.select :_light_novels_anime_id, LightNovelsAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_light_novels_anime_plus_id %>
+    <%= form.select :_light_novels_anime_plus_id, LightNovelsAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :_light_novels_manga_id %>
+    <%= form.select :_light_novels_manga_id, LightNovelsManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_light_novels_manga_plus_id %>
+    <%= form.select :_light_novels_manga_plus_id, LightNovelsMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_light_novels_ln_id %>
+    <%= form.select :_light_novels_ln_id, LightNovelsLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_light_novels_ln_plus_id %>
+    <%= form.select :_light_novels_ln_plus_id, LightNovelsLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_light_novels_drama_id %>
+    <%= form.select :_light_novels_drama_id, LightNovelsDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_light_novels_drama_plus_id %>
+    <%= form.select :_light_novels_drama_plus_id, LightNovelsDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_light_novels_jv_id %>
+    <%= form.select :_light_novels_jv_id, LightNovelsJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_light_novels_jv_plus_id %>
+    <%= form.select :_light_novels_jv_plus_id, LightNovelsJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :_light_novels_am_id %>
+    <%= form.select :_light_novels_am_id, LightNovelsAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_light_novels_am_plus_id %>
+    <%= form.select :_light_novels_am_plus_id, LightNovelsAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :_light_novels_litterature_asiatique_id %>
+    <%= form.select :_light_novels_litterature_asiatique_id, LightNovelsLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_light_novels_litterature_asiatique_plus_id %>
+    <%= form.select :_light_novels_litterature_asiatique_plus_id, LightNovelsLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_light_novels_ost_id %>
+    <%= form.select :_light_novels_ost_id, LightNovelsOst.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_light_novels_artbook_id %>
+    <%= form.select :_light_novels_artbook_id, LightNovelsArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_light_novels_actualite_id %>
+    <%= form.select :_light_novels_actualite_id, LightNovelsActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_light_novels_culture_id %>
+    <%= form.select :_light_novels_culture_id, LightNovelsCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_light_novels_actualite_mini_id %>
+    <%= form.select :_light_novels_actualite_mini_id, LightNovelsActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_light_novels_quizz_id %>
+    <%= form.select :_light_novels_quizz_id, LightNovelsQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 

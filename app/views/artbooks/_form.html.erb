@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :artbooks_france_id %>
+    <%= form.select :artbooks_france_id, ArtbooksFrance.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :artbooks_pays_id %>
+    <%= form.select :artbooks_pays_id, ArtbooksPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :artbooks_illustrations_id %>
+    <%= form.select :artbooks_illustrations_id, ArtbooksIllustration.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :artbooks_type_id %>
+    <%= form.select :artbooks_type_id, ArtbooksType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :artbooks_editeurs_vo_id %>
+    <%= form.select :artbooks_editeurs_vo_id, ArtbooksEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :artbooks_editeurs_vo_id %>
+    <%= form.select :artbooks_editeurs_vo_id, ArtbooksEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :artbooks_editeurs_vf_id %>
+    <%= form.select :artbooks_editeurs_vf_id, ArtbooksEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :artbooks_editeurs_vf_id %>
+    <%= form.select :artbooks_editeurs_vf_id, ArtbooksEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :artbooks_role_id %>
+    <%= form.select :artbooks_role_id, ArtbooksRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :artbooks_people_id %>
+    <%= form.select :artbooks_people_id, ArtbooksPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :artbooks_role_id %>
+    <%= form.select :artbooks_role_id, ArtbooksRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :artbooks_people_id %>
+    <%= form.select :artbooks_people_id, ArtbooksPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :artbooks_societe_role_id %>
+    <%= form.select :artbooks_societe_role_id, ArtbooksSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :artbooks_societe_people_id %>
+    <%= form.select :artbooks_societe_people_id, ArtbooksSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :artbooks_societe_role_id %>
+    <%= form.select :artbooks_societe_role_id, ArtbooksSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :artbooks_societe_people_id %>
+    <%= form.select :artbooks_societe_people_id, ArtbooksSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :artbooks_public_averti_id %>
+    <%= form.select :artbooks_public_averti_id, ArtbooksPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :artbooks_groupes_id %>
+    <%= form.select :artbooks_groupes_id, ArtbooksGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :artbooks_anime_id %>
+    <%= form.select :artbooks_anime_id, ArtbooksAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :artbooks_manga_id %>
+    <%= form.select :artbooks_manga_id, ArtbooksManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :artbooks_ln_id %>
+    <%= form.select :artbooks_ln_id, ArtbooksLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :artbooks_doujinshi_id %>
+    <%= form.select :artbooks_doujinshi_id, ArtbooksDoujinshi.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :artbooks_jv_id %>
+    <%= form.select :artbooks_jv_id, ArtbooksJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :artbooks_drama_id %>
+    <%= form.select :artbooks_drama_id, ArtbooksDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :artbooks_am_id %>
+    <%= form.select :artbooks_am_id, ArtbooksAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :artbooks_litterature_asiatique_id %>
+    <%= form.select :artbooks_litterature_asiatique_id, ArtbooksLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :artbooks_artbook_id %>
+    <%= form.select :artbooks_artbook_id, ArtbooksArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :artbooks_goodies_id %>
+    <%= form.select :artbooks_goodies_id, ArtbooksGoodie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :artbooks_doujin_id %>
+    <%= form.select :artbooks_doujin_id, ArtbooksDoujin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :artbooks_actualite_id %>
+    <%= form.select :artbooks_actualite_id, ArtbooksActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :artbooks_actualite_mini_id %>
+    <%= form.select :artbooks_actualite_mini_id, ArtbooksActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :artbooks_culture_id %>
+    <%= form.select :artbooks_culture_id, ArtbooksCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 

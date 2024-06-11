@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_concerts_artiste_id %>
+    <%= form.select :_concerts_artiste_id, ConcertsArtiste.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_concerts_pays_id %>
+    <%= form.select :_concerts_pays_id, ConcertsPay.all.collect{|x|[x.name, x.id]} %>
 
 
 

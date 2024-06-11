@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_volumes_ln_id %>
+    <%= form.select :_volumes_ln_id, VolumesLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1598,7 +1598,7 @@
 
 
 
-    <%= form.number_field :_volumes_type_id %>
+    <%= form.select :_volumes_type_id, VolumesType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_volumes_illustrations_id %>
+    <%= form.select :_volumes_illustrations_id, VolumesIllustration.all.collect{|x|[x.name, x.id]} %>
 
 
 

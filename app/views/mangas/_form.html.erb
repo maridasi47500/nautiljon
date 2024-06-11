@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_mangas_pays_id %>
+    <%= form.select :_mangas_pays_id, MangasPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_mangas_pays_id %>
+    <%= form.select :_mangas_pays_id, MangasPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_mangas_type_id %>
+    <%= form.select :_mangas_type_id, MangasType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_mangas_genres_id %>
+    <%= form.select :_mangas_genres_id, MangasGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_mangas_genres_id %>
+    <%= form.select :_mangas_genres_id, MangasGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_mangas_themes_id %>
+    <%= form.select :_mangas_themes_id, MangasTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.number_field :_mangas_themes_id %>
+    <%= form.select :_mangas_themes_id, MangasTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_mangas_encours_vo_id %>
+    <%= form.select :_mangas_encours_vo_id, MangasEncoursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_mangas_encours_vf_id %>
+    <%= form.select :_mangas_encours_vf_id, MangasEncoursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vo_id %>
+    <%= form.select :_mangas_editeurs_vo_id, MangasEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vo_id %>
+    <%= form.select :_mangas_editeurs_vo_id, MangasEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vf_id %>
+    <%= form.select :_mangas_editeurs_vf_id, MangasEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vf_collection_id %>
+    <%= form.select :_mangas_editeurs_vf_collection_id, MangasEditeursVfCollection.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vf_id %>
+    <%= form.select :_mangas_editeurs_vf_id, MangasEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_mangas_editeurs_vf_collection_id %>
+    <%= form.select :_mangas_editeurs_vf_collection_id, MangasEditeursVfCollection.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_mangas_prepublie_id %>
+    <%= form.select :_mangas_prepublie_id, MangasPrepublie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_mangas_prepublie_id %>
+    <%= form.select :_mangas_prepublie_id, MangasPrepublie.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_mangas_staff_role_id %>
+    <%= form.select :_mangas_staff_role_id, MangasStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_mangas_staff_people_id %>
+    <%= form.select :_mangas_staff_people_id, MangasStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_mangas_staff_role_id %>
+    <%= form.select :_mangas_staff_role_id, MangasStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.number_field :_mangas_staff_people_id %>
+    <%= form.select :_mangas_staff_people_id, MangasStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_mangas_societe_role_id %>
+    <%= form.select :_mangas_societe_role_id, MangasSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_mangas_societe_people_id %>
+    <%= form.select :_mangas_societe_people_id, MangasSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_mangas_societe_role_id %>
+    <%= form.select :_mangas_societe_role_id, MangasSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_mangas_societe_people_id %>
+    <%= form.select :_mangas_societe_people_id, MangasSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_mangas_public_averti_id %>
+    <%= form.select :_mangas_public_averti_id, MangasPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_mangas_commerce_id %>
+    <%= form.select :_mangas_commerce_id, MangasCommerce.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_mangas_groupes_id %>
+    <%= form.select :_mangas_groupes_id, MangasGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_mangas_anime_id %>
+    <%= form.select :_mangas_anime_id, MangasAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_mangas_anime_plus_id %>
+    <%= form.select :_mangas_anime_plus_id, MangasAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_mangas_ln_id %>
+    <%= form.select :_mangas_ln_id, MangasLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_mangas_ln_plus_id %>
+    <%= form.select :_mangas_ln_plus_id, MangasLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_mangas_manga_id %>
+    <%= form.select :_mangas_manga_id, MangasManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_mangas_manga_plus_id %>
+    <%= form.select :_mangas_manga_plus_id, MangasMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :_mangas_drama_id %>
+    <%= form.select :_mangas_drama_id, MangasDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_mangas_drama_plus_id %>
+    <%= form.select :_mangas_drama_plus_id, MangasDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :_mangas_jv_id %>
+    <%= form.select :_mangas_jv_id, MangasJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_mangas_jv_plus_id %>
+    <%= form.select :_mangas_jv_plus_id, MangasJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_mangas_am_id %>
+    <%= form.select :_mangas_am_id, MangasAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_mangas_am_plus_id %>
+    <%= form.select :_mangas_am_plus_id, MangasAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_mangas_litterature_asiatique_id %>
+    <%= form.select :_mangas_litterature_asiatique_id, MangasLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_mangas_litterature_asiatique_plus_id %>
+    <%= form.select :_mangas_litterature_asiatique_plus_id, MangasLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_mangas_artbook_id %>
+    <%= form.select :_mangas_artbook_id, MangasArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_mangas_actualite_id %>
+    <%= form.select :_mangas_actualite_id, MangasActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :_mangas_culture_id %>
+    <%= form.select :_mangas_culture_id, MangasCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.number_field :_mangas_actualite_mini_id %>
+    <%= form.select :_mangas_actualite_mini_id, MangasActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.number_field :_mangas_sondage_id %>
+    <%= form.select :_mangas_sondage_id, MangasSondage.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23358,7 +23358,7 @@
 
 
 
-    <%= form.number_field :_mangas_quizz_id %>
+    <%= form.select :_mangas_quizz_id, MangasQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23678,7 +23678,7 @@
 
 
 
-    <%= form.number_field :_mangas_concours_id %>
+    <%= form.select :_mangas_concours_id, MangasConcour.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -23998,7 +23998,7 @@
 
 
 
-    <%= form.number_field :_mangas_people_id %>
+    <%= form.select :_mangas_people_id, MangasPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -24318,7 +24318,7 @@
 
 
 
-    <%= form.number_field :_mangas_clip_id %>
+    <%= form.select :_mangas_clip_id, MangasClip.all.collect{|x|[x.name, x.id]} %>
 
 
 

@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_photobooks_france_id %>
+    <%= form.select :_photobooks_france_id, PhotobooksFrance.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_photobooks_pays_id %>
+    <%= form.select :_photobooks_pays_id, PhotobooksPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_photobooks_disponibilite_id %>
+    <%= form.select :_photobooks_disponibilite_id, PhotobooksDisponibilite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_photobooks_illustrations_id %>
+    <%= form.select :_photobooks_illustrations_id, PhotobooksIllustration.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_photobooks_type_id %>
+    <%= form.select :_photobooks_type_id, PhotobooksType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_photobooks_editeurs_vo_id %>
+    <%= form.select :_photobooks_editeurs_vo_id, PhotobooksEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_photobooks_editeurs_vo_id %>
+    <%= form.select :_photobooks_editeurs_vo_id, PhotobooksEditeursVo.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_photobooks_editeurs_vf_id %>
+    <%= form.select :_photobooks_editeurs_vf_id, PhotobooksEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_photobooks_editeurs_vf_id %>
+    <%= form.select :_photobooks_editeurs_vf_id, PhotobooksEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_photobooks_role_id %>
+    <%= form.select :_photobooks_role_id, PhotobooksRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_photobooks_people_id %>
+    <%= form.select :_photobooks_people_id, PhotobooksPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_photobooks_role_id %>
+    <%= form.select :_photobooks_role_id, PhotobooksRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_photobooks_people_id %>
+    <%= form.select :_photobooks_people_id, PhotobooksPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_photobooks_societe_role_id %>
+    <%= form.select :_photobooks_societe_role_id, PhotobooksSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_photobooks_societe_people_id %>
+    <%= form.select :_photobooks_societe_people_id, PhotobooksSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.number_field :_photobooks_societe_role_id %>
+    <%= form.select :_photobooks_societe_role_id, PhotobooksSocieteRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_photobooks_societe_people_id %>
+    <%= form.select :_photobooks_societe_people_id, PhotobooksSocietePerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12478,7 +12478,7 @@
 
 
 
-    <%= form.number_field :_photobooks_public_averti_id %>
+    <%= form.select :_photobooks_public_averti_id, PhotobooksPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_photobooks_groupes_id %>
+    <%= form.select :_photobooks_groupes_id, PhotobooksGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13118,7 +13118,7 @@
 
 
 
-    <%= form.number_field :_photobooks_drama_id %>
+    <%= form.select :_photobooks_drama_id, PhotobooksDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13438,7 +13438,7 @@
 
 
 
-    <%= form.number_field :_photobooks_am_id %>
+    <%= form.select :_photobooks_am_id, PhotobooksAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -13758,7 +13758,7 @@
 
 
 
-    <%= form.number_field :_photobooks_cd_id %>
+    <%= form.select :_photobooks_cd_id, PhotobooksCd.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_photobooks_photobook_id %>
+    <%= form.select :_photobooks_photobook_id, PhotobooksPhotobook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_photobooks_anime_id %>
+    <%= form.select :_photobooks_anime_id, PhotobooksAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_photobooks_bonus_id %>
+    <%= form.select :_photobooks_bonus_id, PhotobooksBonu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :_photobooks_actualite_id %>
+    <%= form.select :_photobooks_actualite_id, PhotobooksActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_photobooks_actualite_mini_id %>
+    <%= form.select :_photobooks_actualite_mini_id, PhotobooksActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_photobooks_goodies_id %>
+    <%= form.select :_photobooks_goodies_id, PhotobooksGoodie.all.collect{|x|[x.name, x.id]} %>
 
 
 

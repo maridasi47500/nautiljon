@@ -1,0 +1,8 @@
+
+<h1>voir le planning des episodes de tous les Animes</h1>
+<%@_animes.each do |x|%>
+<%=render x%>
+<%end%>
+<p>
+<%=link_to "nouveau  Animes", new_anime_path%>
+</p>

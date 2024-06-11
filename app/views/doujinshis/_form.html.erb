@@ -958,7 +958,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_france_id %>
+    <%= form.select :_doujinshis_france_id, DoujinshisFrance.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3518,7 +3518,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_origine_id %>
+    <%= form.select :_doujinshis_origine_id, DoujinshisOrigine.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3838,7 +3838,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_pays_id %>
+    <%= form.select :_doujinshis_pays_id, DoujinshisPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_pays_id %>
+    <%= form.select :_doujinshis_pays_id, DoujinshisPay.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_type_id %>
+    <%= form.select :_doujinshis_type_id, DoujinshisType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_genres_id %>
+    <%= form.select :_doujinshis_genres_id, DoujinshisGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_genres_id %>
+    <%= form.select :_doujinshis_genres_id, DoujinshisGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_themes_id %>
+    <%= form.select :_doujinshis_themes_id, DoujinshisTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_themes_id %>
+    <%= form.select :_doujinshis_themes_id, DoujinshisTheme.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_genres_averti_id %>
+    <%= form.select :_doujinshis_genres_averti_id, DoujinshisGenresAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_genres_averti_id %>
+    <%= form.select :_doujinshis_genres_averti_id, DoujinshisGenresAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_conventions_id %>
+    <%= form.select :_doujinshis_conventions_id, DoujinshisConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_conventions_id %>
+    <%= form.select :_doujinshis_conventions_id, DoujinshisConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_role_id %>
+    <%= form.select :_doujinshis_role_id, DoujinshisRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_staff_people_id %>
+    <%= form.select :_doujinshis_staff_people_id, DoujinshisStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_role_id %>
+    <%= form.select :_doujinshis_role_id, DoujinshisRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_staff_people_id %>
+    <%= form.select :_doujinshis_staff_people_id, DoujinshisStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_public_averti_id %>
+    <%= form.select :_doujinshis_public_averti_id, DoujinshisPublicAverti.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_censure_id %>
+    <%= form.select :_doujinshis_censure_id, DoujinshisCensure.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_gratuit_id %>
+    <%= form.select :_doujinshis_gratuit_id, DoujinshisGratuit.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_groupes_id %>
+    <%= form.select :_doujinshis_groupes_id, DoujinshisGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14398,7 +14398,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_anime_id %>
+    <%= form.select :_doujinshis_anime_id, DoujinshisAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_anime_plus_id %>
+    <%= form.select :_doujinshis_anime_plus_id, DoujinshisAnimePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15038,7 +15038,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_manga_id %>
+    <%= form.select :_doujinshis_manga_id, DoujinshisManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15358,7 +15358,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_manga_plus_id %>
+    <%= form.select :_doujinshis_manga_plus_id, DoujinshisMangaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15678,7 +15678,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_ln_id %>
+    <%= form.select :_doujinshis_ln_id, DoujinshisLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -15998,7 +15998,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_ln_plus_id %>
+    <%= form.select :_doujinshis_ln_plus_id, DoujinshisLnPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16318,7 +16318,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_doujinshi_id %>
+    <%= form.select :_doujinshis_doujinshi_id, DoujinshisDoujinshi.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_doujinshi_plus_id %>
+    <%= form.select :_doujinshis_doujinshi_plus_id, DoujinshisDoujinshiPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -16958,7 +16958,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_drama_id %>
+    <%= form.select :_doujinshis_drama_id, DoujinshisDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_drama_plus_id %>
+    <%= form.select :_doujinshis_drama_plus_id, DoujinshisDramaPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17598,7 +17598,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_jv_id %>
+    <%= form.select :_doujinshis_jv_id, DoujinshisJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_jv_plus_id %>
+    <%= form.select :_doujinshis_jv_plus_id, DoujinshisJvPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_am_id %>
+    <%= form.select :_doujinshis_am_id, DoujinshisAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18558,7 +18558,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_am_plus_id %>
+    <%= form.select :_doujinshis_am_plus_id, DoujinshisAmPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_litterature_asiatique_id %>
+    <%= form.select :_doujinshis_litterature_asiatique_id, DoujinshisLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_litterature_asiatique_plus_id %>
+    <%= form.select :_doujinshis_litterature_asiatique_plus_id, DoujinshisLitteratureAsiatiquePlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_artbook_id %>
+    <%= form.select :_doujinshis_artbook_id, DoujinshisArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_actualite_id %>
+    <%= form.select :_doujinshis_actualite_id, DoujinshisActualite.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20158,7 +20158,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_culture_id %>
+    <%= form.select :_doujinshis_culture_id, DoujinshisCulture.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20478,7 +20478,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_actualite_mini_id %>
+    <%= form.select :_doujinshis_actualite_mini_id, DoujinshisActualiteMini.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_perso_id %>
+    <%= form.select :_doujinshis_perso_id, DoujinshisPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_perso_plus_id %>
+    <%= form.select :_doujinshis_perso_plus_id, DoujinshisPersoPlu.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_perso_manga_id %>
+    <%= form.select :_doujinshis_perso_manga_id, DoujinshisPersoManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_jv_perso_id %>
+    <%= form.select :_doujinshis_jv_perso_id, DoujinshisJvPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22078,7 +22078,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_quizz_id %>
+    <%= form.select :_doujinshis_quizz_id, DoujinshisQuizz.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.number_field :_doujinshis_people_id %>
+    <%= form.select :_doujinshis_people_id, DoujinshisPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 

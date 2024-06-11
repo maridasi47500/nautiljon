@@ -1278,7 +1278,7 @@
 
 
 
-    <%= form.number_field :_tablatures_people_id %>
+    <%= form.select :_tablatures_people_id, TablaturesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -1598,7 +1598,7 @@
 
 
 
-    <%= form.number_field :_tablatures_people_id %>
+    <%= form.select :_tablatures_people_id, TablaturesPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 

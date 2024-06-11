@@ -1,0 +1,27 @@
+<p style="color: green"><%= notice %></p>
+
+
+
+<h1>Agenda des Concerts</h1>
+
+
+
+<div id="_clips_lives_bonus_concerts">
+
+  <% @concerts.each do |_clips_lives_bonus_concert| %>
+
+    <%= render _clips_lives_bonus_concert %>
+
+    <p>
+
+    <%= link_to "Show this concert #{_clips_lives_bonus_concert.date_jj}-#{_clips_lives_bonus_concert.date_mm}-#{_clips_lives_bonus_concert.date_aaaa}", _clips_lives_bonus_concert %>
+
+    </p>
+
+  <% end %>
+
+</div>
+
+
+
+<%= link_to "New concert", new_clips_lives_bonus_concert_path %>

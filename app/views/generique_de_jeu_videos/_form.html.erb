@@ -1598,7 +1598,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_type_id %>
+    <%= form.select :_generique_de_jeu_videos_type_id, GeneriqueDeJeuVideosType.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_staff_role_id %>
+    <%= form.select :_generique_de_jeu_videos_staff_role_id, GeneriqueDeJeuVideosStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_staff_people_id %>
+    <%= form.select :_generique_de_jeu_videos_staff_people_id, GeneriqueDeJeuVideosStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2878,7 +2878,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_staff_role_id %>
+    <%= form.select :_generique_de_jeu_videos_staff_role_id, GeneriqueDeJeuVideosStaffRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -3198,7 +3198,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_staff_people_id %>
+    <%= form.select :_generique_de_jeu_videos_staff_people_id, GeneriqueDeJeuVideosStaffPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_jv_id %>
+    <%= form.select :_generique_de_jeu_videos_jv_id, GeneriqueDeJeuVideosJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_generique_de_jeu_videos_jv_generic_id %>
+    <%= form.select :_generique_de_jeu_videos_jv_generic_id, GeneriqueDeJeuVideosJvGeneric.all.collect{|x|[x.name, x.id]} %>
 
 
 

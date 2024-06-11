@@ -2238,7 +2238,7 @@
 
 
 
-    <%= form.number_field :_doujins_conventions_id %>
+    <%= form.select :_doujins_conventions_id, DoujinsConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -2558,7 +2558,7 @@
 
 
 
-    <%= form.number_field :_doujins_conventions_id %>
+    <%= form.select :_doujins_conventions_id, DoujinsConvention.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4158,7 +4158,7 @@
 
 
 
-    <%= form.number_field :_doujins_role_id %>
+    <%= form.select :_doujins_role_id, DoujinsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4478,7 +4478,7 @@
 
 
 
-    <%= form.number_field :_doujins_people_id %>
+    <%= form.select :_doujins_people_id, DoujinsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -4798,7 +4798,7 @@
 
 
 
-    <%= form.number_field :_doujins_role_id %>
+    <%= form.select :_doujins_role_id, DoujinsRole.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -5118,7 +5118,7 @@
 
 
 
-    <%= form.number_field :_doujins_people_id %>
+    <%= form.select :_doujins_people_id, DoujinsPerson.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.number_field :_doujins_genres_id %>
+    <%= form.select :_doujins_genres_id, DoujinsGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.number_field :_doujins_genres_id %>
+    <%= form.select :_doujins_genres_id, DoujinsGenre.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.number_field :_doujins_groupes_id %>
+    <%= form.select :_doujins_groupes_id, DoujinsGroupe.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.number_field :_doujins_anime_id %>
+    <%= form.select :_doujins_anime_id, DoujinsAnime.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7678,7 +7678,7 @@
 
 
 
-    <%= form.number_field :_doujins_ln_id %>
+    <%= form.select :_doujins_ln_id, DoujinsLn.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.number_field :_doujins_drama_id %>
+    <%= form.select :_doujins_drama_id, DoujinsDrama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.number_field :_doujins_am_id %>
+    <%= form.select :_doujins_am_id, DoujinsAm.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.number_field :_doujins_jv_id %>
+    <%= form.select :_doujins_jv_id, DoujinsJv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.number_field :_doujins_doujin_id %>
+    <%= form.select :_doujins_doujin_id, DoujinsDoujin.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.number_field :_doujins_artbook_id %>
+    <%= form.select :_doujins_artbook_id, DoujinsArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
