@@ -617,7 +617,11 @@ Rails.application.routes.draw do
   resources :evenements
   resources :evenements_people
   resources :evenements_pays
-  resources :animes
+  resources :animes do
+    collection do
+      get "planning", to:"animes#planning"
+    end
+  end
   resources :animes_topics
   resources :animes_quizzs
   resources :animes_cinemas

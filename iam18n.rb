@@ -9,18 +9,18 @@ require 'yaml'
 #            password: Password
 #                  password_confirmation: Confirmation
 #
-@k={"fr" => {
-  "models"=>{},
-  "activerecord" => {
-  "attributes" => {
-    "user" => {
-      "password" => "Mot de passe",
-      "password_confirmation" => "Confirmation du mot de passe"
-    }
-  }
-}
-}
-}
+#@k={"fr" => {
+#  "models"=>{},
+#  "activerecord" => {
+#  "attributes" => {
+#    "user" => {
+#      "password" => "Mot de passe",
+#      "password_confirmation" => "Confirmation du mot de passe"
+#    }
+#  }
+#}
+#}
+#}
 ActiveRecord::Base.connection.tables.each do |x|
   z=x
   if x[-1] == "s"
@@ -36,4 +36,4 @@ ActiveRecord::Base.connection.tables.each do |x|
   end
 end
 
-File.write("config/locales/fr.yml",@k.to_yaml)
+#File.write("config/locales/fr.yml",@k.to_yaml)

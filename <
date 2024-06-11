@@ -1,0 +1,14 @@
+require 'csv'
+require 'yaml'
+
+@tables=ActiveRecord::Base.connection.tables
+  
+@tables.each do |x|
+  ActiveRecord::Base.connection.columns(x).map(&:name).each do |y|
+    if y[-3..-1] == "_id" and @tables.include?(y[-3..-1]+"s")
+      k=`ls app/controllers/`
+
+    end
+  end
+end
+
