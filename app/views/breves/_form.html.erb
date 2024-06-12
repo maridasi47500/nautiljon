@@ -5438,7 +5438,7 @@
 
 
 
-    <%= form.select :_breves_anime_id, BrevesAnime.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_anime_id, Anime.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -5758,7 +5758,7 @@
 
 
 
-    <%= form.select :_breves_ln_id, BrevesLn.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_ln_id, LightNovel.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -6078,7 +6078,7 @@
 
 
 
-    <%= form.select :_breves_manga_id, BrevesManga.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_manga_id, Manga.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -6398,7 +6398,7 @@
 
 
 
-    <%= form.select :_breves_drama_id, BrevesDrama.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_drama_id, Drama.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -6718,7 +6718,7 @@
 
 
 
-    <%= form.select :_breves_am_id, BrevesAm.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_am_id, FilmsAsiatique.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.select :_breves_litterature_asiatique_id, BrevesLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_litterature_asiatique_id, LivresLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -7998,7 +7998,7 @@
 
 
 
-    <%= form.select :_breves_beau_livre_id, BrevesBeauLivre.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_beau_livre_id, Livre.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -8318,7 +8318,7 @@
 
 
 
-    <%= form.select :_breves_jv_id, BrevesJv.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_jv_id, JeuxVideo.all.collect{|x|[x.titre_fr, x.id]} %>
 
 
 
@@ -8638,7 +8638,7 @@
 
 
 
-    <%= form.select :_breves_dvd_id, BrevesDvd.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_dvd_id, Dvd::BluRay.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -8958,7 +8958,7 @@
 
 
 
-    <%= form.select :_breves_artbook_id, BrevesArtbook.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_artbook_id, Artbook.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -9278,7 +9278,7 @@
 
 
 
-    <%= form.select :_breves_photobook_id, BrevesPhotobook.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_photobook_id, Photobook.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -9598,7 +9598,7 @@
 
 
 
-    <%= form.select :_breves_goodies_id, BrevesGoodie.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_goodies_id, Goody.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -9918,7 +9918,7 @@
 
 
 
-    <%= form.select :_breves_cinema_id, BrevesCinema.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_cinema_id, FilmsAsiatiquesEnSalle.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -10238,7 +10238,7 @@
 
 
 
-    <%= form.select :_breves_evenement_id, BrevesEvenement.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_evenement_id, Evenement.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -10558,7 +10558,7 @@
 
 
 
-    <%= form.select :_breves_concerts_id, BrevesConcert.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_concerts_id, Concert.all.collect{|x|[x.nom+" "+x.date.to_s, x.id]} %>
 
 
 
@@ -10878,7 +10878,7 @@
 
 
 
-    <%= form.select :_breves_recette_id, BrevesRecette.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_recette_id, Recette.all.collect{|x|[x.nom, x.id]} %>
 
 
 
@@ -11198,7 +11198,7 @@
 
 
 
-    <%= form.select :_breves_cd_id, BrevesCd.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_cd_id, Cd.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -11518,7 +11518,7 @@
 
 
 
-    <%= form.select :_breves_ost_id, BrevesOst.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_ost_id, Ost.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -11838,7 +11838,7 @@
 
 
 
-    <%= form.select :_breves_amv_id, BrevesAmv.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_amv_id, Amv.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -12158,7 +12158,7 @@
 
 
 
-    <%= form.select :_breves_clip_id, BrevesClip.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_clip_id, Clips::Lives::Bonus::Concert.clips.collect{|x|[x.nom, x.id]} %>
 
 
 
@@ -12798,7 +12798,7 @@
 
 
 
-    <%= form.select :_breves_emission_tv_numero_id, BrevesEmissionTvNumero.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_emission_tv_numero_id, NumeroDemissionTv.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14078,7 +14078,7 @@
 
 
 
-    <%= form.select :_breves_manga_editeur_id, BrevesMangaEditeur.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_manga_editeur_id, MangasEditeursVf.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -14718,7 +14718,7 @@
 
 
 
-    <%= form.select :_breves_jv_societe_id, BrevesJvSociete.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_breves_jv_societe_id, JeuxVideosStaffSociete.all.collect{|x|[x.name, x.id]} %>
 
 
 
