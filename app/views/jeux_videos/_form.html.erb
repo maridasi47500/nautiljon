@@ -16638,7 +16638,7 @@
 
 
 
-    <%= form.select :_jeux_videos_anime_id, JeuxVideosAnime.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_anime_id, Anime.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -17278,7 +17278,7 @@
 
 
 
-    <%= form.select :_jeux_videos_ln_id, JeuxVideosLn.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_ln_id, LightNovel.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -17918,7 +17918,7 @@
 
 
 
-    <%= form.select :_jeux_videos_manga_id, JeuxVideosManga.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_manga_id, Manga.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -19198,7 +19198,7 @@
 
 
 
-    <%= form.select :_jeux_videos_am_id, JeuxVideosAm.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_am_id, FilmsAsiatiquesEnSalle.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19838,7 +19838,7 @@
 
 
 
-    <%= form.select :_jeux_videos_drama_id, JeuxVideosDrama.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_drama_id, Drama.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -20798,7 +20798,7 @@
 
 
 
-    <%= form.select :_jeux_videos_dvd_id, JeuxVideosDvd.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_dvd_id, Dvd::BluRay.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -21118,7 +21118,7 @@
 
 
 
-    <%= form.select :_jeux_videos_artbook_id, JeuxVideosArtbook.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_artbook_id, Artbook.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.select :_jeux_videos_litterature_asiatique_id, JeuxVideosLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_litterature_asiatique_id, LivresLitteratureAsiatique.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -22398,7 +22398,7 @@
 
 
 
-    <%= form.select :_jeux_videos_ost_id, JeuxVideosOst.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_ost_id, Ost.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -22718,7 +22718,7 @@
 
 
 
-    <%= form.select :_jeux_videos_cd_id, JeuxVideosCd.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_cd_id, Cd.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -23038,7 +23038,7 @@
 
 
 
-    <%= form.select :_jeux_videos_doujin_id, JeuxVideosDoujin.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_doujin_id, Doujin.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -23358,7 +23358,7 @@
 
 
 
-    <%= form.select :_jeux_videos_amv_id, JeuxVideosAmv.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_jeux_videos_amv_id, Amv.all.collect{|x|[x.titre, x.id]} %>
 
 
 

@@ -7038,7 +7038,7 @@
 
 
 
-    <%= form.select :_generique_de_jeu_videos_jv_id, GeneriqueDeJeuVideosJv.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_generique_de_jeu_videos_jv_id, GeneriqueDeJeuVideo.all.collect{|x|[x.titre, x.id]} %>
 
 
 
@@ -7358,7 +7358,7 @@
 
 
 
-    <%= form.select :_generique_de_jeu_videos_jv_generic_id, GeneriqueDeJeuVideosJvGeneric.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_generique_de_jeu_videos_jv_generic_id, GeneriqueDeJeuVideo.all.collect{|x|[x.titre, x.id]} %>
 
 
 

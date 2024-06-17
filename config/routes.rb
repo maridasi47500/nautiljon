@@ -634,6 +634,10 @@ Rails.application.routes.draw do
   get "/persos", to:"personnage_danimes#index"
   get "/lyrics",to:"generiques#index"
   get "/amv",to:"amvs#index"
+  get "/persos-mangas",to:"personnage_de_mangas#index"
+  get "doujinshi", to: "doujinshis#index"
+  get "persos-jeuxvideo",to:"personnages_de_jeux_videos#index"
+  get "generiques-jeuxvideo",to:"generique_de_jeu_videos#index"
 
   resources :animes_topics
   resources :animes_quizzs

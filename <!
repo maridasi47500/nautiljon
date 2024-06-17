@@ -18238,7 +18238,7 @@
 
 
 
-    <%= form.select :_doujinshis_am_id, FilmsAsiatiquesEnSalle.all.collect{|x|[x.titre, x.id]} %>
+    <%= form.select :_doujinshis_am_id, FilmsAsiatiquesEnSalle.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -18878,7 +18878,7 @@
 
 
 
-    <%= form.select :_doujinshis_litterature_asiatique_id, LivresLitteratureAsiatique.all.collect{|x|[x.titre, x.id]} %>
+    <%= form.select :_doujinshis_litterature_asiatique_id, DoujinshisLitteratureAsiatique.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -19518,7 +19518,7 @@
 
 
 
-    <%= form.select :_doujinshis_artbook_id, Artbook.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_doujinshis_artbook_id, DoujinshisArtbook.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21438,7 +21438,7 @@
 
 
 
-    <%= form.select :_doujinshis_perso_manga_id, PersonnageDeManga.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_doujinshis_perso_manga_id, DoujinshisPersoManga.all.collect{|x|[x.name, x.id]} %>
 
 
 
@@ -21758,7 +21758,7 @@
 
 
 
-    <%= form.select :_doujinshis_jv_perso_id, PersonnagesDeJeuxVideo.all.collect{|x|[x.name, x.id]} %>
+    <%= form.select :_doujinshis_jv_perso_id, DoujinshisJvPerso.all.collect{|x|[x.name, x.id]} %>
 
 
 
